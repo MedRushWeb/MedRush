@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+</head>
+<body>
+  <script>
+    const db = new PouchDB('QuizAppDB');
+    db.put({ _id: 'sample1', name: 'Majd' }).then(() => {
+      console.log('✅ Saved in browser');
+    });
+  </script>
+</body>
+</html>
+
+
+<script>
+  function loadDoc() {
+    db.get('sample1')
+      .then(doc => console.log('📄 Loaded:', doc))
+      .catch(err => console.error('❌ Not found', err));
+  }
+
+  loadDoc(); // Call it when page loads
+</script>
+

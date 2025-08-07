@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MedRush Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Top Bar */
+    .topbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      padding: 15px 30px;
+      color: white;
+      font-size: 20px;
+      font-weight: 600;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(18px);
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+      width: 380px;
+      padding: 40px 30px;
+      color: white;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: white;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 15px;
+      background: rgba(255, 255, 255, 0.3);
+      color: white;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    input::placeholder {
+      color: #e0e0e0;
+    }
+
+    input:focus {
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ffffff;
+      color: #1e3a8a;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e2e8f0;
+    }
+
+    .toggle-link {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .toggle-link a {
+      color: #facc15;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .toggle-link a:hover {
+      text-decoration: underline;
+    }
+
+    .message {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 14px;
+      color: #dcfce7;
+    }
+
+    .error {
+      color: #fecaca;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 45px;
+      top: 208px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #f9fafb;
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    @keyframes fadeIn {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">MedRush</div>
+
+  <div class="container">
+    <h2 id="formTitle">Sign In</h2>
+
+    <div class="form-group">
+      <input type="text" id="username" placeholder="Username" />
+    </div>
+    <div class="form-group">
+      <input type="password" id="password" placeholder="Password" />
+      <span class="toggle-password" onclick="togglePassword()">Show</span>
+    </div>
+
+    <button onclick="handleAuth()">Submit</button>
+    <div class="message" id="messageBox"></div>
+
+    <div class="toggle-link">
+      <span id="toggleText">Don't have an account? </span>
+      <a onclick="toggleForm()">Sign Up</a>
+    </div>
+  </div>
+
+  <script>
+   let isSignIn = true;
+
+  function toggleForm() {
+    isSignIn = !isSignIn;
+    document.getElementById('formTitle').textContent = isSignIn ? 'Sign In' : 'Sign Up';
+    document.querySelector('.toggle-link a').textContent = isSignIn ? 'Sign Up' : 'Sign In';
+    document.getElementById('toggleText').textContent = isSignIn
+      ? "Don't have an account? "
+      : "Already have an account? ";
+    document.getElementById('messageBox').textContent = '';
+  }
+
+  async function handleAuth() {
+    const user = document.getElementById('username').value.trim();
+    const pass = document.getElementById('password').value.trim();
+    const msgBox = document.getElementById('messageBox');
+
+    if (!user || !pass) {
+      msgBox.textContent = 'Please fill all fields.';
+      msgBox.className = 'message error';
+      return;
+    }
+
+    const endpoint = isSignIn ? '/api/login' : '/api/signup';
+
+    try {
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: user, password: pass })
+      });
+
+      const text = await res.text();
+      msgBox.textContent = text;
+      msgBox.className = res.ok ? 'message' : 'message error';
+    } catch (error) {
+      console.error('❌ Server error:', error);
+      msgBox.textContent = '❌ Server error. Try again.';
+      msgBox.className = 'message error';
+    }
+  }
+
+  function togglePassword() {
+    const passField = document.getElementById('password');
+    const toggleText = document.querySelector('.toggle-password');
+    if (passField.type === 'password') {
+      passField.type = 'text';
+      toggleText.textContent = 'Hide';
+    } else {
+      passField.type = 'password';
+      toggleText.textContent = 'Show';
+    }
+  }
+    </script>
+</body>
+</html>

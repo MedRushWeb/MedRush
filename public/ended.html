@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="ended.css" />
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    },
+    options: {
+      renderActions: {
+        addMenu: []
+      }
+    },
+    chtml: {
+      scale: 1.15  // Makes the equations slightly larger and sharper
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+
+  <body>
+
+
+
+
+
+    
+
+
+
+<!-- Hidden Top Bar -->
+<div class="topbar hidden" id="topBar">
+  <div class="topbar-left">
+
+    <label class="counterr" id="counterr"></label>
+    <label class="id_question" id="id_question"></label>
+
+
+
+  <span id="previous-button"  onclick="goToPrevious()" onclick="" style="cursor: pointer;">
+    <img src="icons/previous.png" width="24" height="24" alt="white-chevron-left"  style="filter: brightness(0) invert(1); margin-left: 150px;"/>
+  </span>
+
+  <!-- Fullscreen Icon (clickable) -->
+  <span onclick="goToNext()" style="cursor: pointer;">
+    <img src="icons/next.png"  width="24" height="24" alt="white-chevron-left"  style="filter: brightness(0) invert(1); margin-left: 10px;"/>
+  </span>
+
+
+
+  </div>
+  <div class="topbar-right">
+     <div class="topbar-icons">
+      <div class="icon-box">
+<span class="icon" onclick="loadCalculator()">
+  <img src="icons/calculator.png" alt="Calculator" width="24" height="24" style="vertical-align: middle;">
+</span>
+        <span class="label">Calculator</span>
+      </div>
+      <div class="icon-box"  onclick="toggleFullscreen()" title="Fullscreen">
+        <span class="icon">⛶</span>
+        <span class="label">Full</span>
+      </div>
+    <div class="icon-box" title="Flag this">
+    <div class="flag-label">
+    <input
+      type="checkbox"
+      class="flag-checkbox"
+      id="flag-checkbox"
+    />
+    <span class="icon" onclick="toggleFlag()">🚩</span>
+  </div>
+  <span class="label">Flag</span>
+</div>
+
+
+
+      <div class="icon-box">
+        <span class="icon" onclick="loadLabValues()" >🧪</span>
+        <span class="label">Lab</span>
+      </div>
+      <div class="icon-box">
+        <span class="icon">📝</span>
+        <span class="label">Note</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Main content (example) -->
+<div class="main-content">
+  <!-- Place your core app layout here -->
+
+
+
+    <div id="loadingScreen">
+  <div class="ripple"></div>
+</div>
+
+
+
+
+<div class="page"></div>
+
+
+
+
+
+
+      <div  class="buttons_container"   id="myList"></div>
+
+      <div id="sidebar-scroll"></div>
+
+  <div class="review_buttons_container"   id="myReview"></div>
+
+ 
+  <div class="quiz-app" id="quiz-app"> 
+
+
+<div id="lab-values-container"></div>
+<div id="calculator-container"></div>  
+
+      <div class="quiz-info">
+      </div>
+      <div class="countdown"></div>
+
+      <div class="quiz-area"> 
+ 
+
+
+      </div>
+      <div class="answers-area" >
+
+      </div>
+      <button class="next-button">Next Question</button>
+      <div id="button-container"></div>
+      <div id="at-button-container"></div>
+
+     
+
+      <div class="results"></div>
+      <div class="intro"></div>
+
+      <div id="output"></div>
+
+
+<div class="panel" id="infoPanel">
+    <div class="status-strip" id="statusStrip"></div>
+    <div class="panel-content">
+        <div class="section" id="statusText">--</div>
+        <div class="section" id="percentageText">--</div>
+        <div class="section" id="timeSpentText">--</div>
+        <div class="section" id="timeNow">--:--:--</div>
+    </div>
+</div>
+
+
+
+
+
+      <div class="explanation" >
+        
+      </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+      <!-- Modal -->
+<!-- Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <!-- Image display -->
+    <img id="modalImage" style="width: 100%; display: none;" />
+
+    <!-- Video display -->
+    <video id="modalVideo" style="width: 100%; display: none;" controls>
+      <source id="modalVideoSource" src="" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+  
+
+<!-- Your hidden bottom bar -->
+<div class="bottombar hidden" id="bottomBar">
+  <div class="bottombar-left">
+    <p class="footer-text">© 2025 MedWeb</p>
+  </div>
+  <div class="bottombar-right">
+<button onclick="Suspend()"> Suspend ⏸️ </button>
+<button onclick="Finish()"> End Block 🛑 </button>
+<button id="newButton"  style="display: none;">HOME</button>
+  </div>
+</div>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
+<script>
+  const db = new PouchDB('QuizAppDB');
+
+  async function saveOrUpdateDoc(id, data) {
+    try {
+      const existing = await db.get(id);
+      await db.put({ _id: id, _rev: existing._rev, data });
+    } catch (err) {
+      if (err.status === 404) {
+        await db.put({ _id: id, data });
+      } else {
+        console.error("❌ Failed to save to PouchDB:", err);
+      }
+    }
+  }
+
+  // Example use:
+  async function saveExample() {
+    await saveOrUpdateDoc("user1", { name: "Majd", score: 100 });
+    console.log("✅ Saved to PouchDB");
+  }
+
+  async function loadExample() {
+    try {
+      const doc = await db.get("user1");
+      console.log("📄 Loaded:", doc);
+    } catch (err) { 
+      console.warn("⚠️ Not found", err);
+    }
+  }
+
+
+</script>
+
+  <script type="module" src="ended.js"></script>  
+  </body>
+</html>

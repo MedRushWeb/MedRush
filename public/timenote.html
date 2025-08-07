@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Start/Stop Buttons with Accumulated Time</title>
+    <style>
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .time-display {
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Start Buttons</h2>
+    <div id="startButtons"></div>
+
+    <h2>Stop Buttons</h2>
+    <div id="stopButtons"></div>
+
+    <h2>Time Between Start and Stop</h2>
+    <div id="timeDisplays"></div>
+
+    <script>
+        const startTimes = {};          // Store current start time
+        const accumulatedTimes = {};    // Store total accumulated time
+        const activeTimers = {};        // Track if timer is active
+        const frozenFlags = {};         // Track if text is frozen
+        let lastStartIndex = null;      // Last start index
+        let lastStartTime = null;       // Last start time
+
+        // Create placeholders and initialize states
+        for (let i = 1; i <= 5; i++) {
+            const timeDisplay = document.createElement('div');
+            timeDisplay.id = `time_display_${i}`;
+            timeDisplay.className = 'time-display';
+            timeDisplay.textContent = `time between start_${i} and stop_${i} = 0.00 seconds`;
+            document.getElementById('timeDisplays').appendChild(timeDisplay);
+
+            accumulatedTimes[i] = 0;
+            frozenFlags[i] = false;
+            activeTimers[i] = false;
+        }
+
+        for (let i = 1; i <= 5; i++) {
+            // Start button
+            const startBtn = document.createElement('button');
+            startBtn.textContent = `start_${i}`;
+            startBtn.addEventListener('click', () => {
+                alert(`start_${i} is clicked`);
+                const now = Date.now();
+
+                if (lastStartIndex !== null && lastStartIndex !== i) {
+                    const diff = (now - lastStartTime) / 1000;
+
+                    if (!frozenFlags[lastStartIndex]) {
+                        accumulatedTimes[lastStartIndex] += diff;
+                    //    const timeDisplay = document.getElementById(`time_display_${lastStartIndex}`);
+ console.log(`time between start_${lastStartIndex} and stop_${lastStartIndex} = ${accumulatedTimes[lastStartIndex].toFixed(2)} seconds`);
+                    }
+
+                    alert(`Time between start_${lastStartIndex} and start_${i}: ${diff.toFixed(2)} seconds`);
+                    activeTimers[lastStartIndex] = false;  // stop previous timer
+                }
+
+                lastStartIndex = i;
+                lastStartTime = now;
+
+                // Only start timer if not frozen
+                if (!frozenFlags[i]) {
+                    startTimes[i] = now;
+                    activeTimers[i] = true;
+                }
+            });
+            document.getElementById('startButtons').appendChild(startBtn);
+
+            // Stop button
+            const stopBtn = document.createElement('button');
+            stopBtn.id = `stop_button_${i}`;
+            stopBtn.textContent = `stop_${i}`;
+            stopBtn.addEventListener('click', () => {
+                if (activeTimers[i] && !frozenFlags[i]) {
+                    const elapsed = (Date.now() - startTimes[i]) / 1000;
+                    accumulatedTimes[i] += elapsed;
+
+                    const timeDisplay = document.getElementById(`time_display_${i}`);
+                    timeDisplay.textContent = `time between start_${i} and stop_${i} = ${accumulatedTimes[i].toFixed(2)} seconds`;
+
+                    activeTimers[i] = false;
+                    frozenFlags[i] = true;  // freeze
+
+                    // Hide stop button
+                    const btn = document.getElementById(`stop_button_${i}`);
+                    btn.style.display = 'none';
+                }
+            });
+            document.getElementById('stopButtons').appendChild(stopBtn);
+        }
+    </script>
+
+</body>
+</html>

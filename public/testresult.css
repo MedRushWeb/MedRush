@@ -1,0 +1,205 @@
+body {
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#titleContainer {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 7px 0 20px 0;
+  color: #1f2937;  /* dark slate */
+}
+
+#progressSection {
+  width: 60%;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#scoreLabel {
+  font-size: 18px;
+  color: #374151;  /* slate */
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+#scoreValue {
+  font-weight: 700;
+  color: #2563eb;  /* blue-600 */
+  margin-left: 5px;
+}
+
+#progressBarContainer {
+  flex: 1;
+  height: 20px;
+  background-color: #e5e7eb;  /* light gray */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#progressBarFill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #22c55e, #16a34a);  /* green gradient */
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 10px 0 0 10px;
+  transition: width 0.6s ease;
+}
+
+table {
+  width: auto;  /* Make table only as wide as needed */
+  margin: 0 auto 40px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  table-layout: auto;  /* Let columns size to their content */
+}
+
+th {
+  background-color: #2563eb;  /* blue-600 */
+  color: #fff;
+  padding: 8px 10px;  /* ↓ reduced padding */
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+td {
+  padding: 3px 14px;  /* ↓ reduced padding */
+  text-align: center;
+  font-size: 14px;
+  background-color: #f9fafb;
+}
+
+tr:hover td {
+  background-color: #dbeafe;  /* light blue on hover */
+  transition: background-color 0.3s ease;
+}
+
+th, td {
+  border-bottom: 1px solid #e0e7ff;
+}
+
+
+input, button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3b82f6;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input:focus, button:hover {
+  background-color: #2563eb;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sidebar styles you already provided */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 100%;
+  background-color: #2e4aad;
+  padding-top: 60px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 9;
+}
+
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 14px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.sidebar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Top Bar */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #2e4aad;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.topbar-left .logo {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.topbar-right button {
+  background: white;
+  color: #2e4aad;
+  border: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.topbar-right button:hover {
+  background: #e0e0e0;
+}
+
+/* Adjust main content for topbar and sidebar */
+.main-content {
+  margin-left: 120px;   /* space for sidebar */
+  margin-top: 70px;     /* space for topbar */
+  padding: 20px;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="extra.css">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">MedWeb</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="/home.html">Home Page</a></li>
+                    <li><a href="/connect.html">Connect</a></li>
+                    <li><a href="#">Previous Tests</a></li>
+                    <li><a href="/reset.html">Reset</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/remove.html">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+     
+     
+              
+<div class="page">
+
+
+    <table id="myTable" class="myTable">
+        <thead>
+            <tr>
+                <th>Exam Number</th>
+                <th>Questions Number</th>
+                <th>Score</th>
+                <th>Date</th>
+                <th>Review Exam</th>
+                <th>Result analysis</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Existing rows can be added here -->
+        </tbody>
+    </table>
+
+
+    <div class="yourexams"   id="yourexams">  </div>
+    <div  class="buttons_container"   id="myList" class="myList"></div>
+
+    <div  class="myFlag"   id="myFlag">
+      <div class="circles-bullets">
+        <div class="circles"></div>
+      </div>
+    </div>
+  
+    <div class="review_buttons_container"   id="myReview" class="myReview"></div>
+  
+    <div class="quiz-app" id="quiz-app"> 
+  
+        <div class="quiz-info">
+          <div class="flag_question">
+            <label class="id_question" id="id_question"></label>
+            <label class="container">Flag Question
+              <input type="checkbox" class="flag-checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="count">Questions Count: <span></span></div>
+        </div>
+  
+        <div class="quiz-area"> 
+   
+        </div>
+        <div class="answers-area"> 
+    
+        </div>  
+      <button class="next-answer-button">Next Answer</button>
+      <button class="review-button"> Show Answers</button>
+      <button class="finish">Finish Exam</button>
+       
+        <div class="bullets">
+          <div class="spans"></div>
+          <div class="countdown"></div>
+        </div>
+        <div class="results"></div>
+        <div class="intro"></div>
+
+
+        <div id="imageModal" class="modal" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    
+    <!-- Image display -->
+    <img id="modalImage" style="width: 100%; display: none;" />
+
+    <!-- Video display -->
+    <video id="modalVideo" style="width: 100%; display: none;" controls>
+      <source id="modalVideoSource" src="" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+
+
+        <div class="explanation" >
+          
+        <label  ID="explanation-text" > </label>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="pagination" id="paginationControls"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
+
+
+<script>
+  const db = new PouchDB('QuizAppDB');
+
+  async function saveOrUpdateDoc(id, data) {
+    try {
+      const existing = await db.get(id);
+      await db.put({ _id: id, _rev: existing._rev, data });
+    } catch (err) {
+      if (err.status === 404) {
+        await db.put({ _id: id, data });
+      } else {
+        console.error("❌ Failed to save to PouchDB:", err);
+      }
+    }
+  }
+
+  // Example use:
+  async function saveExample() {
+    await saveOrUpdateDoc("user1", { name: "Majd", score: 100 });
+    console.log("✅ Saved to PouchDB");
+  }
+
+  async function loadExample() {
+    try {
+      const doc = await db.get("user1");
+      console.log("📄 Loaded:", doc);
+    } catch (err) {
+      console.warn("⚠️ Not found", err);
+    }
+  }
+
+
+</script>
+
+  <script src="extra.js"></script>
+</body>
+</html>

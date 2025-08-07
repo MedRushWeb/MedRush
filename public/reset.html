@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Page</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <h2 class="logo"></h2>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+      <li><a href="home.html">Home Page</a></li>
+      <li><a href="connect.html">Create exams</a></li>
+      <li><a href="previous.html">Previous exams</a></li>
+      <li><a href="#">Reset</a></li>
+      <li><a href="subscription.html">Subscription</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h2>Reset Data</h2>
+  <p class="warning-text">
+    This will reset all your saved data including your previous exams, scores, used, marked, and incorrectly answered questions. <br>
+    Press the <strong>"Reset"</strong> button if you are sure you want to reset all data.
+  </p>
+
+<p class="warning-text">
+    your user Id is : <span id="user-id"></span>
+  </p>
+<button id="resetbtn" class="resetbtn">RESET</button>
+<button id="autoresetbtn" style="display: none;"></button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
+
+
+  <script type="module">
+    const uid = localStorage.getItem("uid");
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  updateDoc,
+  setDoc
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+
+let firestore;
+
+export async function initFirebase() {
+  try {
+    const res = await fetch("/firebase-config");
+    const config = await res.json();
+
+    const app = initializeApp(config);
+    firestore = getFirestore(app);
+
+    console.log("✅ Firebase initialized from backend config");
+    return { firestore };
+  } catch (err) {
+    console.error("❌ Error initializing Firebase:", err);
+    throw err;
+  }
+}
+
+// ✅ Allow other files to access firestore & storage
+export { firestore };
+
+
+
+  
+
+
+
+
+
+    window.addEventListener("DOMContentLoaded", async () => {
+
+
+      await initFirebase();
+  document.getElementById("user-id").textContent = localStorage.getItem("uid");
+
+
+      
+      const urlParams = new URLSearchParams(window.location.search);
+      const uid = urlParams.get("uid");
+
+      if (!uid) {
+        console.error("❌ UID missing from URL");
+        return;
+      }
+
+      const userRef = doc(firestore, "users", uid);
+
+      try {
+        const snap = await getDoc(userRef);
+        if (!snap.exists()) {
+          console.error("❌ No user document found.");
+          return;
+        }
+
+        const data = snap.data();
+        if (data.firstLogin === true) {
+          console.log("🟢 First login — performing auto reset");
+
+          // ✅ Trigger hidden auto-reset button
+          document.getElementById("autoresetbtn")?.click();
+
+          // ✅ Update firstLogin to false
+          await updateDoc(userRef, { firstLogin: false });
+
+          // ✅ Redirect after delay
+            window.location.href = "connect.html";
+
+        } else {
+          console.log("⏩ Not first login — skipping reset");
+          window.location.href = "connect.html";
+        }
+      } catch (err) {
+        console.error("❌ Firestore error:", err.message);
+      }
+    });
+  </script>
+
+
+  <script>
+    const db = new PouchDB('QuizAppDB');
+
+    async function saveOrUpdateDoc(id, data) {
+      try {
+        const existing = await db.get(id);
+        await db.put({ _id: id, _rev: existing._rev, data });
+      } catch (err) {
+        if (err.status === 404) {
+          await db.put({ _id: id, data });
+        } else {
+          console.error("❌ Failed to save to PouchDB:", err);
+        }
+      }
+    }
+
+    async function saveExample() {
+      await saveOrUpdateDoc("user1", { name: "Majd", score: 100 });
+      console.log("✅ Saved to PouchDB");
+    }
+
+    async function loadExample() {
+      try {
+        const doc = await db.get("user1");
+        console.log("📄 Loaded:", doc);
+      } catch (err) {
+        console.warn("⚠️ Not found", err);
+      }
+    }
+  </script>
+
+  
+  <script src="reset.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+for(let i=1;i<=n;i++){
+  // this is the SUBMIT button in the exam for every question
+  let review_questions= document.createElement('button')
+  review_questions.className="review_buttons";
+  let createLine=document.createElement('area')
+  createLine.innerText="\n";
+  review_questions.setAttribute("id", `review_${i}`);
+  //review_questions.innerText= String(i);
+  review_questions.innerText= "Submit Answer";
+  document.getElementById("myReview").appendChild(review_questions);
+  document.getElementById("myReview").appendChild(createLine);
+  quizArea.style.display='block';
+  answersArea.style.display='block';
+  // nextButton.style.display='block';
+  bullets.style.display='block';
+  
+  review_questions.onclick=() =>{
+    
+ // review_questions.dataset.clicked = "true"; // ✅ Mark as clicked
+ // console.log(getReviewClicksArray()); // or call a different function if needed
+
+  let index = i;  // Capture the current value of i
+  submitted_string[`submitted_string_${Z+1}`][index-1] = true;
+  submitted_array= submitted_string[`submitted_string_${Z+1}`];
+async function saveSingleItem() {
+  try {
+    await saveOrUpdateDoc(`submitted_string_${Z+1}`, submitted_string[`submitted_string_${Z+1}`]);
+    await saveOrUpdateDoc(`submitted_array`, submitted_array);  // score is a number
+    console.log("Saved successfully.", submitted_string[`submitted_string_${Z+1}`]);
+  } catch (error) {
+    console.error("Error saving:", error);
+  }
+}
+saveSingleItem();
+
+  //
+  let new_index=currentIndex;
+  new_index++;
+  let answers=document.getElementsByName("question");
+
+  for (let i = 0; i < answers.length; i++) {
+    if (answers[i].checked) {
+   // theChoosenAnswer = answers[i].dataset.answer;
+    chosen_Answers[new_index]=i;
+   // chosen_Answers_string[new_index]=theChoosenAnswer;
+    }  }
+//
+  currentIndex=i-1; // i added let
+  //  nextButton.style.display='none';
+  quizArea.innerHTML = "";
+  answersArea.innerHTML = "";
+  explanationArea.innerHTML="";
+  //
+  addQuestionData_3(FINAL_ARRAY[currentIndex],Final_Count );
+  //let answers=document.getElementsByName("question");
+  // hon bs btghayerha la one question msh array
+  for (let m =0 ;m< answers.length;m++){
+        if (chosen_Answers[currentIndex+1]==m){
+        answers[m].checked=true 
+        }   }
+
+
+for (let m =0 ;m< answers.length;m++){ answers[m].disabled='true' }
+atButtonClicked[i - 1] = true; // Mark this "i@" button as clicked
+//i want it to disappear when "submit" is clicked.
+review_questions.style.display = 'none';
+//
+ } 
+
+ 
+//if (i==1) review_questions.click();
+review_questions.classList.add('hidden-button', 'at-button');
+atButtonContainer.appendChild(review_questions);
+atButtons.push(review_questions);
+}
+
+

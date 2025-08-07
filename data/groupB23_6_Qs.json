@@ -1,0 +1,41 @@
+[
+
+
+{
+  "id": "2041",
+  "title": "A 43-year-old man is evaluated for progressive neuropsychiatric symptoms.  A year ago, he began feeling depressed and having hallucinations.  Five months later, he developed intermittent paresthesias and progressively worsening choreiform movements, myoclonus, and ataxia.  These symptoms have not improved despite multiple hospitalizations; an extensive workup has been unrevealing.  The patient is a slaughterhouse worker with extensive exposure to bovine offal.  As part of the evaluation for prion disease, a tissue sample lysate is processed via gel electrophoresis and transferred to filter paper.  Antibodies to a specific prion protein are added to the filter.  Next, a marked protein that combines with the antibody-protein complex is used to determine whether the test is positive.  Which of the following best describes this test?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Microarray",
+  "answer_2": "B. Northern blot",
+  "answer_3": "C. Southern blot",
+  "answer_4": "D. Southwestern blot",
+  "answer_5": "E. Western blot",
+  "percent_1": "8%",
+  "percent_2": "3%",
+  "percent_3": "5%",
+  "percent_4": "6%",
+  "percent_5": "79%",
+  "right_answer": "E. Western blot",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "@Western blotting@ is used to detect a target polypeptide or #protein# from within a mixed sample.  Potential target proteins are separated by gel #electrophoresis#.  The separated proteins are then transferred to a nitrocellulose membrane and probed with a primary #antibody# specific for the protein of interest.  The membrane is then washed and treated with a (secondary) #marked antibody# that binds to the primary antibody and can be detected (eg, by colorimetry). $For example, a serum sample from a patient with suspected HIV infection can be analyzed via Western blot to detect antibodies directed against specific viral proteins.  Following separation of viral proteins by gel electrophoresis and protein transfer to a nitrocellulose membrane, the membrane is treated with the patient's serum.  Patients who are HIV positive are likely to have antibodies that react with viral p24, gp41, and gp120/160.  If 2 of these 3 bands are positive, the test is considered positive. $Western blotting is similar to the enzyme-linked immunosorbent assay (ELISA) technique; however, in @ELISA@ the patient's serum is tested directly, whereas in Western blotting the proteins are first separated by electrophoresis. $#(Choice B)  Northern# blots analyze #mRNA#.  A sample containing a large number of mRNA molecules is separated via gel electrophoresis.  Separated bands are then transferred to a membrane and hybridized with a probe containing a nucleotide sequence complementary to the mRNA of interest. $#(Choice C)  Southern# blotting is used to analyze #DNA# sequences.  DNA that is fragmented using restriction endonucleases is separated by gel electrophoresis and transferred to a nitrocellulose membrane.  A radiolabeled DNA probe containing a sequence complementary to an area of interest is then used for hybridization.  Restriction site mutations can be detected by Southern blotting because they alter DNA fragment lengths, thereby altering electrophoresis migration patterns. $Microarray analysis is similar to Southern and Northern blotting but involves hybridization of a large number of probes at once #(choice A).#  The genomic DNA or cDNA being analyzed is labeled with a fluorescent tag and placed on a gene chip containing complementary sequences for a large number of genes.  The degree of fluorescence corresponds to the mRNA expressed in the particular sample. $#(Choice D)#  Southwestern blotting is a technique that analyzes DNA-binding proteins using principles of the Southern and Western blot techniques.  DNA-binding proteins are recognized by their ability to bind specific oligonucleotide probes. $#Educational objective# Western blotting is used to identify proteins, Northern blotting identifies specific RNA sequences, and Southern blotting identifies specific DNA sequences in an unknown sample.  ",
+  "clickable_1":"images/img1.2041.mp4",
+  "clickable_2":"images/img2.2041.mp4"
+  
+
+}
+
+
+
+]

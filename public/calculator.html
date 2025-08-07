@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+
+
+    <div id="calculator-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeCalculator()">&times;</span>
+
+
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <!-- Row 1 -->
+      <button onclick="del()">Del</button>
+      <button onclick="memoryAdd()">M+</button>
+      <button onclick="memoryRecall()">MR</button>
+      <button onclick="insert('Math.random()')">Rnd</button>
+      <button onclick="clearDisplay()">C</button>
+
+      <!-- Row 2 -->
+      <button onclick="insert('1/')">1/x</button>
+      <button onclick="insert('Math.log10(')">log10</button>
+      <button onclick="insert('Math.log(')">ln</button>
+      <button onclick="insert('Math.E')">e</button>
+      <button onclick="insert('%')">%</button>
+
+      <!-- Row 3 -->
+      <button onclick="insert('Math.sin(')">sin</button>
+      <button onclick="insert('Math.cos(')">cos</button>
+      <button onclick="insert('Math.tan(')">tan</button>
+      <button onclick="insert('Math.PI')">π</button>
+      <button onclick="insert('Math.sqrt(')">√</button>
+
+      <!-- Row 4 -->
+      <button onclick="insert('factorial(')">n!</button>
+      <button onclick="insert(' % ')">Mod</button>
+      <button onclick="insert('Math.pow(')">xʸ</button>
+      <button onclick="insert('Math.cbrt(')">∛</button>
+      <button onclick="insert('Math.pow(')">ʸ√x</button>
+
+      <!-- Row 5 -->
+      <button onclick="insert('(')">(</button>
+      <button onclick="insert(')')">)</button>
+      <button onclick="toBinary()">bin</button>
+      <button onclick="toOctal()">oct</button>
+      <button onclick="toHex()">hex</button>
+
+      <!-- Row 6–10: Digits and basic ops -->
+      <button onclick="insert('7')">7</button>
+      <button onclick="insert('8')">8</button>
+      <button onclick="insert('9')">9</button>
+      <button onclick="insert('/')">÷</button>
+      <button onclick="insert('-')">−</button>
+
+      <button onclick="insert('4')">4</button>
+      <button onclick="insert('5')">5</button>
+      <button onclick="insert('6')">6</button>
+      <button onclick="insert('*')">×</button>
+      <button onclick="toggleSign()">+/−</button>
+
+      <button onclick="insert('1')">1</button>
+      <button onclick="insert('2')">2</button>
+      <button onclick="insert('3')">3</button>
+      <button onclick="insert('-')">−</button>
+      <button onclick="insert('Math.pow(' + getValue() + ',3)')">x³</button>
+
+      <button onclick="insert('0')">0</button>
+      <button onclick="insert('.')">.</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="insert('+')">+</button>
+      <button onclick="insert('Math.pow(' + getValue() + ',2)')">x²</button>
+    </div>
+  </div>
+
+
+  </div>
+    </div>
+
+
+      <script src="calculator.js"></script>  
+
+</body>
+</html>

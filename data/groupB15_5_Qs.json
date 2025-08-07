@@ -1,0 +1,38 @@
+[
+
+{
+  "SubjectSystem":"Genetics-Biostatistics ",
+  "id": "109119",
+  "title": "A group of geneticists plans to conduct a study on the distribution of allelic variants for a particular gene in a rat population.  In the sample population of 15 rats, the genotype distribution is 5 AA, 5 Aa, and 5 aa.  The phenotypes represented by the various allele combinations do not provide any specific benefit for survival.  During the study, rats will be allowed to mate randomly, but no new rats will be introduced to the population.  Based on the information provided, are the current allele and genotype frequencies in this population in Hardy-Weinberg equilibrium?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. No, because there is no selective advantage for this gene",  
+  "answer_2": "B. No, because this is an isolated community with no genetic diversity",  
+  "answer_3": "C. No, because this population size is too small",  
+  "answer_4": "D. Yes, because these features contribute to a stable gene pool",  
+  "percent_1": "10%",  
+  "percent_2": "13%",  
+  "percent_3": "49%",  
+  "percent_4": "28%",  
+  "right_answer": "C. No, because this population size is too small",  
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+  "table":"",
+  "table_3":"§^#Hardy-Weinberg equilibrium#∆⨉ §^#Principle# ∆ • Genetic variation (ie, frequencies of alleles & genotypes) will remain constant in the absence of disturbing factors §^#Criteria# ∆ • Large population size • Random mating • No natural selection • No migration • No spontaneous mutations",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "The Hardy-Weinberg principle states that genetic variation (ie, allele and genotype frequencies) will remain constant over successive generations in the absence of evolutionary forces within a population.  To produce a nonevolving population in which genetic variation remains constant (ie, Hardy-Weinberg equilibrium), all of the following criteria must be met: $• #Large population size:#  A large population minimizes the effect of genetic drift, which is variation in allele frequency due to chance alone.  The ideal population would be infinite. $• #Random mating:#  All individuals are equally likely to mate with other individuals, regardless of phenotype. $• #No natural selection:#  All individuals are equally likely to survive because no particular phenotype is advantageous for survival. $• #No migration:#  No individuals with unique alleles enter or exit the population. $• #No spontaneous mutations:#  No appreciable rate of mutation prevents creation of new alleles within the population. $The Hardy-Weinberg principle and criteria can apply to any group of organisms, and the population in this scenario satisfies certain criteria:  there is random mating, and there is no natural selection, or migration #(choices A and B)#.  However, with only 15 rats, the #population is small# and therefore does not satisfy all criteria for Hardy-Weinberg# #equilibrium.  In contrast to large populations (ie, >1000 individuals), a small population will be significantly affected by @genetic drift@, resulting in changing frequencies of alleles over successive generations #(choice D).# $#Educational objective# A population is in Hardy-Weinberg equilibrium when the frequency of alleles at a particular locus remains constant over successive generations within that population.  To satisfy all criteria for the equilibrium, there must be a large population size, random mating, no natural selection, no migration, and no spontaneous mutations.  ",
+  "clickable_1":"images/img1.109119.jpg"
+  
+
+}
+
+
+
+]

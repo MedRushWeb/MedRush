@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Webpage Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <!-- Top Bar with only fullscreen and logo -->
+  <div class="topbar">
+    <div class="topbar-left">
+<h2 class="logo">
+   <img src="icons/finallogo.png" alt="MeduRush Logo" style="height: 67px; vertical-align: middle; margin-right: 10px;">
+  </h2>   
+ </div>
+    <div class="topbar-right">
+      <button id="fullscreen-btn" title="Toggle Fullscreen">⛶</button>
+    </div>
+  </div>
+  
+  <!-- Left Sidebar Menu -->
+  <div class="sidebar">
+    <ul class="sidebar-menu">
+      <li><a href="#">Home Page</a></li>
+      <li><a href="connect.html">Create an exam</a></li>
+      <li><a href="previous.html">Previous Exams</a></li>
+      <li><a href="reset.html">Reset</a></li>
+      <li><a href="subscription.html">Subscription</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms-and-conditions.html">terms & conditions</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+    <div class="windows-row">
+      <div class="window_1">
+        <div class="percantage_2"> Score </div>
+        <div class="circular-progress_2">
+          <div class="value-container_2">0%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-row">
+            <span>Total correct</span>
+            <span class="badge green" id="Correct">0</span>
+          </div>
+          <div class="stat-row">
+            <span>Total incorrect</span>
+            <span class="badge red" id="Incorrect">0</span>
+          </div>
+          <div class="stat-row">
+            <span>Total unsolved</span>
+            <span class="badge blue" id="unsolved">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="window_2">
+        <div class="percantage"> Percentage Used </div>
+        <div class="circular-progress">
+          <div class="value-container">0%</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-row">
+            <span>Used Questions</span>
+            <span class="badge green" id="Used">0</span>
+          </div>
+          <div class="stat-row">
+            <span>Unused Questions</span>
+            <span class="badge red" id="Unused">0</span>
+          </div>
+          <div class="stat-row">
+            <span>Total Questions</span>
+            <span class="badge blue">3644</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="windows-row">
+      <div class="window_3">
+        <div class="test-count"> Answer Changes </div>
+        <div class="stat-box">
+          <div class="stat-row">
+            <span>Correct to Incorrect</span>
+            <span class="badge green" id="CorrecttoIncorrect">0</span>
+          </div>
+          <div class="stat-row">
+            <span>Incorrect to Correct</span>
+            <span class="badge red" id="IncorrecttoCorrect">0</span>
+          </div>
+          <div class="stat-row">
+            <span>Incorrect to Used</span>
+            <span class="badge blue" id="IncorrecttoUsed">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="window_4">
+
+                <div class="test-count"> Test Count </div>
+
+        <div class="stat-box">
+          <div class="stat-row">
+            <span>Test Created</span>
+            <span class="badge green" id="TestCreated">0</span>
+          </div>
+          <div class="stat-row">
+            <span>Test Completed</span>
+            <span class="badge red" id="TestCompleted">0</span>
+          </div>
+          <div class="stat-row">
+            <span>Suspended Tests</span>
+            <span class="badge blue" id="SuspendedTests">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
+
+  <script>
+    const db = new PouchDB('QuizAppDB');
+
+    async function saveOrUpdateDoc(id, data) {
+      try {
+        const existing = await db.get(id);
+        await db.put({ _id: id, _rev: existing._rev, data });
+      } catch (err) {
+        if (err.status === 404) {
+          await db.put({ _id: id, data });
+        } else {
+          console.error("❌ Failed to save to PouchDB:", err);
+        }
+      }
+    }
+
+    async function saveExample() {
+      await saveOrUpdateDoc("user1", { name: "Majd", score: 100 });
+      console.log("✅ Saved to PouchDB");
+    }
+
+    async function loadExample() {
+      try {
+        const doc = await db.get("user1");
+        console.log("📄 Loaded:", doc);
+      } catch (err) {
+        console.warn("⚠️ Not found", err);
+      }
+    }
+
+    document.getElementById("fullscreen-btn").addEventListener("click", () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    });
+  </script>
+
+  <script type="module" src="home.js"></script>
+</body>
+</html>

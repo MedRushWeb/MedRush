@@ -1,0 +1,95 @@
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6fa;
+  margin: 0;
+}
+
+/* Topbar */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #2e4aad;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.topbar-left .logo {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+  background-color: #2e4aad;
+  padding-top: 60px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 9;
+}
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.sidebar-menu a {
+  display: block;
+  padding: 14px 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.sidebar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main content */
+.main-content {
+  margin-left: 200px;
+  padding: 90px 30px 30px 30px;
+}
+#resetbtn {
+  background-color: #3639f4;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#resetbtn:hover {
+  background-color: #3419ac;
+}
+
+
+
+
+.warning-text {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}

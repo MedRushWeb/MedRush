@@ -1,0 +1,450 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6fa;
+  color: #333;
+}
+.main {
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2e4aad;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.logo {
+  font-size: 28px;
+  color: white;
+  font-weight: 600;
+}
+.menu ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+.menu ul li a {
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.menu ul li a:hover {
+  color: #ffd700;
+}
+
+/* Window Layout */
+.window_1, .window_2, .window_3, .window_4 {
+  background: white;
+  border: 2px solid #2e4aad;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+.windows-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Titles */
+.percantage, .percantage_2, .test-count {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2e4aad;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #2e4aad;
+  padding-bottom: 5px;
+}
+
+.circular-progress,
+.circular-progress_2 {
+  width: 180px;
+  height: 180px;
+  background: conic-gradient(
+    #0d47a1 0deg,
+    #1976d2 90deg,
+    #42a5f5 180deg,
+    #90caf9 270deg,
+    #bbdefb 360deg
+  );
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  animation: spin-animate 2s ease-in-out;
+}
+.circular-progress::before,
+.circular-progress_2::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: white;
+  border-radius: 50%;
+}
+
+.value-container,
+.value-container_2 {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e4aad;
+  z-index: 2;
+}
+
+/* Optional: animation entrance */
+@keyframes spin-animate {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+/* Stats Boxes */
+.data, .usage, .creation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #2e4aad;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .windows-row {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+#fullscreen-btn,
+.fullscreen-toggle {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 18px;
+  margin-left: 20px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#fullscreen-btn:hover,
+.fullscreen-toggle:hover {
+  background-color: white;
+  color: #2e4aad;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.stat-box {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #fff;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.stat-row:last-child {
+  border-bottom: none;
+}
+.badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+}
+.badge.green {
+  background-color: #4caf50;
+}
+.badge.red {
+  background-color: #f44336;
+}
+.badge.blue {
+  background-color: #00bcd4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 100%;
+  background-color: #2e4aad;
+  padding-top: 60px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 9;
+}
+
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 14px 10px;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.sidebar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+/* Push main content to the right */
+.main-content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main Content */
+.main-content {
+  margin-left: 200px;
+  padding: 90px 30px 30px 30px;
+  background-color: #f4f6fa;
+  min-height: 100vh;
+}
+
+/* Windows and Boxes */
+.window_1, .window_2, .window_3, .window_4 {
+  background: white;
+  border: 1.5px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+.window_1:hover, .window_2:hover, .window_3:hover, .window_4:hover {
+  transform: scale(1.01);
+}
+
+.windows-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Top Bar */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #2e4aad;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px 0 5px;
+  z-index: 10;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Main content layout */
+.main-content {
+  margin-left: 200px;
+  padding: 90px 30px 30px 30px;
+  background-color: #f4f6fa;
+  min-height: 100vh;
+}
+
+/* Topbar contents */
+.topbar-left .logo {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+.topbar-right button {
+  background: white;
+  color: #2e4aad;
+  border: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.topbar-right button:hover {
+  background: #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+
+

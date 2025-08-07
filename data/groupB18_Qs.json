@@ -1,0 +1,1420 @@
+[
+
+
+    {
+      "subjectSystem":"Pathology-Poisoning",
+      "id": "19080",
+      "title": "A 35-year-old, previously healthy man is evaluated immediately after accidental exposure to ionizing radiation at a fluoroscopy manufacturing facility.  The patient is currently asymptomatic.  Vital signs are normal.  Physical examination shows no abnormalities.  If radiation exposure is significant, which of the following cells are most likely to be affected first?",
+      "title_table":"",
+      "title_table_3":"",
+      "exhibit_1":"",
+      "image_1": "",
+      "title_2": "",
+      "audio": "",
+      "comparison_items": "",
+      "answer_1": "A. Bladder epithelial cells",
+      "answer_2": "B. Cardiac myocytes",
+      "answer_3": "C. Intestinal crypt cells",
+      "answer_4": "D. Renal proximal tubular cells",
+      "answer_5": "E. Skeletal muscle cells",
+      "answer_6": "F. Type II pneumocytes",
+      "percent_1": "25%",
+      "percent_2": "3%",
+      "percent_3": "50%",
+      "percent_4": "10%",
+      "percent_5": "2%",
+      "percent_6": "10%",
+      "right_answer": "C. Intestinal crypt cells",
+      "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "", "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "","ansImg_9": "","ansImg_10": "",
+      "table":"",
+      "explanation_img": "",
+      "explanation_1": "",
+      "explanation_2": "Exposure to #ionizing radiation# causes cell injury directly through #DNA double-strand breakage# and indirectly through the generation of #free radicals# that can damage DNA and other cellular components.  Significant DNA damage results in the #upregulation of p53#, which inhibits replication and induces #apoptosis# of the affected cell. $The effects of ionizing radiation vary based on the rate of cellular division.  #Highly proliferative cells# (eg, stem cells) have less time to repair radiation-induced DNA damage before cell death occurs.  Therefore, these cells are highly sensitive to ionizing radiation and most likely to be #affected first# following exposure. $#Intestinal crypt stem cells# divide continuously to produce new intestinal epithelial cells, which have a short life span and are completely renewed every 3-5 days.  Rapid denudation of the gastrointestinal mucosa can occur if the radiation dose is significant, resulting in nausea/vomiting, diarrhea, and gastrointestinal bleeding. $Other cells that are highly sensitive to the effects of ionizing radiation include the following: $• Bone marrow:  #hematopoietic progenitors# (pancytopenia) $• Gonads:  spermatogonia (infertility) $• Skin:  basal keratinocytes, hair follicle stem cells (desquamation, hair loss) $#(Choices A and D)#  Bladder epithelial cells and renal proximal tubular epithelial cells have a much slower turnover rate (eg, weeks to months) compared with intestinal epithelial cells and are less likely to be affected first by exposure to ionizing radiation. $#(Choices B and E)#  Cardiac and skeletal myocytes are long-lived, differentiated cells that do not rapidly divide and can more effectively repair radiation-induced DNA damage before cell death occurs. $#(Choice F)#  Although type II pneumocytes can dedifferentiate and proliferate in response to injury to replace type I pneumocytes, they have a low rate of proliferation at rest and are less likely to be affected acutely by exposure to ionizing radiation. $#Educational objective# Ionizing radiation induces DNA damage (eg, double-strand breakage, free radical generation) that predominantly affects highly proliferative cells (eg, skin stem cells, hematogenous progenitors, intestinal crypt cells).  These rapidly dividing cells are the first to be lost following significant radiation exposure, resulting in hair loss, pancytopenia, diarrhea, and nausea/vomiting.  "
+    
+    }
+    ,
+    
+    {
+      "id": "11949",
+      "title": "A 3-year-old boy is brought to the office by his parents due to constipation.  The boy previously had soft stools 1-2 times daily.  However, over the past 3 months, his bowel movements have decreased to 1 stool every 3-4 days with significant straining and production of hard stool balls.  The boy has intermittent diffuse abdominal pain and increased irritability, but these symptoms have not affected his overall appetite.  Family history is notable for a maternal aunt with celiac disease and a paternal grandmother with 'thyroid problems.'  Four months ago, the boy and his parents moved into a house owned by their family for generations, and the parents are worried that the stress of the move might be contributing to his symptoms.  Height and weight have been tracking appropriately.  Physical examination shows a pale, tired boy with palpable stool in his abdomen but no abdominal tenderness.  Which of the following is the most appropriate diagnostic test for this patient?",
+      "title_table":"",
+      "title_table_3":"",
+      "exhibit_1":"",
+      "image_1": "",
+      "title_2": "",
+      "audio": "",
+      "comparison_items": "",
+      "answer_1": "A. Anorectal manometry",
+      "answer_2": "B. Blood lead level",
+      "answer_3": "C. Serum electrolytes",
+      "answer_4": "D. Serum thyroid-stimulating hormone",
+      "answer_5": "E. Serum tissue transglutaminase",
+      "percent_1": "5%",
+      "percent_2": "81%",
+      "percent_3": "2%",
+      "percent_4": "7%",
+      "percent_5": "4%",
+      "right_answer": "B. Blood lead level",
+      "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "", "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "","ansImg_9": "","ansImg_10": "",
+      "table":"!Complications of lead poisoning in children! ?Neurologic? • Loss of milestones/cognitive impairment • Behavioral problems • Encephalopathy ?Gastrointestinal? • Constipation • Abdominal pain • Decreased vitamin D metabolism ?Renal? • Interstitial nephritis ?Hematologic? • Anemia",
+      "explanation_img": "",
+      "explanation_1": "",
+      "explanation_2": "This patient's constipation, abdominal pain, irritability, and pallor (suggesting anemia) are most likely due to lead poisoning.  Policy efforts resulted in the elimination of lead, a toxic metal, in gasoline (1985) and paint (1977).  Current lead exposure occurs through contact with #dust/paint in homes built before 1978#; this is the most likely cause of this patient's condition given the onset of symptoms after moving. $Lead binds to sulfhydryl groups on proteins, replaces calcium in calcium-dependent cellular functions, and directly inhibits enzymes in heme synthesis.  Symptoms of lead poisoning are neurologic (#cognitive impairment#, irritability), gastrointestinal (#constipation#, #abdominal pain#), renal (#interstitial nephritis#), and hematologic (#anemia#). $Risk factors include having a sibling with prior elevated lead levels and living in older homes with recent renovation/construction.  Because irreversible neurodevelopmental effects occur during exposure to low lead levels, screening is recommended for young children at high risk.  Diagnosis is made by measuring the #blood lead level#.  Urine δ-aminolevulinic acid (heme synthesis substrate) is also @elevated@. $#(Choice A)#  @Hirschsprung disease@ typically presents in the newborn period with bilious vomiting and failure to pass meconium.  Anorectal manometry measures rectal pressure via rectal catheter and shows absent relaxation of the internal anal sphincter.  The diagnosis of Hirschsprung disease is confirmed by rectal biopsy. $#(Choice C)#  Hypokalemia and hypercalcemia can present with constipation.  However, patients with hypokalemia exhibit muscle weakness or arrhythmias, whereas hypercalcemia is accompanied by muscle weakness, confusion, and renal insufficiency. $#(Choice D)#  Hypothyroidism can cause constipation, and primary hypothyroidism is associated with elevated TSH.  However, constipation due to hypothyroidism is usually accompanied by other symptoms, such as decreased growth velocity and short stature in children. $#(Choice E)#  Tissue transglutaminase is a screening test for celiac disease, which typically presents with diarrhea, weight loss, and abdominal pain.  Some patients present with constipation instead of diarrhea.  However, given this patient's appropriate growth and symptom onset after the recent move, lead poisoning is the more likely diagnosis. $#Educational objective# Lead poisoning can cause neurologic, gastrointestinal, renal, and hematologic complications.  Although symptoms can be vague, lead poisoning should be suspected if these symptoms arise while residing in a home built before 1978.  Diagnosis is made by measuring the patient's blood lead level.  ",
+      "clickable_1":"images/img1.11949.jpg",
+      "clickable_2":"images/img2.11949.jpg"
+    
+    
+    },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+{
+  "SubjectSystem":"Pharmacology-poisoning",
+  "id": "20603",
+  "title": "A 17-year-old girl is brought to the emergency department by a friend an hour after she was observed having a seizure.  The patient has no known history of a seizure disorder.  Her friend reports she has a history of depression and substance use disorder and was released yesterday from a psychiatric hospital after 3 days of inpatient treatment.  The patient's medications are unknown.  Temperature is 38.3 C (100.9 F), blood pressure is 90/50 mm Hg, and pulse is 130/min.  On examination, the patient is sedated and disoriented.  The pupils are dilated and bowel sounds are decreased.  She has 700 mL of urine return when a urinary catheter is placed.  ECG reveals sinus tachycardia and a QRS duration of 130 msec.  Which of the following is the most likely cause of this patient's symptoms?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A.Benzodiazepine withdrawal",
+  "answer_2": "B.Cocaine overdose",
+  "answer_3": "C.Opioid withdrawal",
+  "answer_4": "D.Salicylate toxicity",
+  "answer_5": "E.Serotonin syndrome",
+  "answer_6": "F.Tricyclic antidepressant overdose",
+  "percent_1": "7%",
+  "percent_2": "11%",
+  "percent_3": "9%",
+  "percent_4": "1%",
+  "percent_5": "6%",
+  "percent_6": "66%",
+  "right_answer": "F.Tricyclic antidepressant overdose",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Tricyclic antidepressant pharmacology# ∆⨉ §^#Inhibitory effects# ∆^#Consequences# §Central & peripheral muscarinic $acetylcholine receptors ∆ Tachycardia, delirium, dilated pupils, flushing, decreased $sweating, hyperthermia, ileus, urinary retention §Peripheral α1-adrenergic receptors ∆ Peripheral vasodilation (orthostatic hypotension) §Cardiac fast sodium channels ∆ Conduction defects, arrhythmias §Presynaptic (norepinephrine & serotonin)$ neurotransmitter reuptake ∆ Antidepressant & anxiolytic effects, seizures, tremors §Histamine (H1) receptors ∆ Sedation, increased appetite",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient's new-onset seizure, signs of anticholinergic toxicity (ie, dilated pupils, hyperthermia, tachycardia, decreased bowel sounds, urinary retention), and QRS widening are most likely due to #tricyclic antidepressant (TCA) overdose#.  Although newer classes of antidepressants (eg, selective serotonin reuptake inhibitors) are commonly used as first-line therapy, TCAs continue to have a role in the treatment of major depression. $TCAs have an #inhibitory effect on multiple receptor types#, thereby causing a variety of symptoms in the case of overdose: $• Inhibiton of central nervous system receptors can cause #sedation #(histamine [H1] receptors), #seizures #(GABA A receptors), and agitation or delirium (central muscarinic acetylcholine receptors). $• Antagonism of central and peripheral muscarinic acetylcholine receptors results in @anticholinergic symptoms@, including hyperthermia, dry and flushed skin, dilated pupils, tachycardia, decreased bowel sounds, and urinary retention. $• Cardiovascular toxicity may lead to #QRS widening#, with increased risk for ventricular arrhythmia due to inhibition of cardiac fast sodium channels.  #Hypotension# can also occur due to blockade of alpha-1 adrenergic receptors. $Cardiovascular toxicity is the major cause of mortality in TCA overdose. $#(Choice A)#  Symptoms of benzodiazepine withdrawal include seizures and tachycardia.  Psychosis, tremors, sweating, and anxiety are also common.  QRS widening, hypotension, and anticholinergic symptoms would not be expected. $#(Choice B)#  Cocaine overdose has sympathomimetic characteristics that can cause seizures, hyperthermia, and tachycardia, as well as myocardial infarctions and cardiac arrhythmias.  However, hypertension (vs hypotension) and diaphoresis (vs dry skin) are expected in a cocaine overdose. $#(Choice C)#  Opioid withdrawal is associated with dilated pupils, mild hyperthermia, and hypertension (not hypotension) but would not cause seizures or cardiac conduction delay.  Diarrhea and cramps, as opposed to decreased bowel sounds, are also common in opioid withdrawal. $#(Choice D)#  Salicylate toxicity can present with hyperthermia, altered mental status, and seizures (due to neuroglycopenia).  Tachypnea, tinnitus, and acid-base abnormalities are also common.  QRS widening, urinary retention, dilated pupils, and decreased bowel sounds are typically not present. $#(Choice E)#  Serotonin syndrome can occur with an overdose of serotonergic antidepressants or interaction between serotonergic medications.  It can typically cause hyperthermia and tachycardia but also often presents with agitation, diaphoresis (vs dry skin), hypertension (vs hypotension), and neuromuscular hyperactivity (eg, hyperreflexia, clonus); it is not generally associated with QRS widening. $#Educational objective# Symptoms of tricyclic antidepressant overdose include seizures, anticholinergic toxicity, hypotension, and cardiac toxicity (eg, QRS widening, ventricular arrhythmias).  ",
+  "clickable_1":"images/img1.20603.jpg"
+}
+,
+{
+  "id": "841",
+  "title": "A 17-year-old girl with a history of depression is brought to the emergency department after attempting suicide.  Her parents report that she consumed 2 bottles of insecticide after having an argument with her sister approximately 2 hours prior to presentation.  The patient’s symptoms include nausea, vomiting, abdominal pain, and copious watery diarrhea.  She has a known history of self-cutting and suicidal ideations but no prior suicide attempts.  Blood pressure is 86/42 mm Hg and pulse is 120/min.  Her breath has a faint garlic odor, and she has numerous healing linear scars on her forearms.  Which of the following medications should be administered immediately?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A.CaNa2EDTA",
+  "answer_2": "B.Deferoxamine",
+  "answer_3": "C.Dimercaprol",
+  "answer_4": "D.Hydroxycobalamin",
+  "answer_5": "E.Methylene blue",
+  "percent_1": "23%",
+  "percent_2": "8%",
+  "percent_3": "41%",
+  "percent_4": "11%",
+  "percent_5": "17%",
+  "right_answer": "C.Dimercaprol",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Arsenic poisoning# ∆⨉ §^#Mechanism# ∆ • Binds to sulfhydryl groups • Disrupts cellular respiration & gluconeogenesis §^#Sources# ∆ • Pesticides/insecticides • Contaminated water (often from wells) • Pressure-treated wood §^#Manifestations# ∆ • Acute: garlic breath, vomiting, watery diarrhea, QTc prolongation • Chronic: hypo-/hyperpigmentation, hyperkeratosis, stocking-glove neuropathy §^#Treatment# ∆ • Dimercaprol (British anti-Lewisite) • DMSA (ie, meso-2,3-dimercaptosuccinic acid, succimer)",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "Arsenic is odorless, tasteless, and easily absorbed after ingestion or inhalation.  Toxicity can result from exposure to pesticides/insecticides, contaminated water, pressure-treated wood, metallurgy, mining, or glass-making.  Arsenic #binds to sulfhydryl groups, impairing cellular respiration# via #inhibition of pyruvate dehydrogenase# and disruption of gluconeogenesis and glutathione metabolism. $Acute arsenic poisoning affects most organ systems and presents with abdominal pain, vomiting, #severe watery diarrhea#, delirium, and #hypotension# from dehydration.  #QTc prolongation# can progress to life-threatening torsades de pointes.  A #garlic odor# is often noted on the patient's breath or stool. $The first-line chelating agent is #dimercaprol# (eg, British Anti-Lewisite), which increases urinary excretion of heavy metals by forming stable, nontoxic soluble chelates.  The sulfhydryl group of dimercaprol combines with arsenic and displaces arsenic ions from the sulfhydryl groups of enzymes involved in cellular respiration.  Dimercaprol has a very narrow therapeutic index, and serious side effects include nephrotoxicity, hypertension, and fever. $#(Choice A)#  Acute lead poisoning can present with constipation, anemia, and irritability and confusion.  CaNa2EDTA is a treatment option for lead toxicity and works by forming non-ionizing salts to increase urinary lead excretion. $#(Choice B)#  Deferoxamine is the preferred chelating agent for iron overdoses or overload due to multiple blood transfusions.  It binds circulating iron and facilitates its urinary excretion. $#(Choice D)#  Cyanide poisoning presents with confusion, flushing or a \"cherry-red\" skin color, abdominal pain, and vomiting.  Its antidote, hydroxycobalamin (vitamin B12 precursor), binds to intracellular cyanide forming cyanocobalamin, which can be easily excreted in urine. $#(Choice E)#  Methylene blue is indicated for treatment of methemoglobinemia, which presents with gray- or blue-colored skin, shortness of breath, and \"chocolate-colored\" blood.  Methylene blue acts as an artificial electron transporter for reduction of methemoglobin through the NADPH pathway. $#Educational objective# Acute arsenic poisoning impairs cellular respiration and presents with abdominal pain, vomiting, diarrhea, hypotension, and a #garlic odor# on the breath.  #Insecticides# and #contaminated water# are common sources of arsenic.  #Dimercaprol# is the chelating agent of choice.  "
+  
+}
+,
+{
+  "id": "12504",
+  "title": "A 26-year-old man with depressed mental status is brought to the emergency department by police.  Due to fear of arrest, he swallowed a handful of pills as the officers approached him.  On examination, the patient responds to painful stimuli but is somnolent.  Pupils are <2 mm.  Respirations are 6/min.  Lungs are clear to auscultation.  Which of the following additional findings are most likely present in this patient?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "§∆Temperature∆Blood pressure∆Tidal volume",
+  "answer_1": "§A. ∆ ↑ ∆↑ ∆↑",
+  "answer_2": "§B. ∆ ↑ ∆↑ ∆↓",
+  "answer_3": "§C. ∆ ↑ ∆↓ ∆↓",
+  "answer_4": "§D. ∆ ↓ ∆↑ ∆↓",
+  "answer_5": "§E. ∆ ↓ ∆↑ ∆↑",
+  "answer_6": "§F. ∆ ↓ ∆↓ ∆↓",
+  "percent_1": "3%",
+  "percent_2": "8%",
+  "percent_3": "17%",
+  "percent_4": "6%",
+  "percent_5": "4%",
+  "percent_6": "63%",
+  "right_answer": "§F. ∆ ↓ ∆↓ ∆↓",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient has the classic triad of #decreased respiratory rate, constricted pupils# (ie, miosis), and #depressed mental status#, consistent with #acute opioid intoxication#.  Opioids are derived from the opium poppy plant and act on multiple receptor types (eg, @mu, kappa, delta@) located throughout the brain, spinal cord, and gastrointestinal tract.  In an overdose, overstimulation of these receptors causes numerous adverse effects, the most lethal one being respiratory depression.  Respiratory depression is the best predictor of opioid intoxication. $In addition to the classic triad, other clinical manifestations of opioid intoxication include the following: $• #Hypothermia:#  Opioid receptors play a role in thermoregulation, and their activation can impair thermogenesis.  In addition, intoxicated patients are often obtunded and are incapable of protecting themselves from exposure to the environment, leading to heat loss. $• #Hypotension# (usually mild):  Opioids induce histamine release from mast cells.  Histamine binding to H1 receptors on vascular endothelial cells results in arterial vasodilation. $• #Decreased tidal volume:#  Opioid binding at receptors in the brainstem respiratory center causes depression of ventilation as well as inhibition of the protective ventilatory response to hypercapnia and hypoxia.  This overall depressed ventilatory drive results in both reduced respiratory rate and decreased tidal volume. $Decreased bowels sounds and constipation are also common, as opioids slow gastric emptying and decrease peristalsis. $#Educational objective# The classic triad of opioid intoxication is decreased respiratory rate, pupillary constriction (ie, miosis), and depressed mental status.  Hypothermia, hypotension, and decreased tidal volume are also common findings.  ",
+  "clickable_1":"images/img1.12504.jpg"
+  
+
+}
+,
+{
+  "id": "1448",
+  "title": "A 24-year-old woman comes to the emergency department due to bloody emesis.  She had 2 episodes of vomiting bright red blood and feels lightheaded and dizzy.  The patient was recently diagnosed with factitious disorder after being hospitalized multiple times for a myriad of symptoms and undergoing several invasive procedures.  Physical examination shows scattered ecchymoses.  The abdomen is soft and nontender.  Rectal examination shows maroon-colored, guaiac-positive stool.  After much questioning, she admits to having ingested rat poison several days ago.  Immediate treatment of this patient should include which of the following?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Cryoprecipitate",
+  "answer_2": "B. Desmopressin",
+  "answer_3": "C. Fresh frozen plasma",
+  "answer_4": "D. Platelet transfusion",
+  "answer_5": "E. Protamine sulfate",
+  "percent_1": "8%",
+  "percent_2": "2%",
+  "percent_3": "69%",
+  "percent_4": "9%",
+  "percent_5": "12%",
+  "right_answer": "C. Fresh frozen plasma",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§ ∆^#Warfarin overdose# ∆^#Heparin overdose# §^#Vitamin K# ∆ • Effective (takes days) ∆ • Ineffective §^#FFP# ∆ • Effective (contains all blood $clotting factors & proteins) ∆ • Ineffective (contains antithrombin III →$ enhances heparin effect) §^#Protamine# ∆ • Ineffective ∆ • Effective (heparin-specific antidote) %#FFP =# fresh frozen plasma.",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "Most available #rodenticides# contain brodifacoum (\"superwarfarin\"), a long-acting 4-hydroxycoumarin derivative.  By ingesting rodenticide, this patient depleted her vitamin K-dependent clotting factors, thereby causing an acquired coagulopathy (similar to #warfarin# toxicity) that led to bleeding (gastrointestinal hemorrhage with hematemesis and guaiac-positive stools, ecchymoses).  The anticoagulant effect is generally seen approximately 48 hours following ingestion, which represents the time required for depletion of the coagulation factors. $To treat life-threatening bleeding in the setting of coumarin or warfarin toxicity, rapid replenishment of clotting factors II, VII, IX, and X is generally performed through intravenous administration of #fresh frozen plasma# (FFP), which contains all coagulation factors and other proteins present in the original unit of blood.  Additional vitamin K should also be given.  Vitamin K alone can be used in patients with abnormal coagulation tests (eg, prolonged prothrombin or partial thromboplastin times) but no bleeding. $#(Choice A)#  Cryoprecipitate (precipitate obtained from FFP by centrifugation/thawing) contains factor VIII, factor XIII, von Willebrand factor, and fibrinogen.  Therefore, it would not be of significant benefit when vitamin K-dependent clotting factors (II, VII, IX, and X) require replenishment. $#(Choice B)#  Desmopressin increases plasma levels of von Willebrand factor and factor VIII; it is used in management of hemophilia A and von Willebrand disease. $#(Choice D)#  Rat poison or warfarin does not affect platelet count. $#(Choice E)#  Protamine sulfate is used to treat heparin overdose.  It binds to heparin, forming a complex that has no anticoagulant activity. $#Educational objective# Most available rodenticides contain brodifacoum, a long-acting 4-hydroxycoumarin derivative.  A patient who has ingested a quantity of rodenticide sufficient to cause coagulopathy and abnormal bleeding (similar to warfarin toxicity) requires immediate treatment with fresh frozen plasma in addition to vitamin K.  "
+  
+}
+,
+{
+  "id": "1254",
+  "title": "A 49-year-old man comes to the emergency department with severe shortness of breath.  The patient has a history of hypertension and medication nonadherence.  Blood pressure is 260/144 mm Hg and pulse is 100/min.  Chest examination demonstrates bibasilar crackles.  There are no heart murmurs.  Serum creatinine is 1.6 mg/dL.  Intravenous furosemide and continuous nitroprusside infusion are started, along with noninvasive positive pressure ventilation, and he experiences improvement in his symptoms.  The next morning, the patient is confused and lethargic, and he suffers a generalized tonic-clonic seizure.  The skin appears flushed, and serum lactic acid level is elevated.  The nitroprusside infusion rate is found to be higher than recommended.  Which of the following mechanisms is most likely responsible for the drug toxicity seen in this patient?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Disruption of tissue oxygen delivery",
+  "answer_2": "B. Impaired conversion of pyruvate to acetyl-CoA",
+  "answer_3": "C. Increased reduction of hepatic NAD+ to NADH",
+  "answer_4": "D. Inhibition of electron transfer to oxygen",
+  "answer_5": "E. Uncoupling of oxidative phosphorylation",
+  "percent_1": "26%",
+  "percent_2": "7%",
+  "percent_3": "7%",
+  "percent_4": "37%",
+  "percent_5": "22%",
+  "right_answer": "D. Inhibition of electron transfer to oxygen",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient's clinical presentation is consistent with #cyanide toxicity# from #nitroprusside#.  Nitroprusside is a vasodilator with quick onset/offset kinetics commonly used for rapid blood pressure control in patients with hypertensive emergency.  Nitroprusside [Na2(#CN#)5#NO#] rapidly decomposes to nitric oxide (#NO#: vasodilator) and cyanide ion (#CN−#: toxin).  Key risk factors for nitroprusside-induced cyanide toxicity include high doses, prolonged infusions, and #renal insufficiency# (eg, acute kidney injury due to hypertensive emergency). $Cyanide is a potent mitochondrial toxin that binds heme centers in cytochrome c oxidase (complex IV), blocking the @electron transport chain@.  Because mitochondria are #unable to reduce oxygen#, venous blood returning from tissues remains saturated with oxygen and appears #bright red#.  Loss of aerobic respiration also promotes #lactic acidosis#.  As ATP is depleted, acute cyanide toxicity causes neurologic dysfunction (eg, altered mental status, seizures) and cardiovascular collapse. $Cyanide is cleared by rhodanese, an enzyme that transfers sulfur to cyanide to form thiocyanate (SCN) for excretion in urine.  Because cyanide overdose depletes available sulfur donors, one approach to @treatment@ is to provide additional sulfur groups with #sodium thiosulfate#.  Other treatments include #hydroxocobalamin# (directly sequesters CN−) and #sodium nitrite# (induces methemoglobinemia to scavenge CN−). $#(Choice A)#  Methemoglobinemia, caused by oxidizing agents (eg, nitrites, chloroquine), and carbon monoxide exposure increase hemoglobin's affinity for oxygen, which impairs oxygen unloading into the tissues.  Both processes disrupt peripheral tissue oxygen delivery, leading to lactic acidosis. $#(Choice B)#  Arsenic inhibits pyruvate dehydrogenase, the rate-limiting enzyme governing conversion of pyruvate to acetyl-CoA for entry into the tricarboxylic acid cycle, causing depletion of ATP.  Acute arsenic poisoning presents with severe enteritis (diarrhea) and neurologic dysfunction. $#(Choice C)#  Ethanol is converted to acetaldehyde by alcohol dehydrogenase, with concurrent reduction of NAD+ to NADH.  High NADH levels subsequently cause feedback inhibition of lactate dehydrogenase (hepatic gluconeogenesis enzyme), leading to hypoglycemia and lactic acidosis. $#(Choice E)#  Electron transport uncouplers (eg, dinitrophenol [DNP]) cause protons to back-leak across the inner mitochondrial membrane, dissipating the gradient as wasted heat instead of generating ATP.  Because they raise the metabolic rate, these agents are occasionally abused as catabolic weight loss agents.  Accidental overdose results in fatal hyperthermia. $#Educational objective# Cyanide toxicity is an important adverse effect of nitroprusside.  Blockage of mitochondrial electron transport leads to impaired oxygen utilization, causing lactic acidosis, neurologic dysfunction, and cardiovascular collapse.  ",
+  "clickable_1":"images/img1.1254.jpg",
+  "clickable_2":"images/img2.1254.jpg"
+  
+
+}
+,
+{
+  "id": "18830",
+  "title": "A 12-year-old boy is brought to the emergency department due to a peritonsillar abscess.  In preparation for incision and drainage, the patient is given a topical anesthetic, an anxiolytic, pain medications, and antibiotics.  He develops a headache and becomes lethargic.  Temperature is 38 C (100.8 F), pulse is 110/min, and respirations are 16/min.  The lungs are clear to auscultation bilaterally.  The lips and fingertips appear blue and the oxygen saturation is 84%.  Supplemental oxygen is started but does not improve peripheral oxygen saturation.  Which of the following is the most likely cause of this patient's hypoxemia?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Bronchial occlusion due to aspiration",
+  "answer_2": "B. Carbon monoxide binding to hemoglobin",
+  "answer_3": "C. Decreased central respiratory drive",
+  "answer_4": "D. Glucose-6-phosphate dehydrogenase deficiency",
+  "answer_5": "E. Increased heme iron oxidation",
+  "percent_1": "15%",
+  "percent_2": "7%",
+  "percent_3": "23%",
+  "percent_4": "13%",
+  "percent_5": "42%",
+  "right_answer": "E. Increased heme iron oxidation",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Acquired methemoglobinemia# ∆⨉ §^#Precipitating factors# ∆ • Dapsone • Local/topical anesthetics (eg, benzocaine, teething medications) • Nitrates/nitrites (eg, drinking ground water) §^#Pathophysiology# ∆ • Oxidation of heme iron from Fe²⁺ to Fe³⁺ • Fe³⁺ unable to bind oxygen • Oxygen affinity of other hemes increased → left shift → decreased tissue oxygen delivery §^#Clinical$ manifestations# ∆ • Cyanosis (not improved with supplemental O₂) • Chocolate-brown blood (no color change on exposure to air/oxygen) • Pulse oximetry inaccurate → reads near 85% due to absorption wavelength §^#Management# ∆ • Methylene blue",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient with cyanosis that does not improve with supplemental oxygen has #acquired methemoglobinemia# due to the #topical anesthetic# (ie, benzocaine).  Although methemoglobinemia is most commonly caused by dapsone, the most severe cases are seen after administration of benzocaine, which is found in many throat sprays or teething-relief medications. $Acquired methemoglobinemia occurs when heme #iron atoms# are #oxidized #from the ferrous (Fe2+) to the ferric (#Fe3+#) state.  Fe3+ heme is #unable to bind to oxygen#; furthermore, the oxygen affinity of the remaining heme moieties in the hemoglobin is increased.  This results in a #functional anemia# (due to reduced oxygen binding) and a @left shift@ of the oxygen dissociation curve (due to increased oxygen affinity), which leads to impairment in oxygen delivery despite adequate partial pressure of oxygen in arterial blood.  Blood appears chocolate brown and does not change color when exposed to air.  Due to the wavelength of light absorbed by Fe3+ heme, pulse oximetry converges on 85% as the proportion of methemoglobin increases, regardless of the true oxygen saturation status. $Treatment with #methylene blue# or ascorbic acid reduces iron back to the Fe2+ state. $#(Choice A)#  This patient is at risk for bronchial occlusion due to aspiration because of difficulty swallowing (ie, peritonsillar abscess) and medications that impair his ability to protect his airway (ie, pain medication, anxiolytic).  However, the lungs would likely sound abnormal, and supplemental oxygen would improve cyanosis. $#(Choice B)#  Carbon monoxide binds to hemoglobin with greater affinity than oxygen and also causes a left shift of the oxygen dissociation curve, impairing oxygen delivery to tissues.  On pulse oximetry, carboxyhemoglobin reads like oxyhemoglobin, resulting in erroneously high (ie, falsely normal) readings.  In addition, this patient does not have exposure risk factors for carbon monoxide (eg, house fire, car exhaust). $#(Choice C)#  Opioid pain medications and benzodiazepine anxiolytics can lead to a decreased central respiratory drive that, if severe, can lead to hypoxia.  However, cyanosis would improve with supplemental oxygen. $#(Choice D)#  Medications can precipitate acute hemolysis in patients with glucose-6-phosphate dehydrogenase deficiency.  However, it presents with sudden-onset jaundice, pallor, and dark urine; supplemental oxygen would improve pulse oximetry. $#Educational objective# Acquired methemoglobinemia can be precipitated by benzocaine and result in the conversion of Fe2+ to Fe3+, which results in functional anemia and a left shift of the oxygen dissociation curve.  Patients have cyanosis that does not improve with supplemental oxygen.  ",
+  "clickable_1":"images/img1.18830.jpg"
+  
+
+}
+,
+{
+  "id": "18623",
+  "title": "A 40-year-old woman is brought to the emergency department due to difficulty breathing and muscle weakness.  She was one of several people who developed symptoms in a movie theater.  Temperature is 36.7 C (98.1 F), blood pressure is 112/62 mm Hg, pulse is 51/min, and respirations are 24/min.  On physical examination, the patient is diaphoretic.  The pupils are pinpoint and unreactive, and significant tearing is noted.  Diffuse rhonchi and wheezing are present in the lungs bilaterally.  Muscle strength is diminished throughout, and fasciculations are noted in the extremities.  First-line therapy is administered, but the patient remains weak.  Treatment with which of the following is most likely to improve this patient's current condition?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Diphenhydramine",
+  "answer_2": "B. Hemodialysis",
+  "answer_3": "C. Hyperbaric oxygen",
+  "answer_4": "D. Physostigmine",
+  "answer_5": "E. Pralidoxime",
+  "percent_1": "4%",
+  "percent_2": "2%",
+  "percent_3": "7%",
+  "percent_4": "19%",
+  "percent_5": "67%",
+  "right_answer": "E. Pralidoxime",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Organophosphate poisoning# ∆⨉ §^#Common$ exposures# ∆ • Pesticide: farmer/field worker, pediatric ingestion, suicide attempt • Nerve agent: multiple patients presenting with similar symptoms §^#Manifestations# ∆ • Muscarinic: $== ○ #Di#arrhea/diaphoresis $== ○ #Ur#ination $== ○ #Mi#osis $== ○ #Br#onchospasms, bronchorrhea, bradycardia $== ○ #Em#esis $== ○ #La#crimation $== ○ #Sa#livation • Nicotinic: muscle weakness, paralysis, fasciculations §^#Management# ∆ • Decontamination • Atropine reverses muscarinic symptoms • Pralidoxime reverses nicotinic and muscarinic symptoms (reactivates cholinesterase)",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient with bradycardia, miosis, diaphoresis, excessive secretions (eg, bronchorrhea, tearing), and weakness with fasciculations has signs of #cholinergic toxicity#.  Most cases of cholinergic toxicity are due to #organophosphate# pesticides.  However, the occurrence in multiple patients in a city setting suggests intentional organophosphate exposure, possibly due to a chemical weapon (eg, sarin, soman). $Organophosphates #inhibit acetylcholinesterase# in the muscarinic and nicotinic cholinergic synapses, leading to decreased acetylcholine degradation and overstimulation of the corresponding receptors.  In addition to widespread increased visceral smooth muscle tone and glandular secretions due to muscarinic hyperactivity (mnemonic: DUMBELS), #nicotinic hyperactivity# causes #muscle weakness# and paralysis that can lead to rapid respiratory depression and death. $Initial management of organophosphate toxicity includes atropine, a competitive inhibitor of acetylcholine at the muscarinic receptor, which relieves muscarinic hyperstimulation.  However, atropine does not have activity at the nicotinic receptors and cannot treat neuromuscular dysfunction.  Therefore, #pralidoxime#, a #cholinesterase-reactivating agent# that works at both nicotinic and muscarinic sites, should be administered to any patient with neuromuscular dysfunction (eg, weakness, fasciculations).  It should be given only #after atropine# because pralidoxime can cause transient acetylcholinesterase inhibition, which can momentarily worsen symptoms. $#(Choice A)#  Diphenhydramine is an inverse agonist of the histamine H1 receptor, which allows it to function as an antihistamine.  Because the H1 receptor is similar to the muscarinic receptor, diphenhydramine has some antimuscarinic effects (eg, urinary retention).  However, it is less potent than atropine, and it would not reverse nicotinic dysfunction (weakness). $#(Choice B)#  Hemodialysis is sometimes used to treat toxic alcohol poisoning, which usually presents with altered mental status, as well as vision changes (methanol) or flank pain and hematuria (ethylene glycol).  It is not indicated in cholinergic toxicity. $#(Choice C)#  Hyperbaric oxygen is used to treat severe carbon monoxide poisoning, which presents with nausea, dizziness, and altered mental status.  Patients typically have cherry-red cheeks and lips. $#(Choice D)#  Physostigmine is an acetylcholinesterase inhibitor that is sometimes used to treat anticholinergic toxicity (ie, flushing, mydriasis, anhidrosis, fever, urinary retention).  It would worsen this patient's symptoms. $#Educational objective# Organophosphates inhibit acetylcholinesterase, leading to symptoms of muscarinic (mnemonic: DUMBELS) and nicotinic (neuromuscular dysfunction) cholinergic hyperstimulation.  Management includes atropine, a competitive inhibitor of acetylcholine at the muscarinic receptor (reverses muscarinic symptoms), followed by pralidoxime, a cholinesterase-reactivating agent that treats both nicotinic and muscarinic symptoms.  "
+  
+}
+,
+{
+  "id": "2088",
+  "title": "The following vignette applies to the next #2# items.  The items in the set must be answered in sequential order.  Once you click #Proceed to Next Item#, you will not be able to add or change an answer. $A 32-year-old woman comes to the office because she has felt sad and worthless for the past 3 months and often cries for no obvious reason.  The patient has difficulty sleeping, her appetite is decreased, and she no longer enjoys spending time with friends.  She has no significant medical history.  A pregnancy test is negative, and TSH is within normal limits.  The physician discusses the diagnosis with the patient and initiates first-line pharmacologic treatment.  Two days later, the patient is brought to the emergency department after being found lying down next to an empty bottle of the prescribed medication.  Temperature is 38.9 C (102 F), blood pressure is 146/92 mm Hg, and heart rate is 118/min and regular.  The patient is disoriented, tremulous, and diaphoretic.  She has abdominal cramps and diarrhea.  Neurologic examination reveals pupillary dilation, bilateral hyperreflexia in the lower extremities, and bilateral, inducible ankle clonus.  $ #Item 1 of 2 # $Which of the following amino acids is a precursor of the neurotransmitter most likely responsible for this patient's current symptoms?  ",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Glutamic acid",
+  "answer_2": "B. Histidine",
+  "answer_3": "C. Methionine",
+  "answer_4": "D. Tryptophan",
+  "answer_5": "E. Tyrosine",
+  "percent_1": "6%",
+  "percent_2": "2%",
+  "percent_3": "2%",
+  "percent_4": "66%",
+  "percent_5": "25%",
+  "right_answer": "D. Tryptophan",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Serotonin syndrome# ∆⨉ §^#Causes# ∆ • Serotonergic medications, especially in combination (eg, SSRI/SNRI, TCA, $tramadol) • Drug interactions: Serotonergic medication & MAOI or linezolid • Intentional overdose of serotonergic medications • Serotonergic drugs of abuse (eg, MDMA) §^#Clinical $features# ∆ • Mental status changes (eg, anxiety, agitation, delirium) • Autonomic dysregulation (eg, diaphoresis, hypertension, tachycardia,$ hyperthermia, vomiting, diarrhea) • Neuromuscular hyperactivity (eg, tremor, myoclonus, hyperreflexia) %#MAOI =# monoamine oxidase inhibitor; #MDMA =# 3,4-Methylenedioxymethamphetamine;$ #SNRI =# serotonin-norepinephrine reuptake inhibitor; #SSRI =# selective serotonin reuptake inhibitor; #TCA =# tricyclic antidepressant.",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient's feelings of sadness and worthlessness—combined with her impaired sleep, decreased appetite, and decreased enjoyment of previously pleasurable activities (eg, socializing with friends)—lasting ≥2 weeks are consistent with major depressive disorder (MDD).  First-line pharmacotherapy for MDD is a selective serotonin reuptake inhibitor (SSRI).  Her apparent overdose on the prescribed SSRI and her resultant #altered mental status# (eg, disorientation), #autonomic hyperactivity# (eg, hyperthermia, tachycardia, diaphoresis), and #neuromuscular excitation# (eg, hyperreflexia, clonus, tremor) are characteristic of #serotonin syndrome#. $Serotonin syndrome is caused by excessive serotonin activity, most commonly brought on by combining SSRIs with another serotonergic agent such as a monoamine oxidase inhibitor.  It may also occur with a single agent if taken in overdose.  #Tryptophan# is a precursor of #serotonin#, whose biosynthesis occurs via the enzymes tryptophan hydroxylase and amino acid decarboxylase. $#(Choice A)#  Glutamic acid is a precursor for the inhibitory neurotransmitter GABA. $#(Choice B)#  Histidine is the precursor of histamine, which plays a role in allergic (atopic) reactions. $#(Choice C)#  Methionine is a precursor or intermediate in the synthesis of cysteine, carnitine, taurine, and lecithin. $#(Choice E)#  Tyrosine is a precursor for thyroxine, dopamine, epinephrine, norepinephrine, and melanin. $#Educational objective# Serotonin syndrome is characterized by altered mental status, autonomic hyperactivity, and neuromuscular excitation (eg, hyperreflexia, clonus).  Causes include high doses and/or combinations of serotonergic drugs (eg, SSRI and MAOI).  Tryptophan is a precursor for serotonin.  "
+  
+}
+,
+{
+  "id": "2089",
+  "title": "#Item 2 of 2# $The patient is admitted to the hospital and supportive therapy is initiated.  However, she remains disoriented with only limited improvement of her condition.  Which of the following is the antidote for this patient's condition?  ",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Cyproheptadine",
+  "answer_2": "B. Flumazenil",
+  "answer_3": "C. Haloperidol",
+  "answer_4": "D. Naloxone",
+  "answer_5": "E. Propranolol",
+  "percent_1": "75%",
+  "percent_2": "12%",
+  "percent_3": "2%",
+  "percent_4": "5%",
+  "percent_5": "7%",
+  "right_answer": "A. Cyproheptadine",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "Serotonin syndrome is characterized by altered mental status, autonomic hyperactivity, and neuromuscular excitation, which occur as a result of excessive serotonin activity in the CNS.  Treatment includes supportive care, including airway and temperature maintenance as well as hydration.  When supportive measures fail, #cyproheptadine# can be given as an #antidote# as it functions as a #serotonin antagonist#.  Cyproheptadine is a first-generation antihistamine with nonspecific 5-HT1 and 5-HT2 receptor antagonistic properties. $#(Choice B)#  Flumazenil is the antidote for benzodiazepine overdose, not serotonin syndrome. $#(Choice C)#  Haloperidol is an antidopaminergic agent used primarily for the treatment of psychosis. $#(Choice D)#  Naloxone is the antidote for narcotic overdose. $#(Choice E)#  Short-acting antihypertensives, such as esmolol or nitroprusside, can be used to treat hypertension associated with serotonin syndrome.  Antihypertensive agents with longer half-lives, such as propranolol, should be avoided due to the risk of developing hypotension and shock. $#Educational objective# Cyproheptadine is an antihistamine with antiserotonergic properties that can be used as an antidote in severe cases of serotonin syndrome that do not respond to supportive measures.  "
+  
+}
+,
+{
+  "id": "1321",
+  "title": "A 50-year-old man is brought to the emergency department after developing blurred vision and confusion.  Earlier today, he was clearing and burning foliage and weeds on his property.  His medical history is insignificant, and he does not take any medications.  The patient has no history of illicit drug use.  Temperature is 38.9 C (102 F), blood pressure is 110/76 mm Hg, pulse is 120/min, and respirations are 16/min.  He is disoriented to time, place, and person.  Physical examination shows flushed skin and dry oral mucosa.  Both pupils are dilated and nonreactive to light and accommodation.  Bowel sounds are decreased.  Which of the following drugs can potentially reverse this patient's condition?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Atropine",
+  "answer_2": "B. Benztropine",
+  "answer_3": "C. Diazepam",
+  "answer_4": "D. Haloperidol",
+  "answer_5": "E. Metoprolol",
+  "answer_6": "F. Morphine",
+  "answer_7": "G. Naloxone",
+  "answer_8": "H. Physostigmine",
+  "answer_9": "I. Thiamine",
+  "percent_1": "20%",
+  "percent_2": "2%",
+  "percent_3": "1%",
+  "percent_4": "0%",
+  "percent_5": "1%",
+  "percent_6": "0%",
+  "percent_7": "2%",
+  "percent_8": "73%",
+  "percent_9": "0%",
+  "right_answer": "H. Physostigmine",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Anticholinergic toxicity# ∆⨉ §^#\"Hot as a hare\"$ ↑# Body temperature ∆ • ↓ Sweating leads to ↓ heat dissipation §^#\"Dry as a bone\"$ ↓# Secretions (eg, mucous membranes, sweat$ glands) ∆ • ↓ Glandular secretion & smooth muscle contraction §^#\"Red as a beet\"$ F#lushed skin ∆ • Superficial vasodilation from ↑ body heat §^#\"Blind as a bat\"$ C#ycloplegia, mydriasis ∆ • Paralysis of ciliary muscle & iris sphincter §^#\"Mad as a hatter\"$ A#ltered mental status ∆ • Permeates blood-brain barrier & affects CNS pathways §^#\"Full as a flask\"$ C#onstipation,$ urinary retention ∆ • ↓ Intestinal smooth muscle contraction • ↓ Detrusor contraction & ↓ internal urethral sphincter$ relaxation §^#\"Fast as a fiddle\"#$ Tachycardia ∆ • ↓ Vagal tone at the sinoatrial node",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient with blurred vision, fever, altered mental status, flushed skin, and dry mucous membranes has #anticholinergic toxicity#, likely from encountering jimsonweed (Datura stramonium) while working in his yard.  Jimsonweed contains large concentrations of the anticholinergic compounds #atropine#, #scopolamine#, and hyoscyamine.  These agents competitively inhibit acetylcholine at the muscarinic acetylcholine receptor, leading to the classic toxidrome summarized above.  Anticholinergic toxicity can be counteracted by increasing the concentration of acetylcholine in the synaptic cleft.  #Physostigmine#, a cholinesterase inhibitor, increases acetylcholine levels by preventing its degradation by cholinesterase. $#(Choice A)#  Organophosphates are cholinesterase inhibitors that are commonly used as pesticides.  Atropine can be used to counteract the effects of excess muscarinic stimulation (eg, increased salivation, miosis, bronchospasm, bradycardia). However, patients remain at risk of paralysis due to nicotinic overactivation, and so also require treatment with pralidoxime, a cholinesterase reactivating agent. $#(Choices B and D)#  Benztropine is a centrally acting anticholinergic medication used for the treatment of idiopathic and drug-induced Parkinson disease.  Haloperidol is a neuroleptic drug that blocks dopamine receptors in the central nervous system and is used to treat psychosis.  These drugs have anticholinergic effects that would worsen this patient's symptoms. $#(Choice C)#  Diazepam, a long-acting benzodiazepine, positively modulates GABAA action by increasing the frequency of chloride channel opening.  It is used to treat seizures associated with atropine poisoning but does not affect muscarinic cholinergic receptors. $#(Choice E)#  Metoprolol is a selective β1-adrenergic receptor antagonist.  It is used to treat angina, acute coronary syndromes, heart failure, hypertension, and arrhythmias. $#(Choices F and G)#  Morphine is an opioid pain medication that exerts its effects by stimulating opioid receptors in the brain.  Naloxone is a competitive antagonist of these receptors used for opioid overdose.  Morphine has some anticholinergic effects and may worsen symptoms whereas naloxone does not affect cholinergic receptors. $#(Choice I)#  Thiamine (B1) is a cofactor for multiple enzymes used in glucose metabolism.  Patients who are chronically deficient (eg, due to alcohol use disorder or malnutrition) can develop Wernicke-Korsakoff syndrome (ataxia, ophthalmoplegia, confusion). $#Educational objective# Anticholinergic agents (eg, atropine, scopolamine) competitively inhibit acetylcholine at the muscarinic acetylcholine receptor.  The effects can be memorized with the mnemonic, \"Blind as a bat, mad as a hatter, red as a beet, hot as a hare, dry as a bone, full as a flask, and fast as a fiddle,\" and can be reversed by cholinesterase inhibitors (physostigmine).  "
+  
+}
+,
+{
+  "id": "18626",
+  "title": "A 3-year-old, previously healthy boy is brought to the emergency department due to accidental drug ingestion.  His mother found him playing with his grandfather's pill bottles earlier today, and later, he developed nausea and vomited twice.  The patient also began breathing rapidly and appeared ill.  His grandfather recently had a myocardial infarction and takes multiple medications.  On physical examination, the patient is mildly lethargic, tachypneic, and tachycardic.  The abdomen is soft and nontender.  The extremities are warm and capillary refill time is normal.  Laboratory studies reveal high anion gap metabolic acidosis.  Treatment with intravenous sodium bicarbonate infusion is begun.  This therapy is most likely to provide a beneficial effect via which of the following mechanisms?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Decreasing cardiotoxic effects of the drug",
+  "answer_2": "B. Decreasing charged form of the drug in plasma",
+  "answer_3": "C. Increasing drug trapping in the gastric lumen",
+  "answer_4": "D. Increasing excretion of the drug in the urine",
+  "answer_5": "E. Increasing hepatic drug glucuronidation",
+  "percent_1": "10%",
+  "percent_2": "24%",
+  "percent_3": "4%",
+  "percent_4": "61%",
+  "percent_5": "2%",
+  "right_answer": "D. Increasing excretion of the drug in the urine",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Acute salicylate poisoning# ∆⨉ §#Mechanism of $action# ∆ • Direct medullary stimulation (eg, respiratory center, chemoreceptor trigger zone) • Impaired oxidative phosphorylation • Decreased prostaglandin synthesis §#Clinical features# ∆ • Tinnitus • Hyperventilation (primary respiratory alkalosis) • Vomiting • Hyperthermia • Altered mental status • Elevated anion gap & lactate* §#Treatment# ∆ • Intravenous sodium bicarbonate (alkalinization of blood and urine enhances elimination of salicylates) %#*Often presenting as mixed primary respiratory alkalosis–primary metabolic acidosis.",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient with #tachypnea# and anion gap metabolic acidosis following ingestion of an unknown substance most likely has acute #salicylate toxicity#.  Salicylate is the active ingredient in aspirin, and it causes toxicity via stimulation of central respiratory drive and interference with cellular metabolism.  Toxicity commonly presents with #tinnitus#, nausea, vomiting, and alteration in mental status ranging from irritability to lethargy or even coma.  Patients classically have #primary respiratory alkalosis# and #primary anion gap metabolic acidosis#, a mixed disturbance that often presents with blood pH near or within the normal range. $The toxicity of salicylate is caused mostly by its protonated, #salicylic acid# form (Sal-H), which is #lipophilic# and readily #passes into the tissues#.  Therefore, #sodium bicarbonate# helps treat salicylate toxicity in @2 ways@: $• The bicarbonate acts as a base to bind free hydrogen ions in the blood.  This facilitates the conversion of lipophilic salicylic acid to a lipophobic salicylate ion (Sal−), trapping much of the compound within the bloodstream. $• The bicarbonate also alkalinizes the urine to facilitate the conversion of salicylate and its metabolites to their lipophobic, ionized form, which reduces renal tubular reabsorption of the compounds and #increases urinary excretion#. $Notably, acetazolamide is contraindicated in acute salicylate toxicity because it alkalinizes the urine at the expense of acidifying the blood (sodium bicarbonate alkalinizes both the blood and urine), which facilitates additional tissue absorption of salicylic acid. $#(Choice A)#  Sodium bicarbonate is used to reduce the cardiotoxic effects of tricyclic antidepressant (TCA) overdose by decreasing the binding of TCAs to cardiac sodium channels and lowering the risk of arrhythmia. $#(Choice B)#  Sodium bicarbonate facilitates conversion to the salicylate ion (Sal−), increasing, not decreasing, the amount of charged compound in the blood. $#(Choice C)#  Activated charcoal is commonly given orally to patients with acute salicylate toxicity because it binds to salicylate in the gastric lumen and prevents absorption of the drug.  Sodium bicarbonate is given intravenously and acts within the bloodstream and urine. $#(Choice E)#  Salicylate is metabolized mostly via hepatic glucuronidation; however, the induction of hepatic glucuronidation is not used to treat toxicity. $#Educational objective# Salicylate toxicity typically presents with mixed primary respiratory alkalosis and anion gap metabolic acidosis.  Sodium bicarbonate facilitates conversion to the lipophobic, ionized form of salicylate (Sal−), which traps much of the compound in the bloodstream and increases its urinary excretion.  ",
+  "clickable_1":"images/img1.18626.jpg"
+  
+
+}
+,
+{
+  "id": "1868",
+  "title": "A 46-year-old woman with confusion and fever is brought to the emergency department.  She is disoriented, somnolent, and difficult to rouse.  A friend who accompanies the patient says, \"She sounded really anxious when I talked to her on the phone so I decided to check in on her.  She was just lying on the couch and groaning when I got there.  I hope she didn't overdose again—she's tried to before.\"  On physical examination, the patient's skin is flushed, oral mucosa is dry, and pupils are dilated and poorly responsive to light.  Which of the following drugs, if taken in overdose, would most likely cause this clinical presentation? ",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Amitriptyline",
+  "answer_2": "B. Diazepam",
+  "answer_3": "C. Haloperidol",
+  "answer_4": "D. Prazosin",
+  "answer_5": "E. Propranolol",
+  "answer_6": "F. Sertraline",
+  "percent_1": "69%",
+  "percent_2": "11%",
+  "percent_3": "6%",
+  "percent_4": "5%",
+  "percent_5": "1%",
+  "percent_6": "8%",
+  "right_answer": "A. Amitriptyline",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Anticholinergic toxicity# ∆⨉ §^#\"Hot as a hare\"$ ↑# Body temperature ∆ • ↓ Sweating leads to ↓ heat dissipation §^#\"Dry as a bone\"$ ↓# Secretions (eg, mucous membranes, sweat$ glands) ∆ • ↓ Glandular secretion & smooth muscle contraction §^#\"Red as a beet\"$ F#lushed skin ∆ • Superficial vasodilation from ↑ body heat §^#\"Blind as a bat\"$ C#ycloplegia, mydriasis ∆ • Paralysis of ciliary muscle & iris sphincter §^#\"Mad as a hatter\"$ A#ltered mental status ∆ • Permeates blood-brain barrier & affects CNS pathways §^#\"Full as a flask\"$ C#onstipation,$ urinary retention ∆ • ↓ Intestinal smooth muscle contraction • ↓ Detrusor contraction & ↓ internal urethral sphincter$ relaxation §^#\"Fast as a fiddle\"#$ Tachycardia ∆ • ↓ Vagal tone at the sinoatrial node",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient exhibits signs and symptoms of #anticholinergic toxicity#, which results from the inhibition of cholinergic neurotransmission at muscarinic receptors.  Classic manifestations include #fever#, #delirium#, mucosal and axillary #dryness#, cutaneous #flushing#, nonreactive #mydriasis#, and #urinary retention#.  Tachycardia and decreased bowel sounds are other common signs. $Anticholinergic toxicity is associated with numerous over-the-counter (eg, antihistamines, sleep aids, cold preparations) and prescription medications.  #Tricyclic antidepressants# (TCAs) are commonly implicated, particularly ones with strong anticholinergic properties such as #amitriptyline#.  When taken in excess, TCAs can also increase QRS duration, cause arrhythmias, and precipitate seizures. $#(Choice B)#  Typical symptoms of benzodiazepine overdose include sedation, anterograde amnesia, and respiratory depression. $#(Choice C)#  Haloperidol is a high-potency, first-generation antipsychotic (FGA) that primarily causes neurological side effects due to potent D2 antagonism; anticholinergic effects are more common with low-potency FGAs (eg, chlorpromazine). $#(Choice D)#  Prazosin is an alpha-1 adrenergic blocker used to treat hypertension and urinary retention due to benign prostatic hyperplasia.  Its major adverse effect is hypotension (especially postural hypotension). $#(Choice E)#  Adverse effects associated with an overdose of a nonselective beta adrenergic blocker include bronchoconstriction, hypotension, and bradyarrhythmias. $#(Choice F)#  An overdose of a selective serotonin reuptake inhibitor (eg, sertraline) may result in serotonin syndrome, which is characterized by agitated delirium, autonomic instability, seizures, myoclonus, hyperreflexia, and diaphoresis (not anhidrosis as in anticholinergic overdose). $#Educational objective# Anticholinergic toxicity is characterized by fever; confusion; cutaneous flushing; dry oral mucosa; and dilated, poorly reactive pupils.  Tricyclic antidepressants, particularly amitriptyline, have strong anticholinergic effects.  "
+  
+}
+,
+{
+  "id": "18748",
+  "title": "A 24-year-old man is brought to the emergency department due to weakness, lethargy, nausea, and dizziness.  He took fifty 325-mg acetaminophen tablets approximately 6 hours ago.  Vital signs are normal.  Pupils are equal, round, and reactive to light; there is mild epigastric tenderness.  Laboratory results include an elevated serum acetaminophen level.  Intravenous infusion of N-acetylcysteine is started.  This treatment is most likely to improve the patient's condition by which of the following mechanisms?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Activating hepatic glucuronidation enzymes",
+  "answer_2": "B. Competitively blocking drug receptor sites",
+  "answer_3": "C. Increasing the amount of intrahepatic glutathione",
+  "answer_4": "D. Increasing renal excretion of drug molecules",
+  "answer_5": "E. Suppressing hepatic cytochrome P450 enzymes",
+  "percent_1": "4%",
+  "percent_2": "5%",
+  "percent_3": "82%",
+  "percent_4": "6%",
+  "percent_5": "3%",
+  "right_answer": "C. Increasing the amount of intrahepatic glutathione",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp18748.jpg",
+  "explanation_1": "",
+  "explanation_2": "$Metabolism of #acetaminophen# occurs in the liver and involves several enzymatic pathways.  Most of the drug (~90%) undergoes sulfation and glucuronidation into nontoxic metabolites prior to elimination through the urine; a small amount (~2%) of acetaminophen is directly excreted by the kidneys.  The remaining acetaminophen is metabolized by hepatic #cytochrome P450# into the #toxic metabolite# N-acetyl-p-benzoquinone imine (#NAPQI#). $With an appropriate dose of acetaminophen, the small amount of NAPQI produced is converted to a nontoxic form via conjugation by hepatic glutathione and is then excreted in the urine.  However, with an acetaminophen #overdose#, the liver sulfation and glucuronidation pathways become overwhelmed, resulting in excessive NAPQI formation.  Once #intrahepatic glutathione# stores are #depleted#, the unconjugated NAPQI level rises and causes oxidative damage to the liver. $Management of acetaminophen overdose includes #N-acetylcysteine# (NAC), which provides the liver a precursor to produce more glutathione.  By #increasing intrahepatic glutathione stores#, NAC facilitates NAPQI detoxification and prevents further hepatotoxicity. $#(Choice A)#  Although hepatic glucuronidation is an important step in the metabolism of acetaminophen, NAC works by replenishing glutathione stores, not by activating glucuronidation enzymes. $#(Choice B)#  Opioids exert toxicity by overstimulating their receptors, which can be reversed by competitive inhibition (ie, naloxone).  NAPQI does not bind a specific receptor.  Instead, it generates reactive oxygen species and forms adducts with hepatic proteins. $#(Choice D)#  Management of some drug overdoses (eg, salicylates such as aspirin) includes urine alkalinization (ie, sodium bicarbonate), which can increase urinary excretion of the toxin.  Urine alkalinization is not helpful for acetaminophen overdose because unconjugated NAPQI is not excreted through the urine. $#(Choice E)#  Cimetidine inhibits cytochrome P450, which can decrease acetaminophen metabolism, but it has not been shown to be effective in acetaminophen overdose. $#Educational objective# Acetaminophen overdose overwhelms normal metabolic pathways in the liver and depletes intrahepatic glutathione stores, leading to excessive production of N-acetyl-p-benzoquinone imine (NAPQI), a toxic metabolite.  Management includes administration of N-acetylcysteine, which increases intrahepatic glutathione stores and facilitates NAPQI detoxification.  "
+  
+}
+,
+{
+  "id": "15606",
+  "title": "A 7-year-old boy is brought to the emergency department by his older sister after being found in their mother's bathroom with an open bottle of pills.  The bottle is unlabeled and the boy is unable to describe how many pills he ingested.  The sister, who was babysitting, became alarmed when the boy subsequently became increasingly lethargic over the next hour.  The mother takes medications for anxiety, depression, and chronic lower back pain.  On arrival, the boy is somnolent and difficult to arouse.  Temperature is 36.7 C (98 F), blood pressure is 100/60 mm Hg, pulse is 75/min, and respirations are 16/min.  Physical examination is unremarkable.  Which of the following drugs is most likely to reverse this patient's symptoms?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Cyproheptadine",
+  "answer_2": "B. Diphenhydramine",
+  "answer_3": "C. Flumazenil",
+  "answer_4": "D. Naloxone",
+  "answer_5": "E. Physostigmine",
+  "percent_1": "9%",
+  "percent_2": "4%",
+  "percent_3": "64%",
+  "percent_4": "21%",
+  "percent_5": "2%",
+  "right_answer": "C. Flumazenil",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Common toxidromes & antidotes# ∆⨉∆⨉ §^#Drug class# ∆^#Clinical features# ∆^#Antidote# §^#Anticholinergic agents# ∆ • Agitated delirium with sympathetic hyperactivity • Mydriasis, dry skin/mucous membranes, urinary retention ∆ • Physostigmine §^#Benzodiazepines$ (eg, lorazepam)# ∆ • Sedation with normal vital signs • Slurred speech, ataxia ∆ • Flumazenil §^#Opioids (eg, oxycodone)# ∆ • Sedation with respiratory suppression • Miosis, decreased bowel sounds ∆ • Naloxone §^#Serotonergic agents (eg$, SSRIs/SNRIs, TCAs, MAOIs)# ∆ • Serotonin syndrome: altered mental status, mydriasis, sympathetic hyperactivity, hyperreflexia/clonus ∆ • Cyproheptadine %#MAOIs =# monoamine oxidase inhibitors; #SNRIs =# serotonin-norepinephrine reuptake inhibitors; #SSRIs =# selective serotonin reuptake inhibitors; #TCAs =# tricyclic antidepressants.",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "The presence of sedation with normal vital signs for age and an unremarkable physical examination is most consistent with #benzodiazepine overdose#.  Benzodiazepines are often used in the treatment of anxiety disorders and alcohol withdrawal, as well as for procedural sedation.  They bind as agonists at the benzodiazepine site on the GABAA receptor to potentiate the inhibitory effects of GABA, the major inhibitory neurotransmitter of the central nervous system.  #Flumazenil# functions as a competitive #antagonist# at the #benzodiazepine binding site# and may be used as an antidote to reverse benzodiazepine sedation related to overdose or procedural sedation. $#(Choice A)#  Cyproheptadine is a serotonin antagonist that has been used to treat severe cases of serotonin syndrome.  Serotonin syndrome is characterized by altered mental status, autonomic hyperactivity (eg, tachycardia, hypertension), and hyperreflexia/myoclonus. $#(Choice B)#  Diphenhydramine is an antihistamine that has been used to treat allergies and insomnia and to reverse antipsychotic drug–induced dystonic reactions. $#(Choice D)#  Naloxone is an opioid antagonist that is indicated in patients with suspected opioid overdose (eg, decreased respiratory rate, miosis).  Opioid overdose is unlikely in this patient with age-appropriate normal vital signs. $#(Choice E)#  Physostigmine is an acetylcholinesterase inhibitor that has been used as an antidote in severe cases of anticholinergic toxicity (dry mouth, mydriasis, tachycardia). $#Educational objective# Flumazenil is a benzodiazepine receptor antagonist.  It can reverse the sedative effects of benzodiazepines related to overdose and procedural sedation.  "
+  
+}
+,
+{
+  "id": "18622",
+  "title": "A 6-year-old girl is brought to the emergency department by her parents after they found her unresponsive in the basement.  They report that her younger sister sprayed the patient with a bottle that had been filled with pesticide to help rid the house of insects.  Temperature is 36.6 C (98 F), blood pressure is 110/60 mm Hg, pulse is 58/min, and respirations are 42/min.  On examination, the patient is lethargic and salivating.  Which of the following medications should be administered first during treatment of this patient's current condition?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Atropine",
+  "answer_2": "B. Flumazenil",
+  "answer_3": "C. Naloxone",
+  "answer_4": "D. Neostigmine",
+  "answer_5": "E. Pralidoxime",
+  "answer_6": "F. Sodium bicarbonate",
+  "percent_1": "64%",
+  "percent_2": "0%",
+  "percent_3": "0%",
+  "percent_4": "4%",
+  "percent_5": "30%",
+  "percent_6": "1%",
+  "right_answer": "A. Atropine",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Organophosphate poisoning# ∆⨉ §^#Common$ exposures# ∆ • Pesticide: farmer/field worker, pediatric ingestion, suicide attempt • Nerve agent: multiple patients presenting with similar symptoms §^#Manifestations# ∆ • Muscarinic: $== ○ #Di#arrhea/diaphoresis $== ○ #Ur#ination $== ○ #Mi#osis $== ○ #Br#onchospasms, bronchorrhea, bradycardia $== ○ #Em#esis $== ○ #La#crimation $== ○ #Sa#livation • Nicotinic: muscle weakness, paralysis, fasciculations §^#Management# ∆ • Decontamination • Atropine reverses muscarinic symptoms • Pralidoxime reverses nicotinic and muscarinic symptoms (reactivates cholinesterase)",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient developed bradycardia, tachypnea, and excessive salivation after being exposed to a pesticide, suggesting acute #organophosphate toxicity#.  Organophosphates are #acetylcholinesterase inhibitors# that produce signs of #cholinergic excess# due to hyperstimulation of the muscarinic (mnemonic: DUMBELS—see table) and nicotinic (ie, muscle weakness, fasciculations, paralysis) receptors.  Most exposures occur with commercial pesticides, typically in farmers/field workers or in children with access to stored chemicals. $Initial management of organophosphate toxicity includes the administration of #atropine#, a #competitive inhibitor# of acetylcholine at the #muscarinic receptor#, which leads to the resolution of muscarinic symptoms (eg, bradycardia, salivation).  Patients who exhibit signs of nicotinic hyperstimulation (eg, weakness) should then receive pralidoxime, a cholinesterase-reactivating agent that treats both the muscarinic and nicotinic effects of organophosphates.  However, #pralidoxime #should be #given only after atropine# because it can cause transient acetylcholinesterase inhibition, which can momentarily worsen symptoms #(choice E).# $#(Choice B)#  Flumazenil is indicated to treat benzodiazepine overdose, which presents with sedation but would not be expected to cause bradycardia, tachypnea, or hypersalivation. $#(Choice C)#  Naloxone is indicated for treatment of opioid intoxication, which can cause sedation and miosis but suppresses (not increases) the respiratory rate.  Opioid intoxication usually occurs via injection or ingestion, rather than external contact with aerosolized agents. $#(Choice D)#  Neostigmine is another acetylcholinesterase inhibitor that is sometimes used to treat myasthenia gravis; its use would worsen this patient's cholinergic symptoms. $#(Choice F)#  Sodium bicarbonate is indicated to treat patients with tricyclic antidepressant (TCA) overdose who are at risk for ventricular arrhythmias.  However, TCA poisoning presents with altered mental status and anticholinergic signs (ie, flushed skin, mydriasis). $#Educational objective# Organophosphates are acetylcholinesterase inhibitors that are commonly used as agricultural pesticides.  Toxicity is characterized by signs of cholinergic excess (eg, miosis, bronchospasm, muscle fasciculations/weakness, diarrhea, vomiting, lacrimation).  First-line therapy is atropine, a competitive inhibitor of acetylcholine at the muscarinic receptor.  "
+  
+}
+,
+{
+  "id": "15235",
+  "title": "A 20-year-old man is brought to the emergency department after being found confused and somnolent in his apartment.  His face and upper body are covered with emesis.  The patient was last seen with a normal appearance 4 hours ago.  Medical history is significant for excessive alcohol use.  Temperature is 36.8 C (98.2 F), blood pressure is 120/88 mm Hg, pulse is 102/min, and respirations are 26/min.  The patient is barely rousable and does not answer questions.  Cardiopulmonary examination is normal.  The abdomen is soft and nontender.  There are no focal findings on neurologic examination.  Laboratory results are as follows:",
+  "title_table":"!Serum chemistry! ?Sodium? 136 mEq/L ?Chloride? 91 mEq/L ?Bicarbonate? 6 mEq/L ?Urea nitrogen? 22 mg/dL ?Creatinine? 1.9 mg/dL ?Glucose? 80 mg/dL ?Lactic acid? normal !Serum osmolality 380 mOsm/kg! !Arterial blood gas (on room air)! ?pH? 7.19 ?PO2? 110 mm Hg ?PCO2? 20 mm Hg",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "Acute poisoning is suspected and the patient is given an appropriate antidote.  Which of the following is the most likely mechanism of action of the antidote?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Binds to the poison in the blood to form an inert complex",
+  "answer_2": "B. Competitively binds to cell surface receptors",
+  "answer_3": "C. Decreases the conversion rate of poison into a toxic metabolite",
+  "answer_4": "D. Prevents the gastrointestinal absorption of poison into the body",
+  "answer_5": "E. Promotes rapid enzyme-dependent detoxification in the liver",
+  "percent_1": "8%",
+  "percent_2": "10%",
+  "percent_3": "63%",
+  "percent_4": "8%",
+  "percent_5": "11%",
+  "right_answer": "C. Decreases the conversion rate of poison into a toxic metabolite",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp15235.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient has altered mental status, acute renal failure, @anion gap metabolic acidosis (AGMA)@ with normal glucose and lactate levels, and a markedly elevated @osmolar gap@.  These findings are highly suggestive of @toxic alcohol@ ingestion, likely with ethylene glycol (although methanol ingestion is difficult to rule out in this obtunded patient). $Ethylene glycol and methanol are central nervous system depressants found in antifreeze and cleaning solutions, and may be accidentally or intentionally ingested (eg, substitute for ethanol in patients with dependency, suicide attempt).  Although the parent alcohols are relatively nontoxic, ethylene glycol and methanol exhibit profoundly toxic effects when metabolized: $• #Ethylene glycol# metabolites (eg, oxalic acid, glycolic acid, glyoxylic acid) cause #acute kidney injury# due to cytotoxicity and crystalline obstruction. $• #Methanol# metabolites (eg, formic acid) cause retinal injury that leads to #blindness#. $#Fomepizole#, a #competitive inhibitor of alcohol dehydrogenase#, is the preferred agent for treatment of ethylene glycol and methanol toxicity.  By inhibiting the first step in alcohol metabolism, fomepizole decreases the conversion rate of the parent alcohols into their toxic metabolites.  Alternately, ethanol is sometimes used as a competitive inhibitor, although it is less preferred due to difficulty in dosing.  Hemodialysis may be required. $#(Choice A)#  Chelators (eg, deferoxamine) bind to heavy metals and form an inert complex that is cleared renally.  Heavy metal poisoning often causes gastrointestinal symptoms or neuropsychiatric effects; AGMA (without lactic acidosis) and an elevated osmolar gap are unexpected. $#(Choice B)#  Naloxone competitively binds to opioid receptors in the central nervous system and is used to treat opiate overdose.  Patients have sedation and respiratory depression but not an osmolar gap; in addition, hypoxia would be expected on arterial blood gas testing. $#(Choice D)#  Activated charcoal is used to absorb toxins in the stomach and prevent absorption into the body.  It is used for a variety of poisonings (eg, phenobarbital, acetaminophen); however, it does not absorb alcohol. $#(Choice E)#  N-acetylcysteine restores hepatic glutathione stores, promoting the enzyme-based detoxification of the toxic acetaminophen metabolite, N-acetyl-p-benzoquinone imine (NAPQI).  Acetaminophen toxicity presents with altered mentation and AGMA; however, an elevated osmolar gap is unexpected and patients often develop signs of hepatic failure (eg, jaundice). $#Educational objective# Ethylene glycol and methanol are toxic alcohols that cause anion gap metabolic acidosis and an elevated osmolar gap.  Toxicity occurs after metabolization by alcohol dehydrogenase; fomepizole is a competitive inhibitor of alcohol dehydrogenase and is used for the treatment of acute poisoning.  ",
+  "clickable_1":"images/img1.15235.jpg",
+  "clickable_2":"images/img2.15235.jpg",  
+  "clickable_3":"images/img3.15235.jpg"
+  
+
+}
+,
+{
+  "id": "19182",
+  "title": "A 57‐year‐old man is brought to the emergency department due to lethargy and altered mental status.  His family suspects a suicide attempt.  Medical history is significant for dilated cardiomyopathy and major depressive disorder.  On arrival, blood pressure is 76/46 mm Hg, pulse is 38/min, and respirations are 16/min.  Pupils are 3 mm and reactive.  Oropharynx is normal.  Examination shows bilateral wheezing.  There is no peripheral edema.  Capillary refill is 3 seconds.  There is no diaphoresis.  Which of the following categories of medication did this patient most likely ingest?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Beta blocker",
+  "answer_2": "B. Cardiac glycoside",
+  "answer_3": "C. Opioid",
+  "answer_4": "D. Organophosphate",
+  "answer_5": "E. Selective serotonin reuptake inhibitor",
+  "percent_1": "73%",
+  "percent_2": "8%",
+  "percent_3": "10%",
+  "percent_4": "7%",
+  "percent_5": "3%",
+  "right_answer": "A. Beta blocker",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Medications that cause hypotension & bradycardia#∆⨉ §^#Medication# ∆^#Distinguishing features# §^Beta blockers ∆Hypoglycemia, bronchospasm, heart block §^Calcium channel blockers ∆Hyperglycemia §^Digoxin ∆Hyperkalemia, \"scooped\" ST segments on ECG §^Clonidine ∆Miosis, respiratory depression §^Cholinergics ∆SLUD (#Sa#livation, #La#crimation, #Ur#ination, and #De#fecation) §^Magnesium ∆Hyporeflexia",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient has altered mental status and difficulty breathing in the setting of #hypotension# and #bradycardia#.  The body typically compensates for hypotension by becoming tachycardic.  It is unusual to see both bradycardia and hypotension simultaneously, and #medication overdose# should be suspected in these cases. $Although several medications can cause hypotension and bradycardia, this patient's #wheezing# suggests #bronchospasm# and makes #beta blocker toxicity# most likely.  Beta-1 receptors are located primarily in the heart, whereas #beta-2 receptors# are located on the smooth muscle of the lung #bronchioles# and skeletal muscle arterioles, as well as on hepatocytes.  When activated by catecholamines, beta-1 receptors cause increased heart rate and cardiac contractility and beta-2 receptors cause smooth muscle relaxation with bronchodilation.  Beta-2 receptor activation also stimulates hepatocellular gluconeogenesis and glycogenolysis to increase blood glucose. $Beta blockers are commonly used to treat high blood pressure and arrhythmias, and often target both beta-1 and beta-2 receptors.  Because beta blockers act as #competitive antagonists for endogenous catecholam#i#nes#, beta blocker toxicity prevents the catecholamine-mediated effects on the heart, lungs, and liver, causing hypotension, bradycardia, bronchospasm, and #hypoglycemia#.  The hypotension (ie, poor organ perfusion) and hypoglycemia contribute to altered mental status. $#(Choice B)#  Although cardiac glycoside (eg, digoxin) toxicity causes hypotension and bradycardia, bronchospasm is not seen.  Toxicity also presents with nausea, vomiting, tachyarrhythmias, and visual changes. $#(Choice C)#  Opioid overdose presents with respiratory depression, depressed mental status, and pinpoint pupils.  Bronchospasm is not typically seen.  In fact, opioids help suppress cough receptors. $#(Choice D)#  Although organophosphate toxicity can cause bronchorrhea/bronchospasm and bradycardia, clinical features are dominated by other findings of cholinergic excess (eg, salivation/drooling, lacrimation, diaphoresis); pupils are also usually constricted. $#(Choice E)#  Serotonin syndrome primarily manifests with neuromuscular hyperactivity (ie, tremor, muscle rigidity, myoclonus, hyperreflexia).  Bronchospasm is uncommon. $#Educational objective# Beta blockers act as competitive antagonists for endogenous catecholamines; therefore, toxicity presents with hypotension, bradycardia, bronchospasm, and hypoglycemia.  The hypotension and hypoglycemia contribute to altered mental status.  "
+  
+}
+,
+{
+  "id": "16052",
+  "title": "A 5-year-old boy is brought to the emergency department due to accidental drug ingestion.  His mother states the patient was playing by himself earlier today and 2 hours later she found him unresponsive in the bathroom.  There was an empty bottle of hydrocodone-acetaminophen next to him, but she does not know how many pills were in it.  The emergency medical team found the patient stuporous and with bradypnea.  His mental status and respirations promptly improved after 1 dose of intravenous naloxone was administered, and he was transported to the hospital.  On arrival, the patient is sleepy but arouses easily to voice and follows simple instructions.  Vital signs, including respirations, are normal.  One hour later, he has worsening lethargy, bradypnea, and miosis.  Which of the following most likely accounts for this patient's current clinical deterioration?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Acetaminophen-induced liver failure",
+  "answer_2": "B. Coingestion of benzodiazepine",
+  "answer_3": "C. Incomplete CNS penetrance of naloxone",
+  "answer_4": "D. Partial agonistic effect of naloxone",
+  "answer_5": "E. Short half-life of naloxone",
+  "percent_1": "10%",
+  "percent_2": "2%",
+  "percent_3": "3%",
+  "percent_4": "6%",
+  "percent_5": "79%",
+  "right_answer": "E. Short half-life of naloxone",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Clinical features of acute opioid intoxication# ∆⨉ §^#Risk factors# ∆ • Substance abuse • Chronic opioid use • Hospitalized patients (especially postoperative) • Hepatic or renal insufficiency §^#Clinical findings# ∆ • Somnolence, AMS • Pinpoint pupils (miosis) • Shallow breathing & ↓ respiratory rate • Bradycardia, hypothermia, ↓ bowel sounds • Respiratory acidosis on ABG §^#Management# ∆ • Naloxone (may need repeated dosings) • Airway management & ventilation • Exclude other AMS causes (eg, hypoglycemia) %#ABG =# arterial blood gas; #AMS =# altered mental status.",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This young boy, who was found with an empty bottle of hydrocodone-acetaminophen, has evidence of an acute opioid overdose.  Opioids (eg, hydrocodone, methadone) exert their analgesic effect via multiple opioid receptors (eg, delta, kappa, mu) in the central and peripheral nervous systems.  Typical features of overdose include #decreased level of consciousness, reduced respiratory rate#, decreased bowel sounds, and #miosis#. $#Naloxone#, a short-acting #opioid antagonist#, is the primary treatment for acute opioid toxicity and rapidly reverses respiratory depression.  However, it has a #short half-life# (<1 hr), and most opioids take significantly longer to metabolize (eg, half-life of hydrocodone is 4-8 hrs).  Therefore, patients may develop #recurrent symptoms# of opioid toxicity after naloxone is metabolized, and frequent redosing may be necessary. $#(Choice A)#  Acetaminophen poisoning typically causes nausea, vomiting, and malaise in the first 24 hours after ingestion.  Liver failure occurs later, and patients typically have jaundice, tachypnea, and confusion (ie, hepatic encephalopathy) that may progress to coma.  Bradypnea and miosis are more consistent with opioid toxicity. $#(Choice B)#  Although benzodiazepines cause sedation and respiratory depression, miosis does not occur.  In addition, benzodiazepine toxicity is treated with flumazenil, and symptoms would not be expected to improve with naloxone. $#(Choice C)#  Naloxone has excellent CNS penetrance, and this patient's temporary improvement in respiratory rate and somnolence suggests adequate CNS effect.  Opioid medications that do not cross the CNS (eg, loperamide) have effects mainly on the gastrointestinal tract and are used to treat diarrhea. $#(Choice D)#  Naloxone is a pure opioid antagonist; it does not have partial agonist activity.  Buprenorphine is a partial opioid agonist used to prevent opioid withdrawal while reducing the risk of opioid intoxication (eg, euphoria, respiratory depression). $#Educational objective# Naloxone is a short-acting opioid antagonist used for the treatment of opioid overdose (eg, respiratory depression, decreased level of consciousness, miosis, decreased bowel sounds).  Naloxone frequently requires redosing to prevent recurrent overdose symptoms due to its short half-life (<1 hr).  "
+  
+}
+,
+{
+  "id": "172",
+  "title": "A 14-year-old girl is brought to the emergency department following a suicide attempt.  She swallowed several of her grandfather's theophylline tablets after an intense argument with her parents a few hours ago.  The patient reports nausea and headache.  She has no other prior medical problems and takes no medications.  Her temperature is 37 C (98.6 F), blood pressure is 114/76 mm Hg, pulse is 88/min, and respirations are 16/min.  This patient should be carefully monitored for which of the following?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Hematemesis and melena",
+  "answer_2": "B. Hypoglycemia and complete heart block",
+  "answer_3": "C. Jaundice and elevated liver enzymes",
+  "answer_4": "D. Sedation and respiratory depression",
+  "answer_5": "E. Seizures and tachyarrhythmias",
+  "percent_1": "2%",
+  "percent_2": "9%",
+  "percent_3": "10%",
+  "percent_4": "13%",
+  "percent_5": "65%",
+  "right_answer": "E. Seizures and tachyarrhythmias",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "In low to moderate doses, methylxanthines cause mild cortical arousal and insomnia, much like caffeine.  Acute theophylline intoxication results in nausea/vomiting, abdominal pain, diarrhea, cardiac arrhythmias, and seizures.  #Seizures# are the major cause of morbidity and mortality in #theophylline intoxication#.  #Tachyarrhythmias# are the other major concern but usually do not cause QT prolongation. $Treatment of theophylline intoxication includes administration of activated charcoal to reduce gastrointestinal absorption.  Beta blockers are the drugs of choice for theophylline-induced cardiac tachyarrhythmias.  Theophylline-induced seizures are difficult to treat, but benzodiazepines and barbiturates are the most effective agents. $#(Choice A)#  Iron poisoning can cause hematemesis and melena as iron is directly toxic to gastric mucosal cells. $#(Choice B)#  Bradycardia, hypotension, and hypoglycemia are seen with beta blocker toxicity.  Glucagon is the specific antidote as it increases intracellular cyclic adenosine monophosphate and cardiac contractility. $#(Choice C)#  Acetaminophen causes liver damage following a latent period.  Acetylcysteine, a glutathione donor, is used to treat acetaminophen toxicity. $#(Choice D)#  Severe sedation, respiratory depression, and constricted pupils are features of opioid intoxication.  Treatment includes general supportive care and administration of opioid antagonists such as naloxone. $#Educational objective# Seizures are the major cause of morbidity and mortality from theophylline intoxication.  Tachyarrhythmias are the other major concern.  "
+  
+}
+,
+{
+  "id": "18021",
+  "title": "A 42-year-old man is brought to the emergency department due to nausea, vomiting, and blurred vision.  He was making his own whiskey with a home moonshine still and started feeling sick after sampling the first several ounces of distillate.  Funduscopic evaluation reveals optic disc hyperemia.  Laboratory results show a high anion gap metabolic acidosis.  It is determined that the patient's symptoms are due to enzymatic conversion of methanol into formate by alcohol dehydrogenase.  He is started on fomepizole, a medication that transiently binds to alcohol dehydrogenase and prevents methanol from accessing the enzyme's active site.  Which of the following graphs most accurately portrays the change in enzyme kinetics after administration of the antidote? $(Black curves = before treatment)  ",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+
+  "answer_1": "A. ",  "answer_2": "B. ",  "answer_3": "C. ",  "answer_4": "D. ",  "answer_5": "E. ",
+  "percent_1": "58%",  "percent_2": "6%",  "percent_3": "20%",  "percent_4": "5%",  "percent_5": "11%",  
+  "right_answer": "A. ",
+
+  "ansImg_1": "images/ansA18021.jpg",  "ansImg_2": "images/ansB18021.jpg",  "ansImg_3": "images/ansC18021.jpg",  "ansImg_4": "images/ansD18021.jpg",  "ansImg_5": "images/ansE18021.jpg",
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp18021.jpg",
+  "explanation_1": "",
+  "explanation_2": "$@Methanol@ itself is relatively nontoxic, primarily causing CNS depression similar to that caused by ethanol.  However, once ingested, methanol is converted by alcohol and aldehyde dehydrogenase into #formate#, a metabolite with pronounced #nervous system toxicity# (eg, optic nerve destruction, basal ganglia hemorrhage). $Treatment of methanol intoxication is targeted at reducing formate production by inhibiting alcohol dehydrogenase.  #Fomepizole# is a #competitive inhibitor of alcohol dehydrogenase# that decreases the conversion rate of methanol into formate.  Ethanol can also be used as a competitive inhibitor, although it is less preferred due to difficulty in dosing. $#Competitive inhibition# occurs when an inhibitor binds to an enzyme (usually at the active site), preventing it from binding the substrate.  Because competitive inhibitors compete with the substrate for binding to the active site, higher substrate concentrations are required to reach ½ Vmax, thereby #increasing apparent Km#.  However, competitive inhibitors do not alter enzyme function directly, therefore #Vmax# #is unchanged#. $#(Choice B)#  This graph shows decreased Km (ie, increased substrate affinity) after treatment, which would increase the toxicity of methanol. $#(Choices C, D, and E)#  These graphs show a decrease in Vmax (ie, decreased maximum reaction rate) which does not occur with competitive inhibition.  Decreased Vmax occurs with the use of noncompetitive and mixed inhibitors that bind allosterically to an enzyme; noncompetitive inhibitors do not change the Km, whereas mixed inhibitors can either raise or lower the Km. $#Educational objective# Methanol and ethylene glycol have relatively little direct toxicity (similar to ethanol) but are metabolized into highly toxic compounds by alcohol and aldehyde dehydrogenase.  Treatment involves administration of fomepizole, a competitive inhibitor of alcohol dehydrogenase (increases Km without reducing Vmax).  ",
+  "clickable_1":"images/img1.18021.jpg"
+  
+
+}
+,
+{
+  "id": "19261",
+  "title": "A 52-year-old man is in the hospital burn unit 3 days after sustaining severe burns to 35% of his body surface area in a house fire.  The patient remains intubated due to inhalational injury and has been undergoing staged excision and grafting of his burns.  There has been no clinical evidence of infection, but the patient has been persistently febrile, hypertensive, tachycardiac, and hyperglycemic.  Treatment with oxandrolone, a synthetic testosterone analogue, is considered.  The beneficial effect of this treatment is most likely related to its effect on which of the following processes?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Cardiac sympathetic activity",
+  "answer_2": "B. Hepatic glucose production",
+  "answer_3": "C. Muscle protein catabolism",
+  "answer_4": "D. Sensory perception of pain",
+  "answer_5": "E. Vascular capillary permeability",
+  "percent_1": "7%",
+  "percent_2": "15%",
+  "percent_3": "53%",
+  "percent_4": "6%",
+  "percent_5": "19%",
+  "right_answer": "C. Muscle protein catabolism",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Hypermetabolic response in burn injury# ∆⨉ §^#Etiology# ∆ • Moderate to severe burn injury • ↑ Inflammatory mediators result in ↑ catecholamines, glucocorticoids & glucagon §^#Clinical$ features# ∆ • Hyperdynamic circulatory response: tachycardia, hypertension • ↑ Gluconeogenesis & insulin resistance: hyperglycemia • ↑ Basal metabolic rate: ↑ basal body temperature • ↑ Protein & lipid catabolism: ↑ lean muscle wasting",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient with severe burns to 35% of his total body surface area (TBSA) has signs of a #hypermetabolic response#, including increased basal body temperature (eg, fever without clinical signs of infection), a hyperdynamic circulatory response (eg, hypertension, tachycardia), and persistent hyperglycemia.  The hypermetabolic response typically arises within the first 5 days following burn injury and is likely triggered by the profound release of inflammatory mediators from damaged tissue, which leads to increased levels of catecholamines and glucocorticoids.  The severity of the response increases proportionally with burn size. $The increased basal metabolic rate of the hypermetabolic response leads to #increased protein# and lipid #catabolism#, often resulting in #lean muscle wasting#.  To reduce loss of lean muscle mass, early nutritional support (eg, tube feeds) and #anabolic steroid therapy# (eg, oxandrolone) can be initiated.  #Oxandrolone# is a synthetic testosterone analogue that enhances protein synthesis and decreases protein catabolism in skeletal myocytes.  In patients with burn injury, it has been shown to both reduce lean muscle loss and decrease length of hospital stay. $#(Choice A)#  Increased circulating catecholamines after burn injury lead to increased cardiac sympathetic activity, typically manifesting as hypertension and tachycardia.  Beta blockade (eg, propranolol) is commonly used to blunt these effects. $#(Choice B)#  Increased hepatic glucose production occurs as part of the hypermetabolic response to burn injury and contributes to hyperglycemia, which increases risk of infectious complications and mortality.  Insulin is commonly required to provide glycemic control. $#(Choice D)#  Burn injuries cause intense pain, which can further increase sympathetic stimulation and metabolic rate.  Opioid analgesia is commonly used to decrease sensory perception of pain in affected patients. $#(Choice E)#  Widespread tissue injury in large TBSA burns commonly leads to a profound systemic inflammatory response with increased vascular capillary permeability, especially within the first 24 hours.  Aggressive fluid resuscitation is required during this period to prevent intravascular volume depletion (ie, burn shock). $#Educational objective# Patients with severe burn injury commonly develop a hypermetabolic response that results in an increased basal metabolic rate and, often, lean muscle wasting.  Administration of oxandrolone, a synthetic testosterone analogue, enhances muscle protein synthesis and decreases protein catabolism, reducing lean muscle loss.  "
+  
+}
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Pathophysiology-poisoning",
+  "id": "1544",
+  "title": "A 34-year-old woman is brought to the emergency department by ambulance due to nausea, dizziness, and confusion.  Her boyfriend arrives with her and says that he found her lying on the bed next to an empty bottle of aspirin tablets.  When asked about the potential ingestion, the patient admits to swallowing a \"bunch of aspirin pills a little more than 12 hours ago\" after coming home from work.  She also describes hearing \"an annoying buzzing sound that won't stop.\"  Temperature is 38.3 C (101 F) and pulse is 102/min.  She appears agitated and confused.  Which of the following sets of laboratory results is most likely to be found in this patient? ",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "§∆pH ∆PaCO2 ∆Plasma HCO3-",
+  "answer_1": "§A. ∆ 7.26 ∆60 mm Hg ∆26 mEq/L",  
+  "answer_2": "§B. ∆ 7.37 ∆18 mm Hg ∆10 mEq/L",  
+  "answer_3": "§C. ∆ 7.42 ∆40 mm Hg ∆25 mEq/L",  
+  "answer_4": "§D. ∆ 7.47 ∆48 mm Hg ∆34 mEq/L",  
+  "answer_5": "§E. ∆ 7.60 ∆24 mm Hg ∆23 mEq/L",  
+  "percent_1": "19%",  
+  "percent_2": "60%",  
+  "percent_3": "3%",  
+  "percent_4": "8%",  
+  "percent_5": "11%",  
+  "right_answer": "§B. ∆ 7.37 ∆18 mm Hg ∆10 mEq/L",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "#Acute salicylate intoxication# typically presents with nausea/vomiting, dizziness, confusion, #tinnitus# (eg, ringing/buzzing sound), #fever#, and #tachypnea# within several hours after ingestion.  Two different acid-base abnormalities are characteristic: $• #Primary respiratory alkalosis# occurs because salicylates directly stimulate the medullary respiratory center, resulting in increased ventilation and loss of CO2 in the expired air. $• #Primary anion gap metabolic acidosis# develops because toxic salicylate levels increase lipolysis, uncouple oxidative phosphorylation, and inhibit the citric acid cycle.  This results in the accumulation of unmeasured organic acids in the blood (eg, ketoacids, lactate), increasing the anion gap. $Therefore, salicylate toxicity classically presents with a #mixed acid-base disturbance#, with @arterial blood gas@ sometimes showing a #pH within the normal range# as the 2 primary disturbances shift the pH in opposite directions.  There is #low serum HCO3-# due to primary metabolic acidosis and #low PaCO2# due to both respiratory compensation for the metabolic acidosis and the primary respiratory alkalosis.  Because of the mixed disturbance, the #PaCO2 is lower than expected# for respiratory @compensation@ alone (ie, per Winters' formula the expected PaCO2 due to respiratory compensation is ~23 mm Hg, but the primary increase in central respiratory drive pushes PaCO2 even lower). $#(Choice A)#  Low pH with elevated PaCO2 is consistent with primary respiratory acidosis, which can occur with the respiratory depression seen with opioid overdose.  HCO3- is slightly elevated, which is consistent with the small degree of metabolic compensation that occurs in the acute setting; full metabolic compensation requires approximately 72 hours. $#(Choice C)#  These values are consistent with normal acid-base status. $#(Choice D)#  High pH with elevated HCO3- represents primary metabolic alkalosis, which can occur with intractable vomiting.  PaCO2 is elevated and consistent with appropriate respiratory compensation. $#(Choice E)#  High pH with low PaCO2 and near normal HCO3- represent primary respiratory alkalosis with minimal metabolic compensation.  This can occur with any cause of acute hyperventilation (eg, panic attack). $#Educational objective# Salicylate intoxication should be suspected in patients with the triad of fever, tinnitus, and tachypnea.  Salicylates both stimulate central respiratory drive to cause primary respiratory alkalosis and disrupt cellular metabolism to cause primary anion gap metabolic acidosis.  Therefore, toxicity classically presents with a mixed acid-base disturbance and a blood pH sometimes within the normal range.  ",
+  "clickable_1":"images/img1.1544.jpg",
+  "clickable_2":"images/img2.1544.jpg"
+  
+
+},
+
+
+{
+  "id": "107146",
+  "title": "A 15-year-old boy is brought to the emergency department due to worsening rash and profuse sweating for the past week.  Symptoms began gradually, and the patient first noticed the sweating on a cold day, which he thought was unusual.  He has also felt generally unwell, with difficulty sleeping and sensitivity to light.  Physical examination shows an anxious-appearing boy with obvious hyperhidrosis.  Temperature is 36.7 C (98.1 F), blood pressure is 170/96 mm Hg, pulse is 112/min, and respirations are 16/min.  Skin examination is significant for an erythematous maculopapular rash over the torso, thighs, and upper arms, as well as pink macules over the palms and soles with associated desquamation.  Neurologic examination shows a slight tremor.  Excessive exposure to which of the following is most likely responsible for this patient's presentation?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Inhalants",  
+  "answer_2": "B. Lead",  
+  "answer_3": "C. Marijuana",  
+  "answer_4": "D. Mercury",  
+  "answer_5": "E. Selenium",  
+  "percent_1": "24%",  
+  "percent_2": "16%",  
+  "percent_3": "4%",  
+  "percent_4": "40%",  
+  "percent_5": "15%",  
+  "right_answer": "D. Mercury",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Chronic mercury toxicity#∆⨉ §^#Exposures# ∆ • Incidental (eg, broken lightbulbs or thermometers) • Ingestion (eg, shark, swordfish) • Occupational §^#Clinical$ features*# ∆ • Neuropsychiatric: tremor, insomnia, personality changes (eg, irritability) • Cardiovascular: hypertension, tachycardia • Mucocutaneous: gingivitis; diaphoresis; swelling, redness, desquamation of hands/feet • Renal: tubular damage/proteinuria %#*Some features may mimic pheochromocytoma, including elevated urinary catecholamines.",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient has signs of catecholamine excess (eg, diaphoresis, tachycardia, hypertension) in addition to neuropsychiatric symptoms (eg, insomnia, tremor) and a desquamating rash.  This constellation of findings warrants evaluation for #chronic mercury toxicity#. $Manifestations of mercury poisoning include the following: $• Cardiovascular/sympathetic nervous system:  Mercury #inactivates catechol O-methyltransferase#, an enzyme responsible for catecholamine breakdown.  Therefore, mercury toxicity leads to increased serum and urinary epinephrine and norepinephrine, causing excess stimulation of the sympathetic nervous system (similar to pheochromocytoma).  Symptoms include #diaphoresis, tachycardia, hypertension#, and #anxiety#. $• #Neuropsychiatric#:  Mercury can cross the blood-brain barrier and deposit in the CNS, specifically the cerebral cortex, leading to a range of psychiatric and motor symptoms (eg, personality changes, #insomnia, tremor#); photophobia may also be seen. $• Dermatologic:  Mercury toxicity, particularly in children, can lead to a #hypersensitivity rash# (acrodynia).  A diffuse, pruritic body rash or a desquamating, pink rash on the palms and soles is characteristic. $Exposure to mercury is usually occupational (eg, gold miner).  However, a high degree of suspicion must be maintained in children because they are typically exposed inadvertently via broken household items (eg, thermometers, lightbulbs), which may be revealed with a detailed history. $#(Choice A)#  Inhalant (eg, hydrocarbons) abuse can manifest with CNS symptoms such as agitation, but more severe symptoms (eg, ataxia, disorientation, hallucinations) are also typical and present acutely (not gradually).  In addition, the rash associated with inhalant abuse is typically perioral, unlike the truncal and palmar rashes seen in this patient. $#(Choice B)#  Tremor, psychiatric symptoms (eg, depression), and hypertension can be symptoms of chronic lead exposure.  However, this patient's diaphoresis and desquamating dermatitis make this diagnosis unlikely. $#(Choice C)#  Marijuana toxicity can result in acute psychosis or chronically, cannabis hyperemesis syndrome or respiratory disease.  Profound diaphoresis and desquamating rash are not expected. $#(Choice E)#  Selenium toxicity typically manifests as gastrointestinal disturbance (eg, nausea, diarrhea) and hair/nail loss; catecholaminergic manifestations (eg, hypertension, tachycardia, diaphoresis) are not expected. $#Educational objective# Mercury impairs the breakdown of catecholamines, and toxicity can lead to excessive stimulation of the sympathetic nervous system (eg, tachycardia, hypertension, diaphoresis).  A desquamating hypersensitivity rash can also occur, and deposition in the CNS can result in personality changes, insomnia, and tremor.  "
+  
+}
+,
+
+
+{
+  "id": "19108",
+  "title": "A 67-year-old man is brought to the hospital after he developed sudden-onset altered mental status.  The patient was taking care of some yardwork alongside his 17-year-old grandson during a hot summer day.  The grandson does not have any symptoms.  On examination, the patient's temperature is 41 C (105.8 F), blood pressure is 90/60 mm Hg, pulse is 120/min, and respirations are 24/min.  Examination shows warm and dry skin.  The patient is not oriented to time, place, or person.  Deep tendon reflexes and muscle tone are normal.  Which of the following findings in this patient most likely explains why the patient developed symptoms while his grandson remained asymptomatic?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Decreased effective epidermal area available for heat transfer",  
+  "answer_2": "B. Decreased vasodilation of the splanchnic vasculature",  
+  "answer_3": "C. Increased heat transfer to the skin due to reduced subcutaneous fat",  
+  "answer_4": "D. Increased number of sweat glands",  
+  "answer_5": "E. Increased peripheral vasodilation of the skin",  
+  "percent_1": "42%",  
+  "percent_2": "21%",  
+  "percent_3": "21%",  
+  "percent_4": "2%",  
+  "percent_5": "14%",  
+  "right_answer": "A. Decreased effective epidermal area available for heat transfer",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Causes of heat intolerance#∆⨉ §^#Functional# ∆ • Deconditioning/poor physical fitness • Lack of acclimation to elevated ambient temperatures • Reduced skin surface-to-body mass ratio (eg, obesity, high muscle volume, elderly patients) • Aging-related tonic vasoconstriction of peripheral vasculature • Inherited sweat gland dysfunction §^#Acquired# ∆ • Drugs/medications (eg, stimulants, anticholinergics, diuretics, alcohol) • Dehydration • Large areas of scarring (eg, due to burns)",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This elderly patient developed hyperthermia and altered mental status while working outside on a hot summer day.  This presentation suggests exertional #heat stroke#, a life-threatening multisystem disorder characterized by #hyperthermia# (typically >40 C [104 F]) associated with #central nervous system dysfunction# (eg, encephalopathy, as seen in this disoriented patient).  Other classic manifestations of heat stroke include tachycardia, tachypnea, hypotension, flushing, and end-organ dysfunction (eg, pulmonary edema, renal or hepatic failure).  Diaphoresis may or may not be present on examination, depending on hydration status. $Normal thermoregulatory response to elevated temperatures include increased sweating and increased cardiac output.  Furthermore, there is significant peripheral vasodilation and splanchnic vasoconstriction, which shunts blood to the periphery to aid with heat transfer.  However, #elderly# patients are at particularly high risk of developing heat-related illness due to several features of normal aging that impair this response, including: $• Tonic contraction of the peripheral vasculature, which limits heat transfer to the skin $• #Reduced sweat gland density#, which limits the ability to dissipate heat via evaporation $• Loss of rete pegs and dermal capillaries, which #reduces the effective epidermal area available for heat transfer# $In addition, many elderly patients have medical conditions (eg, congestive heart failure) or are taking medications that may limit cardiac output (eg, beta blockers), diaphoresis (eg, anticholinergics), or blood volume available for heat transfer (eg, diuretics). $#(Choices B and E)#  Appropriate responses to elevated temperature include decreased vasodilation (ie, vasoconstriction) of the splanchnic vasculature, which promotes blood flow from the internal organs to the skin, and peripheral vasodilation, which allows for heat dissipation. $#(Choice C)#  Loss of subcutaneous fat also often occurs with aging and reduces the ability to retain heat and allows increased heat transfer to the skin; however, this promotes cooling (and places elderly patients at increased risk for hypothermia). $#(Choice D)#  An increased number of sweat glands would promote cooling in patients with hyperthermia; however, sweat glands are typically reduced with aging, not increased. $#Educational objective# Elderly patients are at increased risk of developing heat-related illness due to several features of normal aging that impair normal thermoregulatory mechanisms, including tonic contraction of the peripheral vasculature, reduced sweat gland density, and reduced effective epidermal area available for heat transfer.  "
+  
+}
+,
+
+
+{
+  "id": "19088",
+  "title": "A 45-year-old woman is brought to the hospital after she collapsed during an airshow on a hot summer day.  The patient has a history of fibromyalgia and takes amitriptyline.  Temperature is 40.5 C (104.9 F), blood pressure is 90/60 mm Hg, pulse is 110/min, and respirations are 22/min.  The skin is warm and red.  She is disoriented.  Neurologic examination shows no focal findings.  If this patient's medication contributed to her current condition, which of the following mechanisms is most likely responsible?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Impaired cardiovascular response to heat stress",  
+  "answer_2": "B. Impaired dissipation of body heat",  
+  "answer_3": "C. Impaired dopamine transmission by hypothalamic neurons",  
+  "answer_4": "D. Increased heat production by increasing muscle tone",  
+  "answer_5": "E. Increased peripheral vasoconstriction",  
+  "percent_1": "14%",  
+  "percent_2": "56%",  
+  "percent_3": "8%",  
+  "percent_4": "9%",  
+  "percent_5": "13%",  
+  "right_answer": "B. Impaired dissipation of body heat",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp19088.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient developed severe hyperthermia and encephalopathy while spending time outside on a hot summer day.  This presentation is suggestive of #nonexertional heat stroke# (NHS), a life-threatening multisystem disorder characterized by #hyperthermia# (typically #>40 C [104 F]#) associated with #CNS dysfunction# (eg, encephalopathy, syncope).  Other classic manifestations of heat stroke include tachycardia, tachypnea, hypotension, flushing, and end-organ dysfunction (eg, pulmonary edema, renal/hepatic failure).  Diaphoresis may or may not be present on examination, depending on hydration status and sweat gland function. $The body normally maintains a core temperature of ~37 C (98.6 F) through multiple #thermoregulatory mechanisms# controlled by the anterior hypothalamus; excessive temperature stimulates diaphoresis, peripheral vasodilation, and behavioral changes (eg, seeking shade).  However, certain #medications can interfere# with these processes, thereby promoting hyperthermia.  These medications include the following: $• #Anticholinergics# (eg, #amitriptyline#, scopolamine) #inhibit diaphoresis#, limiting the body's primary mechanism of heat dissipation. $• Sympathomimetics (eg, amphetamines, cocaine) impair peripheral vasodilation, limiting heat transfer to the skin #(choice E).# $• Dopaminergic antagonists (eg, chlorpromazine, haloperidol) disrupt hypothalamic thermoregulation, likely by blocking dopamine transmission in the hypothalamus #(choice C).# $• Diuretics (eg, furosemide) and beta blockers (eg, metoprolol) limit the cardiac response to heat stress by reducing blood volume or heart rate, thereby decreasing blood flow to the skin #(choice A).# $#(Choice D)#  Malignant hyperthermia is a rare autosomal dominant disorder that occurs due to uncontrolled efflux of calcium from the sarcoplasmic reticulum, resulting in increasing muscle tone (eg, myoclonus, rigidity) and hyperthermia.  However, it typically occurs after administration of certain anesthetics (eg, halothane, succinylcholine), not tricyclic antidepressants. $#Educational objective# Nonexertional heat stroke (NHS) is a life-threatening disorder characterized by hyperthermia (typically >40 C [104 F]) associated with CNS dysfunction (eg, encephalopathy, syncope).  Anticholinergic medications promote heat stroke by impairing diaphoresis.  Other medications associated with NHS include sympathomimetics, dopamine antagonists, diuretics, and beta blockers.  "
+  
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Physiology-Poisoning",
+  "id": "19079",
+  "title": "A 65-year-old homeless man is brought to the hospital after he is found wandering the streets during a cold winter day.  The patient appears confused and has slurred speech.  He has no chronic medical conditions and takes no medications.  On examination, his temperature is 32 C (89.6 F).  Cardiopulmonary examination is normal.  No focal neurologic deficits are present.  Toxicology screen is negative for any substances.  Which of the following physiologic adaptations is most likely occurring in this patient to help maintain homeostasis?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Decreased catecholamine release",
+  "answer_2": "B. Decreased metabolic rate",
+  "answer_3": "C. Decreased muscle tone",
+  "answer_4": "D. Increased parasympathetic activity",
+  "answer_5": "E. Increased peripheral vasoconstriction",
+  "percent_1": "1%",
+  "percent_2": "12%",
+  "percent_3": "1%",
+  "percent_4": "2%",
+  "percent_5": "85%",
+  "right_answer": "E. Increased peripheral vasoconstriction",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp19079.jpg",
+  "explanation_1": "",
+  "explanation_2": "$The body maintains its core temperature in a tightly controlled process known as #thermoregulation#.  In a normal state, body temperature is maintained between 36.5-37.5 C (97.7-99.5 F) via #anterior hypothalamic control#.  Afferent signals (from central and peripheral thermal receptors) are interpreted by the hypothalamus, which promotes temperature homeostasis through alterations in the autonomic nervous system as well as the thyroid and adrenal axes. $#Hypothermia#, defined as a core body temperature <35 C, occurs when the body loses more heat than it generates.  It most commonly occurs due to cold exposure but may also occur due to endocrine disorders (eg, hypothyroidism), skin disorders (eg, burns), abnormal autonomic function (eg, peripheral neuropathies, stroke, spinal cord injury), or drugs that promote vasodilation (eg, alcohol) or impair sympathetic response (eg, beta blockers). $The following physiologic adaptations occur in patients with hypothermia: $• #Increased sympathetic activity# (catecholamine release): promotes #peripheral vasoconstriction# and results in shunting of blood away from the skin.  It also #increases muscle tone# and brown fat metabolism #(choices A and C)#. $• #Shivering:# rapid involuntary muscle contractions that increase muscle metabolism, generating heat as a byproduct. $• #Increased thyroid function:# prolonged cold exposure leads to increased production of thyroid hormone, which increases basal metabolic rate. $These actions promote normalization of body temperature by reducing heat loss and #increasing metabolic rate# (heat generation) #(choice B).# $#(Choice D)#  The sympathetic, not the parasympathetic nervous system, is responsible for the physiologic adaptations in hypothermia.  Most blood vessels do not have parasympathetic innervation; therefore, an increase in parasympathetic activity would not have significant effect on vascular tone. $#Educational objective# The hypothalamus controls thermoregulation by promoting alterations in the autonomic nervous system and the adrenal and thyroid axes.  Physiologic adaptations in response to hypothermia include increased sympathetic activity and thyroid hormone release, shivering, and peripheral vasoconstriction.  These actions normalize body temperature by reducing heat loss and increasing metabolic rate (promoting thermogenesis).  "
+  
+}
+,
+
+
+{
+  "id": "1361",
+  "title": "A 4-year-old boy is brought to the hospital after several episodes of vomiting.  The boy's mother reports that he was playing at a local park prior to the onset of illness.  While cleaning him after the first episode of emesis, she found several small brown mushrooms clenched in his hands and brought samples with her.  The boy is otherwise healthy and takes no medications.  He is intubated due to somnolence and admitted to the intensive care unit.  Analysis of the mushroom samples determines that the main poison stimulates muscarinic receptors.  Which of the following is the most direct effect of this poison?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Detrusor muscle relaxation",
+  "answer_2": "B. Increased myocardial contractility",
+  "answer_3": "C. Kidney renin release",
+  "answer_4": "D. Nitric oxide synthesis",
+  "answer_5": "E. Pupillary dilation",
+  "answer_6": "F. Reduced salivation",
+  "percent_1": "26%",
+  "percent_2": "6%",
+  "percent_3": "4%",
+  "percent_4": "42%",
+  "percent_5": "16%",
+  "percent_6": "7%",
+  "right_answer": "D. Nitric oxide synthesis",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Characteristics of muscarinic acetylcholine receptors# ∆⨉∆⨉∆⨉ §^#Receptor# ∆^#Target $organ(s)# ∆^#Effect of stimulation# ∆^#Effect of inhibition# §^#M1# ∆^Brain ∆^Memory formation/cognitive $functioning ∆^Confusion §^#M2# ∆^Heart ∆^Decreased heart rate & atrial $contraction ∆^Increased heart rate & $contractility §^#M3# ∆^Peripheral$ vasculature ∆^Smooth muscle relaxation, $vasodilation, hypotension ∆^Smooth muscle contraction,$ vasoconstriction, hypertension §↕ ∆^Lungs ∆^Bronchoconstriction ∆^Bronchodilation §↕ ∆^Bladder ∆^Detrusor contraction ∆^Detrusor relaxation, urinary$ retention §↕ ∆^Eyes ∆^Pupillary sphincter muscle $contraction (miosis), ciliary muscle$ contraction (accommodation) ∆^Mydriasis, cycloplegia, may$ precipitate acute angle $glaucoma in elderly patients §↕ ∆^Gastrointestinal$ tract ∆^Increased peristalsis, increased $salivary & gastric secretions ∆^Constipation, dry mouth,$ decreased acid production §↕ ∆^Skin ∆^Increased sweat production ∆^Increased temperature$ (from decreased sweating),",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "Muscarine, a toxin found in certain mushrooms, acts as a #muscarinic (M) agonist# in place of acetylcholine, resulting in an #increase in parasympathetic nervous system activity#.  The M2 and M3 subtype receptors are responsible for most of the toxicities seen in patients. $Although the walls of peripheral blood vessels lack cholinergic innervation, M3 receptors are present on the #endothelial# surface.  Activation of M3 receptors promotes #synthesis of nitric oxide# (NO), an endothelium-derived relaxing factor.  NO diffuses into @vascular smooth muscle cells@, activating guanylate cyclase and increasing intracellular cyclic-GMP.  Increased levels of cyclic-GMP activate #myosin light chain phosphatase#, which dephosphorylates myosin and prevents interaction of the myosin head with actin, resulting in #smooth muscle relaxation# and #vasodilation#.  Vasodilation results in hypotension, with persistently low blood pressure leading to somnolence due to inadequate cerebral perfusion. $In contrast, activation of M3 receptors in other sites leads to a G-protein-coupled increase in intracellular calcium, resulting in smooth muscle contraction.  Clinically, this contraction manifests as detrusor bladder muscle contraction #(choice A),# pupillary constriction or miosis #(choice E),# and exocrine gland secretion (eg, salivation) #(choice F).# $#(Choice B)#  M2 receptors are predominantly found in cardiac muscle.  Activation of M2 receptors leads to a G-protein-coupled decrease in intracellular cyclic-AMP and opens potassium channels to slow depolarization.  This combination results in decreased inotropy (less contractility) and chronotropy (decreased heart rate). $#(Choice C)#  Juxtaglomerular cells in the kidney release renin in response to decreased renal perfusion pressure.  A muscarinic agonist would not have a direct effect on renin release, although the peripheral vasodilation and bradycardia might indirectly lead to renin release. $#Educational objective# Activation of muscarinic receptors by acetylcholine or cholinergic agonists results in peripheral vasodilation due to synthesis of nitric oxide in endothelial cells, which leads to vascular smooth muscle relaxation (eg, hypotension).  Muscarinic receptor activation in other sites causes smooth muscle contraction.  ",
+  "clickable_1":"images/img1.1361.jpg"
+  
+
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Biochemistry-Poisoning",
+  "id": "8482",
+  "title": "A 24-year-old man comes to emergency department complaining of abdominal pain, vomiting, and severe watery diarrhea.  He recently returned from a camping trip and admits to eating wild mushrooms that he collected in the woods.  His past medical history is insignificant and he takes no medications.  He does not use illicit drugs.  On physical examination, he is ill-appearing and jaundiced.  His liver edge is soft, tender, and palpable 4 cm below the right costal margin.  Laboratory tests are significant for elevated levels of alanine aminotransferase, aspartate aminotransferase, and bilirubin.  Synthesis of which of the following is most likely to be directly inhibited by the responsible toxin?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. DNA",
+  "answer_2": "B. Messenger RNA",
+  "answer_3": "C. Protein",
+  "answer_4": "D. Ribosomal RNA",
+  "answer_5": "E. Transfer RNA",
+  "percent_1": "6%",
+  "percent_2": "42%",
+  "percent_3": "28%",
+  "percent_4": "19%",
+  "percent_5": "4%",
+  "right_answer": "B. Messenger RNA",
+
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Products of eukaryotic RNA polymerases#∆⨉ §^#RNA polymerase# ∆^#Major RNA product# §RNA polymerase I ∆Ribosomal RNA §RNA polymerase II ∆Messenger RNA §RNA polymerase III ∆Transfer RNA",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "Amatoxins are found in a variety of poisonous mushrooms (eg, Amanita phalloides, known as death cap) and are responsible for the majority of mushroom poisoning fatalities worldwide.  Ingestion of 1 or more amatoxin-containing mushrooms is a life-threatening emergency.  After absorption by the gastrointestinal tract, amatoxins are transported to the liver via the portal circulation where active transport by organic anion transporting polypeptide (OATP) and sodium taurocholate co-transporter (NTCP) concentrates the toxin within the liver cells.  There, amatoxins bind to DNA-dependent RNA polymerase type II and halt mRNA synthesis, ultimately resulting in apoptosis.  Other organ systems with rapid cellular turnover can also be affected in amatoxin poisoning, including the gastrointestinal tract and proximal convoluted renal tubules. $Symptoms typically start 6-24 hours after ingestion and include abdominal pain, vomiting, and severe, cholera-like diarrhea that may contain blood and mucus.  Severe poisoning can lead to acute hepatic and renal failure.  Urine testing for α-amanitin can confirm suspected amatoxin poisoning. $#(Choice A)#  Acyclovir and related drugs (eg, famciclovir and valacyclovir) are inhibitors of viral DNA polymerase. $#(Choice C)#  Ricin (from the castor oil plant Ricinus communis) is a potent toxin that inhibits protein synthesis by cleaving the rRNA component of the eukaryotic 60S subunit. $#(Choice D)#  The only function of RNA polymerase I is to transcribe the majority of the eukaryotic ribosomal RNA components.  RNA polymerase I is insensitive to amatoxins. $#(Choice E)#  Eukaryotic RNA polymerase III transcribes transfer RNA, 5S ribosomal RNA, and other small RNA molecules.  It is only weakly affected by amatoxins. $#Educational objective# Amatoxins are found in a variety of poisonous mushrooms (eg, Amanita phalloides, known as death cap) and are potent inhibitors of RNA polymerase II (halting mRNA synthesis).  "
+  
+}
+,
+
+
+{
+  "id": "1454",
+  "title": "An 18-month-old boy is brought to the office due to language regression.  He said several words at his 1-year appointment but now no longer speaks any words at all.  His moods have also become more unpredictable over the past 4 months with frequent tantrums.  The parents tried to bring him in sooner for evaluation, but they live in an impoverished part of the city and experienced financial difficulties with transportation to the office.  On physical examination, the boy is quiet and maintains appropriate eye contact throughout the visit.  Hemoglobin is 9 g/dL.  Which of the following enzymes is most likely inhibited in this patient?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. δ-Aminolevulinate dehydratase",
+  "answer_2": "B. Bilirubin glucuronyl transferase",
+  "answer_3": "C. Porphobilinogen deaminase",
+  "answer_4": "D. Pyruvate kinase",
+  "answer_5": "E. Uroporphyrinogen decarboxylase",
+  "percent_1": "61%",
+  "percent_2": "6%",
+  "percent_3": "16%",
+  "percent_4": "8%",
+  "percent_5": "9%",
+  "right_answer": "A. δ-Aminolevulinate dehydratase",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp1454.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This child's language regression and anemia are most likely due to lead poisoning.  #Lead toxicity# is most prevalent among #impoverished children# residing in deteriorating urban #housing built before 1978#.  Young children are particularly susceptible to lead poisoning via inhalation and ingestion of lead-based paint dust or chips due to normal crawling and mouthing behaviors.  The incomplete blood-brain-barrier in children is vulnerable to the #neurotoxic# effects of lead, which include long-standing behavioral problems and developmental delay or regression. $#Anemia# in lead poisoning results from inhibition of #ferrochelatase# and #δ-aminolevulinic acid (ALA) dehydratase# in the heme biosynthesis pathway.  Because protoporphyrin IX cannot combine with iron (Fe2+) to form heme due to ferrochelatase inhibition, it instead incorporates a zinc ion, leading to #elevated zinc protoporphyrin levels#.  In addition, ALA levels are increased.  Lead poisoning also commonly coexists with iron deficiency anemia, and severe lead poisoning can also induce hemolytic anemia. $#(Choice B)#  Glucuronyl transferase (uridine 5'-diphospho-glucuronosyltransferase) is necessary for hepatic bilirubin conjugation.  Gilbert syndrome, a condition marked by jaundice (elevated unconjugated bilirubin levels) during times of stress, results from mutations in the gene encoding glucuronyl transferase. $#(Choice C)#  Defects in porphobilinogen deaminase result in acute intermittent porphyria (AIP), a disorder characterized by acute attacks of abdominal pain, neuropsychiatric symptoms, and @red or brown urine@.  The chronicity of symptoms, lack of abdominal pain, and anemia make AIP unlikely in this patient. $#(Choice D)#  Pyruvate kinase deficiency is typically inherited in an autosomal recessive pattern and leads to hemolytic anemia.  Pyruvate kinase deficiency can present with pallor, scleral icterus, and splenomegaly, but it does not present with behavioral regression or language difficulties. $#(Choice E)#  Defects in uroporphyrinogen decarboxylase cause porphyria cutanea tarda (PCT), the most common form of porphyria.  Patients with PCT exhibit chronic @photosensitivity@ with blistering in areas of sun exposure and elevated levels of uroporphyrinogen in the urine. $#Educational objective# Young children who reside in homes built before 1978 are at significant risk for lead toxicity.  Lead directly inhibits ferrochelatase and δ-aminolevulinic acid (ALA) dehydratase, resulting in anemia, ALA accumulation, and elevated zinc protoporphyrin levels.  Neurotoxicity is also a significant long-term complication.  ",
+  "clickable_1":"images/img1.1454.jpg",
+  "clickable_2":"images/img2.1454.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "107167",
+  "title": "A 2-year-old boy is brought to the emergency department due to sudden-onset facial redness.  The symptoms were first noticed by the parents about 1 hour ago.  The mother also noticed an opened bottle of a vitamin supplement with a few capsules spilled on the floor.  The child has no known medical conditions and takes no medications.  Vital signs are normal.  Physical examination shows facial flushing.  The rest of the examination is unremarkable.  This patient most likely ingested a vitamin that has which of the following biochemical functions?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Coenzyme for transketolase",
+  "answer_2": "B. Coenzyme in hydroxylation of prolyl and lysyl residues",
+  "answer_3": "C. Component of coenzyme A",
+  "answer_4": "D. Precursor for flavin adenine dinucleotide production",
+  "answer_5": "E. Precursor for nicotinamide adenine dinucleotide production",
+  "percent_1": "6%",
+  "percent_2": "6%",
+  "percent_3": "10%",
+  "percent_4": "12%",
+  "percent_5": "66%",
+  "right_answer": "E. Precursor for nicotinamide adenine dinucleotide production",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "$Acute facial flushing following accidental #vitamin ingestion# is highly suggestive of #niacin (vitamin B3) toxicity#.  Niacin is a water-soluble vitamin and the precursor for #NAD# (nicotinamide adenine dinucleotide) and #NADP#, which are both cofactors for key enzymes involved in the synthesis and metabolism of carbohydrates, protein, and fatty acids. $Niacin supplementation is effective in the #treatment of hyperlipidemia#.  At high doses, niacin increases the activity of lipoprotein lipase, which promotes delivery of fatty acids to tissues for storage or metabolism.  Adverse effects of niacin include #cutaneous vasodilation,# flushing, and pruritus due to increased #prostaglandin# production in dermal Langerhans cells.  Pretreatment with nonsteroidal anti-inflammatory drugs (NSAIDs), like aspirin, prior to the administration of niacin decreases prostaglandin production and minimizes flushing. $#(Choice A)#  Thiamine (vitamin B1) is a coenzyme for @transketolase@ in the pentose phosphate pathway.  Thiamine deficiency leads to wet beriberi (cardiac failure), dry beriberi (peripheral neuropathy), and Wernicke encephalopathy (oculomotor dysfunction, ataxia, and encephalopathy); clinically relevant toxicity does not occur. $#(Choice B)#  Vitamin C is a coenzyme for the hydroxylation of prolyl and lysyl residues.  Vitamin C deficiency leads to scurvy (weakness, fatigue, easy bruising, bleeding gingivae).  Large doses of vitamin C are associated with kidney stones and false-negative stool guaiac results. $#(Choice C)#  Pantothenic acid (vitamin B5) is a component of coenzyme A, which is a cofactor for key enzymes involved in acetylation reactions; there is no known toxicity. $#(Choice D)#  Riboflavin (vitamin B2) is the precursor for flavin adenine dinucleotide (FAD) production; excess vitamin B2 is not associated with toxicity. $#Educational objective# Niacin (vitamin B3) is the precursor for NAD and NADP.  Niacin toxicity leads to increased prostaglandin production, which causes cutaneous vasodilation, flushing, and pruritus that may be avoided by pretreating with nonsteroidal anti-inflammatory drugs.  ",
+  "clickable_1":"images/img1.107167.jpg"
+  
+
+}]

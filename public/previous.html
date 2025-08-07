@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="previous.css" />
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    },
+    options: {
+      renderActions: {
+        addMenu: []
+      }
+    },
+    chtml: {
+      scale: 1.15  // Makes the equations slightly larger and sharper
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+
+  <body>
+
+
+
+      <div class="topbar">
+    <div class="topbar-left">
+    </div>
+    <div class="topbar-right">
+      <button id="fullscreen-btn" title="Toggle Fullscreen">⛶</button>
+    </div>
+  </div>
+
+
+
+
+<!-- Left Sidebar Menu -->
+<div class="sidebar" >
+  <ul class="sidebar-menu">
+    <li><a href="home.html">Home Page</a></li>
+    <li><a href="connect.html">Create exam</a></li>
+    <li><a href="#">Previous exams</a></li>
+    <li><a href="reset.html">Reset</a></li>
+    <li><a href="subscription.html">Subscription</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Main content (example) -->
+<div class="main-content">
+  <!-- Place your core app layout here -->
+
+
+<div class="page">
+
+    <table id="myTable" class="myTable">
+        <thead>
+            <tr>
+                <th>Exam Number</th>
+                <th>Questions Number</th>
+                <th>Score</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Existing rows can be added here -->
+        </tbody>
+    </table>
+    
+<div class="pagination" id="paginationControls"></div>
+
+    </div>
+
+    <div  class="buttons_container"   id="myList"></div>
+
+    <div id="sidebar-scroll"></div>
+
+<div class="review_buttons_container"   id="myReview"></div>
+ 
+</div>
+
+  
+
+<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
+<script>
+
+
+
+    document.getElementById("fullscreen-btn").addEventListener("click", () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    });
+
+
+
+
+  const db = new PouchDB('QuizAppDB');
+
+  async function saveOrUpdateDoc(id, data) {
+    try {
+      const existing = await db.get(id);
+      await db.put({ _id: id, _rev: existing._rev, data });
+    } catch (err) {
+      if (err.status === 404) {
+        await db.put({ _id: id, data });
+      } else {
+        console.error("❌ Failed to save to PouchDB:", err);
+      }
+    }
+  }
+
+  // Example use:
+  async function saveExample() {
+    await saveOrUpdateDoc("user1", { name: "Majd", score: 100 });
+    console.log("✅ Saved to PouchDB");
+  }
+
+  async function loadExample() {
+    try {
+      const doc = await db.get("user1");
+      console.log("📄 Loaded:", doc);
+    } catch (err) { 
+      console.warn("⚠️ Not found", err);
+    }
+  }
+
+
+</script>
+
+  <script type="module" src="previous.js"></script>  
+  </body>
+</html>

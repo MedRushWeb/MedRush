@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="connect.css" />
+
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    },
+    options: {
+      renderActions: {
+        addMenu: []
+      }
+    },
+    chtml: {
+      scale: 1.15  // Makes the equations slightly larger and sharper
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+  <body>
+
+
+
+      <!-- Top Bar with only fullscreen and logo -->
+  <div class="topbar">
+    <div class="topbar-left">
+<h2 class="logo">
+   <img src="icons/finallogo.png" alt="MeduRush Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+  </h2> 
+    </div>
+    <div class="topbar-right">
+      <button id="fullscreen-btn" title="Toggle Fullscreen">⛶</button>
+    </div>
+  </div>
+
+
+  
+
+<!-- Left Sidebar Menu -->
+<div class="sidebar" data-save="sidebar">
+  <ul class="sidebar-menu">
+    <li><a href="home.html">Home Page</a></li>
+    <li><a href="#">Create exams</a></li>
+    <li><a href="previous.html">Previous exams</a></li>
+    <li><a href="reset.html">Reset</a></li>
+    <li><a href="subscription.html">Subscription</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Main content (example) -->
+<div class="main-content"  data-save="main-content">
+  <!-- Place your core app layout here -->
+
+<div class="page" data-save="page">
+
+<div id="loadingScreen">
+  <div class="ripple"></div>
+  <div class="loading-text">loading questions...</div>
+</div>
+
+
+
+
+
+
+    <div class="choose-questions">
+  <div class="timing">
+
+
+  <div class="big-box">
+
+  <label  ID="test-mode" class="test-mode"> Test Mode </label>
+
+  <label for="timed" class="timedClass">
+  <input type="checkbox" id="timed" name="timed" onchange="DoTimed()" />
+  <label  ID="timed_text" > Timed </label>
+</label>
+
+</div>
+  </div>
+
+
+
+<div class="Question_mode">
+
+  <div class="big-box">
+
+  <label  ID="question-mode-text" class="question-mode-text"> Question Mode </label>
+
+  <label for="unused" class="unusedClass">
+    <input type="checkbox" id="unused" name="unused" onchange="handleCheckboxChange(this)" checked  />
+  </label>
+  <label  ID="unused_text" > Unused </label>
+  <label  ID="unused_text_remain_text" class="remain-text" > 0 </label>
+
+  <label for="incorrect" class="incorrectClass">
+    <input type="checkbox" id="incorrect" name="incorrect" onchange="handleCheckboxChange(this)" />
+  </label>
+  <label  ID="incorrect_text" > Incorrect </label>
+  <label  ID="incorrect_text_remain_text" class="remain-text" > 0 </label>
+
+
+  <label for="marked" class="markedClass">
+    <input type="checkbox" id="marked" name="marked" onchange="handleCheckboxChange(this)" />
+  </label>
+  <label  ID="marked_text" > Marked </label>
+  <label  ID="marked_text_remain_text" class="remain-text" > 0 </label>
+
+
+  <label for="all-mode" class="all-modeClass">
+    <input type="checkbox" id="all-mode" name="all-mode" onchange="handleCheckboxChange(this)" />
+  </label>
+  <label  ID="all_mode_text" > All </label>
+  <label  ID="all_mode_text_remain_text" class="remain-text" > 0 </label>
+
+
+  <label for="custom-mode" class="custom-modeClass">
+    <input type="checkbox" id="custom-mode" name="custom-mode" onchange="handleCheckboxChange(this)" />
+  </label>
+  <label  ID="custom_mode_text" > Custom </label>
+
+
+
+</div>
+
+</div>
+
+
+<div id="textBoxContainer" style="margin: 20px; display: none;">
+    <input type="text" id="userInput" placeholder="enter id numbers seperated by a comma ..." style="width: 350px; padding: 8px; font-size: 16px;">
+    <br><br>
+</div>
+
+  
+  
+  <!-- 🔷 Group A Section -->
+<div class="box">
+
+  <h2>Choose Subjects</h2>
+ 
+ 
+   <div class="big-box">
+
+ 
+  <div class="group-label-A">
+    <label><input type="checkbox" id="allGroupA"> All Subjects <span id="countAllA"  class="count-style"  >0</span></label>
+    <span id="selectedCount">Selected: 0</span>
+  </div>
+
+  <hr class="section-divider">
+
+  <div id="groupA-container" class="two-column-container">
+  <div id="groupA-left" class="column"></div>
+  <div id="groupA-right" class="column"></div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<!-- 🔶 Group B Section -->
+<div class="box">  
+  
+  <h2>Choose Systems</h2>
+
+    <div class="big-box">
+
+  <div class="group-label">
+    <label><input type="checkbox" id="groupB_all"> All Systems <span id="overlapgroupB_all"      class="count-style" >0</span></label>
+      <span id="selectedCountB">Selected: 0</span>
+
+  </div>
+
+    <hr class="section-divider">
+
+
+  <div class="box_left">
+  <!-- Group B1 -->
+  <div class="group-label" style="justify-content: flex-start; gap: 10px;">
+    <label>
+      <input type="checkbox" id="groupB1"> Allergy & Immunology <span id="overlapgroupB1"     class="count-style">0</span>
+    </label>
+    <span  onclick="toggleSubgroups('groupB1')" id="groupB1-arrow" class="toggle-sign"> <img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+  </div>
+  <div id="groupB1-subgroups" class="subgroup-box" style="display: none;"></div>
+
+  <!-- Group B2 -->
+  <div class="group-label" style="justify-content: flex-start; gap: 10px;">
+    <label>
+      <input type="checkbox" id="groupB2"> Dermatology <span id="overlapgroupB2"    class="count-style">0</span>
+    </label> 
+    <span  onclick="toggleSubgroups('groupB2')" id="groupB2-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+  </div>
+  <div id="groupB2-subgroups" class="subgroup-box" style="display: none;"></div>
+
+  <!-- Group B3 -->
+  <div class="group-label" style="justify-content: flex-start; gap: 10px;">
+    <label>
+      <input type="checkbox" id="groupB3"> Cardiovascular System <span id="overlapgroupB3"     class="count-style" >0</span>
+    </label>
+    <span  onclick="toggleSubgroups('groupB3')" id="groupB3-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+  </div>
+  <div id="groupB3-subgroups" class="subgroup-box" style="display: none;"></div>
+
+ <!-- Group B4 -->
+ <div class="group-label" style="justify-content: flex-start; gap: 10px;">
+  <label>
+    <input type="checkbox" id="groupB4"> Pulmonary & Critical Care <span id="overlapgroupB4"   class="count-style">0</span>
+  </label>
+  <span  onclick="toggleSubgroups('groupB4')" id="groupB4-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB4-subgroups" class="subgroup-box" style="display: none;"></div>
+
+
+    <!-- Group B5 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+  <label>
+    <input type="checkbox" id="groupB5"> Gastrointestinal & Nutrition <span id="overlapgroupB5"   class="count-style" >0</span>
+  </label>
+  <span  onclick="toggleSubgroups('groupB5')" id="groupB5-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB5-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+
+          <!-- Group B6 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+  <label>
+    <input type="checkbox" id="groupB6"> Hematology & Oncology <span id="overlapgroupB6"    class="count-style">0</span>
+  </label>
+  <span  onclick="toggleSubgroups('groupB6')" id="groupB6-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB6-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+                <!-- Group B7 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+  <label>
+    <input type="checkbox" id="groupB7"> Renal, Urinary Systems & Electrolytes <span id="overlapgroupB7"    class="count-style">0</span>
+  </label>
+  <span  onclick="toggleSubgroups('groupB7')" id="groupB7-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB7-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+
+<!-- Group B8 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+  <label>
+    <input type="checkbox" id="groupB8"> Nervous System <span id="overlapgroupB8"    class="count-style"  >0</span>
+  </label>
+  <span  onclick="toggleSubgroups('groupB8')" id="groupB8-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB8-subgroups"  class="subgroup-box" style="display: none;"></div>
+      
+
+  <!-- Group B9 -->
+  <div class="group-label" style="justify-content: flex-start; gap: 10px;">
+      <label>
+        <input type="checkbox" id="groupB9"> Rheumatology/Orthopedics & Sports <span id="overlapgroupB9"    class="count-style"  >0</span>
+      </label>
+      <span  onclick="toggleSubgroups('groupB9')" id="groupB9-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+  </div>
+  <div id="groupB9-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+
+
+
+  <!-- Group B10 -->
+  <div class="group-label" style="justify-content: flex-start; gap: 10px;">
+      <label>
+        <input type="checkbox" id="groupB10"> Infectious Diseases <span id="overlapgroupB10"    class="count-style"  >0</span>
+      </label>
+      <span  onclick="toggleSubgroups('groupB10')" id="groupB10-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+  </div>
+  <div id="groupB10-subgroups"  class="subgroup-box" style="display: none;"></div>
+  
+  
+
+  <!-- Group B11 -->
+  <div class="group-label" style="justify-content: flex-start; gap: 10px;">
+      <label>
+           <input type="checkbox" id="groupB11"> Endocrine, Diabetes & Metabolism <span id="overlapgroupB11"    class="count-style"  >0</span>
+      </label>
+      <span  onclick="toggleSubgroups('groupB11')" id="groupB11-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+  </div>
+  <div id="groupB11-subgroups"  class="subgroup-box" style="display: none;"></div>  
+          
+
+  <!-- Group B12 -->
+  <div class="group-label" style="justify-content: flex-start; gap: 10px;">
+      <label>
+          <input type="checkbox" id="groupB12"> Female Reproductive System & Breast <span id="overlapgroupB12"    class="count-style"  >0</span>
+      </label>
+      <span  onclick="toggleSubgroups('groupB12')" id="groupB12-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+  </div>
+  <div id="groupB12-subgroups"  class="subgroup-box" style="display: none;"></div>  
+   
+  <!-- Group B13 -->
+  <div class="group-label" style="justify-content: flex-start; gap: 10px;">
+      <label>
+          <input type="checkbox" id="groupB13"> Male Reproductive System <span id="overlapgroupB13"    class="count-style"  >0</span>
+      </label>
+      <span  onclick="toggleSubgroups('groupB13')" id="groupB13-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+  </div>
+  <div id="groupB13-subgroups" class="subgroup-box" style="display: none;"></div>
+ 
+
+
+</div>
+  
+
+
+
+
+<div class="box_right">
+<!-- Group B14 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB14"> Pregnancy, Childbirth & Puerperium <span id="overlapgroupB14"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB14')" id="groupB14-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB14-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+
+<!-- Group B15 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB15"> Biostatistics & Epidemiology <span id="overlapgroupB15"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB15')" id="groupB15-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB15-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+
+
+<!-- Group B16 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB16"> Ear, Nose & Throat (ENT) <span id="overlapgroupB16"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB16')" id="groupB16-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB16-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+
+
+<!-- Group B17 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB17"> Psychiatric/Behavioral & Substance Use Disorder <span id="overlapgroupB17"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB17')" id="groupB17-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB17-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+
+<!-- Group B18 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB18"> Poisoning & Environmental Exposure <span id="overlapgroupB18"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB18')" id="groupB18-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB18-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+
+<!-- Group B19 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB19"> Ophthalmology <span id="overlapgroupB19"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB19')" id="groupB19-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB19-subgroups"  class="subgroup-box" style="display: none;"></div>
+<!-- Group B20 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB20"> Social Sciences (Ethics/Legal/Professional) <span id="overlapgroupB20"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB20')" id="groupB20-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB20-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+<!-- Group B21 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB21"> Miscellaneous (Multisystem) <span id="overlapgroupB21"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB21')" id="groupB21-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB21-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+<!-- Group B22 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB22"> Biochemistry (General Principles) <span id="overlapgroupB22"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB22')" id="groupB22-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB22-subgroups" class="subgroup-box" style="display: none;"></div>
+
+<!-- Group B23 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB23"> Genetics (General Principles) <span id="overlapgroupB23"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB23')" id="groupB23-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB23-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+
+<!-- Group B24 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB24"> Microbiology (General Principles) <span id="overlapgroupB24"    class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB24')" id="groupB24-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB24-subgroups" class="subgroup-box" style="display: none;"></div>
+
+<!-- Group B25 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB25"> Pathology (General Principles) <span id="overlapgroupB25"   class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB25')" id="groupB25-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB25-subgroups" class="subgroup-box" style="display: none;"></div>
+
+<!-- Group B26 -->
+<div class="group-label" style="justify-content: flex-start; gap: 10px;">
+<label>
+<input type="checkbox" id="groupB26"> Pharmacology (General Principles) <span id="overlapgroupB26"     class="count-style"  >0</span>
+</label>
+<span  onclick="toggleSubgroups('groupB26')" id="groupB26-arrow" class="toggle-sign"><img src="icons/showmore.png" alt="Toggle" style="width:15px; height:16px;"></span>
+</div>
+<div id="groupB26-subgroups"  class="subgroup-box" style="display: none;"></div>
+
+</div>
+
+
+
+
+
+
+  <div id="groupB-root"></div>
+
+
+
+
+
+<!-- Overlap Output Box -->
+<div id="overlapOutput">
+  <strong> </strong>
+  <div id="overlapContent"> </div>
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+  <!-- ✅ New Extra Output Box -->
+  <div id="extraOutputBox">
+    <div class="Ending">
+      <label  class="number_label" > Enter number of questions </label>
+      <input class="text" id="NumberOfQurstions"  />
+      <button class="start-button">Start</button>
+      </div>  </div>
+
+        </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lz-string@1.4.4/libs/lz-string.min.js"></script>
+<script>
+
+
+    document.getElementById("fullscreen-btn").addEventListener("click", () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    });
+
+
+
+
+
+    
+  const db = new PouchDB('QuizAppDB');
+
+  async function saveOrUpdateDoc(id, data) {
+    try {
+      const existing = await db.get(id);
+      await db.put({ _id: id, _rev: existing._rev, data });
+    } catch (err) {
+      if (err.status === 404) {
+        await db.put({ _id: id, data });
+      } else {
+        console.error("❌ Failed to save to PouchDB:", err);
+      }
+    }
+  }
+
+  // Example use:
+  async function saveExample() {
+    await saveOrUpdateDoc("user1", { name: "Majd", score: 100 });
+    console.log("✅ Saved to PouchDB");
+  }
+
+  async function loadExample() {
+    try {
+      const doc = await db.get("user1");
+      console.log("📄 Loaded:", doc);
+    } catch (err) { 
+      console.warn("⚠️ Not found", err);
+    }
+  }
+
+
+</script>
+
+
+
+
+
+
+<script type="module" src="connect.js"></script>  <!-- ✅ correct -->
+  </body>
+</html>

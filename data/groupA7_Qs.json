@@ -1,0 +1,1974 @@
+[
+{
+  "SubjectSystem":"Histology-Dermatology",
+  "id": "15363",
+  "title": "A 17-year-old boy comes to the office due to a facial lesion.  The patient noticed a small area of rough skin on his lower lip several weeks ago, which has progressively enlarged.  He reports no pain or itching.  The patient had eczema during early childhood but has had no other chronic medical conditions.  Vital signs are within normal limits.  Physical examination findings are shown in the @exhibit@.  There are no other skin rashes, oral lesions, or enlarged lymph nodes.  Which of the following histopathological findings are most likely present in this patient's skin lesion? ",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"images/exhibit15363.jpg",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Acantholysis and multinucleated giant epithelial cells",
+  "answer_2": "B. Epidermal hyperplasia and cytoplasmic vacuolization",
+  "answer_3": "C. Subcorneal bacterial collection and neutrophilic infiltration",
+  "answer_4": "D. Subepidermal linear complement deposits and separation",
+  "percent_1": "30%",
+  "percent_2": "60%",
+  "percent_3": "6%",
+  "percent_4": "5%",
+  "right_answer": "B. Epidermal hyperplasia and cytoplasmic vacuolization",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp15363.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient has a common #cutaneous wart# (ie, @verruca vulgaris@).  Cutaneous warts are caused by #human papillomavirus#, which also causes anogenital warts (ie, condyloma acuminata).  The virus is usually transmitted by direct contact and is most common in children, adolescents, and young adults. $Cutaneous warts typically present as #skin-colored papules# or well-circumscribed plaques.  They may also form complex @filiform lesions@.  On the palms or soles (ie, palmar, @plantar warts@), they commonly present as tender plaques or nodules that disrupt the normal skin striae. $The diagnosis of cutaneous warts is often apparent based on gross findings.  Key findings on magnified view (ie, dermoscopy) include a roughened surface and small black dots representing thrombosed capillaries.  Biopsy is usually not needed but can confirm the diagnosis in atypical cases.  Histopathologic findings include: $• #Epidermal hyperplasia# (acanthosis) with eosinophilic inclusions and keratohyaline granules $• Thickened stratum corneum (#hyperkeratosis#) $• Papilloma formation $• Perinuclear #cytoplasmic vacuolization# (@koilocytosis@) $#(Choice A)#  Intraepidermal fracturing (acantholysis) and formation of multinucleated cells are seen in @herpes simplex labialis@.  Although this condition is often found on the lips and perioral skin, it presents with acute/recurrent blisters and ulcers. $#(Choice C)#  @Impetigo@ is a gram-positive skin infection that generates a neutrophilic infiltrate.  It presents with erythema, blistering, and shallow ulcers with honey-colored crusts. $#(Choice D)#  @Bullous pemphigoid@ is an autoimmune disorder associated with antibodies against hemidesmosomes, leading to subepidermal complement activation and cleavage.  It is most common at age >60 and typically presents with pruritic plaques, erosions, and tense bullae. $#Educational objective# Cutaneous warts (ie, verruca vulgaris) are caused by human papillomavirus and typically present as rough, skin-colored papules.  If necessary, biopsy can confirm the diagnosis and shows epidermal hyperplasia, thickened stratum corneum, papilloma formation, and cytoplasmic vacuolization.  ",
+  "clickable_1":"images/img1.15363.jpg",
+  "clickable_2":"images/img2.15363.jpg",  
+  "clickable_3":"images/img3.15363.jpg",
+  "clickable_4":"images/img4.15363.jpg",
+  "clickable_5":"images/img5.15363.jpg",
+  "clickable_6":"images/img6.15363.jpg",
+  "clickable_7":"images/img7.15363.jpg"
+
+}
+,
+
+
+{
+  "id": "588",
+  "title": "A 6mm punch biopsy of normal appearing epidermis reveals stellar cells that contain intracytoplasmic granules having the shape of a tennis racquet.  These cells demonstrate some myeloid surface markers and can interact closely with T lymphocytes.  The cells described above are best referred to as which of the following?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Kupffer cells",
+  "answer_2": "B. Langerhans cells",
+  "answer_3": "C. Merkel cells",
+  "answer_4": "D. Melanocytes",
+  "answer_5": "E. Macrophages",
+  "answer_6": "F. Epithelioid cells",
+  "percent_1": "5%",
+  "percent_2": "82%",
+  "percent_3": "4%",
+  "percent_4": "3%",
+  "percent_5": "4%",
+  "percent_6": "3%",
+  "right_answer": "B. Langerhans cells",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "#Langerhans cells# (not to be confused with Langhans giant cells, a type of multinucleated cell formed from macrophages) are the form of dendritic cell most commonly found in the skin and mucous membranes.  Dendritic cells are professional #antigen presenting# cells that interact closely with T lymphocytes.  Dendritic are the most effective form of antigen presenting cell because they constitutively express MHC Class II and the co-stimulatory B7 cell surface molecules.  They also take up antigen by constant endocytosis and pinocytosis from their environment. $Langerhans cells are derived from the myeloid cell line and express #myeloid #cell surface markers.  They contain characteristic \"#racquet-shaped#\" #intracytoplasmic granules #(Birbeck granules) that are only visible on electron microscopy. $#(Choice A)#  Kupffer cells are macrophage-derived cells present in the liver that compose part of the reticuloendothelial system.  Kupffer cells lie within the hepatic sinusoids and, like any other macrophage, serve a phagocytic role in the liver. $#(Choice C)#  Merkel cells are neuroendocrine cells of the basal layer of the epidermis, often found in association with nerve projections, that play a role in perception of touch.  They are associated with a rare but highly malignant form of skin cancer known as Merkel cell carcinoma. $#(Choice D)#  Melanocytes are pigment producing cells of the epidermis that arise from the neural crest cells and migrate to the basal layer of the epidermis during embryogenesis.  They possess dendritic processes that intercalate between the remaining cells of the epidermis and facilitate the delivery of pigment-laden melanosomes from the melanocyte to the keratinocytes. $#(Choices E and F)#  Macrophages can be found in the skin, possess myeloid cell surface markers, and when stimulated, are able to produce dendrite-like extensions of their cytoplasm.  Macrophages can also differentiate into multinucleated (Langhans) giant cells and epithelioid cells in the setting of granulomatous inflammation. However, monocytes and their derivatives do not produce Birbeck granules. $#Educational objective# Langerhans cells are dendritic cells found in the skin that act as professional antigen presenting cells.  These cells are derived from the myeloid cell line and they possess characteristic racquet-shaped intracytoplasmic granules known as Birbeck granules.  "
+  
+}
+,
+
+
+{
+  "id": "20884",
+  "title": "A 15-year-old boy is brought to the clinic for a wound check.  Three weeks ago, the patient fell while skateboarding and sustained a large abrasion to the right flank.  Since his last visit, he has been showering daily and applying topical antibiotic ointment to the affected area.  Examination of the right flank shows a clean, healed wound covered in pearly pink epithelium.  The cells responsible for repopulation of this patient's epithelium are most likely to demonstrate which of the following features?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Actin-myosin-based cellular contraction",
+  "answer_2": "B. Cellular proliferation controlled by contact inhibition",
+  "answer_3": "C. Melanosome production and transfer to adjacent cells",
+  "answer_4": "D. Phagocytosis of pathogens and cellular debris",
+  "percent_1": "16%",
+  "percent_2": "62%",
+  "percent_3": "14%",
+  "percent_4": "8%",
+  "right_answer": "B. Cellular proliferation controlled by contact inhibition",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp20884.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient sustained a large flank #abrasion# that healed by secondary intention (ie, from the base upward).  This process, which occurred over 3 weeks, involved the formation of well-vascularized connective tissue (ie, granulation tissue) at the wound base and resurfacing of the wound with new epithelium (ie, reepithelialization). $Reepithelialization is triggered when injury to the skin disrupts most or all of the layers of the @epidermis@, resulting in #loss of keratinocyte-to-keratinocyte contact#.  Contact with other keratinocytes typically limits cell division and/or motility (ie, contact inhibition).  However, when this contact is lost due to injury, keratinocytes are #stimulated to replicate# and migrate until a continuous epithelial layer is restored. $From the wound edges, keratinocytes #migrate across# newly formed #granulation tissue# at the wound base and are replenished via replication of basal keratinocytes in the stratum basale.  This process continues until keratinocytes meet other keratinocytes (ie, #contact inhibition#), corresponding with #completion of reepithelization# (eg, wound covered in pearly pink epithelium).  At this point, proliferation and migration signals cease, and the stratification process begins. $#(Choice A)#  During the proliferation phase of wound healing, transforming growth factor-beta induces some fibroblasts to differentiate into myofibroblasts that produce intracellular contractile proteins (eg, actin, myosin).  Myofibroblast contraction helps decrease the size of the wound. $#(Choice C)#  Melanocytes are melanin-producing cells that reside within the stratum basale.  They are derived from neural crest cells and are distinct from basal cells (ie, keratinocyte stem cells).  Failure of melanocytes to migrate into a healing scar can lead to permanent scar hypopigmentation. $#(Choice D)#  Several immune cells, including neutrophils, macrophages, and dendritic cells, are responsible for pathogen phagocytosis during the inflammatory phase of wound healing.  Macrophages are of particular importance for clearing foreign bodies and cellular debris (eg, apoptotic neutrophils). $#Educational objective# Keratinocytes are responsible for wound reepithelization.  They migrate into the wound from its edges and are repopulated by replication within the stratum basale.  Keratinocytes continue to migrate and proliferate until they contact other similar cells, a regulatory mechanism known as contact inhibition.  ",
+  "clickable_1":"images/img1.20884.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "21262",
+  "title": "A 30-year-old man comes to the office with a rash on his left wrist for the past 3 weeks.  The rash is associated with an itching and burning sensation.  The patient has not used any new skin care products but has been wearing a watch he bought during a recent vacation.  Medical history is unremarkable, and he takes no medications.  The patient does not use recreational drugs.  Temperature is 36.9 C (98.4 F), blood pressure is 118/76 mm Hg, pulse is 64/min, and respirations are 12/min.  Skin examination findings are shown in the image below:",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/21262.jpg",
+  "title_2": "There are no other skin lesions or lymphadenopathy.  Histologic examination would most likely reveal which of the following?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Extravasated erythrocytes, siderophages, and perivascular lymphocytes",
+  "answer_2": "B. Hyperkeratosis and sawtoothed rete ridges",
+  "answer_3": "C. Intercellular epidermal edema with infiltration of lymphocytes and eosinophils",
+  "answer_4": "D. Intraepithelial cleavage, acantholysis, and sparse inflammatory infiltrate",
+  "answer_5": "E. Neutrophilic microabscesses and epidermal hyperplasia",
+  "percent_1": "6%",
+  "percent_2": "5%",
+  "percent_3": "78%",
+  "percent_4": "7%",
+  "percent_5": "3%",
+  "right_answer": "C. Intercellular epidermal edema with infiltration of lymphocytes and eosinophils",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Allergic contact dermatitis#∆⨉ §^#Pathophysiology# ∆ • Type IV hypersensitivity reaction • Common triggers: poison ivy/oak, nickel, dyes, topical medications, skin care products §^#Clinical$ presentation# ∆ • Acute: pruritic red, indurated plaques with vesicles/bullae • Chronic: lichenification, fissuring §^#Diagnosis# ∆ • Clinical findings • Patch testing for persistent cases §^#Treatment# ∆ • Avoidance of suspected allergen • Topical or systemic corticosteroid",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient has chronic #allergic contact dermatitis# (ACD), presenting with localized itching and @lichenification@ (ie, skin thickening).  #Nickel# is a common trigger and typically causes symptoms at the wrists (eg, watches), earlobes (eg, earrings), or umbilicus (eg, belt buckles).  Corrosion of metal alloys by electrolytes in sweat releases soluble metal ions that trigger a hypersensitivity reaction.  ACD is a type IV (#delayed-type#) hypersensitivity reaction occurring in 2 phases:  $1. #Sensitization:#  Cutaneous Langerhans cells take up haptens (ie, allergens) and present them to naive CD4+ and CD8+ T cells in regional lymph nodes, resulting in clonal expansion of hapten-sensitive T cells.  This phase takes 10-14 days and does not result in cutaneous lesions.  $2. #Elicitation:#  On reexposure, sensitized T cells are recruited to the dermis.  There, they release cytokines (eg, interferon gamma) that recruit additional inflammatory cells (eg, macrophages, mast cells, eosinophils), resulting in erythema and pruritus.  Dermal #edema#, caused by leaky dermal vessels, seeps into the #epidermal# intercellular spaces (@spongiosis@), pulling apart intercellular attachments and sometimes resulting in @intraepidermal vesicles@.  With persistent exposure, the lesions become thickened and less vesicular; histopathology shows epidermal hyperplasia (ie, @acanthosis@). $#(Choice A)#  Extravasated erythrocytes, siderophages, and perivascular lymphocytes are characteristic of venous stasis dermatitis, which typically occurs at the lower extremities and presents with @brown discoloration@ (hemosiderin deposition). $#(Choice B)#  Hyperkeratosis and sawtoothed rete ridges are characteristic of @lichen planus@, which presents as small pruritic, purplish, polygonal @papules@ or plaques.  It frequently occurs at the volar wrist but is typically multifocal; a large, localized plaque is atypical. $#(Choice D)#  In @pemphigus vulgaris@, autoantibodies against desmosomes lead to loss of intercellular adhesion (ie, acantholysis) and intraepithelial cleavages that manifest as @flaccid bullae@.  Unlike ACD, pemphigus vulgaris may show a sparse inflammatory infiltrate; loss of intercellular adhesion is caused by autoantibodies, not edema. $#(Choice E)#  Neutrophilic microabscesses and epidermal hyperplasia (ie, acanthosis) are characteristic of @psoriasis@, which presents as erythematous plaques with @thick scales@ typically on the extensor, not flexor, surfaces of the extremities.  Although epidermal hyperplasia is seen in chronic ACD, neutrophilic microabscesses are not expected. $#Educational objective# Allergic contact dermatitis (eg, nickel allergy) is a type IV hypersensitivity reaction characterized by epidermal intercellular edema (ie, spongiosis) and an inflammatory infiltrate (eg, lymphocytes, eosinophils).  Clinical findings can include vesicles, erythema, and pruritus for acute lesions and lichenification for chronic lesions.  ",
+  "clickable_1":"images/img1.21262.jpg",
+  "clickable_2":"images/img2.21262.jpg",  
+  "clickable_3":"images/img3.21262.jpg",
+  "clickable_4":"images/img4.21262.jpg",
+  "clickable_5":"images/img5.21262.jpg",
+  "clickable_6":"images/img6.21262.jpg",
+  "clickable_7":"images/img7.21262.jpg",  
+  "clickable_8":"images/img8.21262.jpg",
+  "clickable_9":"images/img9.21262.jpg",
+  "clickable_10":"images/img10.21262.jpg",
+  "clickable_11":"images/img11.21262.jpg"
+
+}
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Pulmonology",
+  "id": "480",
+  "title": "Fourth-year medical students are recruited for a research study assessing their ability to interpret biopsy samples obtained during routine clinical practice.  As part of the study, they are given samples of normal respiratory mucosa and asked to identify the cell types present after staining with hematoxylin and eosin.  The students observe that the respiratory epithelium changes in composition as the airways continue distally from the trachea to the alveolar ducts.  Which of the following features is last to disappear?",
+  "title_table":"", 
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Cartilage",
+  "answer_2": "B. Cilia",
+  "answer_3": "C. Goblet cells",
+  "answer_4": "D. Mucous glands",
+  "answer_5": "E. Serous glands",
+  "percent_1": "8%",
+  "percent_2": "52%",
+  "percent_3": "19%",
+  "percent_4": "11%",
+  "percent_5": "10%",
+  "right_answer": "B. Cilia",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp480.jpg",
+  "explanation_1": "",
+  "explanation_2": "$#Ciliated mucosal epithelium# lines the pulmonary airways from the trachea to the respiratory bronchioles.  The airway epithelium gradually changes from pseudostratified ciliated columnar to ciliated simple cuboidal by the level of the terminal bronchioles.  #Ciliated cells# continue to be present through the proximal portions of the #respiratory bronchioles#, but are not present in the alveolar ducts or in the alveoli themselves.  This arrangement is important because cilia function to propel mucus toward the pharynx.  The presence of cilia beyond the most distal mucus-producing cells (goblet cells end before the terminal bronchioles) prevents bronchiolar mucus accumulation and airflow obstruction. $#(Choice A)#  The rings of hyaline cartilage that encircle the trachea are replaced by cartilaginous plates in the bronchi.  These rings and plates help keep the larger airways open and end at the termination of the smallest bronchi (they are not found in bronchioles). $#(Choice C)#  Goblet cells are mucus-secreting cells that are present from the trachea down to the larger bronchioles.  They are not found within the terminal bronchioles, which are lined by club cells. $#(Choices D and E)#  The submucosal mucous glands and serous glands are found from the trachea to the distal-most bronchi and produce mucinous components that help trap inhaled particles.  They are not present within the bronchioles. $#Educational objective# Bronchi have a ciliated pseudostratified columnar epithelium with mucin-secreting goblet cells and submucosal mucoserous glands.  The airway epithelium gradually changes to ciliated simple cuboidal by the level of the terminal bronchioles.  Bronchioles lack glands and cartilage, and the number of goblet cells decreases distally, ending before the terminal bronchioles.  Ciliated epithelium persists up to the respiratory bronchioles.  "
+  
+}
+,
+
+
+{
+  "id": "524",
+  "title": "A 64-year-old man is brought to the emergency department due to worsening shortness of breath.  The patient is able to speak in short sentences only and becomes hypoxemic with minimal exertion.  His medical history includes hypertension and dyslipidemia.  He smoked a pack of cigarettes a day for 40 years and worked for 25 years as a nickel miner.  His father died of chronic respiratory failure.  While in the emergency department, he rapidly develops respiratory failure and is intubated.  Despite appropriate treatment, he dies several days later in the intensive care unit.  Autopsy is performed, and examination of the bronchi reveals thickened bronchial walls, inflammatory infiltrates, mucous gland enlargement, and patchy squamous metaplasia of the bronchial mucosa.  Which of the following factors was likely the greatest contributor to this patient's pathological findings?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Allergic",
+  "answer_2": "B. Behavioral",
+  "answer_3": "C. Genetic",
+  "answer_4": "D. Infectious",
+  "answer_5": "E. Neoplastic",
+  "answer_6": "F. Occupational",
+  "percent_1": "2%",
+  "percent_2": "65%",
+  "percent_3": "2%",
+  "percent_4": "1%",
+  "percent_5": "5%",
+  "percent_6": "25%",
+  "right_answer": "B. Behavioral",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient with respiratory failure, hypoxemia, and thickened bronchial walls with inflammatory infiltrates and mucous gland enlargement likely had #chronic bronchitis#.  Chronic bronchitis is characterized by chronic, productive cough with airflow limitation and is part of the spectrum of chronic obstructive pulmonary disease.  It is most commonly caused by #tobacco smoking#.  Chronic irritation by other inhaled environmental substances, such as air pollutants and grain, cotton, or silica dusts, can also contribute to its development.  Biopsy typically shows #thickened bronchial walls# with predominantly #lymphocytic infiltrates#, mucous gland enlargement with increased numbers of goblet cells (#increasing mucus production#), and patchy #squamous metaplasia# of the bronchial mucosa. $#(Choice A)#  Patients with allergic asthma can develop pathologic remodeling of the bronchial wall, which includes thickening of the bronchial epithelium, basement membrane, and bronchial smooth muscle as well as edema, inflammatory infiltrates, and submucosal mucous gland enlargement.  However, the infiltrates consist predominantly of eosinophils and mast cells.  In addition, although asthma is a risk factor for chronic bronchitis, smoking is a much more common cause. $#(Choice C)#  Genetic factors are not known to strongly predispose to chronic bronchitis.  Genetic mutation causing alpha-1 antitrypsin deficiency can lead to panacinar emphysema; however, chronic bronchitis is not a significant component of the disease. $#(Choice D)#  Repeated bronchial/bronchiolar bacterial and viral infections can contribute to the development of chronic bronchitis, although less significantly than can smoking.  Tobacco smoke predisposes to infection by impairing ciliary clearance and directly damaging the respiratory epithelium. $#(Choices E and F)#  Nickel is a carcinogen, and occupational exposure is associated with nasal and lung cancers.  However, neoplastic transformation itself does not contribute to the development of chronic bronchitis.  Although this patient's history of nickel mining is also suggestive of silica dust exposure, smoking is the most important risk factor for chronic bronchitis. $#Educational objective# Thickened bronchial walls, lymphocytic infiltration, mucous gland enlargement, and patchy squamous metaplasia of the bronchial mucosa are features of chronic bronchitis.  Tobacco smoking is the leading cause of chronic bronchitis.  "
+  
+}
+,
+
+
+{
+  "id": "478",
+  "title": "Physicians involved in regenerative medicine research conduct a series of animal experiments to determine pulmonary tissue regeneration capacity.  During one of the experiments, lung alveoli are exposed to NO2 and massive necrosis of the epithelial lining ensues.  Histologic examination of the injured tissues a month later shows partial recovery of the alveolar epithelial lining.  This regenerated tissue is most likely derived from which of the following cell types?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Alveolar macrophages",
+  "answer_2": "B. Ciliated epithelium",
+  "answer_3": "C. Club cells",
+  "answer_4": "D. Goblet cells",
+  "answer_5": "E. Type I pneumocytes",
+  "answer_6": "F. Type II pneumocytes",
+  "percent_1": "2%",
+  "percent_2": "1%",
+  "percent_3": "3%",
+  "percent_4": "1%",
+  "percent_5": "18%",
+  "percent_6": "75%",
+  "right_answer": "F. Type II pneumocytes",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp478.jpg",
+  "explanation_1": "",
+  "explanation_2": "$Ninety-five percent of the alveolar surface is covered by flat type I pneumocytes.  The remaining 5% is covered by interspersed cuboidal #type II pneumocytes# that make up more than half of the total number of alveolar cells.  Type II pneumocytes are the source of #pulmonary surfactant# and have the ability to #proliferate# in response to injury.  They also act as progenitor cells for type I pneumocytes, which cannot regenerate on their own #(choice E).# $#(Choice A)#  Alveolar macrophages are a self-maintaining population derived from fetal monocytes during lung development.  They are the principal cells involved in clearing inhaled foreign particles from the terminal respiratory units. $#(Choice B)#  The pseudostratified, ciliated, columnar epithelium of the tracheobronchial tree gradually tapers to become a simple ciliated cuboidal epithelium at the level of the terminal bronchioles.  Ciliated cells are absent from the lining of alveolar ducts and alveolar sacs. $#(Choice C)#  Club cells are nonciliated, secretory cells found predominantly in the terminal portions of the bronchioles.  These cells can act as a regenerative source of ciliated cells in the bronchioles. $#(Choice D)#  Goblet cells are found in the respiratory epithelium of the bronchi and larger bronchioles; they are absent from the alveolar mucosa.  Goblet cells are considered terminally-differentiated, mucin-producing cells. $#Educational objective# Type II pneumocytes have 2 important functions: regeneration of the alveolar lining following injury and surfactant production.  "
+  
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Gastrointestinal",
+  "id": "324",
+  "title": "A 14-month-old girl is brought to the office due to a 2-month history of diarrhea.  Her parents report that she has 3-5 loose, nonbloody bowel movements daily with occasional episodes of vomiting.  She was breastfed exclusively until age 9 months and has since had a well-varied diet including whole milk, fruits, vegetables, bread, and meats.  However, the girl has been less interested in food over the past several weeks.  There is no history of travel or contacts with similar symptoms.  On physical examination, the patient appears well but has lost 1.1 kg (2.5 lb) in the last 2 months.  After laboratory evaluation, duodenal biopsy findings are shown in the @exhibit@.  Which of the following would most likely improve this patient's symptoms? ",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"images/exhibit324.jpg",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Acid reduction therapy",
+  "answer_2": "B. Anti-inflammatory medications",
+  "answer_3": "C. Antibiotic therapy",
+  "answer_4": "D. Enzyme supplementation",
+  "answer_5": "E. Modified dairy diet",
+  "answer_6": "F. Modified grain diet",
+  "percent_1": "2%",
+  "percent_2": "8%",
+  "percent_3": "3%",
+  "percent_4": "4%",
+  "percent_5": "8%",
+  "percent_6": "76%",
+  "right_answer": "F. Modified grain diet",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp324.jpg",
+  "explanation_1": "",
+  "explanation_2": "$#Celiac disease# is a chronic malabsorptive disorder caused by a #hypersensitivity to gluten#, a protein found in wheat, barley, and rye.  Gliadin (a gluten component) triggers an immune-mediated reaction causing #villous atrophy, crypt hyperplasia#, and @intraepithelial lymphocyte infiltration@.  Normal intestinal villi allow for increased small intestinal surface area to begin the process of digestion and nutrient absorption.  The atrophy in celiac disease causes impairment of nutrient absorption in the duodenum and proximal jejunum, regions where the concentration of gluten is the highest. $Classic celiac disease presents after introduction of gluten into the diet (between age 6-24 months) with symptoms of malabsorption (eg, diarrhea, steatorrhea, flatulence, nutrient deficiencies, weight loss).  Other manifestations include delayed puberty and short stature in children and anemia in adults.  Screening is with serology testing for elevated IgA anti-endomysial and #anti-tissue transglutaminase antibodies#; diagnosis is confirmed by endoscopic biopsy.  With strict adherence to a #gluten-free diet#, symptom resolution occurs within weeks and is followed by normalization of histology and antibody levels. $#(Choice A)#  Mild gastroesophageal reflux is physiologic in healthy infants, but it can lead to irritability, poor feeding, and inadequate weight gain when severe.  The diagnosis is often made clinically and can be treated with conservative changes (eg, smaller feedings) and acid suppression (eg, proton pump inhibitor).  Refractory cases may require biopsy, which shows esophageal inflammation. $#(Choice B)#  Anti-inflammatory medications (eg, glucocorticoids, aminosalicylates) are the mainstay of treatment for inflammatory bowel disease (ulcerative colitis [UC] and Crohn disease [CD]).  Symptoms include abdominal pain, bloody diarrhea, and weight loss.  Colonoscopy may show diffuse colonic inflammation in UC and focal areas of small intestinal and colonic inflammation in CD. $#(Choice C)#  Tropical sprue can occur with extended travel to the tropics and presents with chronic diarrhea, abdominal pain, and flatulence along with similar histologic findings to celiac disease (eg, villous atrophy).  The etiology is likely infectious, and the disease is treated with antibiotics.  However, this patient has no history of travel. $#(Choices D and E)#  Lactase supplementation or limited lactose intake is recommended for patients with lactose intolerance, which classically presents in older children and adults with bloating, flatulence, abdominal discomfort, and diarrhea.  Although biopsy is not indicated for diagnosis, histology would show normal small intestinal architecture with decreased lactase activity. $#Educational objective# Celiac disease (gluten-sensitive enteropathy) classically presents between age 6-24 months with abdominal pain, diarrhea, vomiting, and weight loss.  Duodenal biopsy reveals crypt hyperplasia, villous atrophy, and intraepithelial lymphocyte infiltration.  Treatment with a gluten-free diet resolves symptoms and normalizes serology and histology.  ",
+  "clickable_1":"images/img1.324.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "124",
+  "title": "A 65-year-old woman comes to the emergency department with progressive fatigue and lower-extremity paresthesias.  Medical history is otherwise insignificant and the patient takes no medications.  Laboratory studies show a mean corpuscular volume of 112 fL.  Upper gastrointestinal endoscopy shows atrophic mucosa in the gastric body and fundus and a normal-appearing antrum.  Destruction of which of the following gastric layers is most likely responsible for this patient's symptoms?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/124.jpg",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. A",
+  "answer_2": "B. B",
+  "answer_3": "C. C",
+  "answer_4": "D. D",
+  "percent_1": "49%",
+  "percent_2": "43%",
+  "percent_3": "6%",
+  "percent_4": "2%",
+  "right_answer": "A. A",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp124.jpg",
+  "explanation_1": "",
+  "explanation_2": "$The combination of lower-extremity paresthesias, macrocytic red blood cells (RBCs), and gastric body and fundal atrophy is highly suggestive of #pernicious anemia# (PA).  PA is an autoimmune disorder caused by the cell-mediated #destruction of parietal cells#, @pink cells@ found predominantly in the #upper glandular layer# of the gastric body and fundus.  Over time, progressive parietal cell destruction leads to chronic atrophic gastritis (ie, autoimmune gastritis), characterized histologically by a CD4-predominate inflammatory infiltrate, @oxyntic gland@ atrophy, and intestinal metaplasia (ie, normal stomach epithelia replaced by intestinal epithelium with goblet cells). $Parietal cells are responsible for the secretion of hydrochloric acid and intrinsic factor, a glycoprotein that is involved in the absorption of B12 (cobalamin, an essential nutrient).  After a critical number of parietal cells are destroyed and hepatic stores of cobalamin are depleted, patients #develop B12 deficiency#.  This results in a #megaloblastic anemia#, characterized by macro-ovalocytes (elevated mean corpuscular volume, oval-shaped RBCs) and hypersegmented neutrophils.  Patients also develop neurologic dysfunction due to demyelination of the dorsal and lateral spinal tracts, resulting in #paresthesias and ataxia#. $#(Choice B)#  In contrast to the parietal cell-rich superficial gastric glands, the deeper region of the gastric oxyntic glands has a preponderance of small, basophilic, granular chief cells that synthesize and secrete pepsinogen. $#(Choice C)#  This region contains the muscularis mucosae, which separates the lamina propria from the submucosa. $#(Choice D)#  This region contains the submucosa, which consists of well-vascularized connective tissue. $#Educational objective# Pernicious anemia is an autoimmune disorder caused by the cell-mediated destruction of parietal cells in the superficial upper glandular layer of the gastric body and fundus.  Parietal cells are responsible for the secretion of hydrochloric acid and intrinsic factor, a glycoprotein involved in the absorption of B12.  Deficiency leads to megaloblastic anemia and neurologic dysfunction.  ",
+  "clickable_1":"images/img1.124.jpg",
+  "clickable_2":"images/img2.124.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "15024",
+  "title": "A 62-year-old man comes to the office for the evaluation of jaundice.  Medical history is significant for uncontrolled type 2 diabetes mellitus and morbid obesity.  He does not use tobacco, alcohol, or illicit drugs.  There is no family history of liver disease.  Vital signs are within normal limits.  BMI is 47 kg/m2.  Mild scleral icterus is present.  Heart and lung sounds are normal.  The abdomen is nontender and nondistended.  Trace bilateral lower extremity edema is present.  Laboratory studies reveal elevated transaminases.  A liver biopsy is obtained, and trichrome staining shows the following:",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/15024.jpg",
+  "title_2": "Which of the following cells is directly responsible for the histologic finding indicated by the arrow?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Cholangiocytes",
+  "answer_2": "B. Hepatocytes",
+  "answer_3": "C. Kupffer cells",
+  "answer_4": "D. Sinusoidal endothelial cells",
+  "answer_5": "E. Stellate (Ito) cells",
+  "percent_1": "3%",
+  "percent_2": "5%",
+  "percent_3": "19%",
+  "percent_4": "9%",
+  "percent_5": "65%",
+  "right_answer": "E. Stellate (Ito) cells",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Primary cells of the liver#∆⨉ §^#Cell type# ∆^#Function# §^#Cholangiocyte# ∆ • Bile duct epithelial cell • Transports solutes and electrolytes into bile §^#Hepatocyte# ∆ • Protein, cholesterol & bile synthesis, gluconeogenesis • Drug and fatty acid metabolism §^#Kupffer cell# ∆ • Macrophages within hepatic sinusoids • Phagocytosis of bacteria and RBCs §^#Stellate cell# ∆ • Quiescent phase: vitamin A storage • Activated phase: transform into myofibroblast to secrete collagen (primary cell involved in hepatic fibrosis) %#RBC# = red blood cell.",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient with diabetes mellitus and morbid obesity has #hepatic cirrhosis#, likely due to long-standing nonalcoholic fatty liver disease (NAFLD).  Cirrhosis is the end stage of multiple liver diseases and is characterized by replacement of normal lobular architecture with regenerating nodules separated by bridging fibrous septa. $@Cirrhosis@ can be visualized histologically as #thickened collagenous bands# (which stain blue with Masson trichrome stain) separating clusters of hepatocytes.  Fat infiltration (ie, hepatic steatosis, visible as clear vacuoles within the parenchyma) is commonly seen in both alcohol-induced fatty liver disease and NAFLD.  In response to chronic injury, #stellate (Ito) cells# in the @space of Disse@ are activated and transform into #myofibroblasts# capable of proliferating, promoting chemotaxis, and #producing collagen# in large quantities.  This leads to progressive scar formation and cirrhosis. $Manifestations of cirrhosis include jaundice, scleral icterus, spider angiomas, and elevated liver enzymes.  Evidence of abnormal hepatic synthetic function (eg, abnormal coagulation parameters, hypoalbuminemia) and thrombocytopenia are also common. $#(Choice A)#  Cholangiocytes are epithelial cells within the bile duct system.  They transport ions and solutes into bile as it travels through the canaliculi. $#(Choice B)#  Hepatocytes are located in the liver parenchyma and have many functions, including protein synthesis and storage, fatty acid metabolism, gluconeogenesis, cholesterol synthesis, and drug metabolism. $#(Choice C)#  Kupffer cells are macrophages that reside within hepatic sinusoids.  They are indirectly involved in fibrogenesis because they generate cytokines (ie, TNF-alpha) to assist in the activation of stellate cells; however, their primary function is bacterial phagocytosis and the clearance of red blood cells. $#(Choice D)#  Sinusoidal endothelial cells, which line hepatic sinusoids, are fenestrated cells that filter solutes out of the blood and into hepatocytes.  They assist in the removal of metabolic waste and other macromolecules from circulation. $#Educational objective# Stellate (Ito) cells are the primary cells involved in hepatic fibrosis.  In response to hepatic injury, the stellate cells are activated and transform into myofibroblasts capable of proliferating, promoting chemotaxis, and producing large quantities of collagen.  Collagen stains blue with Masson trichrome stain.  ",
+  "clickable_1":"images/img1.15024.jpg",
+  "clickable_2":"images/img2.15024.jpg"
+  
+
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Renal",
+  "id": "9",
+  "title": "A 43-year-old man comes to the office due to shortness of breath and fatigue.  Over the last 2 weeks, his fatigue has been so profound that he has \"little energy, even to get out of bed.\"  The patient has no chills but has experienced recent weight gain and ankle swelling.  He has no prior medical conditions and takes no medications.  Blood pressure is 168/94 mm Hg, and pulse is 95/min and regular.  The patient has bilateral lower extremity pitting edema limited to the ankles.  Urinalysis reveals 2+ protein, a white blood cell count of 5-7/hpf, and a red blood cell count of 75-100/hpf.  The patient undergoes a kidney biopsy; immunofluorescent microscopy findings are shown in the image below. ",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/9.jpg",
+  "title_2": "Which of the following would most likely be seen on light microscopy in this patient?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Amyloid deposition",
+  "answer_2": "B. Crescent formation",
+  "answer_3": "C. Diffuse capillary wall thickening",
+  "answer_4": "D. Nodular glomerulosclerosis",
+  "answer_5": "E. Normal glomeruli",
+  "percent_1": "16%",
+  "percent_2": "43%",
+  "percent_3": "25%",
+  "percent_4": "13%",
+  "percent_5": "3%",
+  "right_answer": "B. Crescent formation",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp9.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient's hypertension, hematuria (with mild pyuria), and moderate proteinuria are indicative of @nephritic syndrome@.  Immunofluorescence microscopy further demonstrates #linear deposits# (ie, ribbon-like) along the glomerular basement membrane (GBM), a finding characteristic of #anti-GBM disease#.  In this condition, anti-GBM autoantibodies (usually #IgG#) develop against the alpha-3 chain of #type IV collagen# (a subunit found in high concentration in the GBM).  Subsequent complement deposition (eg, #C3#) and leukocyte infiltration lead to rapidly progressive (crescentic) glomerulonephritis (RPGN). $#RPGN# is a syndrome of severe renal injury that manifests with acute-onset hematuria and decreased glomerular filtration (weight gain, edema).  It can occur due to multiple diseases (eg, granulomatosis with polyangiitis, microscopic polyangiitis).  The presence of @glomerular crescents@—composed of proliferating parietal cells, lymphocytes, macrophages, and fibrin—on light microscopy is diagnostic. $Anti-GBM antibodies also #cross-react# with pulmonary #alveolar #basement membranes, which are also enriched in the alpha-3 subchain, causing diffuse alveolar damage and hemorrhage.  The combination of glomerulonephritis and pulmonary hemorrhage in patients with anti-GBM antibodies is known as #Goodpasture syndrome#. $#(Choice A)#  @Renal amyloidosis@ causes a nephrotic syndrome (ie, heavy proteinuria, hypoalbuminemia, hyperlipidemia, edema); significant hematuria is unexpected.  Immunofluorescence microscopy is nonspecific and may show diffuse mesangial staining (rather than distinct, linear immune deposits on the GBM).  On Congo red staining, amyloid deposits appear red-pink under light microscopy and have an apple-green birefringence under polarized light. $#(Choice C)#  In @membranous nephropathy@, which causes a nephrotic syndrome, immunofluorescence demonstrates granular deposits of IgG and C3 along the GBM.  Uniform, diffuse capillary wall thickening is seen on light microscopy. $#(Choice D)#  Nodular glomerulosclerosis (Kimmelstiel-Wilson lesion) and mesangial expansion are seen on light microscopy in @diabetic nephropathy@, which presents as a nephrotic syndrome.  There are no immune deposits on immunofluorescence. $#(Choice E)#  Normal glomeruli are found on light microscopy in minimal change disease, a condition that primarily affects children and presents as a nephrotic syndrome.  There are no immune deposits on immunofluorescence. $#Educational objective# Anti-glomerular basement membrane (GBM) antibodies react with collagen type IV, causing rapidly progressive glomerulonephritis with glomerular crescent formation on light microscopy.  Immunofluorescence demonstrating linear (ribbon-like) deposits of IgG and C3 along the GBM is characteristic.  ",
+  "clickable_1":"images/img1.9.jpg",
+  "clickable_2":"images/img2.9.jpg",  
+  "clickable_3":"images/img3.9.jpg",
+  "clickable_4":"images/img4.9.jpg",
+  "clickable_5":"images/img5.9.jpg"
+
+}
+,
+
+
+{
+  "id": "27",
+  "title": "A 9-year-old girl is brought to the office due to 2 days of face and eye puffiness.  The patient was treated for a rash on her leg with an antibiotic about 3 weeks ago.  Temperature is 37.2 C (99 F) and blood pressure is 150/90 mm Hg.  On physical examination, there is generalized edema but no rash.  Urinalysis reveals proteinuria and hematuria.  An electron microscopy image representative of this patient's disease process is shown below:",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/27.jpg",
+  "title_2": "The area marked by the arrow most likely represents which of the following?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Albumin buildup",
+  "answer_2": "B. Eosinophil enzymes",
+  "answer_3": "C. Fibrin deposition",
+  "answer_4": "D. Hyaline accumulation",
+  "answer_5": "E. Immune complex deposits",
+  "answer_6": "F. Lipid droplet",
+  "answer_7": "G. Neutrophil enzymes",
+  "percent_1": "3%",
+  "percent_2": "2%",
+  "percent_3": "4%",
+  "percent_4": "5%",
+  "percent_5": "82%",
+  "percent_6": "3%",
+  "percent_7": "1%",
+  "right_answer": "E. Immune complex deposits",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+  "table":"",
+  "table_3":"§^#Acute poststreptococcal glomerulonephritis#∆⨉ §^#Onset# ∆ • 7-10 days after GAS pharyngeal infection • 2-4 weeks after GAS skin infection §^#Pathophysiology# ∆ • Formation of nephritogenic GAS antigen-antibody complexes • Complex deposition along GBM • Complement activation & neutrophil-mediated damage (type III HS) §^#Clinical features*# ∆ • Gross hematuria (tea- or cola-colored urine) • Hypertension • Edema (periorbital or generalized) §^#Laboratory findings# ∆ • ↑ Serum creatinine with hematuria, RBC casts & mild proteinuria • ↑ Antistreptolysin-O & anti-DNase B titers §^#Histologic findings# ∆ • LM: hypercellular enlarged glomeruli • IF: granular IgG, IgM & C3 deposits with \"lumpy-bumpy\" appearance • EM: subepithelial \"humps\" (between podocytes & GBM) %*50℅ of cases are asymptomatic. $ #EM# = electron microscopy; #GAS# = group A Streptococcus; #GBM# = glomerular basement membrane; #HS# = hypersensitivity; #IF# = immunofluorescence; #LM# = light microscopy.",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This pediatric patient with hypertension, hematuria, proteinuria, and edema has a @nephritic syndrome@.  The timeline (3 weeks after a skin infection) of symptoms suggests the most likely cause is #poststreptococcal glomerulonephritis# (PSGN), an immune complex–mediated disease that occurs after exposure to nephritogenic strains of group A Streptococcus.  Laboratory evaluation reveals classic signs of nephritic syndrome (eg, hematuria, red blood cell [RBC] casts, mild proteinuria). $The #immune complexes# in PSGN are deposited along the glomerular basement membrane (GBM) and are visible on electron microscopy as large, dome-shaped, #subepithelial#, electron-dense #deposits# (@\"humps\"@).  These can also be visualized on immunofluorescence as #granular# deposits of IgG, IgM, and C3 along the GBM and glomerular mesangium (\"#lumpy-bumpy#\" appearance).  Because the immune complexes trigger an inflammatory reaction, light microscopy shows large glomeruli that are hypercellular due to leukocyte infiltration and proliferation of glomerular cells (a response to injury). $#(Choice A)#  Proteins such as albumin may be lost in the urine due to increased permeability of the glomerular capillary wall in PSGN.  However, albumin does not deposit within the glomerulus or renal tubules. $#(Choice B)#  Many antibiotics (eg, penicillins, cephalosporins) can cause acute interstitial nephritis (AIN), which often manifests as peritubular T-lymphocyte, macrophage, and eosinophilic infiltration.  However, edema, significant hematuria, and proteinuria are uncommon, and AIN usually resolves when the offending agent is discontinued. $#(Choice C)#  Prominent fibrin deposition is characteristic of rapidly progressive (crescentic) glomerulonephritis. $#(Choice D)#  Hyaline (acellular, homogeneous, proteinaceous material) can accumulate within the glomerular capillary and arteriolar walls in diabetic nephropathy due to extravasation of plasma proteins. $#(Choice F)#  Lipid droplets in renal tubules may be seen in conditions causing nephrotic syndrome, which leads to heavy proteinuria and edema; however, gross hematuria and RBC casts are unexpected.  In addition, lipid droplets do not deposit on the basement membrane. $#(Choice G)#  Neutrophils and monocytes infiltrate the glomeruli in PSGN, contributing to the hypercellular appearance on light microscopy.  Enzymes released from these cells would not typically form extracellular aggregates. $#Educational objective# Poststreptococcal glomerulonephritis is an immune complex–mediated disease that occurs 2-4 weeks after group A Streptococcus skin infections.  Immune complexes composed of IgG, IgM, and C3 are deposited along the glomerular basement membrane and are visible on electron microscopy as large, dome-shaped, subepithelial, electron-dense deposits.  ",
+  "clickable_1":"images/img1.27.jpg",
+  "clickable_2":"images/img2.27.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "8",
+  "title": "An 8-year-old boy is brought to the office due to acute facial puffiness.  His mother reports that for the preceding 24 hours he has been easily fatigued and has had dark urine.  The patient was treated for a skin infection 3 weeks ago but has no chronic medical conditions.  Temperature is 36.1 C (97 F) and blood pressure is 140/94 mm Hg.  Physical examination shows periorbital edema and mild pitting edema along the ankles.  The remainder of the examination shows no abnormalities.  A representative renal biopsy sample is shown in the image below:",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/8.jpg",
+  "title_2": "The fluorescent areas on the slide most likely indicate the presence of which of the following substances?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Albumin",
+  "answer_2": "B. C1q",
+  "answer_3": "C. C3",
+  "answer_4": "D. Fibrin",
+  "answer_5": "E. IgE",
+  "answer_6": "F. M protein",
+  "percent_1": "3%",
+  "percent_2": "4%",
+  "percent_3": "71%",
+  "percent_4": "2%",
+  "percent_5": "6%",
+  "percent_6": "14%",
+  "right_answer": "C. C3",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This pediatric patient with @nephritic syndrome@ (eg, periorbital edema, hematuria, hypertension) following a recent skin infection most likely has #poststreptococcal glomerulonephritis# (PSGN), the most common cause of pediatric nephritic syndrome.  This typically occurs after exposure to strains of group A Streptococcus that produce nephritogenic antigens that can activate the alternate complement pathway.  These combine with antibodies to form immune complexes, which deposit on the glomerular basement membrane (GBM) and induce complement activation and inflammation. $These immune complexes are visible on immunofluorescence microscopy as @granular deposits@ of #IgG, IgM, and C3# on the GBM and mesangium.  Because these particular immune complexes tend to activate complement via the alternate pathway, the deposits rarely contain C1q or C4 (classic complement pathway components) #(choice B).# $#(Choice A)#  Disruption of the GBM in PSGN causes increased filtration of proteins such as albumin, which are lost in urine and do not deposit in the GBM.  The loss of albumin results in decreased plasma oncotic pressure and subsequent peripheral edema. $#(Choice D)#  Fibrin deposits in the Bowman space of the glomerulus are found in the crescents of rapidly progressive glomerulonephritis. $#(Choice E)#  IgE deposits are sometimes seen in lupus nephritis and are confined to the capillary wall.  They are associated with a poorer prognosis. $#(Choice F)#  M protein is a component of the streptococcal cell wall that acts as an antiphagocytic virulence factor and stimulates antibody formation.  The cross-reactivity of these antibodies to myosin within myocardial cells is likely responsible for rheumatic heart disease.  However, M protein has not been isolated in the immune complexes in PSGN. $#Educational objective# Poststreptococcal glomerulonephritis occurs after exposure to strains of group A Streptococcus that produce nephritogenic antigens; antigen-antibody complexes deposit on the glomerular basement membrane and activate the alternate complement pathway.  Immunofluorescence microscopy shows granular deposits of IgG, IgM, and C3 in the basement membranes and mesangium.  ",
+  "clickable_1":"images/img1.8.jpg",
+  "clickable_2":"images/img2.8.jpg"
+  
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Female Reproductive System",
+  "id": "21642",
+  "title": "A 53-year-old woman comes to the office due to an itchy rash she has had on her left breast for the past month.  The patient has applied over-the-counter corticosteroid ointment with no relief of symptoms.  The patient's last menstrual period was 2 years ago.  She has a history of hypertension that has improved with weight loss and exercise, and she takes no prescription medications.  Physical examination shows an eczematous plaque on the left nipple and areola.  The remainder of the physical examination is unremarkable.  Histologic examination of the skin lesion would most likely show which of the following?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Adenocarcinoma",
+  "answer_2": "B. Angiosarcoma",
+  "answer_3": "C. Fibroadenoma",
+  "answer_4": "D. Lymphoma",
+  "answer_5": "E. Papilloma",
+  "percent_1": "52%",
+  "percent_2": "7%",
+  "percent_3": "13%",
+  "percent_4": "3%",
+  "percent_5": "24%",
+  "right_answer": "A. Adenocarcinoma",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp21642.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient likely has #Paget disease of the breast# (PDB), a malignant breast condition characterized by a unilateral, painful/pruritic, #eczematous rash# confined to the #nipple and areola#.  Associated @scaling and ulceration@ are also frequently seen. $PDB is diagnosed by tissue biopsy (eg, wedge, punch) that reveals Paget cells in the #epidermis# of the nipple-areolar complex.  Paget cells are malignant, #intraepithelial adenocarcinoma cells# that appear enlarged with abundant cytoplasm and prominent nucleoli on microscopy.  These cells and associated skin changes are thought to be caused by the spread of an #underlying breast malignancy# (eg, intraductal carcinoma, ductal carcinoma in situ) to the nipple surface via the mammary ducts, resulting in the eczematous nipple rash. $Because approximately 85% of patients have an underlying breast malignancy, all patients with PDB require #diagnostic mammography# even without a palpable breast mass. $#(Choice B)#  @Cutaneous angiosarcoma@, which can arise in the radiation field following radiotherapy for breast cancer, typically presents as purple papulonodular lesions and bruise-like patches.  Microscopy often shows anastomosing vascular channels infiltrating the dermis lined by atypical (ie, large, hyperchromatic) endothelial cells. $#(Choice C)#  @Fibroadenomas@ are small, firm, mobile breast masses that occur due to the proliferation of breast stroma and epithelium.  Fibroadenomas are benign, and microscopy typically shows stromal proliferation compressing the breast ducts. $#(Choice D)#  Breast lymphoma is extremely rare and typically presents as a painless, palpable breast mass without cutaneous manifestations in a postmenopausal woman.  Moreover, cutaneous lymphomas typically involve the trunk and/or extremities rather than the breast. $#(Choice E)#  @Intraductal papillomas@ of the breast typically present with unilateral, bloody nipple discharge with no associated breast masses or skin/nipple changes.  Microscopy shows papillae composed of epithelial and myoepithelial cells, which line a fibrovascular core. $#Educational objective# Paget disease of the breast is a malignant breast condition characterized by a unilateral, painful/pruritic, eczematous rash on the nipple/areolar skin.  Diagnosis is with biopsy showing the infiltration of the nipple/areolar epidermis by Paget cells (intraepithelial adenocarcinoma cells).  ",
+  "clickable_1":"images/img1.21642.jpg",
+  "clickable_2":"images/img2.21642.jpg",  
+  "clickable_3":"images/img3.21642.jpg",
+  "clickable_4":"images/img4.21642.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "11890",
+  "title": "A 34-year-old woman comes to the office with bleeding from the right nipple.  The patient has noticed blood staining her bra on several occasions over the past week but has no fever or breast pain.  She has no chronic medical conditions and does not take any medications.  Breast examination shows no palpable masses or skin changes.  A thin, blood-tinged discharge can be expressed from the right nipple.  There are no enlarged axillary lymph nodes.  Which of the following is the most likely histopathologic finding in this patient's right breast?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Atypical cells infiltrating the nipple skin",
+  "answer_2": "B. Cysts lined by metaplastic apocrine cells",
+  "answer_3": "C. Epithelial cells lining fibrovascular cores",
+  "answer_4": "D. Necrotic adipocytes with inflammation",
+  "answer_5": "E. Stromal proliferation compressing the ducts to slits",
+  "percent_1": "13%",
+  "percent_2": "10%",
+  "percent_3": "48%",
+  "percent_4": "8%",
+  "percent_5": "22%",
+  "right_answer": "C. Epithelial cells lining fibrovascular cores",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp11890.jpg",
+  "explanation_1": "",
+  "explanation_2": "$#Nipple discharge# can be physiologic (ie, bilateral, nonbloody or milky, without masses or skin changes) or pathologic (ie, #bloody# or serosanguineous and #unilateral# with or without palpable masses and skin changes). $The most common cause of pathologic nipple discharge is an #intraductal papilloma#, which classically presents as a unilateral, bloody nipple discharge with no associated breast masses, skin changes, or axillary lymphadenopathy.  Although most cases of intraductal papilloma are benign, all patients with pathologic nipple discharge require evaluation with imaging (eg, mammogram or ultrasound, depending upon age) and possibly with biopsy.  On microscopy, intraductal papilloma shows #epithelial and myoepithelial cells lining fibrovascular cores# forming papillae within a duct or cyst wall.  The bloody discharge results from twisting of the vascular stalk of the papilloma in the duct. $#(Choice A)#  @Paget disease of the breast@ occurs due to the ductal spread of atypical malignant cells to the nipple epidermis.  Although patients may have bloody nipple discharge, they also have a unilateral erythematous, intensely pruritic, ulcerative lesion over the nipple and areola, which is not seen in this patient. $#(Choice B)#  @Fibrocystic changes of the breast@ may show cysts with or without metaplasia and areas of fibrosis.  Patients with fibrocystic changes typically have cyclic breast pain, not nipple discharge. $#(Choice D)#  @Fat necrosis@ typically presents as an irregular breast mass with no associated nipple discharge after localized trauma or biopsy.  Microscopy may show adipocytes undergoing necrosis with inflammation, including macrophages and giant cells. $#(Choice E)#  @Fibroadenomas@ are small, firm, and mobile breast masses that occur due to proliferation of breast stroma and ducts.  Fibroadenomas do not typically cause bloody nipple discharge.  Microscopic examination shows stromal proliferation compressing the ducts to slits. $#Educational objective# Intraductal papilloma is characterized by epithelial and myoepithelial cells lining fibrovascular cores in a cyst wall or duct.  It is the most common cause of bloody nipple discharge and typically presents without breast masses or skin changes.  ",
+  "clickable_1":"images/img1.11890.jpg",
+  "clickable_2":"images/img2.11890.jpg",  
+  "clickable_3":"images/img3.11890.jpg",
+  "clickable_4":"images/img4.11890.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "11888",
+  "title": "A 23-year-old woman, gravida 2 para 1, at 39 weeks gestation comes to the labor and delivery unit with regular painful contractions.  The patient's first pregnancy was uncomplicated and resulted in a full-term, spontaneous vaginal delivery 3 years ago, and her current pregnancy has been uncomplicated.  She takes a prenatal vitamin daily and has no chronic medical conditions.  In response to rising estrogen levels, the patient's myometrial cells increase the expression of genes that encode the oxytocin receptor and connexin 43.  These molecular changes most likely result in increased formation of which of the following?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Adherens junctions",
+  "answer_2": "B. Desmosomes",
+  "answer_3": "C. Fenestrae",
+  "answer_4": "D. Gap junctions",
+  "answer_5": "E. Hemidesmosomes",
+  "answer_6": "F. Tight junctions",
+  "percent_1": "11%",
+  "percent_2": "9%",
+  "percent_3": "7%",
+  "percent_4": "58%",
+  "percent_5": "4%",
+  "percent_6": "12%",
+  "right_answer": "D. Gap junctions",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Cell junctions#∆⨉∆⨉ §^#Type# ∆^#Proteins# ∆^#Function# §^#Gap junction# ∆^Connexins ∆^Intercellular communication §^#Tight junction# ∆^Claudins, occludin ∆^Paracellular barrier §^#Adherens junction# ∆^Cadherins ∆^Cellular anchor §^#Desmosomes# ∆^Cadherins (eg, desmogleins, desmoplakin) ∆^Provide strong adhesion between cells §^#Hemidesmosomes# ∆^Integrins ∆^Anchor epithelial cells to basement membrane",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "The initiation of labor requires a series of biochemical changes in the uterus and cervix mediated by endocrine changes (eg, increased estrogen & progesterone).  Communicating #gap junctions# are especially important during labor and delivery, which require #coordination and synchronization# of individual myometrial (uterine smooth muscle) cells. $@Gap junctions@ facilitate electrical and chemical communication between neighboring cells via a connexon, a connecting cylinder with a central channel composed of #connexin proteins# (eg, connexin 43).  In preparation for #labor#, increasing #estrogen# levels stimulate upregulation of connexin 43, increasing formation of gap junctions between individual myometrial cells.  An #increase in gap junction density# allows the passage of small ions between neighboring myometrial cells, resulting in coordinated, synchronous labor contractions. $Estrogen also increases the expression of uterotonic #oxytocin receptors#, Gq–coupled membrane receptors that increase intracellular calcium levels, heightening myometrial excitability. $#(Choices A and B)#  Both adherens junctions and desmosomes are composed of @cadherins@, which are calcium-dependent adhesion proteins that bind epithelial cells together.  The cytoplasmic anchor of adherens junctions is the actin filament, whereas the cytoplasmic anchor of desmosomes is the intermediate filament.  Autoantibodies against desmoglein, a cadherin protein for desmosomes, are found in pemphigus vulgaris. $#(Choice C)#  Fenestrae are transcellular pores within endothelial cells that facilitate increased solute exchange.  They are found in capillaries perfusing the intestine, renal tubules, and endocrine glands. $#(Choice E)#  Hemidesmosomes are similar to desmosomes but link cells to the basement membrane via integrins, transmembrane anchor proteins.  Autoantibodies to hemidesmosomes cause bullous pemphigoid and pemphigoid gestationis. $#(Choice F)#  Tight junctions (zonula occludens), composed of claudins and occludin, prevent paracellular passage of fluid and solutes.  Tight junctions between capillary endothelial cells help form the blood-brain barrier. $#Educational objective# Gap junctions facilitate communication and coordination between cells and play an important role in labor contractions.  Gap junctions are composed of connexin proteins, which are upregulated in the uterus in response to rising estrogen levels.  ",
+  "clickable_1":"images/img1.11888.jpg",
+  "clickable_2":"images/img2.11888.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "1957",
+  "title": "A 42-year-old woman, gravida 4 para 4, comes to the office due to heavy and painful menstrual bleeding over the past 3 months.  The patient's last menstrual period was 3 weeks ago.  Menarche was at age 10, and menstrual periods last for 3-5 days and occur every 30 days.  She is sexually active with her husband and does not have pain with intercourse.  The patient had a bilateral tubal ligation 3 years ago after the birth of her last child.  She takes no medications and has no allergies.  BMI is 24 kg/m2.  Vital signs are normal.  On bimanual examination, the uterus is uniformly enlarged and tender.  Urine β-hCG is negative.  Which of the following is the most likely cause of this patient's symptoms?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Benign myometrial smooth muscle cell proliferation",
+  "answer_2": "B. Blastocyst implantation in the fallopian tube",
+  "answer_3": "C. Endometrial glands and stroma within the myometrium",
+  "answer_4": "D. Localized overgrowth of endometrium into the uterine cavity",
+  "answer_5": "E. Unregulated endometrial proliferation with increased gland-to-stroma ratio",
+  "percent_1": "20%",
+  "percent_2": "2%",
+  "percent_3": "49%",
+  "percent_4": "10%",
+  "percent_5": "19%",
+  "right_answer": "C. Endometrial glands and stroma within the myometrium",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp1957.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient has #adenomyosis#, a disorder caused by an abnormal collection of #endometrial glands and stroma within the uterine myometrium#.  Adenomyosis is common in multiparous women, and prior uterine surgery (eg, cesarean delivery) is a risk factor. $Although the exact pathogenesis is unclear, adenomyosis may occur due to endometrial invagination into the myometrium during periods of myometrial weakening or changes in vascularity at the endomyometrial interface (eg, pregnancy, uterine surgery).  The clinical features of adenomyosis reflect its pathophysiology: $• endometrial gland proliferation and cyclic bleeding within the myometrium leads to #dysmenorrhea# and #uterine tenderness# $• abnormal myometrial hyperplasia and hypertrophy results in a concentric, #uniformly enlarged uterus# $• uterine enlargement and subsequently increased endometrial surface area causes #regular, heavy menstrual bleeding# $Definitive therapy is with hysterectomy, which allows for histologic diagnosis. $#(Choice A)#  Leiomyomas (ie, uterine fibroids) are benign myometrial smooth muscle cell tumors.  Although fibroids can cause regular, heavy menses (also due to increased endometrial surface area), the uterus is typically nontender and @irregularly enlarged@ rather than tender and uniformly enlarged. $#(Choice B)#  An @ectopic pregnancy@ most commonly occurs due to abnormal blastocyst implantation in the fallopian tube.  Although prior tubal surgery (eg, bilateral tubal ligation) is a risk factor, ectopic pregnancy is unlikely in this patient with a negative urine β-hCG.  In addition, uterine enlargement would not be seen. $#(Choice D)#  @Endometrial polyps@ are benign, intracavitary, focal hyperplastic growths of endometrial tissue.  In contrast to adenomyosis, endometrial polyps cause painless intermenstrual bleeding rather than painful, cyclic, heavy menses.  There is also no associated uterine tenderness or enlargement. $#(Choice E)#  Patients with endometrial hyperplasia have unregulated endometrial gland proliferation with increased gland-to-stroma ratio; the thickened endometrial lining may slightly increase uterine size and cause heavy menses.  However, endometrial hyperplasia does not typically cause dysmenorrhea or uterine tenderness.  In addition, the most common risk factor is unopposed estrogen from chronic anovulation and/or obesity; this patient has regular menses and a normal BMI. $#Educational objective# Adenomyosis is the abnormal presence of endometrial glands and stroma within the uterine myometrium.  Affected patients are typically multiparous women with dysmenorrhea, heavy menses, and a uniformly enlarged uterus.  ",
+  "clickable_1":"images/img1.1957.jpg",
+  "clickable_2":"images/img2.1957.jpg",  
+  "clickable_3":"images/img3.1957.jpg"
+  
+
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Cardiovascular",
+  "id": "8711",
+  "title": "A 67-year-old man is found dead in his home.  The cause of death is not apparent; he had a long history of hypertension and he had a myocardial infarction a year ago.  An autopsy is performed.  Gross examination of the heart shows white scarring and enlargement of the left ventricle.  Histologic findings from a section of the left ventricle are shown below.",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/8711.jpg",
+  "title_2": "The type of collagen seen in the autopsy sample is most likely to be extensively found in which of the following normal body tissues?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Basement membrane",
+  "answer_2": "B. Granulation tissue",
+  "answer_3": "C. Hyaline cartilage",
+  "answer_4": "D. Nucleus pulposus",
+  "answer_5": "E. Tendon",
+  "percent_1": "8%",
+  "percent_2": "34%",
+  "percent_3": "16%",
+  "percent_4": "3%",
+  "percent_5": "39%",
+  "right_answer": "E. Tendon",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+  "table":"",
+  "table_3":"§^#Collagen subtypes#∆⨉∆⨉ §^#Type# ∆^#Locations# ∆^#Associated diseases# §^I ∆Skin, bone, tendons, ligaments, dentin, cornea, blood vessels & scar tissue ∆Osteogenesis imperfecta §^II ∆Cartilage, vitreous humor & nucleus pulposus ∆Skeletal dysplasias §^III ∆Skin, lungs, intestines, blood vessels, bone marrow, lymphatics & granulation tissue ∆Vascular Ehlers-Danlos syndrome (Type IV) §^IV ∆Basement membranes ∆Alport syndrome",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "@Evolution of a myocardial infarction@ occurs in several stages.  The final stage of the healing process begins approximately 2 weeks after infarction and involves increased deposition of #type I collagen#.  Fibrosis continues until about 2 months after infarction, resulting in a dense @collagenous scar @composed primarily of type I collagen.  The scar can be identified grossly as a firm, gray-white lesion or microscopically as collagenous tissue replacing myocardium (as in this patient). $In addition to its role in #wound healing#, type I collagen (the most abundant type) provides #strength# and support for a variety of cellular tissues and organs (eg, #tendons, ligaments, skin#).  It is also the major organic component in #bones# and significantly contributes to overall bone strength.  Defects in type I collagen can occur in osteogenesis imperfecta, an autosomal dominant disorder that may present with fragile bones and ligament laxity. $#(Choices A, C, and D)#  Basement membrane contains type IV collagen; hyaline cartilage (eg, articular surfaces) and nucleus pulposus contain type II collagen. $#(Choice B)#  Granulation tissue is a capillary-rich fibroblastic proliferation composed primarily of type III collagen.  Although granulation tissue is seen approximately 7 days after an acute myocardial infarction, it is eventually replaced by type I collagen as the infarct heals.  Type III collagen is involved in the structural maintenance of extensible connective tissues and is often found alongside type I collagen. $#Educational objective# Type I collagen is the primary collagen in mature scars (eg, remote myocardial infarction).  It is the most prevalent type of collagen and provides strength and support throughout the human body, particularly in bones, tendons, ligaments, and skin.  ",
+  "clickable_1":"images/img1.8711.jpg",
+  "clickable_2":"images/img2.8711.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "15868",
+  "title": "An autopsy is being performed on a 72-year-old man with a history of myocardial infarction.  Light microscopy of a portion of the left ventricle reveals the findings shown in the image below:",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/15868.jpg",
+  "title_2": "This patient most likely sustained the myocardial infarction during which of the following time frames prior to his death?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Less than 4 hours",
+  "answer_2": "B. 1 to 3 days",
+  "answer_3": "C. 7 to 10 days",
+  "answer_4": "D. 2 weeks to 2 months",
+  "answer_5": "E. More than 2 months",
+  "percent_1": "9%",
+  "percent_2": "77%",
+  "percent_3": "12%",
+  "percent_4": "2%",
+  "percent_5": "1%",
+  "right_answer": "B. 1 to 3 days",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Time after myocardial infarction# ∆^#Predominant light microscopic changes# §^0-4 hours ∆ • No visible change §^4-12 hours ∆ • Wavy fibers with narrow, elongated myocytes §^12-24 hours ∆ • Myocyte hypereosinophilia with pyknotic (shrunken) nuclei §^1-3 days ∆ • Coagulation necrosis (loss of nuclei & striations) • Prominent neutrophilic infiltrate §^3-7 days ∆ • Disintegration of dead neutrophils & myofibers • Macrophage infiltration at border areas §^7-10 days ∆ • Robust phagocytosis of dead cells by macrophages • Beginning formation of granulation tissue at margins §^10-14 days ∆ • Well-developed granulation tissue with neovascularization §^2-8 weeks ∆ • Progressive collagen deposition & scar formation",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "Postmortem histopathology of this patient's myocardium reveals a @dense neutrophilic infiltrate@ surrounded by relatively normal myocytes consistent with the morphologic changes expected in the border zone of ischemic injury #1-3 days after# myocardial infarction (MI).  Myocardial cells are highly metabolically active and susceptible to #ischemic injury# after as little as 3-4 minutes of oxygen deprivation due to coronary artery blockage. $After irreversible myocardial injury, a series of characteristic #microscopic changes# occur over predictable time frames due to #coagulative necrosis# of myocardial fibers and infiltration of #inflammatory cells#, which play an essential role in the healing process: $• During the first 4 hours post-MI, no visible change occurs although cardiac-specific enzymes can be detected in the patient's bloodstream #(choice A).# $• From 4 to 24 hours post-MI, changes due to digestion of cytoplasmic organelles, denaturation of proteins, and loss of RNA become visible (eg, wavy, hypereosinophilic myocytes with shrunken nuclei), especially in the central portion of the infarct. $• From #1 to 3 days# post-MI, #neutrophils infiltrate# the #border zone# of the injured tissue in response to proinflammatory cytokines (eg, IL-6, IL-8), eventually migrating to the central portion of the infarct.  These neutrophils phagocytize dead myocytes and release #lysosomal enzymes#, reactive oxygen species, and #cytokines# (eg, IL-1, TNF-α) that can prevent infiltration by pathogens and facilitate wound healing. $• From 3 to 10 days post-MI, macrophages infiltrate and phagocytize dead myocytes and neutrophils while initiating the formation of granulation tissue by producing cytokines (eg, IL-10) and growth factors (TGF-β) #(choice C).# $• From 10 to 14 days post-MI, prominent fibroblast proliferation, collagen deposition, and neovascularization of @granulation tissue@ are present. $• From 2 weeks to 2 months post-MI, collagen remodeling and fibroblast differentiation into myofibroblasts drive the formation of @scar tissue@ #(choice D).# $• After 2 months post-MI, remodeling continues to a slower rate as the scar matures and contracts #(choice E).# $#Educational objective# Irreversible myocardial ischemic injury initiates a series of predictable morphologic changes over the hours to weeks after the initial injury.  From 1 and 3 days after the initial injury, neutrophils infiltrate the border zone of the injured tissue (where myocytes are relatively normal) in response to proinflammatory cytokines (eg, IL-6, IL-8), eventually migrating to the central portion of the infarct.  ",
+  "clickable_1":"images/img1.15868.jpg",
+  "clickable_2":"images/img2.15868.jpg",  
+  "clickable_3":"images/img3.15868.jpg"
+  
+
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Rheumatology",
+  "id": "1159",
+  "title": "A 65-year-old postmenopausal woman comes to the office for an annual visit.  The patient feels well and has no symptoms.  She has no chronic medical conditions, and her only medication is a daily multivitamin.  Physical examination shows no abnormalities.  Screening DXA scan reveals mild osteopenia.  The patient is advised regarding appropriate lifestyle measures to limit bone loss, including weight-bearing exercise.  In response to increased mechanical load, cells located within bone lacunae (indicated by the arrow) communicate with each other via gap junctions to increase bone remodeling within regions experiencing excessive strain.",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/1159.jpg",
+  "title_2": "The cells described above are most likely to represent which of the following?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Mesenchymal stem cells",
+  "answer_2": "B. Osteoblasts",
+  "answer_3": "C. Osteoclasts",
+  "answer_4": "D. Osteocytes",
+  "answer_5": "E. Osteochondroprogenitor cells",
+  "answer_6": "F. Pericytes",
+  "percent_1": "1%",
+  "percent_2": "36%",
+  "percent_3": "14%",
+  "percent_4": "43%",
+  "percent_5": "5%",
+  "percent_6": "2%",
+  "right_answer": "D. Osteocytes",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp1159.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This postmenopausal woman with low bone mineral density is at increased risk for osteoporosis and bone fracture.  Moderate weight-bearing exercise helps prevent further bone loss by altering osteocyte activity through a process known as #force adaptation#. $Osteoblasts that become entrapped in bone matrix differentiate into #osteocytes#.  These cells reside in small, fluid-filled lacunae that connect to other lacunae and bone surfaces through adjoining tunnels (ie, canaliculi).  Osteocyte cytoplasmic processes traverse the canaliculi and connect to neighboring cells, forming an #interconnected network# that regulates bone homeostasis via mechanosensory and endocrine cues: $• #Mechanical stress# (ie, bone deformation) is sensed by osteocytes via extracellular attachments (eg, integrins) to the canalicular walls, resulting in the release of mediators—such as soluble receptor activator of nuclear factor-kappa B (RANKL) and sclerostin—that orchestrate bone remodeling $• Control of local calcium homeostasis and bone mineralization in response to parathyroid hormone $• Secretion of fibroblast growth factor 23 (FGF23), the major hormone responsible for regulating serum phosphate levels $Osteocyte function relies on the presence of #gap junctions# that connect the cytoplasmic processes between osteocytes.  These junctions facilitate #cell-to-cell communication#, allowing intracellular signals (eg, calcium, cyclic AMP) to propagate to neighboring cells.  This osteocyte network is critical for proper control of local osteoclast/osteoblast populations and regulation of regional bony remodeling. $#(Choices A, B, and E)#  Mesenchymal stem cells within the periosteum, endosteum, and bone marrow give rise to osteochondroprogenitor cells, which can differentiate into osteoblasts (cells that secrete osteoid matrix).  Osteoblasts that become trapped in mineralized bone matrix transform into osteocytes, which are terminally differentiated cells that cannot revert back into stem cells or osteoblasts. $#(Choice C)#  In states that favor bone resorption, osteoblasts, osteocytes, and bone marrow stromal cells increase expression of RANKL.  This stimulates the fusion of osteoclast precursor cells (derived from the monocyte linage) into @multinucleated osteoclasts@ that release enzymes causing bone resorption; osteocytes do not fuse into osteoclasts or directly secrete osteolytic enzymes. $#(Choice F)#  Pericytes are multipotent cells embedded within the microvascular wall.  In the bone, they help facilitate fracture healing by regulating local blood flow, promoting angiogenesis, and functioning as an ancillary source for differentiating osteoblasts. $#Educational objective# Osteocytes detect increased mechanical load in the bones (eg, weight-bearing exercise) and communicate with one another through gap junctions to orchestrate bone remodeling.  ",
+  "clickable_1":"images/img1.1159.jpg"
+  
+
+}
+,
+
+
+{
+  "id": "1734",
+  "title": "A researcher is investigating the structure of the sarcomere using skeletal muscle obtained from an experimental animal.  He develops monoclonal antibodies directed against a specific skeletal muscle protein and finds that these antibodies disrupt the binding of actin to structural support elements within the sarcomere.  Electron microscopy of the sarcomere is shown in the image below.",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/1734.jpg",
+  "title_2": "Which of the following labeled regions do these antibodies most likely bind?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. A",
+  "answer_2": "B. B",
+  "answer_3": "C. C",
+  "answer_4": "D. D",
+  "answer_5": "E. E",
+  "answer_6": "F. F",
+  "percent_1": "48%",
+  "percent_2": "9%",
+  "percent_3": "12%",
+  "percent_4": "15%",
+  "percent_5": "13%",
+  "percent_6": "3%",
+  "right_answer": "A. A",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp1734.jpg",
+  "explanation_1": "",
+  "explanation_2": "$A #sarcomere# is composed of overlapping filaments of actin and myosin as well as structural and binding proteins (eg, titin, α-actinin).  A single sarcomere is defined as the distance between two Z lines.  #Thin (actin) filaments# are bound to structural proteins at the #Z line#.  The unbound ends of the actin filaments project into the middle of the sarcomere, where they interact with thick (myosin) filaments during muscle contraction. $#(Choice B)#  The A band corresponds to myosin filaments in the sarcomere.  In this region, there are myosin filaments overlapped with actin filaments as well as non-overlapped myosin filaments.  The A band always remains the same length during muscle contraction. $#(Choice C)#  The M line lies at the center of the A band and is where myosin filaments anchor to structural elements in the center of the sarcomere. $#(Choice D)#  Myosin and actin filaments overlap at the segment of the sarcomere between the H and I bands. $#(Choices E and F)#  The I band is the region of the sarcomere in which actin does not overlap with myosin, and the H band is the region in which myosin does not overlap with actin.  During muscle contraction, both H and I bands decrease in length. $#Educational objective# A single sarcomere is defined as the distance between two Z lines.  Thin (actin) filaments in the I band are bound to structural proteins at the Z line, whereas thick (myosin) filaments in the A band are bound to structural proteins at the M line.  "
+  
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Nervous",
+  "id": "1536",
+  "title": "A 68-year-old man with a history of Parkinson disease is hospitalized for pneumonia and sepsis.  The patient is treated with intravenous (IV) fluids and antibiotics.  He is also started on an infusion of IV dopamine for hemodynamic support.  Although the manifestations of Parkinson disease are attributed to dopaminergic neuron degeneration in the substantia nigra, IV dopamine does not improve this patient's Parkinson symptoms.  Which of the following cell structures accounts for this lack of responsiveness?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Desmosomes",
+  "answer_2": "B. Fenestrae",
+  "answer_3": "C. Gap junctions",
+  "answer_4": "D. Hemidesmosomes",
+  "answer_5": "E. Intermediate junctions",
+  "answer_6": "F. Tight junctions",
+  "percent_1": "1%",
+  "percent_2": "4%",
+  "percent_3": "7%",
+  "percent_4": "1%",
+  "percent_5": "1%",
+  "percent_6": "86%",
+  "right_answer": "F. Tight junctions",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp1536.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient's Parkinson symptoms do not improve with intravenous dopamine infusion because dopamine is unable to cross the blood-brain barrier.  The #blood-brain barrier# is formed by tight junctions between nonfenestrated capillary endothelial cells that prevent the #paracellular# passage of fluid and solutes.  #Tight junctions#, also known as zonulae occludentes, are composed of transmembrane proteins (eg, claudins and occludins) that associate with actin filaments, forming a #beltlike seal# around the apical intercellular space.  This seal only permits the passage of substances from the blood to the brain via transcellular movement. $Transcellular movement of dopamine is limited by the molecule's low lipid solubility and the lack of dopamine-specific transport carriers in capillary endothelial cells of the blood-brain barrier.  L-DOPA (dopamine precursor) also has low lipid solubility, but it is able to enter the brain due to its high affinity for the large neutral amino acid transporter. $#(Choice A)#  Desmosomes (maculae adherentes) are spotlike junctions that anchor adjacent cells together via keratin intermediate filament interactions.  Autoantibodies against desmosomes in the stratum spinosum of the skin cause pemphigus vulgaris. $#(Choice B)#  Fenestrae are small pores within endothelial cells that allow free fluid exchange between the intravascular and extravascular spaces.  They are found in capillaries perfusing the intestine, renal tubules, and endocrine glands. $#(Choice C)#  Gap junctions are composed of connexin proteins that create channels between cells, permitting the free passage of small ions (eg, Ca2+) and molecules. $#(Choice D)#  Hemidesmosomes are similar to desmosomes but bind the basal layer of epithelial cells to the basement membrane.  Autoantibodies against hemidesmosomes in the skin cause bullous pemphigoid. $#(Choice E)#  Intermediate junctions (zonula adherens or belt desmosomes) are located below tight junctions and form a beltlike anchor between adjacent cells in association with actin microfilaments. $#Educational objective# The blood-brain barrier is formed by tight junctions between nonfenestrated capillary endothelial cells that prevent the paracellular passage of fluid and solutes.  This barrier only permits the passage of substances from the blood to the brain via transcellular movement across the endothelial plasma membrane, which is limited by diffusion or carrier-mediated transport.  "
+  
+}
+,
+
+
+{
+  "id": "1936",
+  "title": "In an experiment, laboratory animals are subjected to a toxic insult that specifically targets the protein kinesin.  Which of the following is most likely to be absent from tissues on histological examination as a result?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Nissl substance in pyramidal neurons",
+  "answer_2": "B. Secretory vesicles in nerve terminals",
+  "answer_3": "C. T-tubules in skeletal muscle cells",
+  "answer_4": "D. Desmosomes in epithelial lining cells",
+  "answer_5": "E. Microvilli in intestinal epithelial cells",
+  "percent_1": "7%",
+  "percent_2": "59%",
+  "percent_3": "14%",
+  "percent_4": "7%",
+  "percent_5": "13%",
+  "right_answer": "B. Secretory vesicles in nerve terminals",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "Kinesin is a microtubule associated motor protein whose function is anterograde transport of intracellular vesicles and organelles toward the plus (rapidly growing) ends of microtubules.  Kinesin uses energy derived from ATP hydrolysis to move along the microtubule.  The plus ends of microtubules typically lie at sites distant from the nucleus; thus, in neurons, kinesin carries vesicles and organelles away from the cell body and toward the nerve terminal.  A targeted toxic insult to this protein would be expected to impair anterograde transport resulting in a deficiency of synaptic vesicles at the nerve terminal. $#(Choice A)#  The Nissl substance in neurons corresponds to the rough endoplasmic reticulum. $#(Choice C)#  The transverse tubule (T-tubule) system is a tubular network located at the junction of the A and I bands of striated myocytes.  T-tubules are open to the extracellular space and facilitate the spread of depolarization to the inside of the cell. $#(Choice D)#  Desmosomes are protein aggregates that mediate cell-cell adhesion between epithelial cells. $#(Choice E)#  Microvilli are small cylindrical extensions of the apical plasma membrane that contain actin thin filaments.  Microvilli cover the apical surfaces of intestinal epithelial cells.  They do not contain microtubules or microtubule associated proteins. $#Educational objective# Kinesin is a microtubule-associated, ATP-powered motor protein that facilitates the anterograde transport of neurotransmitter-containing secretory vesicles down axons to synaptic terminals.  "
+  
+}
+,
+
+
+{
+  "id": "1922",
+  "title": "A 20-year-old woman comes to the office due to blisters around her mouth associated with a mild burning sensation.  She reports that she has been having frequent recurrence of these lesions, which resolve spontaneously within a few days.  She has no medical problems and does not take any medications.  Physical examination findings are shown in the image below.",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/1922.jpg",
+  "title_2": "It is determined that the causative organism of this patient's condition remains in a latent state in the neuronal cell bodies of sensory ganglia.  Upon reactivation, the virus is transported through the nerve axon to the skin.  Which of the following proteins is most likely involved in the transport process leading to disease recurrence?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Dynein",
+  "answer_2": "B. Kinesin",
+  "answer_3": "C. Lamin",
+  "answer_4": "D. Selectin",
+  "answer_5": "E. Spectrin",
+  "answer_6": "F. Vimentin",
+  "percent_1": "27%",
+  "percent_2": "66%",
+  "percent_3": "2%",
+  "percent_4": "1%",
+  "percent_5": "1%",
+  "percent_6": "4%",
+  "right_answer": "B. Kinesin",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp1922.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient is suffering from recurrent bouts of #herpes labialis# (\"cold sores\"), which is most commonly caused by #herpes simplex virus 1 (HSV-1)#.  Primary infection occurs following contact with an affected individual's saliva.  Although it is often asymptomatic, infection can result in painful blister formation on the oral mucosa and surrounding skin of the mouth and lips.  After resolution of the initial infection, the virus enters a latent phase where viral particles lay dormant in neural sensory ganglia (most commonly the trigeminal). $#Reactivation# of the virus occurs during times of stress or illness, resulting in recurrence of the characteristic perioral vesicular lesions.  During reactivation, HSV particles rely on #anterograde axonal transport# to reach the skin and oral mucosa.  Anterograde axonal transport is mediated by #kinesin#, a motor protein that moves intracellular cargo (eg, organelles, viral particles) away from the nucleus, down the axon, and toward the nerve terminal.  Kinesin-mediated movement is powered by ATP hydrolysis and guided by microtubule filaments, which function as an intracellular \"track\" system. $#(Choice A)#  Dynein is a microtubular motor protein that participates in retrograde axonal transport (ie, moving organelles toward the nucleus).  Dynein is important in establishing the latent phase following primary HSV infection by transporting viral particles to the neural sensory ganglia.  However, it is not responsible for disease recurrence. $#(Choice C)#  Lamins are proteins that help form the fibrillar network that lines the inside of the nuclear envelope.  In addition to providing structural support, they also help to organize the genome and regulate gene transcription. $#(Choice D)#  Selectins are a group of cell adhesion molecules that are expressed on endothelial cells during the inflammatory response.  They function to bind leukocytes, allowing them to exit blood vessels at the site of inflammation. $#(Choice E)#  Spectrin is a cytoskeletal protein located intracellularly along the plasma membrane.  It is responsible for maintaining the distinct shape of red blood cells.  Protein defects may result in hereditary elliptocytosis and spherocytosis. $#(Choice F)#  Vimentin is a type of intermediate filament expressed in mesenchymal cells.  It is responsible for securing organelles inside the cytosol and provides resistance to mechanical stress. $#Educational objective# Kinesin is a microtubule-associated motor protein that functions in the anterograde transport of materials and organelles within cells.  Reactivation of latent herpes simplex virus requires anterograde transport of viral particles from neuronal cell bodies in the sensory ganglia to the skin and oral mucosa.  "
+  
+}
+,
+
+
+{
+  "id": "108226",
+  "title": "A mouse model of focal dystonia due to mutations in DYT-TOR1A is being studied.  Humans with this mutation have variable expressivity of diverse forms of dystonia, including cervical dystonia (ie, torticollis), writer's cramp, and lower limb dystonias.  Histologic analysis of an affected muscle in one of the experimental mice is most likely to show which of the following?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Enlarged lysosomes",
+  "answer_2": "B. Fibrofatty replacement of muscle fibers",
+  "answer_3": "C. Inflammatory cellular infiltrate",
+  "answer_4": "D. Muscle fiber hypertrophy",
+  "answer_5": "E. Muscle fiber necrosis without inflammation",
+  "percent_1": "9%",
+  "percent_2": "25%",
+  "percent_3": "10%",
+  "percent_4": "42%",
+  "percent_5": "14%",
+  "right_answer": "D. Muscle fiber hypertrophy",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Focal dystonia#∆⨉ §^#Pathophysiology# ∆ • Abnormal CNS neuronal signaling • Etiologies $== ○ Genetic $== ○ Acquired (eg, dopamine receptor-blockers) $== ○ Idiopathic §^#Clinical features# ∆ • Sustained, involuntary muscle contractions • Muscle spasm leads to pain & abnormal body postures • Sometimes alleviated by a sensory trick (eg, touching affected body part) • Hypertrophy of affected muscle",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "#Dystonia# is a neurologic movement disorder characterized by sustained, involuntary muscle contractions, which force certain parts of the body into abnormal, sometimes painful movements or postures.  #Focal dystonias# affect a single muscle or group of related muscles, the most common of which include cervical dystonia (ie, torticollis), blepharospasm (ie, eyelid twitching), and brachial dystonia (ie, writer's cramp). $Focal dystonias are usually classified as idiopathic; however, #genetic mutations# are becoming increasingly implicated.  Focal dystonias are due to abnormal #neural signaling pathways#, which can arise from multiple locations in the brain (eg, basal ganglia, motor cortex, supplementary motor areas). $Because the dystonia originates from abnormal neural signaling, microscopic examination of the affected muscle is often relatively unremarkable.  Histopathology may show normal muscle or #muscle fiber hypertrophy# (which occurs due to repetitive contractions). $#(Choice A)#  Certain types of glycogen storage diseases (eg, Pompe disease) can lead to weakness and fatigue due to abnormal glycogenolysis in skeletal muscle.  Muscle biopsy would show enlarged lysosomes containing periodic acid–Schiff (PAS)-positive material. $#(Choice B)#  Duchenne and Becker muscular dystrophies are caused by mutations affecting dystrophin, a cytoplasmic protein vital for stabilization of the muscle cell membrane.  Loss of cell membrane integrity leads to muscle fiber degeneration and progressive fibrofatty replacement. $#(Choice C)#  Autoimmune muscle injury (eg, dermatomyositis, @polymyositis@) often shows an inflammatory cellular infiltrate (eg, lymphocytes) with muscle fiber necrosis, phagocytosis, and regeneration.  Over time, the active inflammation and necrosis may be replaced by fibrosis. $#(Choice E)#  Statin therapy can cause @muscle fiber necrosis@ without a significant associated inflammatory infiltrate.  Muscle aches and weakness are the most common complications of statin therapy. $#Educational objective# Focal dystonia is a neurologic movement disorder characterized by sustained, involuntary muscle contractions.  Because these contractions are neurologically mediated, muscle biopsy may not show significant histologic changes, although muscle fiber hypertrophy is often present due to repetitive contractions.  ",
+  "clickable_1":"images/img1.108226.jpg",
+  "clickable_2":"images/img2.108226.jpg"
+  
+
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Infectious",
+  "id": "483",
+  "title": "A 35-year-old woman, gravida 1, para 0, at 12 weeks gestation comes to the office for evaluation of genital warts.  She first noticed the warts last week and is concerned that it has persisted.  The patient has occasional mild pruritus but no pain.  She is currently sexually active with her boyfriend and engages in oral and vaginal intercourse.  Examination shows several verrucous, skin-colored lesions over the labia majora.  The patient asks whether the lesion could affect her future child.  The virus involved in this patient's condition also has an affinity to infect which of the following structures?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Alveoli",
+  "answer_2": "B. False vocal cords",
+  "answer_3": "C. Paranasal sinuses",
+  "answer_4": "D. Trachea",
+  "answer_5": "E. True vocal cords",
+  "percent_1": "4%",
+  "percent_2": "26%",
+  "percent_3": "16%",
+  "percent_4": "9%",
+  "percent_5": "45%",
+  "right_answer": "E. True vocal cords",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"§^#Respiratory epithelium#∆⨉∆⨉ §^#Type# ∆^#Location# ∆^#Function# §^#Ciliated, pseudostratified, columnar# ∆Nasal cavity, upper pharynx, false vocal cords, trachea, bronchi ∆ • Mucus-secreting cells moisten air & trap debris/pathogens • Ciliary beating sweeps debris toward pharynx for swallowing §^#Squamous, stratified# ∆True vocal cords ∆ Protects from abrasion & chemical attack §^#Cuboidal# ∆Bronchioles ∆ Conducts air to alveoli §^#Simple squamous# ∆Alveoli ∆ Gas exchange",
+  "explanation_img": "",
+  "explanation_1": "",
+  "explanation_2": "This patient's verrucous, skin-colored genital lesion is most consistent with condylomata acuminatum, also known as anogenital warts.  Condylomata acuminatum is caused by #human papillomavirus (HPV)#, a small #double-stranded DNA virus# with >100 subtypes.  HPV is the most common sexually transmitted disease and can be transmitted by vaginal, anal, and oral intercourse.  Most infections are cleared by host immunity, but #types 6# and #11# can result in warts. $HPV infects basal epithelial cells through small breaks in the skin or mucosal surfaces.  It has a predilection for #stratified squamous epithelium#, which is found in the anal canal, vagina, and cervix.  In the respiratory tract, the #true vocal cords# are the only area covered with stratified squamous epithelium.  The vocal cords undergo near-constant friction and abrasion to produce speech.  Stratified squamous epithelium is protective, as deeper cells can replace surface cells that are damaged. $Infants can acquire respiratory papillomatosis via passage through the birth canal of mothers infected with the virus.  Warty growths on the true vocal cords can lead to a weak cry, hoarseness, and stridor. $#(Choice A)#  The alveoli are comprised of simple squamous epithelium.  This thin and flat epithelium facilitates rapid transmembrane exchange of oxygen and carbon dioxide. $#(Choice B)# The false vocal cords, also known as ventricular folds, are folds of mucous membrane lined in respiratory epithelium, which is ciliated, pseudostratified, columnar, and mucus-secreting.  The false vocal cords are adjacent to the true vocal cords and help to lubricate the true vocal cords with mucus and protect the airway from foreign bodies. $#(Choices C and D)#  The paranasal sinuses and trachea also are lined in respiratory epithelium.  This ciliated, pseudostratified, columnar, and mucus-secreting epithelium protects the respiratory tract from debris and pathogens.  Goblet cells secrete mucus to trap particulate matter, and the cilia beat in a rhythmic fashion to propel this mucus/debris toward the oral cavity, where it can be swallowed or coughed up. $#Educational objective# Human papilloma virus (HPV) is a small DNA virus with a tropism for stratified squamous epithelium, which protectively lines anatomical areas that undergo frequent friction and abrasion, including the true vocal cords, cervix, and anus.  Infants can acquire respiratory papillomatosis via passage through an HPV-infected birth canal.  "
+  
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Endocrine",
+  "id": "8424",
+  "title": "A researcher is investigating factors affecting adrenal hormone synthesis and release.  An intact adrenal gland is obtained from a donor cadaver, and a histologic section of the gland is shown below.  Cells from a specific part of the gland, indicated by the arrow, are extracted for further analysis.",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "images/8424.jpg",
+  "title_2": "These cells are most likely to be directly activated by which of the following substances?",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Acetylcholine",
+  "answer_2": "B. ACTH",
+  "answer_3": "C. Angiotensin II",
+  "answer_4": "D. Epinephrine",
+  "answer_5": "E. Norepinephrine",
+  "percent_1": "42%",
+  "percent_2": "28%",
+  "percent_3": "10%",
+  "percent_4": "11%",
+  "percent_5": "9%",
+  "right_answer": "A. Acetylcholine",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp8424.jpg",
+  "explanation_1": "",
+  "explanation_2": "$The adrenal gland is made up of an outer cortex (divided into 3 zones) and an inner medulla:  $1. The zona glomerulosa is the outermost zone of the cortex and is composed of cells arranged in rounded or arched clusters (glomus is Latin for ball) that secrete mineralocorticoid hormones (primarily aldosterone).  $2. The zona fasciculata is the middle zone and contains foamy-appearing cells in columns (fascis is Latin for bundle or stack) that secrete glucocorticoid hormones (primarily cortisol).  $3. The zona reticularis is the inner zone of the cortex and contains cells in anastomosing cords (rete is Latin for net) that secrete androgens.  $4. The #adrenal medulla# is sharply demarcated from the cortex and is composed of chromaffin cells with a deeply basophilic cytoplasm. $#Chromaffin cells# are modified neuroendocrine cells derived from the neural crest.  They are #stimulated by acetylcholine# released by sympathetic preganglionic neurons and #secrete catecholamines# (80% epinephrine, 20% norepinephrine) directly into the bloodstream to amplify sympathetic nervous system activity. $#(Choice B)#  ACTH stimulates secretion of glucocorticoid hormones from the zona fasciculata.  Cortisol produced in response to ACTH increases activity of the adrenal medullary enzyme phenylethanolamine N-methyltransferase, which catalyzes the conversion of norepinephrine to epinephrine.  ACTH therefore indirectly upregulates medullary epinephrine production, but does not directly control it. $#(Choice C)#  Aldosterone secretion from the zona glomerulosa is primarily regulated by angiotensin II and extracellular potassium levels. $#(Choice D)#  Epinephrine released by the adrenal medulla acts on adrenergic receptors in the heart, lungs, liver, and skeletal muscle to increase sympathetic tone and mediate the acute stress response. $#(Choice E)#  Most sympathetic postganglionic neurons release norepinephrine to activate adrenergic receptors on the target tissues.  However, the preganglionic fibers innervating the adrenal medulla (and postganglionic sympathetic neurons innervating eccrine sweat glands) release acetylcholine. $#Educational objective# Chromaffin cells are modified neuroendocrine cells derived from the neural crest.  Chromaffin cells in the adrenal medulla are stimulated by acetylcholine released by sympathetic preganglionic neurons and secrete catecholamines directly into the bloodstream to amplify sympathetic nervous system activity.  "
+  
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Male Reproductive System",
+  "id": "16236",
+  "title": "A 34-year-old man is found to have low sperm count during an infertility evaluation.  The patient has no chronic medical conditions but has a history of testicular trauma from a motorcycle accident several years ago.  Vital signs are within normal limits and physical examination shows no abnormalities.  Further evaluation reveals the patient has developed antisperm antibodies.  This patient's testicular trauma most likely damaged an anatomic barrier formed from which of the following components?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Leydig cells",
+  "answer_2": "B. Primary spermatocytes",
+  "answer_3": "C. Secondary spermatocytes",
+  "answer_4": "D. Sertoli cells",
+  "answer_5": "E. Tunica albuginea",
+  "percent_1": "9%",
+  "percent_2": "3%",
+  "percent_3": "3%",
+  "percent_4": "59%",
+  "percent_5": "25%",
+  "right_answer": "D. Sertoli cells",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp16236.jpg",
+  "explanation_1": "",
+  "explanation_2": "$Seminiferous tubules are bounded by a basal lamina, with columnar Sertoli cells extending from the basal lamina to the lumen.  The #Sertoli cells# are connected by a continuous barrier of #tight junctions#, forming a functional boundary between the outer basal compartment and the inner luminal compartment of the tubule.  These tight junctions form the #blood-testis barrier# (BTB), which controls the environment of the developing spermatids and prevents immune exposure. $Undifferentiated germ cells (@spermatogonia@) reside along the basal lamina, between the Sertoli cells, and outside the BTB.  The spermatogonia are continually replenished by mitosis.  During differentiation, spermatozoa pass through the barrier, which reforms behind them.  Disruption to the BTB (eg, due to trauma or ischemia) can lead to formation of antisperm antibodies, which can impair fertility. $#(Choice A)#  Leydig cells produce a high local concentration of testosterone, which diffuses into the nearby seminiferous tubules and facilitates spermatogenesis.  However, the Leydig cells are outside the tubules and do not form the BTB. $#(Choices B and C)#  Primary and secondary spermatocytes are postmeiotic cells derived from spermatogonia.  They migrate between the Sertoli cells, inside the BTB, but are not found in a continuous layer and do not form the BTB. $#(Choice E)#  The @tunica albuginea@ of the testis is a thick connective tissue structure that forms the outer capsule of the testis within the scrotum.  It supports the testis as a whole but does not separate individual seminiferous tubules or form the BTB between the inner tubule and the blood. $#Educational objective# The blood-testis barrier is formed by tight junctions between Sertoli cells in the seminiferous tubules and prevents immune exposure to the developing spermatids.  During differentiation, spermatozoa pass through the barrier, which reforms behind them.  Disruption to the blood-testis barrier can lead to formation of antisperm antibodies, which can impair fertility.  ",
+  "clickable_1":"images/img1.16236.jpg",
+  "clickable_2":"images/img2.16236.jpg"
+  
+
+}
+
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "SubjectSystem":"Histology-Pregnancy",
+  "id": "334",
+  "title": "A 28-year-old woman comes to the office due to vaginal spotting.  The patient normally has regular monthly menses with 3-4 days of moderate bleeding.  However, she has had spotting for the past 2 days, and her last menstrual period was 6 weeks ago.  Vital signs are normal.  Serum quantitative β-hCG level is 800 IU/mL (normal at 6 weeks gestation: 1,080-56,500), and a repeat level performed 2 days later shows an abnormal rise to 900 IU/mL.  Pelvic ultrasound reveals no gestational sac in the uterus.  If uterine curettage is performed, which of the following microscopic findings would most likely be found in this patient?",
+  "title_table":"",
+  "title_table_3":"",
+  "exhibit_1":"",
+  "table_before_image":"",
+  "image_1": "",
+  "title_2": "",
+  "audio": "",
+  "comparison_items": "",
+  "answer_1": "A. Atypical endometrial cells, disorganized glands, and multiple mitoses",
+  "answer_2": "B. Dilated, coiled endometrial glands and edematous stroma",
+  "answer_3": "C. Inflammatory infiltration of endometrial glands",
+  "answer_4": "D. Straight, short endometrial glands and compact stroma",
+  "percent_1": "36%",
+  "percent_2": "50%",
+  "percent_3": "6%",
+  "percent_4": "8%",
+  "right_answer": "B. Dilated, coiled endometrial glands and edematous stroma",
+  "ansImg_1": "",  "ansImg_2": "",  "ansImg_3": "",  "ansImg_4": "",  "ansImg_5": "",  "ansImg_6": "",  "ansImg_7": "",  "ansImg_8": "",
+  "ansImg_9": "",  "ansImg_10": "",
+
+  "table":"",
+  "table_3":"",
+  "explanation_img": "images/exp334.jpg",
+  "explanation_1": "",
+  "explanation_2": "$This patient with vaginal bleeding, positive β-hCG, and no visible intrauterine gestational sac has a #pregnancy of unknown location#, which is concerning for an #ectopic pregnancy# (ie, embryo implantation in an extrauterine location such as the @fallopian tube@).  Early ectopic pregnancy may not be visible on ultrasound; therefore, patients require serial β-hCG measurements for diagnosis. $This patient has an #abnormally low β-hCG level# for gestational age (eg, 800 IU/mL at 6 weeks gestation) plus an #inappropriate rise in β-hCG level#.  In normal pregnancies, these levels double approximately every 48 hours; in cases of spontaneous abortion, levels typically decrease.  Therefore, the most likely cause of this patient's low β-hCG level is ectopic pregnancy.  Risk factors include pelvic inflammatory disease and prior pelvic surgery. $Despite its extrauterine location, an ectopic pregnancy changes the #uterine endometrium# due to the secretion of β-hCG, which signals the ovarian corpus luteum to continue progesterone production.  Progesterone promotes endometrial remodeling and #decidualization#, which normally optimizes the intrauterine environment for pregnancy.  Therefore, if uterine curettage is performed on this patient, it would likely show dilated, #coiled endometrial glands# and vascularized, #edematous stroma# (ie, decidualization) but no products of conception (eg, villi). $#(Choice A)#  Atypical endometrial cells with disorganized glands and multiple mitoses are consistent with @endometrial adenocarcinoma@, a uterine malignancy that usually presents with vaginal bleeding.  However, it typically affects postmenopausal women and is not associated with positive β-hCG levels. $#(Choice C)#  Inflammatory infiltration of endometrial glands suggests @endometritis@, an infection of the uterine decidua.  Endometritis is not associated with abnormal β-hCG levels. $#(Choice D)#  Straight, short endometrial glands with compact stroma are found in the early @proliferative phase@ of the menstrual cycle (ie, 4-7 days following menses, prior to ovulation). $#Educational objective# Ectopic pregnancy should be suspected in patients with a pregnancy of unknown location (ie, no visible intrauterine gestation) and abnormally rising β-hCG levels.  Despite their extrauterine location, ectopic pregnancies promote endometrial decidualization, which appears as dilated, coiled endometrial glands and vascularized, edematous stroma.  ",
+  "clickable_1":"images/img1.334.jpg",
+  "clickable_2":"images/img2.334.jpg",
+  "clickable_3":"images/img3.334.jpg",
+  "clickable_4":"images/img4.334.jpg"
+  
+
+}
+]

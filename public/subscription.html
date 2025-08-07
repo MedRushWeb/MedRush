@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Your Plan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+    body { background: linear-gradient(to right, #f8fafc, #e0f2fe); color: #1e293b; }
+    .navbar { background: #1d4ed8; color: white; padding: 16px 30px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+    .navbar h2 { font-size: 24px; }
+    .nav-links a { color: white; margin-left: 20px; text-decoration: none; font-weight: 500; }
+    .nav-links a:hover { text-decoration: underline; }
+    .container { max-width: 1200px; margin: 0px auto; padding: 10px; text-align: center; }
+    .container h1 { font-size: 36px; margin-bottom: 40px; color: #0f172a; }
+    .plans { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+    .plan-card { background: white; border-radius: 16px; padding: 30px; width: 270px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); transition: transform 0.4s ease, border 0.3s ease; position: relative; overflow: hidden; cursor: pointer; }
+    .plan-card::before { content: ''; position: absolute; height: 100%; width: 6px; background: #3b82f6; left: 0; top: 0; transition: width 0.3s; }
+    .plan-card.selected::before { width: 100%; background: linear-gradient(90deg, #2563eb, #3b82f6); z-index: -1; }
+    .plan-card.selected { color: white; transform: scale(1.05); }
+    .plan-title { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
+    .plan-price { font-size: 20px; margin-bottom: 15px; color: #2563eb; }
+    .plan-card.selected .plan-price, .plan-card.selected .plan-title { color: white; }
+    .plan-features { list-style: none; margin-bottom: 20px; }
+    .plan-features li { margin: 8px 0; }
+    .highlight { border: 3px solid #f59e0b; background: linear-gradient(145deg, #fff7ed, #fffbeb); min-height: 520px; position: relative; z-index: 5; box-shadow: 0 12px 24px rgba(0,0,0,0.25); }
+    .footer { margin-top: 0px; text-align: center; padding: 20px; background: #1e40af; color: white; }
+    @media (max-width: 900px) { .plans { flex-direction: column; align-items: center; } }
+    .highlight-wrapper { display: flex; flex-direction: column; align-items: center; margin-top: -80px; }
+    .highlight-label { background: #f59e0b; color: white; font-weight: bold; padding: 6px 12px; border-radius: 999px; font-size: 20px; margin-bottom: -8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); z-index: 999; }
+  
+  .plan-card-free-plan {background: white; border-radius: 16px; padding: 30px; width: 200px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); transition: transform 0.4s ease, border 0.3s ease; position: relative; overflow: hidden; cursor: pointer;}
+   
+  
+  .free-btn {
+    background-color: #007bff;       /* Bootstrap blue */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+  }
+
+  .free-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+
+  .free-btn:active {
+    background-color: #004080;
+    transform: translateY(0);
+  }
+  </style>
+
+
+<script src="https://www.paypal.com/sdk/js?client-id=AXXKx4gEyEMIENeXINnEn5TOVJ76t5Gu11vqlN-rfwn7kr6kMLErz_JjJT9G64rBuRJQDT0o0r1mtSyF&vault=true&intent=subscription"></script>
+
+
+
+</head>
+<body>
+
+  <div class="navbar">
+    <h2>MedRush</h2>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="#">Features</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1></h1>
+    <div class="plans">
+
+
+      <!-- Free Plan -->
+<div class="plan-card-free-plan" onclick="selectPlan(this)">
+  <div class="plan-title">Free Plan</div>
+  <div class="plan-price">0$/month</div>
+  <ul class="plan-features">
+    <li>✔ 4 exams only</li>
+    <li>✘ no reset option</li>
+    <li>✘ No customized exams per id </li>
+    <li>✘ No performance tracking</li>
+  </ul>
+  <button class="free-btn" onclick="activateFreePlan()"> Free plan</button>
+</div>
+
+      <!-- 1 Month -->
+      <div class="plan-card" onclick="selectPlan(this)">
+        <div class="plan-title">1 month</div>
+        <div class="plan-price">20$/month</div>
+        <ul class="plan-features">
+          <li>✔ 1 month only</li>
+          <li>✔ all questions accessible</li>
+          <li>✔ custom id questions accessible</li>
+          <li>✔ unlimited exams</li>
+        </ul>
+        <div id="paypal-button-container-1m"></div>
+          
+      </div>
+
+
+
+      <!-- Highlighted Plan -->
+      <div class="highlight-wrapper">
+        <div class="highlight-label">Our Most Subscribed Plan</div>
+        <div class="plan-card highlight" onclick="selectPlan(this)">
+          <div class="plan-title">1 year</div>
+          <div class="plan-price">10$/month</div>
+          <div class="plan-price">120$/year</div>
+          <ul class="plan-features">
+            <li>✔ 1 year</li>
+            <li>✔ all questions accessible</li>
+            <li>✔ custom id questions accessible</li>
+            <li>✔ unlimited exams</li>
+          </ul>
+          <div id="paypal-button-container-1y"></div>
+        </div>
+      </div>
+
+      <!-- 6 Months -->
+      <div class="plan-card" onclick="selectPlan(this)">
+        <div class="plan-title">6 months</div>
+        <div class="plan-price">15$/month</div>
+        <div class="plan-price">90$/6 months</div>
+        <ul class="plan-features">
+          <li>✔ 6 months</li>
+          <li>✔ all questions accessible</li>
+          <li>✔ custom id questions accessible</li>
+          <li>✔ unlimited exams</li>
+        </ul>
+        <div id="paypal-button-container-6m"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">&copy; 2025 MedRush. All rights reserved.</div>
+
+  <script>
+    function selectPlan(card) {
+      document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+    }
+
+ 
+////////////////////////////////////////
+
+const uid = localStorage.getItem("uid"); // User-specific ID
+
+function checkSubscription() {
+  if (!uid) {
+    console.log("❌ No user ID found");
+    alert("No user ID found. Please log in.");
+    return;
+  }
+
+  const subscriptionID = localStorage.getItem(`subscriptionID_${uid}`);
+  if (!subscriptionID) {
+    console.log("❌ No subscription found for this user");
+    alert("No subscription found for this user.");
+    return;
+  }
+
+  fetch(`/check-subscription?subscriptionID=${subscriptionID}`)
+    .then(res => res.json())
+    .then(data => {
+      console.log("Subscription status:", data.status);
+      if (data.status === "ACTIVE") {
+        localStorage.setItem(`isSubscribed_${uid}`, "true");
+        console.log("✅ Subscription is active");
+        alert("✅ Subscription is active");
+      } else {
+        localStorage.setItem(`isSubscribed_${uid}`, "false");
+        console.log("❌ Subscription is not active");
+        alert("❌ Subscription is not active");
+      }
+    })
+    .catch(err => {
+      console.error("Error checking subscription:", err);
+      alert("Error checking subscription. Check console for details.");
+    });
+}
+
+paypal.Buttons({
+  createSubscription: function(data, actions) {
+    return actions.subscription.create({
+      plan_id: "P-8SK88310PM0516006NCJGMQA" // Replace with your plan ID
+    });
+  },
+  onApprove: function(data) {
+    if (!uid) {
+      alert("❌ Cannot save subscription — no user ID.");
+      return;
+    }
+    console.log("Approved, subscriptionID:", data.subscriptionID);
+    localStorage.setItem(`subscriptionID_${uid}`, data.subscriptionID);
+    checkSubscription(); // Check immediately after approval
+  }
+}).render('#paypal-button-container-1m');
+
+
+
+paypal.Buttons({
+  createSubscription: function(data, actions) {
+    return actions.subscription.create({
+      plan_id: "P-08U958537A0478239NCJGNWY" // Replace with your plan ID
+    });
+  },
+  onApprove: function(data) {
+    if (!uid) {
+      alert("❌ Cannot save subscription — no user ID.");
+      return;
+    }
+    console.log("Approved, subscriptionID:", data.subscriptionID);
+    localStorage.setItem(`subscriptionID_${uid}`, data.subscriptionID);
+    checkSubscription(); // Check immediately after approval
+  }
+}).render('#paypal-button-container-1y');
+
+
+
+
+paypal.Buttons({
+  createSubscription: function(data, actions) {
+    return actions.subscription.create({
+      plan_id: "P-1Y1467987D5999511NCJGLMI" // Replace with your plan ID
+    });
+  },
+  onApprove: function(data) {
+    if (!uid) {
+      alert("❌ Cannot save subscription — no user ID.");
+      return;
+    }
+    console.log("Approved, subscriptionID:", data.subscriptionID);
+    localStorage.setItem(`subscriptionID_${uid}`, data.subscriptionID);
+    checkSubscription(); // Check immediately after approval
+  }
+}).render('#paypal-button-container-6m');
+
+
+
+
+// ✅ Auto-check subscription when page loads for this user
+window.onload = () => {
+  if (uid && localStorage.getItem(`subscriptionID_${uid}`)) {
+   // checkSubscription();
+  }
+};
+
+
+
+
+
+
+
+function activateFreePlan(){
+
+
+        window.location.href = "connect.html";  // ✅ only then redirect
+}
+</script>
+
+</body>
+</html>
+
+

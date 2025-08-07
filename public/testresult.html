@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Table</title>
+  <link rel="stylesheet" href="testresult.css">
+</head>
+<body>
+
+
+
+  <div class="topbar">
+  <div class="topbar-left">
+    <h2 class="logo">MedWeb</h2>
+  </div>
+  <div class="topbar-right">
+    <button id="fullscreen-btn" title="Toggle Fullscreen">⛶</button>
+  </div>
+</div>
+
+
+
+<!-- Left Sidebar Menu -->
+<div class="sidebar">
+  <ul class="sidebar-menu">
+    <li><a href="home.html">Home Page</a></li>
+    <li><a href="connect.html">Create exams</a></li>
+    <li><a href="previous.html">Previous exams</a></li>
+    <li><a href="subscription.html">Subscription</a></li>
+    <li><a href="reset.html">Reset</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Main Content Area -->
+<div class="main-content">
+  <div id="titleContainer">Test Result</div>
+
+  <div class="card">
+    <div id="progressSection">
+      <span id="scoreLabel">Your Score: <span id="scoreValue">0%</span></span>
+      <div id="progressBarContainer">
+        <div id="progressBarFill"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="tableContainer"></div>
+  </div>
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.3.1/dist/pouchdb.min.js"></script>
+  <script>
+  const db = new PouchDB('QuizAppDB');
+
+</script>
+
+  <script type="module" src="testresult.js"></script>
+
+
+
+
+
+</body>
+</html>

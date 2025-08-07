@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab Values</title>
+  <link rel="stylesheet" href="labvalues.css" />
+
+</head>
+<body>
+
+<!-- Button Group -->
+<div class="button-group">
+  <button onclick="showSerumTable()">Serum</button>
+  <button onclick="showCSFTable()">CSF</button>
+  <button onclick="showBloodTable()">Blood</button>
+  <button onclick="showUrineTable()">Urine and BMI</button>
+</div>
+
+<!-- Hidden Table Container -->
+<div id="serum-table-container"  class="lab-table-wrapper" style="display: none; width: max-content; max-width: 100%; overflow-x: auto;">
+  <div style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;">
+    <table class="reference-table">
+      <thead>
+        <tr>
+          <th id="test-header" >Test</th>
+          <th>Reference Range</th>
+        </tr>
+      </thead>
+      <tbody id="serum-table-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<script src="labvalues.js"></script>
+</body>
+</html>
