@@ -1120,23 +1120,6 @@ background-color:#ccc;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #button-container {
 display: flex;
 
@@ -1187,41 +1170,6 @@ background-color: #007BFF;
 .at-button:focus {
 outline:none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2063,3 +2011,208 @@ html, body {
     display: inline-block;  /* keep label inline */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Media Query for iPhones (up to iPhone 15 Pro Max) ========== */
+@media screen and (max-width: 480px) {
+
+  /* Keep sidebar-scroll fixed on the left */
+  #sidebar-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display: block;
+    background-color: #f5f5f5;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .sidebar {
+    display: none; /* hide big sidebar if present */
+  }
+
+  .topbar {
+    left: 60px;
+    height: 50px;
+    padding: 0 10px;
+  }
+
+  .bottombar {
+    left: 60px;
+    height: 45px;
+    padding: 0 10px;
+  }
+
+  .main-content {
+    margin-left: 60px;
+    padding: 10px;
+    top: 50px;
+  }
+
+  .quiz-app {
+    left: 60px;
+    top: 50px;
+    bottom: 45px;
+    padding: 10px;
+  }
+
+  .quiz-app .quiz-area,
+  .quiz-app .answers-area {
+    padding: 8px;
+  }
+
+  .quiz-app .answer label {
+    font-size: 13px;
+  }
+
+  .start-button,
+  .next-button,
+  .finish,
+  .review-button,
+  .next-answer-button {
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .Systems-choices,
+  .Subjects-choices {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+
+  .choose-questions {
+    font-size: 16px;
+  }
+
+  .text {
+    width: 24px;
+    height: 24px;
+  }
+
+  .number_label {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ========== Media Query for iPads (portrait and landscape) ========== */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+  #sidebar-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display: block;
+    background-color: #f5f5f5;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .sidebar {
+    display: none; /* hide full sidebar */
+  }
+
+  .topbar {
+    left: 60px;
+    height: 55px;
+    padding: 0 15px;
+  }
+
+  .bottombar {
+    left: 60px;
+    height: 45px;
+    padding: 0 15px;
+  }
+
+  .main-content {
+    margin-left: 60px;
+    padding: 15px;
+    top: 55px;
+  }
+
+  .quiz-app {
+    left: 60px;
+    top: 55px;
+    bottom: 45px;
+    padding: 12px;
+  }
+
+  .quiz-app .answer label {
+    font-size: 15px;
+  }
+
+  .start-button,
+  .next-button,
+  .finish,
+  .review-button,
+  .next-answer-button {
+    width: 140px;
+    font-size: 16px;
+    height: 30px;
+  }
+
+  .Systems-choices,
+  .Subjects-choices {
+    padding-left: 60px;
+    font-size: 16px;
+  }
+}

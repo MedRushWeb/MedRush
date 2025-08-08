@@ -1945,8 +1945,12 @@ function tablingQuestion(data, targetElement) {
 
 
       function showImage(src) {
-        const isVideo = src.endsWith('.mp4');
+      //  const isVideo = src.endsWith('.mp4');
       
+
+      const isVideo = src.toLowerCase().includes('.mp4');  // ✅ More reliable for signed URLs
+
+
         // Get DOM elements
         const imageEl = document.getElementById("modalImage");
         const videoEl = document.getElementById("modalVideo");

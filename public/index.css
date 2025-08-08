@@ -21,8 +21,8 @@ body {
 /* ===== Animated Bars in Background ===== */
 .bar {
   position: absolute;
-  width: 4px;
-  height: 100px;
+  width: 0.4vw;
+  height: 15vh;
   background: rgba(255, 255, 255, 0.2);
   animation: moveBars 6s linear infinite;
 }
@@ -33,7 +33,7 @@ body {
 .bar:nth-child(4) { left: 80%; animation-delay: 3s; }
 
 @keyframes moveBars {
-  0% { top: -100px; }
+  0% { top: -10vh; }
   100% { top: 110vh; }
 }
 
@@ -44,39 +44,40 @@ header {
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(6px);
-  padding: 15px 0;
+  padding: 1rem 0;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(0,0,0,0.2);
 }
 
 header h1 {
   color: white;
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
 header p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 0.95rem;
-  margin-top: 5px;
+  font-size: 1rem;
+  margin-top: 0.3rem;
 }
 
 /* ===== Glass Container ===== */
 .container {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(15px);
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 320px;
+  width: 90%;
+  max-width: 400px;
   animation: slideUp 0.8s ease-out;
   z-index: 1;
 }
 
 /* ===== Title in Form ===== */
 .container h2 {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   font-size: 1.8rem;
   color: #fff;
   letter-spacing: 1px;
@@ -89,17 +90,17 @@ header p {
   width: 50px;
   height: 3px;
   background: white;
-  margin: 8px auto 0 auto;
+  margin: 0.5rem auto 0 auto;
   border-radius: 3px;
 }
 
 /* ===== Inputs ===== */
 .container input {
   width: 100%;
-  padding: 12px 15px;
-  margin: 8px 0;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
   border: none;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   outline: none;
   background: rgba(255, 255, 255, 0.25);
   color: white;
@@ -113,18 +114,18 @@ header p {
 
 .container input:focus {
   background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0.75rem rgba(255, 255, 255, 0.8);
 }
 
 /* ===== Buttons ===== */
 .container button {
   width: 45%;
-  padding: 10px 0;
-  margin: 10px 5px;
+  padding: 0.65rem 0;
+  margin: 0.5rem 0.3rem;
   background: white;
   color: #4f8ef7;
   border: none;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
@@ -135,12 +136,12 @@ header p {
   background: #4f8ef7;
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(79, 142, 247, 0.4);
+  box-shadow: 0 0.3rem 1rem rgba(79, 142, 247, 0.4);
 }
 
 /* ===== Message ===== */
 #message {
-  margin-top: 15px;
+  margin-top: 1rem;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -156,11 +157,9 @@ header p {
   to { transform: translateY(0); opacity: 1; }
 }
 
-
-
-/* Toggle Link Style */
+/* ===== Toggle Link Style ===== */
 #toggle-mode {
-  margin-top: 15px;
+  margin-top: 1rem;
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -175,4 +174,92 @@ header p {
 
 #toggle-mode a:hover {
   color: #ffd54f;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small phones (iPhone SE, older Androids) */
+@media (max-width: 375px) {
+  .container {
+    padding: 1.8rem;
+    width: 95%;
+  }
+
+  .container h2 {
+    font-size: 1.4rem;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  .container button {
+    width: 100%;
+    margin: 0.3rem 0;
+  }
+}
+
+/* Small phones (iPhone 12, Galaxy S) */
+@media (max-width: 480px) {
+  .container {
+    padding: 2rem;
+    width: 95%;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+  }
+
+  .container button {
+    width: 100%;
+    margin: 0.3rem 0;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets (iPads, Galaxy Tabs) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    padding: 2.5rem;
+    width: 80%;
+    max-width: 450px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .container h2 {
+    font-size: 1.8rem;
+  }
+
+  .container button {
+    font-size: 1rem;
+  }
+}
+
+/* Laptops & desktops */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 400px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
 }

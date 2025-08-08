@@ -41,7 +41,6 @@ export { firestore, storage };
 
 
 
-
 let examIdsArray={};
 let unusedIdsArrayCloud;
 let markedIdsArrayCloud;
@@ -5181,20 +5180,19 @@ if (ansImageSrc && ansImageSrc.trim() !== "") {
     theLabel.append(ansImageDiv);
 }
 */
-let ansImagePath = obj[`ansImg_${i}`]; // e.g., "images/answer_img_1.png"
 
+
+
+let ansImagePath = obj[`ansImg_${i}`]; // e.g., "images/answer_img_1.png"
 if (ansImagePath && ansImagePath.trim() !== "") {
   const imageRef = ref(storage, ansImagePath);
-
   getDownloadURL(imageRef)
     .then(url => {
       let ansImage = document.createElement("IMG");
       ansImage.src = url;
-
       let ansImageDiv = document.createElement("div");
       ansImageDiv.className = `ansImageDiv`;
       ansImageDiv.appendChild(ansImage);
-
       theLabel.append(ansImageDiv);
     })
     .catch(error => {
@@ -5965,10 +5963,14 @@ flag_checkbox.checked=false;
 }
 
 
+
   
       window.showImage = function (src) {
-        const isVideo = src.endsWith('.mp4');
-      
+    //    const isVideo = src.endsWith('.mp4');
+      //
+
+        const isVideo = src.toLowerCase().includes('.mp4');  // ✅ More reliable for signed URLs
+
         // Get DOM elements
         const imageEl = document.getElementById("modalImage");
         const videoEl = document.getElementById("modalVideo");
@@ -5990,9 +5992,10 @@ flag_checkbox.checked=false;
           imageEl.src = src;
         }
       }
-      
+   
 
- 
+
+
 window.closeModal = function () {
     document.getElementById("imageModal").style.display = "none";
     document.getElementById("modalVideo").pause(); // Pause video if playing

@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>Contact Us - Planify</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Contact Us - Planify</title>
   <style>
     * {
       box-sizing: border-box;
@@ -28,6 +32,7 @@
 
     .navbar h2 {
       margin: 0;
+      font-size: 24px;
     }
 
     .nav-links a {
@@ -116,18 +121,73 @@
       margin-top: 60px;
     }
 
-    @media (max-width: 768px) {
+    /* Responsive Layout for tablets and below */
+    @media (max-width: 1024px) {
       .contact-container {
         flex-direction: column;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 20px;
+      }
+
+      .navbar h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 15px;
+        display: inline-block;
+      }
+    }
+
+    /* iPhone-specific tweaks */
+    @media (max-width: 480px) {
+      .navbar {
+        padding: 10px 15px;
+      }
+
+      .navbar h2 {
+        font-size: 18px;
+      }
+
+      .nav-links a {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+
+      .contact-info h3,
+      .contact-form h3 {
+        font-size: 20px;
+      }
+
+      form input, form textarea {
+        font-size: 14px;
+        padding: 10px;
+      }
+
+      form button {
+        font-size: 15px;
+        padding: 10px 15px;
+      }
+
+      .footer {
+        font-size: 14px;
+        padding: 15px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navigation -->
   <div class="navbar">
-    <h2>MedRush</h2>
+    <h2>DrWheezy</h2>
     <div class="nav-links">
       <a href="home.html">Home</a>
       <a href="#">Plans</a>
@@ -141,7 +201,7 @@
     <div class="contact-info">
       <h3>Contact Information</h3>
       <div class="info-item">
-        <i>✉️ medrushweb@gmail.com</i><span></span>
+        <i>✉️ drwheezyweb@gmail.com</i><span></span>
       </div>
       <p>We're here to help! Send us a message and we'll respond as soon as possible.</p>
     </div>

@@ -79,7 +79,7 @@ body {
 }
 
 .number_label{
-display: flex;
+display: block;
 float: left;  
 font-size:18px ;
 font-weight:bold;
@@ -140,6 +140,8 @@ height: 80px;
 width: 100%;
 float: left;
 }
+
+
 
 
 .test-mode{
@@ -384,6 +386,8 @@ outline:none;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+
+
 .big-box:hover {
   transform: translateY(-1px); /* subtle lift */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* slightly stronger shadow */
@@ -599,4 +603,218 @@ outline:none;
   color: white;
   font-size: 22px;
   font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Media Queries ========== */
+
+/* iPhones (all orientations, width ≤ 480px) */
+@media screen and (max-width: 480px) {
+
+
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 60px;
+    z-index: 100;
+    border-top: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .sidebar-menu {
+    display: block;
+  }
+
+  .sidebar-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .sidebar-menu a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .main-content {
+    margin-left: 160px;
+    padding: 15px;
+    margin-bottom: 0;
+  }
+
+  .topbar {
+    height: 60px;
+    padding: 0 10px;
+    z-index: 999999;
+  }
+
+  .topbar-left .logo {
+    font-size: 18px;
+  }
+
+  .loading-text {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .ripple {
+    width: 60px;
+    height: 60px;
+  }
+
+  .start-button {
+    width: 120px;
+    font-size: 14px;
+    height: 30px;
+    margin-left: 10px;
+  }
+
+  .test-mode,
+  .timedClass,
+  .question-mode-text,
+  .unusedClass,
+  .incorrectClass,
+  .markedClass,
+  .all-modeClass {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .two-column-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+
+
+
+
+
+
+
+  .box_left,
+  .box_right {
+    float: none;
+    padding: 0;
+  }
+
+  .count-style,
+  .remain-text {
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+
+
+
+
+
+/* Ensure .box layout is responsive on small screens */
+.box {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* Fix h2 inside box */
+.box h2 {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1.5px solid #9ab3f5;
+}
+
+/* Optional: override unnecessary float behavior in small screens */
+.box_left,
+.box_right {
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* iPads (portrait & landscape, width ≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .main-content {
+    margin-left: 160px;
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 120px;
+  }
+
+  .sidebar-menu a {
+    font-size: 15px;
+  }
+
+  .start-button {
+    width: 130px;
+    font-size: 15px;
+  }
+
+  .test-mode,
+  .timedClass,
+  .question-mode-text {
+    font-size: 16px;
+  }
+
+  .two-column-container {
+    flex-direction: column;
+    gap: 15px;
+  }
 }

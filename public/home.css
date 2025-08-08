@@ -221,26 +221,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -290,40 +270,6 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Main Content */
 .main-content {
   margin-left: 200px;
@@ -354,42 +300,6 @@ a {
   gap: 20px;
   justify-content: space-between;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -448,3 +358,194 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== iPad & Tablet Styles ========== */
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .windows-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sidebar {
+    width: 140px;
+    padding-top: 60px;
+  }
+
+  .main-content {
+    margin-left: 140px;
+    padding: 70px 20px 20px 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .topbar {
+    padding: 0 15px;
+  }
+
+  .topbar-left .logo {
+    font-size: 20px;
+  }
+
+  .topbar-right button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+}
+
+
+/* ========== iPhone & Small Devices Styles ========== */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .windows-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .window_1, .window_2, .window_3, .window_4 {
+    min-width: auto;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .circular-progress,
+  .circular-progress_2 {
+    width: 140px;
+    height: 140px;
+  }
+
+  .circular-progress::before,
+  .circular-progress_2::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .value-container,
+  .value-container_2 {
+    font-size: 20px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding-top: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 99;
+  }
+
+  .sidebar-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .sidebar-menu li {
+    border: none;
+  }
+
+  .sidebar-menu a {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 70px 15px 80px 15px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .topbar-left .logo {
+    font-size: 18px;
+  }
+
+  .topbar-right button {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}
