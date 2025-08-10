@@ -57,7 +57,7 @@
   </style>
 
 
-<script src="https://www.paypal.com/sdk/js?client-id=AXXKx4gEyEMIENeXINnEn5TOVJ76t5Gu11vqlN-rfwn7kr6kMLErz_JjJT9G64rBuRJQDT0o0r1mtSyF&vault=true&intent=subscription"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=Aec0bitCbqqY4v0NrmeMSxfe86n95Jmy9QbLXiU2woFf4vnFxb4e3W0HJ-fBsFqUKNPkhrLLc1KAtts3&vault=true&intent=subscription"></script>
 
 
 
@@ -143,7 +143,9 @@
 
   <div class="footer">&copy; 2025 DrWheezy. All rights reserved.</div>
 
-  <script>
+<script type="module">
+
+    /*
     function selectPlan(card) {
       document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('selected'));
       card.classList.add('selected');
@@ -191,7 +193,7 @@ function checkSubscription() {
 paypal.Buttons({
   createSubscription: function(data, actions) {
     return actions.subscription.create({
-      plan_id: "P-8SK88310PM0516006NCJGMQA" // Replace with your plan ID
+      plan_id: "P-2MW634431J448221NNCJ7F5I" // Replace with your plan ID
     });
   },
   onApprove: function(data) {
@@ -210,7 +212,7 @@ paypal.Buttons({
 paypal.Buttons({
   createSubscription: function(data, actions) {
     return actions.subscription.create({
-      plan_id: "P-08U958537A0478239NCJGNWY" // Replace with your plan ID
+      plan_id: "P-2MW634431J448221NNCJ7F5I" // Replace with your plan ID
     });
   },
   onApprove: function(data) {
@@ -230,7 +232,7 @@ paypal.Buttons({
 paypal.Buttons({
   createSubscription: function(data, actions) {
     return actions.subscription.create({
-      plan_id: "P-1Y1467987D5999511NCJGLMI" // Replace with your plan ID
+      plan_id: "P-2MW634431J448221NNCJ7F5I" // Replace with your plan ID
     });
   },
   onApprove: function(data) {
@@ -265,6 +267,402 @@ function activateFreePlan(){
 
         window.location.href = "connect.html";  // ✅ only then redirect
 }
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+  // --- UI ---
+  function selectPlan(card) {
+    document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+  }
+
+  // --- Keep your existing uid source ---
+  const uid = localStorage.getItem("uid"); // User-specific ID
+
+  // --- Firebase (CDN v10+) ---
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+  import {
+    getFirestore, doc, getDoc, setDoc, serverTimestamp
+  } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+
+  let _db;
+  async function initFirebase() {
+    if (_db) return _db;
+    const res = await fetch("/firebase-config");
+    const config = await res.json();
+    const app = initializeApp(config);
+    _db = getFirestore(app);
+    return _db;
+  }
+
+  // --- 🔐 subscriptionID helpers (Firestore + LocalStorage) ---
+  async function saveSubscriptionID(uid, subscriptionID) {
+    try {
+      const db = await initFirebase();
+      // Writes userSubscriptions/{uid} with merge:true ✅
+      await setDoc(
+        doc(db, "userSubscriptions", uid),
+        { subscriptionID, updatedAt: serverTimestamp() },
+        { merge: true }
+      );
+      // Mirror to LocalStorage (keep existing behavior)
+      localStorage.setItem(`subscriptionID_${uid}`, subscriptionID);
+      console.log("✅ subscriptionID saved to Firestore & LocalStorage");
+    } catch (e) {
+      console.error("Firestore save failed, keeping LocalStorage only:", e);
+    }
+  }
+
+  async function loadSubscriptionID(uid) {
+    // 1) Try LocalStorage first (fast path)
+    const fromLocal = localStorage.getItem(`subscriptionID_${uid}`);
+    if (fromLocal) return fromLocal;
+
+    // 2) Fallback to Firestore, then hydrate LocalStorage
+    try {
+      const db = await initFirebase();
+      const snap = await getDoc(doc(db, "userSubscriptions", uid));
+      if (snap.exists()) {
+        const id = snap.data()?.subscriptionID;
+        if (id) {
+          localStorage.setItem(`subscriptionID_${uid}`, id);
+          console.log("📥 subscriptionID loaded from Firestore into LocalStorage");
+          return id;
+        }
+      }
+    } catch (e) {
+      console.error("Failed to load subscriptionID from Firestore:", e);
+    }
+    return null;
+  }
+
+  // --- Your existing checker (unchanged except: try load if missing) ---
+  function checkSubscription() {
+    if (!uid) {
+      console.log("❌ No user ID found");
+      alert("No user ID found. Please log in.");
+      return;
+    }
+
+    // Try LocalStorage; if missing, attempt Firestore load then re-check
+    let subscriptionID = localStorage.getItem(`subscriptionID_${uid}`);
+    if (!subscriptionID) {
+      loadSubscriptionID(uid).then((loaded) => {
+        if (!loaded) {
+          console.log("❌ No subscription found for this user");
+          alert("No subscription found for this user.");
+          return;
+        }
+        fetch(`/check-subscription?subscriptionID=${loaded}`)
+          .then(res => res.json())
+          .then(data => {
+            console.log("Subscription status:", data.status);
+            if (data.status === "ACTIVE") {
+              localStorage.setItem(`isSubscribed_${uid}`, "true");
+              console.log("✅ Subscription is active");
+              alert("✅ Subscription is active");
+            } else {
+              localStorage.setItem(`isSubscribed_${uid}`, "false");
+              console.log("❌ Subscription is not active");
+              alert("❌ Subscription is not active");
+            }
+          })
+          .catch(err => {
+            console.error("Error checking subscription:", err);
+            alert("Error checking subscription. Check console for details.");
+          });
+      });
+      return; // stop here; promise above will continue
+    }
+
+    // Normal path (you had this already)
+    fetch(`/check-subscription?subscriptionID=${subscriptionID}`)
+      .then(res => res.json())
+      .then(data => {
+        console.log("Subscription status:", data.status);
+        if (data.status === "ACTIVE") {
+          localStorage.setItem(`isSubscribed_${uid}`, "true");
+          console.log("✅ Subscription is active");
+          alert("✅ Subscription is active");
+        } else {
+          localStorage.setItem(`isSubscribed_${uid}`, "false");
+          console.log("❌ Subscription is not active");
+          alert("❌ Subscription is not active");
+        }
+      })
+      .catch(err => {
+        console.error("Error checking subscription:", err);
+        alert("Error checking subscription. Check console for details.");
+      });
+  }
+
+  // --- PayPal Buttons (save to both stores on approve) ---
+  paypal.Buttons({
+    createSubscription: function (data, actions) {
+      return actions.subscription.create({
+        plan_id: "P-2MW634431J448221NNCJ7F5I" // Replace with your plan ID
+      });
+    },
+    onApprove: async function (data) {
+      if (!uid) {
+        alert("❌ Cannot save subscription — no user ID.");
+        return;
+      }
+      console.log("Approved, subscriptionID:", data.subscriptionID);
+
+      // Keep LocalStorage (existing behavior)
+      localStorage.setItem(`subscriptionID_${uid}`, data.subscriptionID);
+
+      // NEW: also save to Firestore
+      await saveSubscriptionID(uid, data.subscriptionID);
+
+      checkSubscription(); // Check immediately after approval
+    }
+  }).render('#paypal-button-container-1m');
+
+  paypal.Buttons({
+    createSubscription: function (data, actions) {
+      return actions.subscription.create({
+        plan_id: "P-2MW634431J448221NNCJ7F5I"
+      });
+    },
+    onApprove: async function (data) {
+      if (!uid) {
+        alert("❌ Cannot save subscription — no user ID.");
+        return;
+      }
+      console.log("Approved, subscriptionID:", data.subscriptionID);
+      localStorage.setItem(`subscriptionID_${uid}`, data.subscriptionID);
+      await saveSubscriptionID(uid, data.subscriptionID);
+      checkSubscription();
+    }
+  }).render('#paypal-button-container-1y');
+
+  paypal.Buttons({
+    createSubscription: function (data, actions) {
+      return actions.subscription.create({
+        plan_id: "P-2MW634431J448221NNCJ7F5I"
+      });
+    },
+    onApprove: async function (data) {
+      if (!uid) {
+        alert("❌ Cannot save subscription — no user ID.");
+        return;
+      }
+      console.log("Approved, subscriptionID:", data.subscriptionID);
+      localStorage.setItem(`subscriptionID_${uid}`, data.subscriptionID);
+      await saveSubscriptionID(uid, data.subscriptionID);
+      checkSubscription();
+    }
+  }).render('#paypal-button-container-6m');
+
+  // ✅ On load: if LocalStorage empty, try pulling from Firestore (no isSubscribed changes here)
+  window.onload = async () => {
+    if (uid) {
+      if (!localStorage.getItem(`subscriptionID_${uid}`)) {
+        await loadSubscriptionID(uid);
+      }
+      // If you want to auto-check, uncomment your original line:
+      // if (localStorage.getItem(`subscriptionID_${uid}`)) checkSubscription();
+    }
+  };
+
+  // --- Free plan (unchanged) ---
+  function activateFreePlan() {
+    window.location.href = "connect.html";
+  }
+  window.activateFreePlan = activateFreePlan; // expose if called from HTML
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function selectPlan(card) {
+    document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+  }
+
+  const uid = localStorage.getItem("uid"); // still keep UID from localStorage
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+  import {
+    getFirestore, doc, getDoc, setDoc, serverTimestamp
+  } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+
+  let _db;
+  async function initFirebase() {
+    if (_db) return _db;
+    const res = await fetch("/firebase-config");
+    const config = await res.json();
+    const app = initializeApp(config);
+    _db = getFirestore(app);
+    return _db;
+  }
+
+  // --- Save subscriptionID ONLY to Firestore ---
+  async function saveSubscriptionID(uid, subscriptionID) {
+    try {
+      const db = await initFirebase();
+      await setDoc(
+        doc(db, "userSubscriptions", uid),
+        { subscriptionID, updatedAt: serverTimestamp() },
+        { merge: true }
+      );
+      console.log("✅ subscriptionID saved to Firestore only");
+    } catch (e) {
+      console.error("❌ Failed to save subscriptionID to Firestore:", e);
+    }
+  }
+
+  // --- Load subscriptionID ONLY from Firestore ---
+  async function loadSubscriptionID(uid) {
+    try {
+      const db = await initFirebase();
+      const snap = await getDoc(doc(db, "userSubscriptions", uid));
+      if (snap.exists()) {
+        const id = snap.data()?.subscriptionID;
+        if (id) {
+          console.log("📥 subscriptionID loaded from Firestore:", id);
+          return id;
+        }
+      }
+    } catch (e) {
+      console.error("❌ Failed to load subscriptionID from Firestore:", e);
+    }
+    return null;
+  }
+
+  // --- Check subscription using Firestore value ---
+  async function checkSubscription() {
+    if (!uid) {
+      console.log("❌ No user ID found");
+      alert("No user ID found. Please log in.");
+      return;
+    }
+
+    const subscriptionID = await loadSubscriptionID(uid);
+    if (!subscriptionID) {
+      console.log("❌ No subscription found for this user");
+      alert("No subscription found for this user.");
+      return;
+    }
+
+    fetch(`/check-subscription?subscriptionID=${subscriptionID}`)
+      .then(res => res.json())
+      .then(data => {
+        console.log("Subscription status:", data.status);
+        if (data.status === "ACTIVE") {
+          localStorage.setItem(`isSubscribed_${uid}`, "true");
+          console.log("✅ Subscription is active");
+          alert("✅ Subscription is active");
+        } else {
+          localStorage.setItem(`isSubscribed_${uid}`, "false");
+          console.log("❌ Subscription is not active");
+          alert("❌ Subscription is not active");
+        }
+      })
+      .catch(err => {
+        console.error("Error checking subscription:", err);
+        alert("Error checking subscription. Check console for details.");
+      });
+  }
+
+  // --- PayPal Buttons ---
+  function renderPayPalButton(selector) {
+    paypal.Buttons({
+      createSubscription: function (data, actions) {
+        return actions.subscription.create({
+          plan_id: "P-2MW634431J448221NNCJ7F5I" // Replace with your plan ID
+        });
+      },
+      onApprove: async function (data) {
+        if (!uid) {
+          alert("❌ Cannot save subscription — no user ID.");
+          return;
+        }
+        console.log("Approved, subscriptionID:", data.subscriptionID);
+        await saveSubscriptionID(uid, data.subscriptionID);
+        checkSubscription();
+      }
+    }).render(selector);
+  }
+
+  renderPayPalButton('#paypal-button-container-1m');
+  renderPayPalButton('#paypal-button-container-1y');
+  renderPayPalButton('#paypal-button-container-6m');
+
+  // ✅ On load: check subscription from Firestore
+  window.onload = () => {
+    if (uid) {
+      checkSubscription();
+    }
+  };
+
+  function activateFreePlan() {
+    window.location.href = "connect.html";
+  }
+  window.activateFreePlan = activateFreePlan;
+
 </script>
 
 </body>
