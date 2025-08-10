@@ -35,6 +35,10 @@ import {
 
 let firestore, storage;
 
+
+
+
+
 export async function initFirebase() {
   try {
     const res = await fetch("/firebase-config");
@@ -51,6 +55,16 @@ export async function initFirebase() {
     throw err;
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 // ✅ Allow other files to access firestore & storage
 export { firestore, storage };
@@ -1073,8 +1087,11 @@ async function CombosaveMinimalToFirestore() {
 }
 
 
-
+/*
 startButton.onclick = () => {
+  */
+
+  startButton.onclick = async () => {
 if (document.getElementById("timed").checked){isTimed=true}else{isTimed=false};
 
 if (document.getElementById("unused").checked || document.getElementById("all-mode").checked || document.getElementById("incorrect").checked || document.getElementById("marked").checked) {
@@ -1086,10 +1103,13 @@ if (document.getElementById("unused").checked || document.getElementById("all-mo
 if ( n > FINAL_ARRAY.length)alert("enter a maximum number of "+ FINAL_ARRAY.length);
 else {
 
-
+/*
 checkSubscription().then(isSubscribed => {
-  if (isSubscribed || (Z<4) ) {
+    if (isSubscribed || (Z<4) ) {
+*/
 
+
+  if (await checkSubscription() || await checkSubscriptionLS() || (Z<4) ) {
 // FINAL_ARRAY=FINAL_ARRAY.slice(0,n);
 FINAL_ARRAY=randomizeSliceStickPairs(FINAL_ARRAY,originalGroupAData,n);
 //console.log("v",FINAL_ARRAY);
@@ -1111,8 +1131,11 @@ test_result_index=Z;
   } else {
         window.location.href = "subscription.html";  // ✅ only then redirect
 }
-});
 
+
+/*
+});
+*/
 
 
 
@@ -1744,7 +1767,7 @@ async function deleteCurrentUserData() {
 
 
 
-
+/*
 
 async function checkSubscription() {
   if (!uid) {
@@ -1774,3 +1797,103 @@ async function checkSubscription() {
   }
 }
 
+*/
+
+
+
+  /***** PayPal: Check status (server endpoint: /check-subscription) *****/
+async function checkSubscription() {
+  if (!uid) {
+    console.log("❌ No user ID found");
+    alert("No user ID found. Please log in.");
+    return false;
+  }
+
+  const subscriptionID = await loadSubscriptionID(uid);
+  if (!subscriptionID) {
+    console.log("❌ No subscription found for this user");
+    alert("No subscription found for this user.");
+    return false;
+  }
+
+  try {
+    const res = await fetch(`/check-subscription?subscriptionID=${subscriptionID}`);
+    const data = await res.json();
+
+    console.log("PayPal subscription status:", data.status);
+
+    if (data.status === "ACTIVE") {
+      localStorage.setItem(`isSubscribed_${uid}`, "true");
+      alert("✅ PayPal subscription is active");
+      return true;
+    } else {
+      localStorage.setItem(`isSubscribed_${uid}`, "false");
+      alert("❌ PayPal subscription is not active");
+      return false;
+    }
+  } catch (err) {
+    console.error("PayPal check error:", err);
+    alert("Error checking PayPal subscription.");
+    return false;
+  }
+}
+
+
+
+
+
+  async function loadSubscriptionID(uid) {
+  try {
+    const { firestore: db } = await initFirebase();
+    const snap = await getDoc(doc(db, "userSubscriptions", uid));
+    if (snap.exists()) {
+      const id = snap.data()?.subscriptionID;
+      if (id) {
+        console.log("📥 subscriptionID loaded from Firestore:", id);
+        return id;
+      }
+    } else {
+      console.log("⚠️ No subscription document found for UID:", uid);
+    }
+  } catch (e) {
+    console.error("❌ Firestore load failed:", e);
+  }
+  return null; // Return null if not found or on error
+}
+
+
+
+
+
+  
+  // Check LS status (server: /check-ls-subscription)
+// Check LS status (server: /check-ls-subscription)
+async function checkSubscriptionLS(subscriptionIDFromEvent) {
+  try {
+    const subscriptionID = subscriptionIDFromEvent || await loadSubscriptionID(uid);
+    if (!subscriptionID) {
+      console.log("❌ No LS subscription found for this user");
+      alert("No LS subscription found for this user.");
+      return false; // ❌ No subscription
+    }
+
+    const r = await fetch(`/check-ls-subscription?subscriptionID=${subscriptionID}`);
+    const data = await r.json();
+    const status = (data && data.status) || "unknown";
+    console.log("LS subscription status:", status);
+
+    if (status === "active") {
+      localStorage.setItem(`isSubscribed_${uid}`, "true");
+      alert("✅ Lemon Squeezy subscription is active");
+      return true; // ✅ Subscription active
+    } else {
+      localStorage.setItem(`isSubscribed_${uid}`, "false");
+      alert(`❌ Lemon Squeezy subscription not active (status: ${status})`);
+      return false; // ❌ Subscription not active
+    }
+  } catch (e) {
+    console.error("LS check error:", e);
+    alert("Error checking Lemon Squeezy subscription.");
+    return false; // ❌ Error occurred
+  }
+}
