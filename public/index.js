@@ -376,6 +376,10 @@ document.getElementById("auth-btn").addEventListener("click", async () => {
       const uid = userCred.user.uid;
       localStorage.setItem("uid", uid); // Optional
 
+      localStorage.setItem("email", userCred.user.email); // ✅ add this
+
+
+
       const docSnap = await getDoc(doc(db, "users", uid));
       if (docSnap.exists()) {
         const data = docSnap.data();

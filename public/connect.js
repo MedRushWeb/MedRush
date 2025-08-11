@@ -1754,53 +1754,6 @@ async function deleteCurrentUserData() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-async function checkSubscription() {
-  if (!uid) {
-    console.log("❌ No user ID found");
-    return false;
-  }
-
-  const subscriptionID = localStorage.getItem(`subscriptionID_${uid}`);
-  if (!subscriptionID) {
-    console.log("❌ No subscription found for this user");
-    return false;
-  }
-
-  try {
-    const res = await fetch(`/check-subscription?subscriptionID=${subscriptionID}`);
-    const data = await res.json();
-
-    console.log("Subscription status:", data.status);
-
-    const isActive = data.status === "ACTIVE";
-    localStorage.setItem(`isSubscribed_${uid}`, isActive ? "true" : "false");
-
-    return isActive;
-  } catch (err) {
-    console.error("❌ Error checking subscription:", err);
-    return false;
-  }
-}
-
-*/
-
-
-
   /***** PayPal: Check status (server endpoint: /check-subscription) *****/
 async function checkSubscription() {
   if (!uid) {
@@ -1809,7 +1762,13 @@ async function checkSubscription() {
     return false;
   }
 
-  const subscriptionID = await loadSubscriptionID(uid);
+  //const subscriptionID = await loadSubscriptionID(uid);
+    
+  const subscriptionID = await loadSubscriptionID(uid, "paypal");
+
+
+
+
   if (!subscriptionID) {
     console.log("❌ No subscription found for this user");
     alert("No subscription found for this user.");
@@ -1841,7 +1800,7 @@ async function checkSubscription() {
 
 
 
-
+/*
   async function loadSubscriptionID(uid) {
   try {
     const { firestore: db } = await initFirebase();
@@ -1851,6 +1810,39 @@ async function checkSubscription() {
       if (id) {
         console.log("📥 subscriptionID loaded from Firestore:", id);
         return id;
+      }
+    } else {
+      console.log("⚠️ No subscription document found for UID:", uid);
+    }
+  } catch (e) {
+    console.error("❌ Firestore load failed:", e);
+  }
+  return null; // Return null if not found or on error
+}
+*/
+
+
+// provider: "paypal" or "lemonsqueezy"
+async function loadSubscriptionID(uid, provider) {
+  try {
+    if (!uid) {
+      console.error("❌ Missing UID");
+      return null;
+    }
+    if (!["paypal", "lemonsqueezy"].includes(provider)) {
+      console.error(`❌ Invalid provider: ${provider}`);
+      return null;
+    }
+    const { firestore: db } = await initFirebase();
+    const snap = await getDoc(doc(db, "userSubscriptions", uid));
+    if (snap.exists()) {
+      const fieldName = provider === "paypal" ? "PPsubscriptionID" : "LSsubscriptionID";
+      const id = snap.data()?.[fieldName];
+      if (id) {
+        console.log(`📥 ${fieldName} loaded from Firestore:`, id);
+        return id;
+      } else {
+        console.log(`⚠️ No ${fieldName} found for UID:`, uid);
       }
     } else {
       console.log("⚠️ No subscription document found for UID:", uid);
@@ -1870,7 +1862,12 @@ async function checkSubscription() {
 // Check LS status (server: /check-ls-subscription)
 async function checkSubscriptionLS(subscriptionIDFromEvent) {
   try {
-    const subscriptionID = subscriptionIDFromEvent || await loadSubscriptionID(uid);
+  //  const subscriptionID = subscriptionIDFromEvent || await loadSubscriptionID(uid);
+
+  const subscriptionID = subscriptionIDFromEvent || await loadSubscriptionID(uid, "lemonsqueezy");
+
+
+
     if (!subscriptionID) {
       console.log("❌ No LS subscription found for this user");
       alert("No LS subscription found for this user.");
