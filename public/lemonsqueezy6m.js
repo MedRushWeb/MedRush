@@ -92,9 +92,9 @@
       alert("Firebase init failed. Enable Anonymous Sign-in if required.\n" + (e?.message || e));
     }
 // fake one for testing
-    const HOSTED_LINK = "https://drwheezy.lemonsqueezy.com/buy/ba137892-a1d2-4421-bb9d-cd8a6fe8112e?embed=1";
+ //   const HOSTED_LINK = "https://drwheezy.lemonsqueezy.com/buy/ba137892-a1d2-4421-bb9d-cd8a6fe8112e?embed=1";
 
-  //  const HOSTED_LINK = "https://drwheezy.lemonsqueezy.com/buy/66c8a46b-3323-4d3c-972c-25d5869c1655?embed=1";
+    const HOSTED_LINK = "https://drwheezy.lemonsqueezy.com/buy/66c8a46b-3323-4d3c-972c-25d5869c1655?embed=1";
     const buyBtn = document.getElementById("buy");
     const buyAnchor = document.getElementById("buy-anchor");
     const createExamBtn = document.getElementById("createExamBtn");
