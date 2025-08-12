@@ -1109,7 +1109,7 @@ checkSubscription().then(isSubscribed => {
 */
 
 
-  if (await checkSubscription() || await checkSubscriptionLS() || (Z<4) ) {
+  if (await finalLemonSqueezyloadfunction() || await checkSubscription() || (Z<4) ) {
 // FINAL_ARRAY=FINAL_ARRAY.slice(0,n);
 FINAL_ARRAY=randomizeSliceStickPairs(FINAL_ARRAY,originalGroupAData,n);
 //console.log("v",FINAL_ARRAY);
@@ -1860,11 +1860,11 @@ async function loadSubscriptionID(uid, provider) {
   
   // Check LS status (server: /check-ls-subscription)
 // Check LS status (server: /check-ls-subscription)
-async function checkSubscriptionLS(subscriptionIDFromEvent) {
+async function checkSubscriptionLS() {
   try {
   //  const subscriptionID = subscriptionIDFromEvent || await loadSubscriptionID(uid);
 
-  const subscriptionID = subscriptionIDFromEvent || await loadSubscriptionID(uid, "lemonsqueezy");
+  const subscriptionID =  await loadSubscriptionID(uid, "lemonsqueezy");
 
 
 
@@ -1874,7 +1874,7 @@ async function checkSubscriptionLS(subscriptionIDFromEvent) {
       return false; // ❌ No subscription
     }
 
-    const r = await fetch(`/check-ls-subscription?subscriptionID=${subscriptionID}`);
+    const r = await fetch(`/check-subscription?subscriptionID=${subscriptionID}`);
     const data = await r.json();
     const status = (data && data.status) || "unknown";
     console.log("LS subscription status:", status);
@@ -1892,5 +1892,54 @@ async function checkSubscriptionLS(subscriptionIDFromEvent) {
     console.error("LS check error:", e);
     alert("Error checking Lemon Squeezy subscription.");
     return false; // ❌ Error occurred
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+async function finalLemonSqueezyloadfunction() {
+  if (!uid) throw new Error("Login first");
+
+  try {
+    // ✅ Ensure Firebase is initialized
+    const { firestore: db } = await initFirebase();
+
+    // ✅ Reference to user's subscription document
+    const ref = doc(db, "userSubscriptions", uid);
+    const snap = await getDoc(ref);
+
+    const id = snap.exists() ? snap.data().LSsubscriptionID : null;
+    if (!id) {
+      return false;
+    }
+
+
+    // ✅ Check subscription status from backend API
+    const r = await fetch(`/api/ls/check-subscription?subscriptionID=${encodeURIComponent(id)}`);
+    const json = await r.json();
+
+    // ✅ Update Firestore with the latest LS status
+    if (json?.status) {
+      await setDoc(ref, { LSstatus: json.status }, { merge: true });
+    }
+
+
+    alert (`Lemon Squeezy is ${json.status} for this id : ${id}`)
+    // ✅ Return true if active, false otherwise
+    return !!json?.active;
+
+  } catch (err) {
+    console.error("❌ Error in finalLemonSqueezyloadfunction:", err);
+    return false;
   }
 }

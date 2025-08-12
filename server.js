@@ -821,17 +821,13 @@ app.listen(PORT, () =>
 
 
 
-
-
-
-
-
-// server.js
+// server.js (merged)
 import express from "express";
 import fs from "fs";
 import path from "path";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
+import cors from "cors";
 import { fileURLToPath } from "url";
 
 dotenv.config();
@@ -840,19 +836,19 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // ---------- Middleware / Static ----------
-app.use(express.json());
+app.use(cors());
+app.use(express.json({ limit: "2mb" }));
 app.use(express.static("public"));
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/audioes", express.static(path.join(__dirname, "audioes")));
 
-// ---------- Firebase config (replace with your real config) ----------
+// ---------- Firebase config ----------
 app.get("/firebase-config", (req, res) => {
+  // TODO: replace with your real keys if these are placeholders
   res.json({
-
-    
   apiKey: "AIzaSyAtKFbssJoDWHRaDsr6yHEMKJ4cz7jpI1Q",
   authDomain: "medrush-c78fb.firebaseapp.com",
   projectId: "medrush-c78fb",
@@ -860,9 +856,8 @@ app.get("/firebase-config", (req, res) => {
   messagingSenderId: "382253906640",
   appId: "1:382253906640:web:edeab544653ba45e2dbcd5",
   measurementId: "G-7W9GM9KXZK"
- 
 
-});
+  });
 });
 
 // ---------- Serve JSON from /data safely ----------
@@ -1145,6 +1140,83 @@ app.get("/check-ls-subscription", async (req, res) => {
     res.status(500).json({ error: "Internal error" });
   }
 });
+
+// ---------- Extra API aliases from the addition file ----------
+// (1) /api/ls/check-subscription (alias)
+app.get("/api/ls/check-subscription", async (req, res) => {
+  const { subscriptionID } = req.query;
+  if (!subscriptionID) return res.status(400).json({ error: "Missing subscriptionID" });
+  try {
+    const resp = await fetch(`https://api.lemonsqueezy.com/v1/subscriptions/${encodeURIComponent(subscriptionID)}`, {
+      headers: {
+        "Authorization": `Bearer ${process.env.LEMON_API_KEY}`,
+        "Accept": "application/vnd.api+json"
+      }
+    });
+    if (!resp.ok) {
+      const text = await resp.text();
+      return res.status(resp.status).json({ error: "Lemon Squeezy API error", details: text });
+    }
+    const data = await resp.json();
+    const status = data?.data?.attributes?.status || "unknown";
+    const active = status === "active" || status === "on_trial";
+    res.json({ active, status, subscription: data?.data });
+  } catch (e) {
+    res.status(500).json({ error: "Server error", details: String(e) });
+  }
+});
+
+// (2) /api/ls/capture — capture latest subscription by buyer email
+app.post("/api/ls/capture", async (req, res) => {
+  try {
+    const { uid, email } = req.body || {};
+    if (!uid) return res.status(400).json({ error: "Missing uid" });
+    if (!email) return res.status(400).json({ error: "Missing email" });
+
+    const urls = [
+      `https://api.lemonsqueezy.com/v1/subscriptions?filter[user_email]=${encodeURIComponent(email)}`,
+      `https://api.lemonsqueezy.com/v1/subscriptions?filter[email]=${encodeURIComponent(email)}`
+    ];
+
+    let first = null, lastDetails = "";
+    for (const url of urls) {
+      const resp = await fetch(url, {
+        headers: {
+          "Authorization": `Bearer ${process.env.LEMON_API_KEY}`,
+          "Accept": "application/vnd.api+json"
+        }
+      });
+      if (!resp.ok) {
+        lastDetails = await resp.text();
+        continue;
+      }
+      const json = await resp.json();
+      if (Array.isArray(json?.data) && json.data.length > 0) {
+        first = json.data[0];
+        break;
+      }
+    }
+
+    if (!first) {
+      return res.status(404).json({
+        error: "No subscriptions found for that email",
+        details: lastDetails
+      });
+    }
+
+    res.json({
+      uid,
+      email,
+      subscriptionID: first.id,
+      status: first.attributes?.status || "unknown"
+    });
+  } catch (e) {
+    res.status(500).json({ error: "Server error", details: String(e) });
+  }
+});
+
+// ---------- Health ----------
+app.get("/health", (_req, res) => res.json({ ok: true }));
 
 // =======================================================
 //                       MAIN PAGE
