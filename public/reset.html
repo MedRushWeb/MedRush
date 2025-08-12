@@ -39,6 +39,19 @@
 <p class="warning-text">
     your user Id is : <span id="user-id"></span>
   </p>
+
+
+
+  <p class="warning-text">
+    your email Id is : <span id="email-id"></span>
+  </p>
+
+
+  <p class="warning-text">
+    Step 1 Questions
+  </p>
+
+
 <button id="resetbtn" class="resetbtn">RESET</button>
 <button id="autoresetbtn" style="display: none;"></button>
   </div>
@@ -95,6 +108,7 @@ export { firestore };
       await initFirebase();
   document.getElementById("user-id").textContent = localStorage.getItem("uid");
 
+  document.getElementById("email-id").textContent = localStorage.getItem("email");
 
       
       const urlParams = new URLSearchParams(window.location.search);

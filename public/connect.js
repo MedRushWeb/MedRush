@@ -1103,10 +1103,7 @@ if (document.getElementById("unused").checked || document.getElementById("all-mo
 if ( n > FINAL_ARRAY.length)alert("enter a maximum number of "+ FINAL_ARRAY.length);
 else {
 
-/*
-checkSubscription().then(isSubscribed => {
-    if (isSubscribed || (Z<4) ) {
-*/
+
 
 
   if (await finalLemonSqueezyloadfunction() || await checkSubscription() || (Z<4) ) {
@@ -1764,14 +1761,12 @@ async function checkSubscription() {
 
   //const subscriptionID = await loadSubscriptionID(uid);
     
-  const subscriptionID = await loadSubscriptionID(uid, "paypal");
-
-
+  const subscriptionID = await loadSubscriptionID(uid);
 
 
   if (!subscriptionID) {
     console.log("❌ No subscription found for this user");
-    alert("No subscription found for this user.");
+  //  alert("No subscription found for this user.");
     return false;
   }
 
@@ -1782,12 +1777,10 @@ async function checkSubscription() {
     console.log("PayPal subscription status:", data.status);
 
     if (data.status === "ACTIVE") {
-      localStorage.setItem(`isSubscribed_${uid}`, "true");
-      alert("✅ PayPal subscription is active");
+//      alert("✅ PayPal subscription is active");
       return true;
     } else {
-      localStorage.setItem(`isSubscribed_${uid}`, "false");
-      alert("❌ PayPal subscription is not active");
+//      alert("❌ PayPal subscription is not active");
       return false;
     }
   } catch (err) {
@@ -1822,21 +1815,27 @@ async function checkSubscription() {
 */
 
 
-// provider: "paypal" or "lemonsqueezy"
-async function loadSubscriptionID(uid, provider) {
+async function loadSubscriptionID(uid) {
   try {
     if (!uid) {
       console.error("❌ Missing UID");
       return null;
     }
+
+    /*
     if (!["paypal", "lemonsqueezy"].includes(provider)) {
       console.error(`❌ Invalid provider: ${provider}`);
       return null;
     }
+      */
     const { firestore: db } = await initFirebase();
     const snap = await getDoc(doc(db, "userSubscriptions", uid));
     if (snap.exists()) {
-      const fieldName = provider === "paypal" ? "PPsubscriptionID" : "LSsubscriptionID";
+
+
+    //  const fieldName =  provider === "paypal" ? "PPsubscriptionID" : "LSsubscriptionID";
+    const fieldName = "PPsubscriptionID";
+    
       const id = snap.data()?.[fieldName];
       if (id) {
         console.log(`📥 ${fieldName} loaded from Firestore:`, id);
@@ -1852,54 +1851,6 @@ async function loadSubscriptionID(uid, provider) {
   }
   return null; // Return null if not found or on error
 }
-
-
-
-
-
-  
-  // Check LS status (server: /check-ls-subscription)
-// Check LS status (server: /check-ls-subscription)
-async function checkSubscriptionLS() {
-  try {
-  //  const subscriptionID = subscriptionIDFromEvent || await loadSubscriptionID(uid);
-
-  const subscriptionID =  await loadSubscriptionID(uid, "lemonsqueezy");
-
-
-
-    if (!subscriptionID) {
-      console.log("❌ No LS subscription found for this user");
-      alert("No LS subscription found for this user.");
-      return false; // ❌ No subscription
-    }
-
-    const r = await fetch(`/check-subscription?subscriptionID=${subscriptionID}`);
-    const data = await r.json();
-    const status = (data && data.status) || "unknown";
-    console.log("LS subscription status:", status);
-
-    if (status === "active") {
-      localStorage.setItem(`isSubscribed_${uid}`, "true");
-      alert("✅ Lemon Squeezy subscription is active");
-      return true; // ✅ Subscription active
-    } else {
-      localStorage.setItem(`isSubscribed_${uid}`, "false");
-      alert(`❌ Lemon Squeezy subscription not active (status: ${status})`);
-      return false; // ❌ Subscription not active
-    }
-  } catch (e) {
-    console.error("LS check error:", e);
-    alert("Error checking Lemon Squeezy subscription.");
-    return false; // ❌ Error occurred
-  }
-}
-
-
-
-
-
-
 
 
 
@@ -1934,7 +1885,11 @@ async function finalLemonSqueezyloadfunction() {
     }
 
 
-    alert (`Lemon Squeezy is ${json.status} for this id : ${id}`)
+//    alert (`Lemon Squeezy is ${json.status} for this id : ${id}`)
+
+
+
+
     // ✅ Return true if active, false otherwise
     return !!json?.active;
 

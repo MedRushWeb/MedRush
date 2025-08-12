@@ -19,7 +19,7 @@ body {
 #progressSection {
   width: 60%;
   max-width: 600px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 10px auto;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -215,7 +215,14 @@ input:focus, button:hover {
 
 
 
-
+  #averageothers {
+    text-align: center;
+    color: blue;
+    font-family: Cambria;
+    font-size: 18px;
+     margin: 0 auto 10px auto;
+ 
+  }
 
 
 

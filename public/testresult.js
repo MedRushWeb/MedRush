@@ -45,7 +45,7 @@ let FinalArray_IDs;
 
 
 
-
+let average;
 
 /////////////////////////////////////////////////////////////////////
 
@@ -233,6 +233,9 @@ await loadTestResultIndexOnly();
 await ComboLoadValuesFromFirestore();
 
 updateProgressBar(parseFloat((scores[`score_${test_result_index}_${uid}`]*100).toFixed(1)));
+
+
+
  createTable();
 })();
 
@@ -258,6 +261,11 @@ async function createTable() {
 const examEntries = Exams[`Exam_${test_result_index}_${uid}`] || [];
 
 const Timeentries= timeperQuestion[`timeperQuestion_${test_result_index}_${uid}`] || [];
+
+
+
+average=0;
+
 
 
 for (let i = 0; i < examEntries.length; i++) {
@@ -321,6 +329,10 @@ const match = right.match(/[A-V]/);  // Finds first capital A–F
 const letter = match ? match[0] : null;
 const index = letter ?  letter.charCodeAt(0) - 64: null;
 const percentage = index ? examEntries[i][`percent_${index}`] : "";
+
+//average=average+percentage;
+average += Number(percentage.replace('%', '')) || 0;
+
 
 cell.innerText = percentage;
 
@@ -392,6 +404,17 @@ async function handleSaveAndRedirect() {
   }
 }
 
+
+
+//alert (average/examEntries.length);
+
+
+  const scoreValue = document.getElementById('averageScore');
+  scoreValue.textContent = " "+ average/examEntries.length + ' %';
+
+
+
+
   const container = document.getElementById("tableContainer");
   container.innerHTML = "";
   container.appendChild(table);
@@ -451,7 +474,10 @@ function updateProgressBar(percentage) {
 
   progressBarFill.style.width = percentage + '%';
   scoreValue.textContent = percentage + '%';
+
 }
+
+
 
     document.getElementById("fullscreen-btn").addEventListener("click", () => {
       if (!document.fullscreenElement) {

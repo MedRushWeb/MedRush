@@ -1,325 +1,3 @@
-/*
-
-const uid = localStorage.getItem("uid");
-const MYemail =localStorage.getItem("email");
-
-
-const logBox = document.getElementById("log");
-function log(...args){
-  const line = args.map(a => (typeof a === "string" ? a : JSON.stringify(a, null, 2))).join(" ");
-  logBox.textContent += line + "\n";
-  logBox.scrollTop = logBox.scrollHeight;
-  console.log(...args);
-}
-
-// ---------- Firebase (client) ----------
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
-let app, auth, db ;
-
-async function initFirebase(){
-  const cfg = await fetch("/firebase-config").then(r=>r.json());
-  app = initializeApp(cfg);
-  auth = getAuth(app);
-  db = getFirestore(app);
-
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      document.getElementById("uid").textContent = uid;
-    }
-  });
-}
-
-document.getElementById("login").addEventListener("click", async () => {
-  try {
-    if (!app) await initFirebase();
-    const userCred = await signInAnonymously(auth);
-    document.getElementById("uid").textContent = uid;
-    log("✅ Signed in anonymously:", uid);
-  } catch (e) {
-    console.error(e);
-    alert("Firebase sign-in failed. Enable Anonymous Sign-in in Firebase Console.\n" + (e?.message || e));
-  }
-});
-
-// ---------- Lemon checkout (hidden anchor method) ----------
-const HOSTED_LINK = "https://medrush.lemonsqueezy.com/buy/7a68e3f0-9233-465c-8448-58ae47a86d01?embed=1";
-const buyBtn = document.getElementById("buy");
-const buyAnchor = document.getElementById("buy-anchor");
-
-buyBtn.addEventListener("click", async () => {
-  if (!uid) return alert("Login first to get UID");
-  if (!window.LemonSqueezy) return alert("LemonSqueezy script not loaded yet. Wait a second and try again.");
-
-  const email = MYemail;
-  if (!email) return alert("Please type your email before purchase");
-
-  const url = new URL(HOSTED_LINK);
-  url.searchParams.set("embed", "1");
-  url.searchParams.set("checkout[custom][uid]", uid);
-  url.searchParams.set("checkout[email]", email); // ensure email makes it to LS
-
-  // Configure success handler
-  window.LemonSqueezy.Setup({
-    eventHandler: async (event) => {
-      if (event.event === "Checkout.Success") {
-        const buyerEmail = event?.data?.user_email || email;
-        try {
-          const r = await fetch("/api/ls/capture", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ uid, email: buyerEmail })
-          });
-          const data = await r.json();
-          log("capture →", data);
-          if (data.subscriptionID) {
-            await setDoc(doc(db, "userSubscriptions", uid), {
-              LSsubscriptionID: data.subscriptionID,
-              LSstatus: data.status
-            }, { merge: true });
-            log("💾 Saved subscription to Firestore");
-          } else {
-            log("⚠️ Could not resolve subscription. Consider using webhooks for reliability.");
-          }
-        } catch (e) {
-          log("❌ capture error:", String(e));
-        }
-      }
-    }
-  });
-
-  buyAnchor.href = url.toString();
-  buyAnchor.click();
-});
-
-// ---------- Check subscription: returns true/false ----------
-async function checkSubscription(){
-  if (!uid) throw new Error("Login first");
-  const ref = doc(db, "userSubscriptions", uid);
-  const snap = await getDoc(ref);
-  const id = snap.exists() ? snap.data().LSsubscriptionID : null;
-  if (!id) { log("No LSsubscriptionID found in Firestore for this UID"); return false; }
-
-  const r = await fetch(`/api/ls/check-subscription?subscriptionID=${encodeURIComponent(id)}`);
-  const json = await r.json();
-  if (json?.status) {
-    await setDoc(ref, { LSstatus: json.status }, { merge: true });
-  }
-  return !!json?.active;
-}
-
-document.getElementById("check").addEventListener("click", async () => {
-  try {
-    const ok = await checkSubscription();
-    document.getElementById("status").textContent = String(ok);
-    log("✅ checkSubscription:", ok);
-  } catch (e) {
-    log("❌ checkSubscription error:", String(e));
-  }
-});
-
-window.checkSubscription = checkSubscription;
-
-
-
-*/
-
-
-
-/*
-
-const uid = localStorage.getItem("uid");
-const MYemail =localStorage.getItem("email");
-
-
-
-
-
-// ---------- Firebase (client) ----------
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAuth, signInAnonymously, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-
-let app, auth, db ;
-
-async function initFirebase(){
-  const cfg = await fetch("/firebase-config").then(r=>r.json());
-  app = initializeApp(cfg);
-  auth = getAuth(app);
-  db = getFirestore(app);
-
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      document.getElementById("uid").textContent = uid;
-    }
-  });
-}
-
-
-
-window.onload = async function() {
-  const mySubscriptionStatus = "Active"; // or "Inactive"
-
-  // Fill the spans
-  document.getElementById("UID").textContent = uid;
-  document.getElementById("userEmail").textContent = MYemail;
- // document.getElementById("subStatus").textContent = mySubscriptionStatus;
-
-
- 
-
-
-
-
-  try {
-    if (!app) await initFirebase();
-  } catch (e) {
-    console.error(e);
-    alert("Firebase sign-in failed. Enable Anonymous Sign-in in Firebase Console.\n" + (e?.message || e));
-  }
-
-
-
-
-
-const HOSTED_LINK = "https://medrush.lemonsqueezy.com/buy/7a68e3f0-9233-465c-8448-58ae47a86d01?embed=1";
-const buyBtn = document.getElementById("buy");
-const buyAnchor = document.getElementById("buy-anchor");
-
-
-
-createExamBtn.addEventListener("click", async () => {
-  window.location.href = "connect.html";  // ✅ only then redirect
-});
-
-
-buyBtn.addEventListener("click", async () => {
-
-  if (!uid) return alert("Login first to get UID");
-  if (!window.LemonSqueezy) return alert("LemonSqueezy script not loaded yet. Wait a second and try again.");
-
-  const email = MYemail;
-  if (!email) return alert("Please log out and log in again to make a payment");
-
-  const url = new URL(HOSTED_LINK);
-  url.searchParams.set("embed", "1");
-  url.searchParams.set("checkout[custom][uid]", uid);
-  url.searchParams.set("checkout[email]", email); // ensure email makes it to LS
-
-  // Configure success handler
-  window.LemonSqueezy.Setup({
-    eventHandler: async (event) => {
-      if (event.event === "Checkout.Success") {
-        const buyerEmail = event?.data?.user_email || email;
-        try {
-          const r = await fetch("/api/ls/capture", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ uid, email: buyerEmail })
-          });
-          const data = await r.json();
-          if (data.subscriptionID) {
-            await setDoc(doc(db, "userSubscriptions", uid), {
-              LSsubscriptionID: data.subscriptionID,
-              LSstatus: data.status
-            }, { merge: true });
-          } else {
-          }
-        } catch (e) {
-        }
-      }
-    }
-  });
-
-  buyAnchor.href = url.toString();
-  buyAnchor.click();
-
-});
-
-checkSubscription()
-window.checkSubscription = checkSubscription;
-
-
-
-
-
-
-
-// ---------- Check subscription: returns true/false ----------
-async function checkSubscription(){
-  if (!uid) throw new Error("Login first");
-  const ref = doc(db, "userSubscriptions", uid);
-  const snap = await getDoc(ref);
-  const id = snap.exists() ? snap.data().LSsubscriptionID : null;
-
-  const r = await fetch(`/api/ls/check-subscription?subscriptionID=${encodeURIComponent(id)}`);
-  const json = await r.json();
-  if (json?.status) {
-    await setDoc(ref, { LSstatus: json.status }, { merge: true });
-  }
-  return !!json?.active;
-}
-
-
-
-
-
-
-
-
-
-
-
-//  let ok = await checkSubscription();
-//  if (ok==false) {ok= "not active"}
-//  if (ok==true) {ok= "active"}
-//  document.getElementById("status").textContent = String(ok);
- 
-
-
-}
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // ===== Local IDs =====
   const uid = localStorage.getItem("uid");
   const MYemail = localStorage.getItem("email");
@@ -373,7 +51,7 @@ async function checkSubscription(){
   }
 
   // Normalize server response into {approvedAt, currentPeriodEnd}
-  function normalizePeriodFields(data, fallbackMonths = 1) {
+  function normalizePeriodFields(data, fallbackMonths = 6) {
     const now = new Date();
     const approvedAt =
       data?.approvedAt ||
@@ -415,7 +93,7 @@ async function checkSubscription(){
     }
 
     // Buttons
-    const HOSTED_LINK = "https://medrush.lemonsqueezy.com/buy/7a68e3f0-9233-465c-8448-58ae47a86d01?embed=1";
+    const HOSTED_LINK = "";
     const buyBtn = document.getElementById("buy");
     const buyAnchor = document.getElementById("buy-anchor");
     const createExamBtn = document.getElementById("createExamBtn");
@@ -458,8 +136,8 @@ async function checkSubscription(){
                 const subscriptionID = data?.subscriptionID || null;
                 const status = data?.status || null;
 
-                // Normalize dates (fallback = +1 month if server didn't include period end)
-                const { approvedAt, currentPeriodEnd } = normalizePeriodFields(data, 1);
+                // Normalize dates (fallback = +6 month if server didn't include period end)
+                const { approvedAt, currentPeriodEnd } = normalizePeriodFields(data, 6);
 
                 // Save to Firestore
                 await saveLSMeta(uid, { subscriptionID, status, approvedAt, currentPeriodEnd });
@@ -512,7 +190,7 @@ async function checkSubscription(){
     // Save status
     const status = json?.status || null;
 
-    // Normalize any dates from server, fallback to +1 month from now if missing and ACTIVE
+    // Normalize any dates from server, fallback to +6 month from now if missing and ACTIVE
     let approvedAt = json?.approvedAt || json?.createdAt || json?.created_at || null;
     let currentPeriodEnd =
       json?.currentPeriodEnd ||
@@ -524,7 +202,7 @@ async function checkSubscription(){
       null;
 
     if (!currentPeriodEnd && status === "active" || status === "ACTIVE") {
-      const tmp = addMonths(new Date(), 1);
+      const tmp = addMonths(new Date(), 6);
       currentPeriodEnd = tmp.toISOString();
     }
 

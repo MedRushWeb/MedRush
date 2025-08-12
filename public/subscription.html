@@ -54,6 +54,92 @@
     background-color: #004080;
     transform: translateY(0);
   }
+
+
+
+
+
+
+
+   #LEMONSQUEEZY-HREF_1m {
+    background-color: #6e59f2; /* LemonSqueezy purple */
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(110, 89, 242, 0.3);
+  }
+
+  #LEMONSQUEEZY-HREF_1m:hover {
+    background-color: #5b4ad1;
+    box-shadow: 0 6px 16px rgba(110, 89, 242, 0.4);
+    transform: translateY(-1px);
+  }
+
+  #LEMONSQUEEZY-HREF_1m:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(110, 89, 242, 0.3);
+  }
+
+
+  
+
+     #LEMONSQUEEZY-HREF_6m {
+    background-color: #6e59f2; /* LemonSqueezy purple */
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(110, 89, 242, 0.3);
+  }
+
+  #LEMONSQUEEZY-HREF_6m:hover {
+    background-color: #5b4ad1;
+    box-shadow: 0 6px 16px rgba(110, 89, 242, 0.4);
+    transform: translateY(-1px);
+  }
+
+  #LEMONSQUEEZY-HREF_6m:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(110, 89, 242, 0.3);
+  }
+
+
+
+     #LEMONSQUEEZY-HREF_1y {
+    background-color: #6e59f2; /* LemonSqueezy purple */
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(110, 89, 242, 0.3);
+  }
+
+  #LEMONSQUEEZY-HREF_1y:hover {
+    background-color: #5b4ad1;
+    box-shadow: 0 6px 16px rgba(110, 89, 242, 0.4);
+    transform: translateY(-1px);
+  }
+
+  #LEMONSQUEEZY-HREF_1y:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 8px rgba(110, 89, 242, 0.3);
+  }
+
+
+
   </style>
 
 
@@ -73,7 +159,12 @@
     </div>
   </div>
 
-  <div class="container">
+<!-- Subscription status display -->
+  <div id="subscription-status" style="margin-bottom: 20px; text-align: left; font-size: 18px;">
+    <p>Your subscription is: <span id="sub-status" style="font-weight: bold;"></span></p>
+    <p>Ends in: <span id="sub-end-date" style="font-weight: bold;">--</span></p>
+  </div>
+
     <h1></h1>
     <div class="plans">
 
@@ -102,18 +193,7 @@
           <li>✔ unlimited exams</li>
         </ul>
         <div id="paypal-button-container-1m"></div>
-        <button id="LEMONSQUEEZY-HREF">LEMONSQUEEZY-HREF</button>
-
-        <button id="ls-subscribe-1m">Subscribe (Lemon Squeezy 1M)</button>
-
-        <a href="https://medrush.lemonsqueezy.com/buy/07d06c2d-c986-41f8-84e3-7e1c0653e3fd?embed=1" class="lemonsqueezy-button">Buy test</a>
-
-
-  <a href="https://medrush.lemonsqueezy.com/buy/7a68e3f0-9233-465c-8448-58ae47a86d01?embed=1" class="lemonsqueezy-button">Buy testmode</a><script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
-          
-
-
-
+        <button id="LEMONSQUEEZY-HREF_1m">Pay Lemon Squeezy</button>
       </div>
 
 
@@ -132,6 +212,8 @@
             <li>✔ unlimited exams</li>
           </ul>
           <div id="paypal-button-container-1y"></div>
+          <button id="LEMONSQUEEZY-HREF_1y">Pay Lemon Squeezy</button>
+
         </div>
       </div>
 
@@ -147,18 +229,20 @@
           <li>✔ unlimited exams</li>
         </ul>
         <div id="paypal-button-container-6m"></div>
+        <button id="LEMONSQUEEZY-HREF_6m">Pay Lemon Squeezy</button>
+
       </div>
 
     </div>
   </div>
 
-  <div class="footer">&copy; 2025 DrWheezy. All rights reserved.</div>
+  <div class="footer">&copy; 2025 DrWheezy.</div>
 
 
 
 
 <script type="module">
- alert(localStorage.getItem("email"));
+// alert(localStorage.getItem("email"));
 
 
 /*
@@ -641,22 +725,23 @@ await saveSubscriptionID(uid, subscriptionID, "lemonsqueezy");
 
 
 
+*/
 
 
-
-    /***** UI *****/
+  /*
+  
+  // UI 
     function selectPlan(card) {
       document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('selected'));
       card.classList.add('selected');
       // Optional: remember selection
-      localStorage.setItem("isSelected", "true");
     }
     window.selectPlan = selectPlan;
 
-    /***** ID & Flags *****/
+    // ID & Flags
     const uid = localStorage.getItem("uid") || "demo-user"; // keep UID from LocalStorage (fallback demo)
 
-    /***** Firebase Init *****/
+    // Firebase Init 
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
     import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
 
@@ -670,7 +755,7 @@ await saveSubscriptionID(uid, subscriptionID, "lemonsqueezy");
       return _db;
     }
 
-    /***** subscriptionID (Firestore ONLY, per provider) *****/
+    // subscriptionID (Firestore ONLY, per provider)
     // provider: "paypal" | "lemonsqueezy"
     async function saveSubscriptionID(uid, subscriptionID, provider) {
       try {
@@ -723,7 +808,7 @@ await saveSubscriptionID(uid, subscriptionID, "lemonsqueezy");
       }
     }
 
-    /***** PayPal: Check status (server endpoint: /check-subscription) *****/
+    // PayPal: Check status (server endpoint: /check-subscription) 
     async function checkSubscription() {
       if (!uid) {
         console.log("❌ No user ID found");
@@ -744,11 +829,9 @@ await saveSubscriptionID(uid, subscriptionID, "lemonsqueezy");
           console.log("PayPal subscription status:", data.status);
           if (data.status === "ACTIVE") {
             localStorage.setItem(`isSubscribed_${uid}`, "true");
-            localStorage.setItem("isSelected", "true"); // ← your flag
             alert("✅ PayPal subscription is active");
           } else {
             localStorage.setItem(`isSubscribed_${uid}`, "false");
-            localStorage.setItem("isSelected", "false");
             alert("❌ PayPal subscription is not active");
           }
         })
@@ -759,7 +842,7 @@ await saveSubscriptionID(uid, subscriptionID, "lemonsqueezy");
     }
     window.checkSubscription = checkSubscription;
 
-    /***** PayPal Buttons *****/
+    // PayPal Buttons
     function renderPayPalButton(selector, planId) {
       if (typeof paypal === "undefined" || !paypal?.Buttons) {
         console.warn("⚠️ PayPal SDK not loaded; skipping render for", selector);
@@ -787,173 +870,18 @@ await saveSubscriptionID(uid, subscriptionID, "lemonsqueezy");
     renderPayPalButton('#paypal-button-container-1y', 'P-2MW634431J448221NNCJ7F5I');
     renderPayPalButton('#paypal-button-container-6m', 'P-2MW634431J448221NNCJ7F5I');
 
-    /***** Lemon Squeezy Safe Loader *****/
-    async function loadLemonScript() {
-      if (window.LemonSqueezy) return window.LemonSqueezy;
-      await new Promise((resolve, reject) => {
-        const s = document.createElement('script');
-        s.src = 'https://app.lemonsqueezy.com/js/lemon.js';
-        s.async = true;
-        s.onload = resolve;
-        s.onerror = reject;
-        document.head.appendChild(s);
-      });
-      // wait for global
-      return new Promise((resolve, reject) => {
-        let tries = 0;
-        const iv = setInterval(() => {
-          if (window.LemonSqueezy) { clearInterval(iv); resolve(window.LemonSqueezy); }
-          if (++tries > 50) { clearInterval(iv); reject(new Error("LemonSqueezy failed to load")); }
-        }, 100);
-      });
-    }
-    async function ensureLemon() { return window.LemonSqueezy || await loadLemonScript(); }
+    
 
-    /***** Lemon Squeezy Checkout URLs (Test mode) *****/
-    // Replace with your TEST checkout links for recurring variants
-    const LS_CHECKOUT_1M = "https://medrush.lemonsqueezy.com/buy/07d06c2d-c986-41f8-84e3-7e1c0653e3fd?embed=1&mode=test";
-    const LS_CHECKOUT_1Y = "https://medrush.lemonsqueezy.com/buy/07d06c2d-c986-41f8-84e3-7e1c0653e3fd?embed=1&mode=test";
-    const LS_CHECKOUT_6M = "https://medrush.lemonsqueezy.com/buy/07d06c2d-c986-41f8-84e3-7e1c0653e3fd?embed=1&mode=test";
-
-    async function openLsCheckout(url) {
-      const LS = await ensureLemon();
-      LS.Open({ checkout: url });
-    }
-    window.openLsCheckout = openLsCheckout;
-
-   async function finalizeLsSubscription({ orderIdMaybe, identifier, orderNumber, userEmail }) {
-  if (!uid) { alert("❌ Cannot save subscription — no user ID."); return; }
-
-  try {
-    const qs = new URLSearchParams();
-    if (orderIdMaybe) qs.set("order_id", String(orderIdMaybe));
-    if (identifier)   qs.set("identifier", identifier);
-    if (orderNumber != null) qs.set("order_number", String(orderNumber));
-    if (userEmail)    qs.set("user_email", userEmail);
-
-    const res  = await fetch(`/ls/resolve-subscription?${qs.toString()}`);
-    const json = await res.json();
-
-    if (!json.subscriptionID) {
-      console.error("No subscriptionID returned from server", json);
-      alert("Could not resolve subscription. Contact support.");
-      return;
-    }
-
-    const subscriptionID = json.subscriptionID;
-    console.log("Resolved (LS) subscriptionID:", subscriptionID);
-
-    await saveSubscriptionID(uid, subscriptionID, "lemonsqueezy");
-    await checkSubscriptionLS(subscriptionID);
-  } catch (e) {
-    console.error("Finalize LS error:", e);
-    alert("Error finalizing Lemon Squeezy subscription.");
-  }
-}
-
-    // Check LS status (server: /check-ls-subscription)
-    async function checkSubscriptionLS(subscriptionIDFromEvent) {
-      try {
-        const subscriptionID = subscriptionIDFromEvent || await loadSubscriptionID(uid, "lemonsqueezy");
-        if (!subscriptionID) {
-          console.log("❌ No LS subscription found for this user");
-          alert("No LS subscription found for this user.");
-          return;
-        }
-        const r = await fetch(`/check-ls-subscription?subscriptionID=${encodeURIComponent(subscriptionID)}`);
-        const data = await r.json();
-        const status = (data && data.status) || "unknown";
-        console.log("LS subscription status:", status);
-
-        if (status === "active") {
-          localStorage.setItem(`isSubscribed_${uid}`, "true");
-          localStorage.setItem("isSelected", "true"); // ← your flag
-          alert("✅ Lemon Squeezy subscription is active");
-        } else {
-          localStorage.setItem(`isSubscribed_${uid}`, "false");
-          localStorage.setItem("isSelected", "false");
-          alert(`❌ Lemon Squeezy subscription not active (status: ${status})`);
-        }
-      } catch (e) {
-        console.error("LS check error:", e);
-        alert("Error checking Lemon Squeezy subscription.");
-      }
-    }
-    window.checkSubscriptionLS = checkSubscriptionLS;
-
-    // ✅ Correct object + robust path to order id (works across payload shapes)
-(async () => {
-  try {
-    const LS = await ensureLemon();
-    LS.Setup({
-      eventHandler: async (e) => {
-        if (e?.event !== "Checkout.Success") return;
-
-        const d  = e?.data || {};
-        const at = d.attributes
-          || d.order?.attributes
-          || d.order?.data?.attributes
-          || d.data?.attributes
-          || {};
-
-        // these are what your server can use
-        const apiOrderIdMaybe = d.id || d.order?.id || d.order?.data?.id || d.data?.id || null;
-        const identifier      = d.identifier ?? at.identifier ?? null;       // UUID-like
-        const orderNumber     = d.order_number ?? at.order_number ?? null;   // integer
-        const userEmail       = d.user_email ?? at.user_email ?? null;
-
-        const qs = new URLSearchParams();
-        if (apiOrderIdMaybe) qs.set("order_id", String(apiOrderIdMaybe));
-        if (identifier)      qs.set("identifier", identifier);
-        if (orderNumber != null) qs.set("order_number", String(orderNumber));
-        if (userEmail)       qs.set("user_email", userEmail);
-
-        const resp = await fetch(`/ls/resolve-subscription?${qs.toString()}`);
-        const json = await resp.json();
-
-        if (!json.subscriptionID) {
-          console.error("No subscriptionID returned from server", json);
-          alert("Could not resolve subscription. Contact support.");
-          return;
-        }
-
-        const subscriptionID = json.subscriptionID;
-        await saveSubscriptionID(uid, subscriptionID, "lemonsqueezy");
-        await checkSubscriptionLS(subscriptionID);
-      }
-    });
-  } catch (e) {
-    console.warn("LS not initialized (loader error).", e);
-  }
-})();
-
-
-    // Attach LS buttons (ensure these IDs exist in your HTML)
-    const btn1m = document.getElementById("ls-subscribe-1m");
-    const btn1y = document.getElementById("ls-subscribe-1y");
-    const btn6m = document.getElementById("ls-subscribe-6m");
-    if (btn1m) btn1m.addEventListener('click', () => openLsCheckout(LS_CHECKOUT_1M));
-    if (btn1y) btn1y.addEventListener('click', () => openLsCheckout(LS_CHECKOUT_1Y));
-    if (btn6m) btn6m.addEventListener('click', () => openLsCheckout(LS_CHECKOUT_6M));
-
-    /***** On load (optional auto-check) *****/
+    // On load (optional auto-check) 
     window.onload = () => {
       if (!uid) return;
       // checkSubscription();     // PayPal status
       // checkSubscriptionLS();   // Lemon Squeezy status
     };
 
-    /***** Free plan *****/
+    //Free plan 
     function activateFreePlan() { window.location.href = "connect.html"; }
     window.activateFreePlan = activateFreePlan;
-
-
-
-
-
-
-
-
 
 
     const LSBTN = document.getElementById("LEMONSQUEEZY-HREF");
@@ -961,6 +889,600 @@ await saveSubscriptionID(uid, subscriptionID, "lemonsqueezy");
 LSBTN.addEventListener("click", () => {
   window.location.href = "lemonsqueezy.html";
 });
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // ===== UI =====
+  function selectPlan(card) {
+    document.querySelectorAll('.plan-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+    // Optional: remember selection
+  }
+  window.selectPlan = selectPlan;
+
+  // ===== ID & Flags =====
+  const uid = localStorage.getItem("uid") || "demo-user"; // keep UID from LocalStorage (fallback demo)
+
+  // ===== Firebase Init =====
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+  import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+
+  let _db;
+  async function initFirebase() {
+    if (_db) return _db;
+    const res = await fetch("/firebase-config");
+    const config = await res.json();
+    const app = initializeApp(config);
+    _db = getFirestore(app);
+    return _db;
+  }
+
+  // ===== Helpers =====
+  // Safely add calendar months (handles month-end overflow, e.g., Jan 31 + 1m -> Feb 29/28)
+  function addMonths(date, months) {
+    const d = new Date(date);
+    const day = d.getDate();
+    d.setMonth(d.getMonth() + months);
+    if (d.getDate() < day) d.setDate(0);
+    return d;
+  }
+
+  // ===== subscriptionID (Firestore ONLY, per provider) =====
+  // provider: "paypal" | "lemonsqueezy"
+  async function saveSubscriptionID(uid, subscriptionID, provider) {
+    try {
+      if (!uid) throw new Error("Missing uid");
+      if (!subscriptionID) throw new Error("Missing subscriptionID");
+      if (!["paypal", "lemonsqueezy"].includes(provider)) {
+        throw new Error(`Invalid provider: ${provider}`);
+      }
+      const db = await initFirebase();
+      const fieldName = provider === "paypal" ? "PPsubscriptionID" : "LSsubscriptionID";
+      await setDoc(
+        doc(db, "userSubscriptions", uid),
+        { [fieldName]: subscriptionID, updatedAt: serverTimestamp() },
+        { merge: true }
+      );
+      console.log(`✅ ${fieldName} saved to Firestore: ${subscriptionID}`);
+    } catch (e) {
+      console.error("❌ Firestore save failed:", e);
+    }
+  }
+
+  // Save period metadata (approvedAt & currentPeriodEnd) alongside plan info
+  async function savePeriodMetaToFirestore(uid, { provider, planId, planMonths }) {
+    const db = await initFirebase();
+    const approvedAt = new Date();
+    const currentPeriodEnd = addMonths(approvedAt, planMonths);
+
+    await setDoc(
+      doc(db, "userSubscriptions", uid),
+      {
+        provider,                 // "paypal"
+        planId,                   // PayPal plan ID
+        planMonths,               // 1, 6, 12...
+        approvedAt,               // stored as Firestore Timestamp
+        currentPeriodEnd,         // stored as Firestore Timestamp
+        currentPeriodEndEpochMs: currentPeriodEnd.getTime(), // optional: easy client checks
+        lastUpdated: serverTimestamp()
+      },
+      { merge: true }
+    );
+    console.log("🗓️ Saved billing period:", { approvedAt, currentPeriodEnd, planMonths });
+  }
+
+  // provider: "paypal" | "lemonsqueezy"
+  async function loadSubscriptionID(uid, provider) {
+    try {
+      if (!uid) throw new Error("Missing uid");
+      if (!["paypal", "lemonsqueezy"].includes(provider)) {
+        throw new Error(`Invalid provider: ${provider}`);
+      }
+      const db = await initFirebase();
+      const snap = await getDoc(doc(db, "userSubscriptions", uid));
+      if (!snap.exists()) {
+        console.log(`⚠️ No subscription doc for uid: ${uid}`);
+        return null;
+      }
+      const fieldName = provider === "paypal" ? "PPsubscriptionID" : "LSsubscriptionID";
+      const id = snap.data()?.[fieldName] || null;
+      if (id) {
+        console.log(`📥 ${fieldName} loaded from Firestore:`, id);
+        return id;
+      }
+      const legacy = snap.data()?.subscriptionID;
+      if (legacy) {
+        console.log("🔎 Legacy subscriptionID found (consider migrating):", legacy);
+        return legacy;
+      }
+      return null;
+    } catch (e) {
+      console.error("❌ Firestore load failed:", e);
+      return null;
+    }
+  }
+
+  // ===== PayPal: Check status (server endpoint: /check-subscription) =====
+  async function checkSubscription() {
+    if (!uid) {
+      console.log("❌ No user ID found");
+      alert("No user ID found. Please log in.");
+      return;
+    }
+
+    const subscriptionID = await loadSubscriptionID(uid, "paypal");
+    if (!subscriptionID) {
+      console.log("❌ No subscription found for this user");
+    //  alert("No subscription found for this user.");
+      return;
+    }
+
+    fetch(`/check-subscription?subscriptionID=${encodeURIComponent(subscriptionID)}`)
+      .then(res => res.json())
+      .then(data => {
+        console.log("PayPal subscription status:", data.status);
+        if (data.status === "ACTIVE") {
+   //       alert("✅ PayPal subscription is active");
+        } else {
+    //      alert("❌ PayPal subscription is not active");
+        }
+      })
+      .catch(err => {
+        console.error("PayPal check error:", err);
+        alert("Error checking PayPal subscription.");
+      });
+  }
+  window.checkSubscription = checkSubscription;
+
+  // ===== PayPal Buttons =====
+  // NOTE: Ensure the PayPal JS SDK with "subscriptions" is included in your HTML:
+  function renderPayPalButton(selector, planId, planMonths) {
+    if (typeof paypal === "undefined" || !paypal?.Buttons) {
+      console.warn("⚠️ PayPal SDK not loaded; skipping render for", selector);
+      return;
+    }
+    paypal.Buttons({
+      createSubscription: function (data, actions) {
+        return actions.subscription.create({ plan_id: planId });
+      },
+      onApprove: async function (data) {
+        if (!uid) {
+          alert("❌ Cannot save subscription — no user ID.");
+          return;
+        }
+        const subId = data.subscriptionID;
+        console.log("Approved (PayPal), subscriptionID:", subId);
+
+        // Save the subscription ID under provider=paypal
+        await saveSubscriptionID(uid, subId, "paypal");
+
+        // Save approvedAt + computed currentPeriodEnd
+        await savePeriodMetaToFirestore(uid, {
+          provider: "paypal",
+          planId,
+          planMonths
+        });
+
+        // Your existing post-approve check
+        checkSubscription();
+      }
+    }).render(selector);
+  }
+
+  // TODO: replace with your real sandbox plan IDs
+  renderPayPalButton('#paypal-button-container-1m', 'P-2MW634431J448221NNCJ7F5I', 1);
+  renderPayPalButton('#paypal-button-container-6m', 'P-2MW634431J448221NNCJ7F5I', 6);
+  renderPayPalButton('#paypal-button-container-1y', 'P-2MW634431J448221NNCJ7F5I', 12);
+
+  // ===== On load (optional auto-check) =====
+  window.onload = () => {
+    if (!uid) return;
+    // checkSubscription();     // PayPal status
+    // checkSubscriptionLS();   // Lemon Squeezy status (if you add it)
+  };
+
+  // ===== Free plan =====
+  function activateFreePlan() { window.location.href = "connect.html"; }
+  window.activateFreePlan = activateFreePlan;
+
+  // ===== LemonSqueezy button -> navigate =====
+  const LSBTN = document.getElementById("LEMONSQUEEZY-HREF_1m");
+  if (LSBTN) {
+    LSBTN.addEventListener("click", () => {
+      window.location.href = "lemonsqueezy.html";
+    });
+  }
+
+
+
+    const LSBTN_6m = document.getElementById("LEMONSQUEEZY-HREF_6m");
+  if (LSBTN_6m) {
+    LSBTN_6m.addEventListener("click", () => {
+      window.location.href = "lemonsqueezy6m.html";
+    });
+  }
+
+
+    const LSBTN_1y = document.getElementById("LEMONSQUEEZY-HREF_1y");
+  if (LSBTN_1y) {
+    LSBTN_1y.addEventListener("click", () => {
+      window.location.href = "lemonsqueezy1year.html";
+    });
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+const ts = 1755005200; // example timestamp (seconds)
+const endDate = new Date(ts.toString().length === 10 ? ts * 1000 : ts);
+const formattedDate = endDate.toLocaleString('en-GB', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit',
+  hour12: false,
+  timeZoneName: 'short'
+}).replace(',', ' at');
+
+*/
+// this code comapres ls and paypal enddates then keeps only one and write a date only without a clock
+//document.getElementById('sub-end-date').textContent = (await loadSubscriptionEndDates(uid)).toDateString();
+
+
+
+
+
+
+const BOOLEAN = (await checkpaypal() || await checklemonsqueezy());
+
+//alert(BOOLEAN)
+const statusEl = document.getElementById('sub-status');
+statusEl.textContent = BOOLEAN ? "Active" : "Inactive";
+statusEl.style.color = BOOLEAN ? "green" : "red";
+
+
+
+const endDate = await loadSubscriptionEndDates(uid);
+document.getElementById('sub-end-date').textContent = endDate 
+  ? endDate.toDateString() 
+  : "--";
+
+
+
+
+/*
+// ===== PayPal: Check status (server endpoint: /check-subscription) =====
+async function checkpaypal() {
+  if (!uid) {
+    console.log("❌ No user ID found");
+    alert("No user ID found. Please log in.");
+    return false; // return a boolean
+  }
+
+  const subscriptionID = await loadSubscriptionID(uid, "paypal");
+  if (!subscriptionID) {
+    console.log("❌ No subscription found for this user");
+    alert("No subscription found for this user.");
+    return false; // return a boolean
+  }
+
+  try {
+    const res = await fetch(`/check-subscription?subscriptionID=${encodeURIComponent(subscriptionID)}`);
+    const data = await res.json();
+
+    console.log("PayPal subscription status:", data.status);
+
+    // consider both status and a possible boolean `active` flag from your API
+    const isActive =
+      (typeof data?.status === "string" && data.status.toUpperCase() === "ACTIVE") ||
+      !!data?.active;
+
+    localStorage.setItem(`isSubscribed_${uid}`, String(isActive));
+
+    alert(isActive ? "✅ PayPal subscription is active" : "❌ PayPal subscription is not active");
+    return isActive; // <-- boolean
+  } catch (err) {
+    console.error("PayPal check error:", err);
+    alert("Error checking PayPal subscription.");
+    return false; // fail closed
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// ===== Check subscription (server endpoint: /api/ls/check-subscription) =====
+async function checklemonsqueezy() {
+  if (!uid) throw new Error("Login first");
+
+  const db = await initFirebase();
+  const snap = await getDoc(doc(db, "userSubscriptions", uid));
+  const id = snap.exists() ? snap.data().LSsubscriptionID : null;
+  if (!id) return false;
+
+  const res = await fetch(`/api/ls/check-subscription?subscriptionID=${encodeURIComponent(id)}`);
+  if (!res.ok) return false;
+
+  const json = await res.json();
+
+  // Prefer explicit boolean if provided
+  if (typeof json?.active === "boolean") return json.active;
+
+  // Fallback to status string
+  const status = (json?.status || "").toString().toLowerCase();
+  return status === "active";
+}
+*/
+
+
+
+// ===== PayPal: Check status (server endpoint: /check-subscription) =====
+async function checkpaypal() {
+  if (!uid) {
+    console.log("❌ No user ID found");
+    alert("No user ID found. Please log in.");
+    return false;
+  }
+
+  const subscriptionID = await loadSubscriptionID(uid, "paypal");
+  if (!subscriptionID) {
+    console.log("❌ No subscription found for this user");
+  //  alert("No subscription found for this user.");
+    return false;
+  }
+
+  try {
+    const res = await fetch(`/check-subscription?subscriptionID=${encodeURIComponent(subscriptionID)}`);
+    const data = await res.json();
+
+    console.log("PayPal subscription status:", data.status);
+
+    // consider both status and a possible boolean `active` flag from your API
+    const isActive =
+      (typeof data?.status === "string" && data.status.toUpperCase() === "ACTIVE") ||
+      !!data?.active;
+
+
+    if (isActive) {
+      if (data.current_period_end) {
+        const endDate = new Date(data.current_period_end);
+        const formattedDate = endDate.toLocaleString(); // local time
+  //      alert(`✅ PayPal subscription is active\nEnds on: ${formattedDate}`);
+      } else {
+  //      alert("✅ PayPal subscription is active\nEnd date not provided.");
+      }
+    } else {
+  //    alert("❌ PayPal subscription is not active");
+    }
+
+    return isActive;
+  } catch (err) {
+    console.error("PayPal check error:", err);
+    alert("Error checking PayPal subscription.");
+    return false;
+  }
+}
+
+
+
+
+// ===== Check subscription (server endpoint: /api/ls/check-subscription) =====
+async function checklemonsqueezy() {
+  if (!uid) {
+    alert("No user ID found. Please log in.");
+    return false;
+  }
+
+  const db = await initFirebase();
+  const snap = await getDoc(doc(db, "userSubscriptions", uid));
+  const id = snap.exists() ? snap.data().LSsubscriptionID : null;
+  if (!id) {
+//    alert("No LemonSqueezy subscription found for this user.");
+    return false;
+  }
+
+  try {
+    const res = await fetch(`/api/ls/check-subscription?subscriptionID=${encodeURIComponent(id)}`);
+    if (!res.ok) {
+      alert("Error checking LemonSqueezy subscription.");
+      return false;
+    }
+
+    const json = await res.json();
+
+    // Determine if active
+    const isActive =
+      (typeof json?.active === "boolean" && json.active) ||
+      (json?.status || "").toString().toLowerCase() === "active";
+
+    if (isActive) {
+      if (json.current_period_end) {
+        const endDate = new Date(json.current_period_end);
+        const formattedDate = endDate.toLocaleString(); // Local time
+//        alert(`✅ LemonSqueezy subscription is active\nEnds on: ${formattedDate}`);
+      } else {
+//        alert("✅ LemonSqueezy subscription is active\nEnd date not provided.");
+      }
+    } else {
+//      alert("❌ LemonSqueezy subscription is not active");
+    }
+
+    return isActive;
+  } catch (err) {
+    console.error("LemonSqueezy check error:", err);
+    alert("Error checking LemonSqueezy subscription.");
+    return false;
+  }
+}
+
+
+
+
+
+
+/*
+async function loadSubscriptionEndDates(uid) {
+  if (!uid) {
+    alert("❌ No user ID found");
+    return null;
+  }
+
+
+  try {
+    const db = await initFirebase();
+    const snap = await getDoc(doc(db, "userSubscriptions", uid));
+
+    if (!snap.exists()) {
+      alert("❌ No subscription document found for this UID");
+      return null;
+    }
+
+    const data = snap.data();
+    const lsEnd = data.LScurrentPeriodEnd || null;
+    const ppEnd = data.currentPeriodEnd || null;
+
+    alert(
+      `📅 LemonSqueezy End Date: ${lsEnd || "Not found"}\n` +
+      `📅 PayPal End Date: ${ppEnd || "Not found"}`
+    );
+
+
+   return { LScurrentPeriodEnd: lsEnd, currentPeriodEnd: ppEnd };
+
+  } catch (err) {
+    console.error("🔥 Error loading subscription end dates:", err);
+    alert("Error loading subscription end dates");
+    return null;
+  }
+}
+*/
+
+
+
+async function loadSubscriptionEndDates(uid) {
+  if (!uid) {
+    alert("❌ No user ID found");
+    return null;
+  }
+
+  try {
+    const db = await initFirebase();
+    const snap = await getDoc(doc(db, "userSubscriptions", uid));
+
+    if (!snap.exists()) {
+//      alert("❌ No subscription document found for this UID");
+      return null;
+    }
+
+    const data = snap.data();
+  //  const lsEnd = data.LScurrentPeriodEnd || null;
+  //  const ppEnd = data.currentPeriodEnd || null;
+
+
+
+const ppEnd = data.currentPeriodEnd ? data.currentPeriodEnd.toDate() : null;
+const lsEnd = data.LScurrentPeriodEnd ? data.LScurrentPeriodEnd.toDate() : null;
+
+
+/*
+    alert(
+      `📅 LemonSqueezy End Date: ${lsEnd  || "Not found"}\n` +
+      `📅 PayPal End Date: ${ppEnd|| "Not found"}`
+    );
+*/
+
+
+
+
+    // Rule:
+    // If both null/undefined → return null
+    if (!lsEnd && !ppEnd) return null;
+
+    // If only one exists → return it
+    if (lsEnd && !ppEnd) return lsEnd;
+    if (ppEnd && !lsEnd) return ppEnd;
+
+    // If both exist → return the bigger number
+return new Date(Math.max(lsEnd.getTime(), ppEnd.getTime()));
+
+  } catch (err) {
+    console.error("🔥 Error loading subscription end dates:", err);
+    alert("Error loading subscription end dates");
+    return null;
+  }
+}
+
+
 
 
 
@@ -977,6 +1499,13 @@ LSBTN.addEventListener("click", () => {
 
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
