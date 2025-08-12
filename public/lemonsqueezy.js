@@ -414,8 +414,9 @@ async function checkSubscription(){
       alert("Firebase init failed. Enable Anonymous Sign-in if required.\n" + (e?.message || e));
     }
 
-    // Buttons
-    const HOSTED_LINK = "https://medrush.lemonsqueezy.com/buy/7a68e3f0-9233-465c-8448-58ae47a86d01?embed=1";
+
+
+    const HOSTED_LINK = "https://drwheezy.lemonsqueezy.com/buy/5bb1e621-efe3-4026-b0b9-367d338eb4af?embed=1";
     const buyBtn = document.getElementById("buy");
     const buyAnchor = document.getElementById("buy-anchor");
     const createExamBtn = document.getElementById("createExamBtn");

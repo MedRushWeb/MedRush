@@ -895,7 +895,12 @@ async function getPayPalAccessToken() {
     `${process.env.PAYPAL_CLIENT_ID}:${process.env.PAYPAL_SECRET}`
   ).toString("base64");
 
+
+/*
   const response = await fetch("https://api-m.sandbox.paypal.com/v1/oauth2/token", {
+*/
+const response = await fetch("https://api-m.paypal.com/v1/oauth2/token", {
+
     method: "POST",
     headers: {
       "Authorization": `Basic ${auth}`,
@@ -923,7 +928,10 @@ app.get("/check-subscription", async (req, res) => {
     const accessToken = await getPayPalAccessToken();
 
     const response = await fetch(
+/*
       `https://api-m.sandbox.paypal.com/v1/billing/subscriptions/${subscriptionID}`,
+*/
+`https://api-m.paypal.com/v1/billing/subscriptions/${subscriptionID}`,
       {
         method: "GET",
         headers: {
