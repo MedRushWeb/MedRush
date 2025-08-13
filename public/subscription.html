@@ -141,9 +141,159 @@
     box-shadow: 0 3px 8px rgba(110, 89, 242, 0.3);
   }
 
+  .promo-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+
+  }
+
+  #promo-input-1m {
+    width: 130px; /* ✅ Fixed smaller width */
+    padding: 8px 12px;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    font-size: 12px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  #promo-input-1m:focus {
+    border-color: #1d4ed8;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+  }
+
+  #apply-promo-1m {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 450;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+        margin-bottom: 20px; /* ✅ Space underneath */
+
+  }
+
+  #apply-promo-1m:hover {
+    background-color: #1d4ed8;
+  }
+
+  #apply-promo-1m:active {
+    transform: scale(0.96);
+  }
 
 
-  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #promo-input-6m {
+    width: 130px; /* ✅ Fixed smaller width */
+    padding: 8px 12px;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    font-size: 12px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  #promo-input-6m:focus {
+    border-color: #1d4ed8;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+  }
+
+  #apply-promo-6m {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 450;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+        margin-bottom: 20px; /* ✅ Space underneath */
+
+  }
+
+  #apply-promo-6m:hover {
+    background-color: #1d4ed8;
+  }
+
+  #apply-promo-6m:active {
+    transform: scale(0.96);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #promo-input-1y {
+    width: 130px; /* ✅ Fixed smaller width */
+    padding: 8px 12px;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    font-size: 12px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  #promo-input-1y:focus {
+    border-color: #1d4ed8;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+  }
+
+  #apply-promo-1y {
+    background-color: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 450;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+        margin-bottom: 20px; /* ✅ Space underneath */
+
+  }
+
+  #apply-promo-1y:hover {
+    background-color: #1d4ed8;
+  }
+
+  #apply-promo-1y:active {
+    transform: scale(0.96);
+  }
+
+
+</style>
 
 
 <script src="https://www.paypal.com/sdk/js?client-id=AXXKx4gEyEMIENeXINnEn5TOVJ76t5Gu11vqlN-rfwn7kr6kMLErz_JjJT9G64rBuRJQDT0o0r1mtSyF&vault=true&intent=subscription"></script>
@@ -167,7 +317,6 @@
     <p>Your subscription is: <span id="sub-status" style="font-weight: bold;"></span></p>
     <p>Ends in: <span id="sub-end-date" style="font-weight: bold;">--</span></p>
   </div>
-
     <h1></h1>
     <div class="plans">
 
@@ -195,8 +344,10 @@
           <li>✔ custom id questions accessible</li>
           <li>✔ unlimited exams</li>
         </ul>
+        <input type="text" id="promo-input-1m" placeholder="Enter promo code">
+        <button id="apply-promo-1m">Apply</button>
         <div id="paypal-button-container-1m"></div>
-        <button id="LEMONSQUEEZY-HREF_1m">Pay Lemon Squeezy</button>
+        <button id="LEMONSQUEEZY-HREF_1m">Lemon Squeezy</button>
       </div>
 
 
@@ -214,8 +365,10 @@
             <li>✔ custom id questions accessible</li>
             <li>✔ unlimited exams</li>
           </ul>
+          <input type="text" id="promo-input-1y" placeholder="Enter promo code">
+          <button id="apply-promo-1y">Apply</button>
           <div id="paypal-button-container-1y"></div>
-          <button id="LEMONSQUEEZY-HREF_1y">Pay Lemon Squeezy</button>
+          <button id="LEMONSQUEEZY-HREF_1y">Lemon Squeezy</button>
 
         </div>
       </div>
@@ -231,11 +384,11 @@
           <li>✔ custom id questions accessible</li>
           <li>✔ unlimited exams</li>
         </ul>
+        <input type="text" id="promo-input-6m" placeholder="Enter promo code">
+        <button id="apply-promo-6m">Apply</button>
         <div id="paypal-button-container-6m"></div>
-        <button id="LEMONSQUEEZY-HREF_6m">Pay Lemon Squeezy</button>
-
+        <button id="LEMONSQUEEZY-HREF_6m">Lemon Squeezy</button>
       </div>
-
     </div>
   </div>
 
@@ -1101,17 +1254,55 @@ LSBTN.addEventListener("click", () => {
     }).render(selector);
   }
 
-  // TODO: replace with your real sandbox plan IDs
+
   renderPayPalButton('#paypal-button-container-1m', 'P-0JK81678NP2946820NCN2VEI', 1);
   renderPayPalButton('#paypal-button-container-6m', 'P-79H549746T130084HNCN2VSY', 6);
-
-
-// fake test only 1 $
-//  renderPayPalButton('#paypal-button-container-6m', 'P-3T973528KS5492806NCN5ABY', 6);
-
   renderPayPalButton('#paypal-button-container-1y', 'P-9WP73999W2079694SNCN2V7Q', 12);
 
 
+document.getElementById("apply-promo-1m").addEventListener("click", () => {
+  const enteredCode = document.getElementById("promo-input-1m").value.trim().toUpperCase();
+  const validCode = "U1MTE4NQ";
+  if (enteredCode === validCode) {
+
+alert("Congrats! 30% discount is applied now for 1 month plan!");
+document.getElementById("paypal-button-container-1m").innerHTML = "";
+  renderPayPalButton('#paypal-button-container-1m', 'P-5LC497998P242522CNCOLEYQ', 1);
+  }
+});
+
+document.getElementById("apply-promo-6m").addEventListener("click", () => {
+  const enteredCode = document.getElementById("promo-input-6m").value.trim().toUpperCase();
+  const validCode = "U1MTE4NQ";
+  if (enteredCode === validCode) {
+    alert("Congrats! 30% discount is applied now for 6 months plan!");
+
+document.getElementById("paypal-button-container-6m").innerHTML = "";
+  renderPayPalButton('#paypal-button-container-6m', 'P-5F427536AW6493151NCOLGUI', 6);
+  }
+});
+
+
+document.getElementById("apply-promo-1y").addEventListener("click", () => {
+  const enteredCode = document.getElementById("promo-input-1y").value.trim().toUpperCase();
+  const validCode = "U1MTE4NQ";
+  if (enteredCode === validCode) {
+        alert("Congrats! 30% discount is applied now for 1 year plan!");
+
+document.getElementById("paypal-button-container-1y").innerHTML = "";
+  renderPayPalButton('#paypal-button-container-1y', 'P-9S92761505643494GNCOLF3Q', 12);
+  }
+});
+
+
+
+/*
+  // TODO: replace with your real sandbox plan IDs
+  renderPayPalButton('#paypal-button-container-1m', 'P-0JK81678NP2946820NCN2VEI', 1);
+  renderPayPalButton('#paypal-button-container-6m', 'P-79H549746T130084HNCN2VSY', 6);
+  renderPayPalButton('#paypal-button-container-1y', 'P-9WP73999W2079694SNCN2V7Q', 12);
+
+*/
 
 
 

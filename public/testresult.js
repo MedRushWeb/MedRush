@@ -411,7 +411,7 @@ async function handleSaveAndRedirect() {
 
 
   const scoreValue = document.getElementById('averageScore');
-  scoreValue.textContent = " "+ average/examEntries.length + ' %';
+  scoreValue.textContent = " "+ ((average/examEntries.length).toFixed(1)) + ' %';
 
 
 
