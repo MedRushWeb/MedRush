@@ -330,9 +330,10 @@ const letter = match ? match[0] : null;
 const index = letter ?  letter.charCodeAt(0) - 64: null;
 const percentage = index ? examEntries[i][`percent_${index}`] : "";
 
-//average=average+percentage;
-average += Number(percentage.replace('%', '')) || 0;
-
+//average += Number(percentage.replace('%', '')) || 0;
+average += Number(
+  (percentage !== undefined ? percentage.replace('%', '') : "50")
+) || 0;
 
 cell.innerText = percentage;
 
