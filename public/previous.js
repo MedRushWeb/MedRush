@@ -1,3 +1,5 @@
+/*
+
 const uid = localStorage.getItem("uid");
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
@@ -30,8 +32,63 @@ export async function initFirebase() {
 // ✅ Allow other files to access firestore & storage
 export { firestore };
 
+*/
 
+let uid;
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  updateDoc,
+  setDoc
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+import {
+  getAuth,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
 
+let firestore, auth;
+
+// ✅ Initialize Firebase once
+export async function initFirebase() {
+  if (firestore && auth) {
+    return { firestore, auth }; // already initialized
+  }
+
+  try {
+    const res = await fetch("/firebase-config");
+    const config = await res.json();
+
+    const app = initializeApp(config);
+    firestore = getFirestore(app);
+    auth = getAuth(app);
+
+    console.log("✅ Firebase initialized from backend config");
+    return { firestore, auth };
+  } catch (err) {
+    console.error("❌ Error initializing Firebase:", err);
+    throw err;
+  }
+}
+
+// ✅ Secure alternative to localStorage.getItem("uid")
+export async function getCurrentUID() {
+  await initFirebase(); // ensure auth is ready
+
+  return new Promise((resolve, reject) => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        resolve(user.uid);  // 🔑 Safe UID
+      } else {
+        reject("⚠️ No user logged in");
+      }
+    });
+  });
+}
+
+// ✅ Export so other files can use them
+export { firestore, auth };
 
 
 
@@ -132,7 +189,8 @@ let isTimed;
 
 async function doStuff() {
 
-  await initFirebase();
+await initFirebase();
+uid = await getCurrentUID();
 
 await Z_load_Cloud();
 await loadCloud();
@@ -195,7 +253,9 @@ await saveEndedCloud();
 }
 
 
-function addRows() {
+async function addRows() {
+  uid = await getCurrentUID();
+  
   const tableBody = document.getElementById("myTable").getElementsByTagName('tbody')[0];
   tableBody.innerHTML = '';
 
@@ -237,6 +297,7 @@ for (let i = Z - 1; i >= 0; i--) {
     /*
     <td>${Exams[`Exam_${i+1}_${uid}`].length}</td>
     */
+
 
     const row = document.createElement('tr');
       row.innerHTML = `

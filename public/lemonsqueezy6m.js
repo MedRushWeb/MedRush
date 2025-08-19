@@ -1,3 +1,4 @@
+/*
   // ===== Local IDs =====
   const uid = localStorage.getItem("uid");
   const MYemail = localStorage.getItem("email");
@@ -21,6 +22,63 @@
     });
     return db;
   }
+*/
+
+
+
+
+let uid;
+const MYemail = localStorage.getItem("email");
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import { getFirestore, doc, setDoc, getDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+let app, auth, db;
+
+async function initFirebase() {
+  if (db) return db;
+  const cfg = await fetch("/firebase-config").then(r => r.json());
+  app = initializeApp(cfg);
+  auth = getAuth(app);
+  db = getFirestore(app);
+
+  // ✅ Listen for the authenticated user
+  onAuthStateChanged(auth, (user) => {
+    const el = document.getElementById("uid");
+    if (user && el) {
+      el.textContent = user.uid;   // 🔑 show real UID
+    } else if (el) {
+      el.textContent = "Not logged in";
+    }
+  });
+
+  return db;
+}
+
+// ✅ Helper if you need UID in code (not just DOM)
+async function getCurrentUID() {
+  await initFirebase();
+  return new Promise((resolve, reject) => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) resolve(user.uid);
+      else reject("⚠️ No user logged in");
+    });
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // ===== Helpers =====
   // Safely add months to a date (handles month-end overflow)
@@ -79,20 +137,19 @@
 
   // ===== On Load =====
   window.onload = async function () {
+
+
+    await initFirebase();
+    uid = await getCurrentUID();
+    
+    
     // Fill UI spans if present
     const uidSpan = document.getElementById("UID");
     const emailSpan = document.getElementById("userEmail");
     if (uidSpan && uid) uidSpan.textContent = uid;
     if (emailSpan && MYemail) emailSpan.textContent = MYemail;
 
-    try {
-      await initFirebase();
-    } catch (e) {
-      console.error(e);
-      alert("Firebase init failed. Enable Anonymous Sign-in if required.\n" + (e?.message || e));
-    }
-// fake one for testing
- //   const HOSTED_LINK = "https://drwheezy.lemonsqueezy.com/buy/ba137892-a1d2-4421-bb9d-cd8a6fe8112e?embed=1";
+
 
     const HOSTED_LINK = "https://drwheezy.lemonsqueezy.com/buy/66c8a46b-3323-4d3c-972c-25d5869c1655?embed=1";
     const buyBtn = document.getElementById("buy");
@@ -179,6 +236,9 @@
   async function checkSubscription() {
     if (!uid) throw new Error("Login first");
     if (!db) await initFirebase();
+    uid = await getCurrentUID();
+
+
 
     const ref = doc(db, "userSubscriptions", uid);
     const snap = await getDoc(ref);
@@ -252,7 +312,10 @@
 async function checklemonsqueezy() {
   if (!uid) throw new Error("Login first");
   if (!db) await initFirebase();
+    uid = await getCurrentUID();
 
+
+    
   const ref = doc(db, "userSubscriptions", uid);
   const snap = await getDoc(ref);
   const id = snap.exists() ? snap.data().LSsubscriptionID : null;

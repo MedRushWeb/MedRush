@@ -1,3 +1,4 @@
+/*
 const uid = localStorage.getItem("uid");
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
@@ -36,14 +37,71 @@ export async function initFirebase() {
 // ✅ Allow other files to access firestore & storage
 export { firestore, storage };
 
+*/
 
 
+let uid;
 
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  updateDoc,
+  setDoc
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+import {
+  getStorage,
+  ref,
+  getDownloadURL
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js";
+import {
+  getAuth,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
 
+let firestore, storage, auth;
 
+// ✅ Initialize Firebase
+export async function initFirebase() {
+  if (firestore && storage && auth) {
+    return { firestore, storage, auth }; // already initialized
+  }
 
+  try {
+    const res = await fetch("/firebase-config");
+    const config = await res.json();
 
+    const app = initializeApp(config);
+    firestore = getFirestore(app);
+    storage = getStorage(app);
+    auth = getAuth(app);
 
+    console.log("✅ Firebase initialized from backend config");
+    return { firestore, storage, auth };
+  } catch (err) {
+    console.error("❌ Error initializing Firebase:", err);
+    throw err;
+  }
+}
+
+// ✅ Safe replacement for localStorage UID
+export async function getCurrentUID() {
+  await initFirebase(); // ensure auth is ready
+
+  return new Promise((resolve, reject) => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        resolve(user.uid);  // 🔑 Safe UID
+      } else {
+        reject("⚠️ No user logged in");
+      }
+    });
+  });
+}
+
+// ✅ Allow other files to access firestore & storage
+export { firestore, storage, auth };
 
 
 
@@ -197,6 +255,10 @@ window.onload = async function() {
 
 
   await initFirebase();
+  uid = await getCurrentUID();
+  
+
+
   
 timeperQuestion[`timeperQuestion_${test_result_index}_${uid}`] = [];
 submitted_string[`submitted_string_${test_result_index}_${uid}`]=[];  

@@ -15,6 +15,9 @@
 
 // connect.js
 
+
+
+/*
 const uid = localStorage.getItem("uid");
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
@@ -70,6 +73,70 @@ export async function initFirebase() {
 export { firestore, storage };
 
 
+*/
+let uid;
+
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  updateDoc,
+  setDoc,
+  deleteDoc  // ✅ Added
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+import {
+  getStorage,
+  ref,
+  getDownloadURL
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js"; 
+import {
+  getAuth,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+
+let firestore, storage, auth;
+
+// ✅ Initialize Firebase
+export async function initFirebase() {
+  try {
+    const res = await fetch("/firebase-config");
+    const config = await res.json();
+
+    const app = initializeApp(config);
+    firestore = getFirestore(app);
+    storage = getStorage(app);
+    auth = getAuth(app);
+
+    console.log("✅ Firebase initialized from backend config");
+    return { firestore, storage, auth };
+  } catch (err) {
+    console.error("❌ Error initializing Firebase:", err);
+    throw err;
+  }
+}
+
+// ✅ Get the current user UID safely (instead of localStorage)
+export function getCurrentUID() {
+  return new Promise((resolve, reject) => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        resolve(user.uid);  // 🔑 Safe UID
+      } else {
+        reject("⚠️ No user logged in");
+      }
+    });
+  });
+}
+
+// ✅ Allow other files to access firestore & storage
+export { firestore, storage, auth };
+
+
+
+
+
 
 
 
@@ -101,7 +168,7 @@ async function ComboLoadValuesFromFirestore() {
 
       Z=allData.Z;
 
-
+      
       // Extract relevant data from Firestore document using `Z` and `uid`    
       unusedIdsArrayCloud = allData.unusedIdsArrayCloud;
       incorrectIdsArrayCloud = allData.incorrectIdsArrayCloud;
@@ -861,6 +928,8 @@ document.addEventListener('visibilitychange', function() {
 window.onload =  async function() {
 
 await initFirebase();
+uid = await getCurrentUID();
+
 
   //
   //

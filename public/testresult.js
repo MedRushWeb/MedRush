@@ -1,3 +1,4 @@
+/*
 const uid = localStorage.getItem("uid");
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
@@ -29,6 +30,66 @@ export async function initFirebase() {
 
 // ✅ Allow other files to access firestore & storage
 export { firestore };
+
+*/
+
+
+let uid;
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  updateDoc,
+  setDoc
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+import {
+  getAuth,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
+
+let firestore, auth;
+
+// ✅ Initialize Firebase once
+export async function initFirebase() {
+  if (firestore && auth) {
+    return { firestore, auth }; // already initialized
+  }
+
+  try {
+    const res = await fetch("/firebase-config");
+    const config = await res.json();
+
+    const app = initializeApp(config);
+    firestore = getFirestore(app);
+    auth = getAuth(app);
+
+    console.log("✅ Firebase initialized from backend config");
+    return { firestore, auth };
+  } catch (err) {
+    console.error("❌ Error initializing Firebase:", err);
+    throw err;
+  }
+}
+
+// ✅ Safe replacement for localStorage.getItem("uid")
+export async function getCurrentUID() {
+  await initFirebase(); // make sure auth is ready
+
+  return new Promise((resolve, reject) => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        resolve(user.uid);  // 🔑 Safe UID
+      } else {
+        reject("⚠️ No user logged in");
+      }
+    });
+  });
+}
+
+// ✅ Export for other files
+export { firestore, auth };
+
 
 
 
@@ -228,6 +289,7 @@ async function ComboloadIndex() {
 
     (async () => {
 await initFirebase();
+uid = await getCurrentUID();
 
 await loadTestResultIndexOnly();
 await ComboLoadValuesFromFirestore();
