@@ -637,7 +637,6 @@ outline:none;
 
 
 
-/* ========== Media Queries ========== */
 
 /* iPhones (all orientations, width ≤ 480px) */
 @media screen and (max-width: 480px) {
@@ -676,6 +675,44 @@ outline:none;
     margin-bottom: 0;
   }
 
+
+
+
+
+
+
+
+
+
+
+  
+.big-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+.big-box:hover {
+  transform: translateY(-1px); /* subtle lift */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* slightly stronger shadow */
+}
+
+.big-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
   .topbar {
     height: 60px;
     padding: 0 10px;
@@ -696,12 +733,70 @@ outline:none;
     height: 60px;
   }
 
+
+
+  .choose-questions{
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 20px;
+  font-family: Arial;
+  height: 100%;
+ }
+
+
   .start-button {
     width: 120px;
     font-size: 14px;
     height: 30px;
     margin-left: 10px;
   }
+
+
+
+
+
+
+
+  
+.question-mode-text{
+  display: block;
+  float: left;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 40px;
+
+}
+
+.unusedClass{
+  margin-top: 20px;
+  margin-left: 85px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.incorrectClass{
+  margin-left: 20px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.markedClass{
+  margin-left: 20px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.all-modeClass{
+  margin-left: 20px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+
 
   .test-mode,
   .timedClass,
@@ -714,10 +809,11 @@ outline:none;
     margin-left: 10px;
   }
 
-  .two-column-container {
-    flex-direction: column;
-    gap: 10px;
-  }
+.two-column-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 
 
 
@@ -726,12 +822,18 @@ outline:none;
 
 
 
+.box_left{
+  padding-left: 8px;
+  float: left;}
+.box_right{
+  padding-right: 8px;
+  float: right;}
+.group-label{
+  font-size: 12px;
+}
 
-  .box_left,
-  .box_right {
-    float: none;
-    padding: 0;
-  }
+
+
 
   .count-style,
   .remain-text {
@@ -763,12 +865,7 @@ outline:none;
 }
 
 /* Optional: override unnecessary float behavior in small screens */
-.box_left,
-.box_right {
-  float: none;
-  padding-left: 0;
-  padding-right: 0;
-}
+
 
 
 
@@ -794,6 +891,42 @@ outline:none;
     padding: 20px;
   }
 
+
+
+
+
+
+
+
+
+
+
+  
+.big-box {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+
+.big-box:hover {
+  transform: translateY(-1px); /* subtle lift */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* slightly stronger shadow */
+}
+
+.big-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
   .sidebar {
     width: 120px;
   }
@@ -802,19 +935,90 @@ outline:none;
     font-size: 15px;
   }
 
+
+
+  .choose-questions{
+  margin-top: 4px;
+  padding-top: 4px;
+  font-size: 14px;
+  font-family: Arial;
+  height: 100%;
+ }
+
+
   .start-button {
     width: 130px;
     font-size: 15px;
   }
 
+
+
+
+
+
+
+
+  
+.question-mode-text{
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+
+}
+
+.unusedClass{
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.incorrectClass{
+  margin-left: 15px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.markedClass{
+  margin-left: 15px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.all-modeClass{
+  margin-left: 15px;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
   .test-mode,
   .timedClass,
   .question-mode-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  .two-column-container {
-    flex-direction: column;
-    gap: 15px;
-  }
+.two-column-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+
+.box_left{
+  padding-left: 11px;
+  float: left;}
+.box_right{
+  padding-right: 11px;
+  float: right;}
+.group-label{
+  font-size: 13px;
+}
+
+
 }

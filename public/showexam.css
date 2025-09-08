@@ -1050,22 +1050,18 @@ font-weight:100;
 }
 
 
-.explanation_title{
- font-family: Cambria, Georgia, "Times New Roman", Times, serif;
-font-weight:100; 
-font-size: 18px;
 
+
+
+.explanation_title {
+  margin: 0;
+  font-size: 17px;
+  font-style: normal;
+  font-family: Arial; 
+  font-weight: 100;
 }
 
-.explanation_title mjx-container {
-  font-size: 1.5em !important;   /* makes math bigger */
-}
 
-.explanation_title mjx-math {
-  font-family: Cambria, Georgia, "Times New Roman", serif !important;  /* overrides thin font */
-  font-weight: normal !important;  /* counteracts font-weight:100 */
-  font-size: inherit;
-}
 
 .match{
 
@@ -2066,8 +2062,8 @@ html, body {
 
 
 
-/* ========== Media Query for iPhones (up to iPhone 15 Pro Max) ========== */
-@media screen and (max-width: 480px) {
+/* ==========  Query for iPhones (up to iPhone 15 Pro Max) ========== */
+  @media screen and (max-width: 480px) {
 
   /* Keep sidebar-scroll fixed on the left */
   #sidebar-scroll {
@@ -2111,6 +2107,31 @@ html, body {
     padding: 10px;
   }
 
+
+
+
+
+
+
+
+.quiz-app .quiz-area {
+  background-color:#f8f8f8;
+  padding: 8;
+  margin-top: 15px;
+
+}
+
+
+.quiz-app .quiz-area h2 {
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+
+
   .quiz-app .quiz-area,
   .quiz-app .answers-area {
     padding: 8px;
@@ -2149,11 +2170,31 @@ html, body {
     font-size: 14px;
   }
 
+
+
+  
+.explanation_title {
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-family: Arial; 
+  font-weight: 100;
 }
 
 
-/* ========== Media Query for iPads (portrait and landscape) ========== */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========  Query for iPads (portrait and landscape) ========== */
+@media screen and (max-width: 1024px) {
 
   #sidebar-scroll {
     position: fixed;
@@ -2196,8 +2237,21 @@ html, body {
     padding: 12px;
   }
 
+
+
+  
+.quiz-app .quiz-area h2 {
+  margin: 0;
+  font-size: 15px;
+  font-style: normal;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+
+
   .quiz-app .answer label {
-    font-size: 15px;
+  font-size: 15px;
   }
 
   .start-button,
@@ -2215,4 +2269,19 @@ html, body {
     padding-left: 60px;
     font-size: 16px;
   }
+
+
+
+
+
+.explanation_title {
+  margin: 0;
+  font-size: 15px;
+  font-style: normal;
+  font-family: Arial; 
+  font-weight: 100;
+}
+
+
+
 }

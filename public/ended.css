@@ -13,6 +13,23 @@
   backdrop-filter: blur(4px);
 }
 
+
+
+/* CSS */
+#loadingScreen_exam {
+  display: none;  /* Start hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+
 .ripple {
   width: 80px;
   height: 80px;
@@ -46,6 +63,10 @@
     opacity: 0;
   }
 }
+
+
+
+
 
 
 
@@ -297,6 +318,7 @@ border-radius: 5px;
   display: block;
   height: fit-content;
   width: fit-content;
+  
 
 }
 .quiz-app .answers-area .answer:not(:last-child) {
@@ -321,14 +343,15 @@ border-radius: 5px;
 
 
 
-
-
-
 .answer input[type="radio"] {
     transform: scale(1.3); /* increase size */
     margin-right: 8px;     /* add space between radio and text */
     cursor: pointer;       /* show pointer on hover */
 }
+
+
+
+
 
 
 
@@ -628,6 +651,9 @@ margin-top: 2.2px;
 padding-left: 20px;
 
 }
+
+
+
 
 .timing{
 display: block;
@@ -975,6 +1001,7 @@ label.disabled {
 
 
 
+
 .id_question{
 display: inline-block;
 color: white;
@@ -990,9 +1017,6 @@ color: white;
 font-size: 14px;
 font-weight:400;
 }
-
-
-
 
 
 
@@ -1026,22 +1050,18 @@ font-weight:100;
 }
 
 
-.explanation_title{
- font-family: Cambria, Georgia, "Times New Roman", Times, serif;
-font-weight:100; 
-font-size: 18px;
 
+
+
+.explanation_title {
+  margin: 0;
+  font-size: 17px;
+  font-style: normal;
+  font-family: Arial; 
+  font-weight: 100;
 }
 
-.explanation_title mjx-container {
-  font-size: 1.5em !important;   /* makes math bigger */
-}
 
-.explanation_title mjx-math {
-  font-family: Cambria, Georgia, "Times New Roman", serif !important;  /* overrides thin font */
-  font-weight: normal !important;  /* counteracts font-weight:100 */
-  font-size: inherit;
-}
 
 .match{
 
@@ -1096,23 +1116,6 @@ background-color:#ccc;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #button-container {
 display: flex;
 
@@ -1163,41 +1166,6 @@ background-color: #007BFF;
 .at-button:focus {
 outline:none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1261,8 +1229,6 @@ border-radius: 8px;
 
 
 }
-
-
 .close {
 position: absolute;
 top: 10px;
@@ -1582,9 +1548,7 @@ font-weight: bold !important;
 
 
 
-
-
-
+/* Push main content to the right */
 .main-content {
   top : 60px;
   left : 140px; 
@@ -1669,6 +1633,9 @@ font-weight: bold !important;
 
 
 
+
+    /* Red flag on the right (drawn as triangle) */
+    /* 🚩 emoji on the most right, small size */
     .new_buttons.flagged::after {
       content: '🚩';
       position: absolute;
@@ -1689,8 +1656,6 @@ font-weight: bold !important;
     width: 8px;
     height: 100%;
     background-color: rgb(21, 197, 21);
-
-
 }
 
 
@@ -1703,14 +1668,19 @@ font-weight: bold !important;
     width: 8px;
     height: 100%;
     background-color: red;
+
 }
+
+
+
+
+
 
 
 
 .status {
   display: none; /* or block if you want visible */
 }
-
 
 
 
@@ -1783,7 +1753,6 @@ font-weight: bold !important;
   z-index: 10;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-left: 2px solid rgba(255, 255, 255, 0.15);
-
   color: white;
 }
 
@@ -1792,22 +1761,36 @@ font-weight: bold !important;
   display: none;
 }
 
-/* Optional button style */
+/* Right section: countdown + buttons */
+.bottombar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* 💥 space between countdown and buttons */
+}
+
+/* Countdown text style */
+.bottombar-right span {
+  background: transparent;
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+/* Button style */
 .bottombar-right button {
   background: transparent;
   height: 40px;
   padding: 8px 16px;
   font-size: 16px;
   border: none;
-  border-radius: 8px;
-  color: white;
   border-radius: 4px;
+  color: white;
   cursor: pointer;
-  transform: translateY(-6px); /* Moves the button 10px up */
-
+  transform: translateY(-6px); /* Moves the button slightly up */
 }
-
-
 
 /* 🔁 Hover effect */
 .bottombar button:hover {
@@ -1815,14 +1798,6 @@ font-weight: bold !important;
   color: white;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1856,122 +1831,6 @@ font-weight: bold !important;
   transform: scale(1.2);
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#myTable {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-#myTable th {
-    background-color: #2e4aad;
-    color: white;
-    padding: 12px 15px;
-    text-align: center;
-    font-size: 16px;
-}
-
-#myTable td {
-    padding: 10px 15px;
-    text-align: center;
-    font-size: 14px;
-}
-
-#myTable tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-#myTable tr:hover {
-    background-color: #ddd;
-    transition: background-color 0.3s ease;
-}
-
-#myTable th,
-#myTable td {
-    border: 1px solid #ddd;
-}
-
-
-.table-icons {
-  position: relative;
-  display: inline-block;
-}
-
-.table-icons[data-tooltip]::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: 100%; /* position above */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 4px 8px;
-  border-radius: 4px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease-in-out;
-  font-size: 12px;
-  margin-bottom: 6px;
-  z-index: 10;
-}
-
-.table-icons[data-tooltip]:hover::after {
-  opacity: 1;
-}
-
-
-
-
-
-
-
-#myTable td button {
-    display: inline-block;    /* make buttons inline */
-    width: auto;              /* cancel any full-width or 100% width */
-    margin-right: 5px;        /* space between buttons */
-    padding: 5px 10px;        /* optional: adjust padding for better fit */
-    box-sizing: border-box;   /* ensures padding doesn't break width */
-    white-space: nowrap;      /* prevent button text from wrapping */
-}
-
-#myTable td:last-child {
-    white-space: nowrap;      /* prevent td from breaking lines */
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2054,10 +1913,19 @@ font-weight: bold !important;
 
 
 
-                html, body {
+
+
+
+
+
+
+
+
+html, body {
   height: 100%;
   overflow: hidden;
 }
+
 
 
 
@@ -2108,59 +1976,10 @@ font-weight: bold !important;
 
 
 
-
-#newButton::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 125%; /* position above the button */
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    white-space: nowrap;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s;
-    font-size: 12px;
-    z-index: 100; /* ensure it's above other elements */
-}
-
-#newButton:hover::after {
-    opacity: 1;
-}
-
-
-
-
-
-
-
-
-
-
 .omitted {
   text-decoration: line-through;
   color: black; /* optional: keeps text black */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2210,8 +2029,41 @@ font-weight: bold !important;
 
 
 
-/* ========== Media Query for iPhones (up to iPhone 15 Pro Max) ========== */
-@media screen and (max-width: 480px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========  Query for iPhones (up to iPhone 15 Pro Max) ========== */
+  @media screen and (max-width: 480px) {
 
   /* Keep sidebar-scroll fixed on the left */
   #sidebar-scroll {
@@ -2255,6 +2107,31 @@ font-weight: bold !important;
     padding: 10px;
   }
 
+
+
+
+
+
+
+
+.quiz-app .quiz-area {
+  background-color:#f8f8f8;
+  padding: 8;
+  margin-top: 15px;
+
+}
+
+
+.quiz-app .quiz-area h2 {
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+
+
   .quiz-app .quiz-area,
   .quiz-app .answers-area {
     padding: 8px;
@@ -2293,11 +2170,31 @@ font-weight: bold !important;
     font-size: 14px;
   }
 
+
+
+  
+.explanation_title {
+  margin: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-family: Arial; 
+  font-weight: 100;
 }
 
 
-/* ========== Media Query for iPads (portrait and landscape) ========== */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+
+
+
+}
+
+
+
+
+
+
+
+/* ==========  Query for iPads (portrait and landscape) ========== */
+@media screen and (max-width: 1024px) {
 
   #sidebar-scroll {
     position: fixed;
@@ -2340,8 +2237,21 @@ font-weight: bold !important;
     padding: 12px;
   }
 
+
+
+  
+.quiz-app .quiz-area h2 {
+  margin: 0;
+  font-size: 15px;
+  font-style: normal;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+
+
   .quiz-app .answer label {
-    font-size: 15px;
+  font-size: 15px;
   }
 
   .start-button,
@@ -2359,4 +2269,19 @@ font-weight: bold !important;
     padding-left: 60px;
     font-size: 16px;
   }
+
+
+
+
+
+.explanation_title {
+  margin: 0;
+  font-size: 15px;
+  font-style: normal;
+  font-family: Arial; 
+  font-weight: 100;
+}
+
+
+
 }
